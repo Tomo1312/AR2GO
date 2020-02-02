@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arhitekture>
+    <Arhitektura>
+        <name>Almeria</name>
+        <description>2006</description>
+        <author>Marija Pivac i Miroslav Dragomanović</author>
+        <imagePath>almeriaarhitektura</imagePath>
+        <points>1</points>
+        <latitude>45.8024732</latitude>
+        <longitude>16.0123641</longitude>
+    </Arhitektura>
+    <Arhitektura>
+        <name>Chromos toranj</name>
+        <description>JEDAN JAKO DOBAR TORANJ</description>
+        <author>Marijan Turkulin i Petar Vouk</author>
+        <imagePath>chromostoranj</imagePath>
+        <points>1</points>
+        <latitude>45.802818</latitude>
+        <longitude>16.008936</longitude>
+    </Arhitektura>
+</Arhitekture>

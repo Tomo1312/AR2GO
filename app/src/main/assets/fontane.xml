@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Fontane>
+    <Fontana>
+        <name>Bandićeve fontane</name>
+        <description>2012.</description>
+        <author>Helena Paver-Njirić</author>
+        <imagePath>bandicevefotnane</imagePath>
+        <points>1</points>
+        <latitude>45.797572</latitude>
+        <longitude>15.9791426</longitude>
+    </Fontana>
+	
+    <Fontana>
+        <name>Bliznaci</name>
+        <description>1984.</description>
+        <author>Helena Paver-Njirić</author>
+        <imagePath>blizancifontana</imagePath>
+        <points>1</points>
+        <latitude>45.8099367</latitude>
+        <longitude>15.9783729</longitude>
+    </Fontana>
+</Fontane>
