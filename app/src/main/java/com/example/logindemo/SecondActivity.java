@@ -3,6 +3,7 @@ package com.example.logindemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
@@ -16,6 +17,7 @@ import android.graphics.Typeface;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Parcelable;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -39,6 +41,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.text.CollationElementIterator;
 import java.util.ArrayList;
 import java.util.Locale;
@@ -56,8 +59,7 @@ public class SecondActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private static int lifes, bodovi;
     private FirebaseDatabase firebaseDatabase;
-    private static DatabaseReference databaseReference;
-    private final static String TAG = "BroadcastService";
+    private DatabaseReference databaseReference;
 
     protected static long mTimeLeftInMillis;
     protected static boolean mTimerRunning = false;
@@ -66,7 +68,9 @@ public class SecondActivity extends AppCompatActivity {
 /*    protected static final long START_TIME_IN_MILIS = 10 * 1000;
     private CountDownTimer mCountDownTimer;
     protected static long mTimeLeftInMillis;
-    private long mEndTime;*/
+    private long mEndTime;
+    private final static String TAG = "BroadcastService";
+    protected static UserProfile user;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +82,6 @@ public class SecondActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
-        final DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -92,14 +95,24 @@ public class SecondActivity extends AppCompatActivity {
                 profileBodovi.setText("= " + valueOf(bodovi));
                 profileLifes.setText("="+ valueOf(lifes));
                 if (!mTimerRunning && lifes < 20){
+                    //user = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
+                    Intent i = new Intent(SecondActivity.this, BroadcastService.class);
+                    i.putExtra("userName", userName);
+                    i.putExtra("userEmail", userEmail);
+                    i.putExtra("bodovi", bodovi);
+                    i.putExtra("unlockedSculptures", unlockedSculptures);
+                    i.putExtra("lifes", lifes);
+
+                    startService(i);
+                    //ContextCompat.startForegroundService(SecondActivity.this,i);
+                    //startForegroundService(SecondActivity.this, new Intent(SecondActivity.this, BroadcastService.class));
+                    Log.i("Broadcast", "Started service");
+                }else if(lifes == 20){
                     try{
                         stopService(new Intent(SecondActivity.this, BroadcastService.class));
                     }catch (Exception ex){
 
-                    }
-                    startService(new Intent(SecondActivity.this, BroadcastService.class));
-                    Log.i("Broadcast", "Started service");
-                }
+                    }}
             }
 
             @Override
@@ -199,7 +212,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
 
-    protected static BroadcastReceiver br = new BroadcastReceiver() {
+/*    protected static BroadcastReceiver br = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
             updateGui(intent);
@@ -214,7 +227,7 @@ public class SecondActivity extends AppCompatActivity {
             String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
             time.setText(timeLeftFormated);
         }
-    }
+    }*/
     /*@Override
     public void onResume() {
         super.onResume();
@@ -243,12 +256,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onDestroy();
     }*/
 
-    protected static void updateLifes(){
-        lifes = lifes + 1;
-        UserProfile addLifes = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
-        databaseReference.setValue(addLifes);
-        mTimerRunning = false;
-    }
+
 
     /*----Method to Check GPS is enable or disable ----- */
     @NonNull
