@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -50,7 +51,7 @@ import static java.lang.String.valueOf;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private static TextView time;
+    protected static TextView time;
     private ImageView info, tickets, events;
     private String eventMessage;
     private TextView freeLance, story, premiumStory, profileName, profileBodovi,collections, profileLifes;
@@ -60,9 +61,11 @@ public class SecondActivity extends AppCompatActivity {
     private static int lifes, bodovi;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
-
+    private Intent mServiceIntent;
+    private BroadcastService mYourService;
     protected static long mTimeLeftInMillis;
     protected static boolean mTimerRunning = false;
+    public Intent broadcastIntent;
     private static String unlockedSculptures, userName, userEmail;
 
 /*    protected static final long START_TIME_IN_MILIS = 10 * 1000;
@@ -95,24 +98,13 @@ public class SecondActivity extends AppCompatActivity {
                 profileBodovi.setText("= " + valueOf(bodovi));
                 profileLifes.setText("="+ valueOf(lifes));
                 if (!mTimerRunning && lifes < 20){
-                    //user = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
-                    Intent i = new Intent(SecondActivity.this, BroadcastService.class);
-                    i.putExtra("userName", userName);
-                    i.putExtra("userEmail", userEmail);
-                    i.putExtra("bodovi", bodovi);
-                    i.putExtra("unlockedSculptures", unlockedSculptures);
-                    i.putExtra("lifes", lifes);
-
-                    startService(i);
-                    //ContextCompat.startForegroundService(SecondActivity.this,i);
-                    //startForegroundService(SecondActivity.this, new Intent(SecondActivity.this, BroadcastService.class));
+                    mYourService = new BroadcastService();
+                    mServiceIntent = new Intent(SecondActivity.this, BroadcastService.class);
+                    if (!isMyServiceRunning(mYourService.getClass())) {
+                       startService(mServiceIntent);
+                    }
                     Log.i("Broadcast", "Started service");
-                }else if(lifes == 20){
-                    try{
-                        stopService(new Intent(SecondActivity.this, BroadcastService.class));
-                    }catch (Exception ex){
-
-                    }}
+                }
             }
 
             @Override
@@ -120,7 +112,6 @@ public class SecondActivity extends AppCompatActivity {
                 Toast.makeText(SecondActivity.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
             }
         });
-
         final DatabaseReference databaseReferenceOFEvents = firebaseDatabase.getReference("Events");
         databaseReferenceOFEvents.addValueEventListener(new ValueEventListener() {
             @Override
@@ -191,27 +182,30 @@ public class SecondActivity extends AppCompatActivity {
             }
         });
 
-        profileLifes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (mTimerRunning){
-                    int minutes = (int) mTimeLeftInMillis / 1000 / 60;
-                    int seconds = (int) mTimeLeftInMillis / 1000 % 60;
-                    String timeLeftFormated = "In " + valueOf(minutes) + " minutes and " + valueOf(seconds)+ " seconds you will get another life";
-                    Toast.makeText(SecondActivity.this, timeLeftFormated , Toast.LENGTH_LONG);
-                }
-                else{
-                    Toast.makeText(SecondActivity.this, "Max number of lives is reached!" , Toast.LENGTH_LONG);
-                }
-            }
-        });
         Boolean flag = displayGpsStatus();
         if(!flag){
             alertbox("Gps Status!!", "Your GPS is: OFF");
         }
     }
 
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                Log.i ("Service status", "Running");
+                return true;
+            }
+        }
+        Log.i ("Service status", "Not running");
+        return false;
+    }
 
+
+    @Override
+    protected void onDestroy() {
+        //stopService(mServiceIntent);
+        super.onDestroy();
+    }
 /*    protected static BroadcastReceiver br = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -239,22 +233,29 @@ public class SecondActivity extends AppCompatActivity {
         super.onPause();
         //unregisterReceiver(br);
     }
-
+    @Override
+    public void onDestroy() {
+        //stopService(new Intent(SecondActivity.this, BroadcastService.class));
+        super.onDestroy();
+        broadcastIntent = new Intent();
+        broadcastIntent.setAction("restartservice");
+        broadcastIntent.setClass(SecondActivity.this, Restarter.class);
+        this.sendBroadcast(broadcastIntent);
+    }
     @Override
     public void onStop() {
         try {
-            //unregisterReceiver(br);
+            broadcastIntent = new Intent();
+            broadcastIntent.setAction("restartservice");
+            broadcastIntent.setClass(SecondActivity.this, Restarter.class);
+            this.sendBroadcast(broadcastIntent);
         } catch (Exception e) {
             // Receiver was probably already stopped in onPause()
         }
         super.onStop();
     }
+*/
 
-    @Override
-    public void onDestroy() {
-        //stopService(new Intent(SecondActivity.this, BroadcastService.class));
-        super.onDestroy();
-    }*/
 
 
 
