@@ -24,20 +24,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.io.Serializable;
 import java.util.Locale;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import static java.lang.String.valueOf;
 
 public class BroadcastService extends Service {
-    public int counter = 0;
     private final static String TAG = "BroadcastService";
-    public static final String COUNTDOWN_BR = "logindemo.countdown_br";
-    private static final String ANDROID_CHANNEL_ID = "1";
-    Intent bi = new Intent(COUNTDOWN_BR);
-    protected static final long START_TIME_IN_MILIS = 30 * 1000;
+    protected static final long START_TIME_IN_MILIS = 30 * 60 * 1000;
     protected long mTimeLeftInMillis;
     protected CountDownTimer cdt = null;
     protected String userName, userEmail, unlockedSculptures;
@@ -45,9 +36,7 @@ public class BroadcastService extends Service {
     protected FirebaseAuth firebaseAuth;
     protected FirebaseDatabase firebaseDatabase;
     protected DatabaseReference databaseReference;
-    public static boolean isServiceRunning = false;
     public boolean isFirst;
-    public int delay;
     protected Intent broadcastIntent;
     protected static long tempLeftMilis;
     @Override
@@ -114,31 +103,8 @@ public class BroadcastService extends Service {
         return START_STICKY;
     }
 
-    private Timer timer;
-    private TimerTask timerTask;
 
     public void startTimer() {
-/*        if(isFirst){
-            delay = 20  * 1000;
-        }else{
-            delay = 0;
-        }
-        if (timer == null) {
-            timer = new Timer();
-    *//*        timerTask = new TimerTask() {
-                public void run() {
-                    Log.i("Count", "=========  "+ (counter++));
-                }
-            };*//*
-            timer.scheduleAtFixedRate(new TimerTask() {
-                @Override
-                public void run() {
-                    updateLifes();
-                    Log.d("SCHEDULE FIXED RATE", "ideee");
-                }
-
-            }, delay, 20 * 1000);
-        }*/
         cdt = new CountDownTimer(mTimeLeftInMillis, 1000) {
             @Override
             public void onFinish() {
@@ -153,7 +119,11 @@ public class BroadcastService extends Service {
                 int seconds = (int) millisUntilFinished / 1000 % 60;
                 String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
                     try{
-                        SecondActivity.time.setText(timeLeftFormated);
+                        if(timeLeftFormated.equals("00:00")){
+                            SecondActivity.time.setText("");
+                        }else{
+                            SecondActivity.time.setText(timeLeftFormated);
+                        }
                         SecondActivity.mTimerRunning = true;
                     }catch (Exception ex){
 
@@ -168,15 +138,14 @@ public class BroadcastService extends Service {
     }
 
     protected void updateLifes(){
-        lifes = lifes + 1;
+        lifes++;
         UserProfile addLifes = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
         databaseReference.setValue(addLifes);
-        SecondActivity.mTimerRunning = false;
 
-        isFirst = false;
-        if (lifes >= 20){
+        if (lifes > 19){
+            stoptimertask();
+            stopForeground(true);
             stopService(broadcastIntent);
-            //stopService(BroadcastService.this);
         }else{
             mTimeLeftInMillis = START_TIME_IN_MILIS;
             startTimer();
@@ -203,23 +172,4 @@ public class BroadcastService extends Service {
             }
         }
     }
-
-/*    private void startTimer() {
-        mTimeLeftInMillis = START_TIME_IN_MILIS;
-        cdt = new CountDownTimer(mTimeLeftInMillis, 1000) {
-            @Override
-            public void onFinish() {
-                updateLifes();
-                Log.i(TAG, "Timer finished");
-            }
-
-            @Override
-            public void onTick(long millisUntilFinished) {
-                SecondActivity.mTimerRunning = true;
-                //bi.putExtra("timeRunning", true);
-                //bi.putExtra("countdown", millisUntilFinished);
-                //sendBroadcast(bi);
-            }
-        }.start();
-    }*/
 }

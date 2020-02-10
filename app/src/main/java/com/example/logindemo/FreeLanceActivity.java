@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.app.ActivityManager;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
@@ -19,6 +20,7 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -83,6 +85,9 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     private ScrollView leftScrollView;
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
 
+    private Intent mServiceIntent;
+    private BroadcastService mService;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,6 +127,14 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                         userName = userProfile.getUserName();
                         userEmail = userProfile.getUserEmail();
                         lifes = userProfile.getUserLifes();
+                        if (lifes < 20){
+                            mService = new BroadcastService();
+                            mServiceIntent = new Intent(FreeLanceActivity.this, BroadcastService.class);
+                            if (!isMyServiceRunning(mService.getClass())) {
+                                startService(mServiceIntent);
+                            }
+                            Log.i("Broadcast", "Started service");
+                        }
                         if(mMap != null)
                             onMapReady(mMap);
                     }
@@ -155,6 +168,17 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         }
     }
 
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                Log.i ("Service status", "Running");
+                return true;
+            }
+        }
+        Log.i ("Service status", "Not running");
+        return false;
+    }
 
     /*----Method to Check GPS is enable or disable ----- */
     @NonNull
@@ -526,6 +550,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             // TODO Auto-generated method stub
         }
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
     }
     /*    @NonNull
     protected void getAllSculptures() throws IOException, XmlPullParserException{

@@ -3,22 +3,16 @@ package com.example.logindemo;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
-import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.os.Parcelable;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -33,19 +27,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ThrowOnExtraProperties;
 import com.google.firebase.database.ValueEventListener;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
-
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Serializable;
-import java.text.CollationElementIterator;
-import java.util.ArrayList;
-import java.util.Locale;
 
 import static java.lang.String.valueOf;
 
@@ -61,19 +43,8 @@ public class SecondActivity extends AppCompatActivity {
     private static int lifes, bodovi;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
-    private Intent mServiceIntent;
-    private BroadcastService mYourService;
-    protected static long mTimeLeftInMillis;
     protected static boolean mTimerRunning = false;
-    public Intent broadcastIntent;
-    private static String unlockedSculptures, userName, userEmail;
-
-/*    protected static final long START_TIME_IN_MILIS = 10 * 1000;
-    private CountDownTimer mCountDownTimer;
-    protected static long mTimeLeftInMillis;
-    private long mEndTime;
-    private final static String TAG = "BroadcastService";
-    protected static UserProfile user;*/
+    protected static String unlockedSculptures, userName, userEmail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +53,11 @@ public class SecondActivity extends AppCompatActivity {
 
         setUiVeiws();
 
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
@@ -97,14 +73,6 @@ public class SecondActivity extends AppCompatActivity {
                 profileName.setText(userProfile.getUserName());
                 profileBodovi.setText("= " + valueOf(bodovi));
                 profileLifes.setText("="+ valueOf(lifes));
-                if (!mTimerRunning && lifes < 20){
-                    mYourService = new BroadcastService();
-                    mServiceIntent = new Intent(SecondActivity.this, BroadcastService.class);
-                    if (!isMyServiceRunning(mYourService.getClass())) {
-                       startService(mServiceIntent);
-                    }
-                    Log.i("Broadcast", "Started service");
-                }
             }
 
             @Override
@@ -188,76 +156,10 @@ public class SecondActivity extends AppCompatActivity {
         }
     }
 
-    private boolean isMyServiceRunning(Class<?> serviceClass) {
-        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
-        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
-            if (serviceClass.getName().equals(service.service.getClassName())) {
-                Log.i ("Service status", "Running");
-                return true;
-            }
-        }
-        Log.i ("Service status", "Not running");
-        return false;
-    }
-
-
     @Override
     protected void onDestroy() {
-        //stopService(mServiceIntent);
         super.onDestroy();
     }
-/*    protected static BroadcastReceiver br = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            updateGui(intent);
-        }
-    };
-
-    protected static void updateGui(Intent intent){
-        if (intent.getExtras() != null) {
-            long mTimeLeftInMillis = intent.getLongExtra("countdown", 0);
-            int minutes = (int) mTimeLeftInMillis / 1000 / 60;
-            int seconds = (int) mTimeLeftInMillis / 1000 % 60;
-            String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-            time.setText(timeLeftFormated);
-        }
-    }*/
-    /*@Override
-    public void onResume() {
-        super.onResume();
-        //registerReceiver(br, new IntentFilter(BroadcastService.COUNTDOWN_BR));
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        //unregisterReceiver(br);
-    }
-    @Override
-    public void onDestroy() {
-        //stopService(new Intent(SecondActivity.this, BroadcastService.class));
-        super.onDestroy();
-        broadcastIntent = new Intent();
-        broadcastIntent.setAction("restartservice");
-        broadcastIntent.setClass(SecondActivity.this, Restarter.class);
-        this.sendBroadcast(broadcastIntent);
-    }
-    @Override
-    public void onStop() {
-        try {
-            broadcastIntent = new Intent();
-            broadcastIntent.setAction("restartservice");
-            broadcastIntent.setClass(SecondActivity.this, Restarter.class);
-            this.sendBroadcast(broadcastIntent);
-        } catch (Exception e) {
-            // Receiver was probably already stopped in onPause()
-        }
-        super.onStop();
-    }
-*/
-
-
-
 
     /*----Method to Check GPS is enable or disable ----- */
     @NonNull
@@ -284,8 +186,6 @@ public class SecondActivity extends AppCompatActivity {
                 .setPositiveButton("Gps On",
                         new DialogInterface.OnClickListener() {
                             public void onClick(@NonNull DialogInterface dialog, int id) {
-                                // finish the current activity
-                                // AlertBoxAdvance.this.finish();
                                 Intent myIntent = new Intent(
                                         Settings.ACTION_SECURITY_SETTINGS);
                                 startActivity(myIntent);
@@ -369,125 +269,4 @@ public class SecondActivity extends AppCompatActivity {
         layoutCollections.setAnimation(atg);
 
     }
-
-    /*private void showUnlockedSculptures() {
-        String xmlString = new String();
-        for (Sculpture sculpture : sculptures) {
-            if (unlockedSculptures.contains(sculpture.name)) {
-                xmlString = xmlString + sculpture.name + "\t is unlocked\n";
-            }
-        }
-        textunlockedSculputres.setText(xmlString);
-    }*/
-
-    /*protected ArrayList<Sculpture> getAllSculptures() throws IOException, XmlPullParserException{
-        XmlPullParserFactory parserFactory;
-        XmlPullParser parser;
-        parserFactory = XmlPullParserFactory.newInstance();
-        parser = parserFactory.newPullParser();
-        try{
-            InputStream is = getAssets().open("sculptures.xml");
-            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
-            parser.setInput(is, null);
-        }catch (IOException e){
-        }
-        ArrayList<Sculpture> sculpturesInXml = new ArrayList<>();
-        int eventType = parser.getEventType();
-        Sculpture currentSculpture = null;
-
-        while(eventType != XmlPullParser.END_DOCUMENT){
-            String eltName = null;
-            switch (eventType){
-                case XmlPullParser.START_TAG:
-                    eltName = parser.getName();
-                    if("Sculpture".equals(eltName)){
-                        currentSculpture = new Sculpture();
-                        sculpturesInXml.add(currentSculpture);
-                    }else if (currentSculpture != null){
-                        if ("name".equals(eltName)){
-                            currentSculpture.name = parser.nextText();
-                        }else if ("imagePath".equals(eltName)){
-                            currentSculpture.imagePath= parser.nextText();
-                        }else if ("description".equals(eltName)){
-                            currentSculpture.description = parser.nextText();
-                        }else if ("latitude".equals(eltName)){
-                            currentSculpture.latitude = parser.nextText();
-                        }else if ("longtitude".equals(eltName)){
-                            currentSculpture.longtitude = parser.nextText();
-                        }
-                    }
-                    break;
-            }
-            eventType = parser.next();
-        }
-        return sculpturesInXml;
-    }*/
-
-    /*    @Override
-    protected void onStop() {
-        super.onStop();
-
-        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-        SharedPreferences.Editor editor = prefs.edit();
-
-        editor.putLong("millisLeft", mTimeLeftInMillis);
-        editor.putBoolean("timerRunning", mTimerRunning);
-        editor.putLong("endTime", mEndTime);
-
-        editor.apply();
-
-        if (mCountDownTimer != null) {
-            mCountDownTimer.cancel();
-        }
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-
-        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
-
-        mTimeLeftInMillis = prefs.getLong("millisLeft", START_TIME_IN_MILIS);
-        mTimerRunning = prefs.getBoolean("timerRunning", false);
-
-        updateGui();
-
-        if (mTimerRunning) {
-            mEndTime = prefs.getLong("endTime", 0);
-            mTimeLeftInMillis = mEndTime - System.currentTimeMillis();
-
-            if (mTimeLeftInMillis < 0) {
-                mTimeLeftInMillis = 0;
-                mTimerRunning = false;
-                updateGui();
-            } else {
-                startTimer();
-            }
-        }
-    }
-    private void startTimer(){
-        mEndTime = System.currentTimeMillis() + mTimeLeftInMillis;
-        mTimeLeftInMillis = START_TIME_IN_MILIS;
-        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                mTimeLeftInMillis = millisUntilFinished;
-                mTimerRunning = true;
-                updateGui();
-            }
-
-            @Override
-            public void onFinish() {
-                mTimerRunning = false;
-                mTimeLeftInMillis = START_TIME_IN_MILIS;
-            }
-        }.start();
-    }
-
-    private void updateGui(){
-        int minutes = (int) mTimeLeftInMillis / 1000 / 60;
-        int seconds = (int) mTimeLeftInMillis / 1000 % 60;
-        String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d",minutes,seconds);
-        tvuserLifes.setText(timeLeftFormated);
-    }*/
 }
