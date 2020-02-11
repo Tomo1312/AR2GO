@@ -26,8 +26,8 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.Locale;
 
-public class BroadcastService extends Service {
-    private final static String TAG = "BroadcastService";
+public class Timer extends Service {
+    private final static String TAG = "Timer";
     protected static final long START_TIME_IN_MILIS = 30 * 60 * 1000;
     protected long mTimeLeftInMillis;
     protected CountDownTimer cdt = null;
@@ -88,7 +88,7 @@ public class BroadcastService extends Service {
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(BroadcastService.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
+                Toast.makeText(Timer.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
             }
         });
         tempLeftMilis = Restarter.milisLeft;
@@ -159,7 +159,7 @@ public class BroadcastService extends Service {
 
         broadcastIntent = new Intent();
         broadcastIntent.setAction("restartservice");
-        broadcastIntent.setClass(BroadcastService.this, Restarter.class);
+        broadcastIntent.setClass(Timer.this, Restarter.class);
         this.sendBroadcast(broadcastIntent);
     }
 

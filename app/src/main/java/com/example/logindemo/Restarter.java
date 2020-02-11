@@ -14,11 +14,11 @@ public class Restarter extends BroadcastReceiver {
         Log.i("Broadcast Listened", "Service tried to stop");
         Toast.makeText(context, "Service restarted", Toast.LENGTH_SHORT).show();
 
-        milisLeft = BroadcastService.tempLeftMilis;
+        milisLeft = Timer.tempLeftMilis;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            context.startForegroundService(new Intent(context, BroadcastService.class));
+            context.startForegroundService(new Intent(context, Timer.class));
         } else {
-            context.startService(new Intent(context, BroadcastService.class));
+            context.startService(new Intent(context, Timer.class));
         }
     }
 }
