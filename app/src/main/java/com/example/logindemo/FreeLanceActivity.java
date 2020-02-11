@@ -13,8 +13,6 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
-import android.location.Address;
-import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -51,8 +49,6 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 import static java.lang.String.valueOf;
 import static java.lang.Thread.sleep;
@@ -86,7 +82,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
 
     private Intent mServiceIntent;
-    private BroadcastService mService;
+    private Timer mService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,8 +124,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                         userEmail = userProfile.getUserEmail();
                         lifes = userProfile.getUserLifes();
                         if (lifes < 20){
-                            mService = new BroadcastService();
-                            mServiceIntent = new Intent(FreeLanceActivity.this, BroadcastService.class);
+                            mService = new Timer();
+                            mServiceIntent = new Intent(FreeLanceActivity.this, Timer.class);
                             if (!isMyServiceRunning(mService.getClass())) {
                                 startService(mServiceIntent);
                             }
