@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.app.ActivityManager;
 import android.app.AlertDialog;
+import android.app.IntentService;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,6 +14,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -34,11 +36,11 @@ import static java.lang.String.valueOf;
 public class SecondActivity extends AppCompatActivity {
 
     protected static TextView time;
-    private ImageView info, tickets, events;
+    private ImageView info, tickets, events, loginScreen;
     private String eventMessage;
     private TextView freeLance, story, premiumStory, profileName, profileBodovi,collections, profileLifes;
-    private ConstraintLayout layoutFreeLance, layoutStory, layoutPremiumStory, layoutCollections;
-    private Animation atg;
+    private ConstraintLayout layoutFreeLance, layoutStory, layoutPremiumStory, layoutCollections, allTheMainThings;
+    private Animation atg,fadein;
     private FirebaseAuth firebaseAuth;
     private static int lifes, bodovi;
     private FirebaseDatabase firebaseDatabase;
@@ -230,6 +232,8 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void setUiVeiws() {
+        loginScreen = (ImageView)findViewById(R.id.loginImage);
+
         info = (ImageView)findViewById(R.id.ivInfo);
         tickets = (ImageView)findViewById(R.id.ivTickets);
         events = (ImageView)findViewById(R.id.ivEvents);
@@ -239,6 +243,7 @@ public class SecondActivity extends AppCompatActivity {
         collections = (TextView)findViewById(R.id.tvColletions);
         time = (TextView)findViewById(R.id.tvTime);
 
+        allTheMainThings = (ConstraintLayout)findViewById(R.id.allMainStaff);
         layoutFreeLance = (ConstraintLayout)findViewById(R.id.layoutFreelance);
         layoutStory = (ConstraintLayout)findViewById(R.id.layoutStory);
         layoutPremiumStory = (ConstraintLayout)findViewById(R.id.layoutPremiumStory);
@@ -247,7 +252,8 @@ public class SecondActivity extends AppCompatActivity {
         profileName = (TextView) findViewById(R.id.tvProfileName);
         profileBodovi = (TextView) findViewById(R.id.tvProfileBodovi);
         profileLifes = (TextView)findViewById(R.id.tvProfileLifes);
-        //textunlockedSculputres = (TextView)findViewById(R.id.tvUnlockedSculptures);
+
+        fadein = AnimationUtils.loadAnimation(this,R.anim.fadein);
         atg = AnimationUtils.loadAnimation(this,R.anim.atg);
         Typeface typeface = Typeface.createFromAsset(getAssets(),"FREESCPT.TTF");
         freeLance.setTypeface(typeface);
@@ -258,6 +264,29 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void startAnimations(){
+        loginScreen.startAnimation(fadein);
+        fadein.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                try {
+                    Thread.sleep(700);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                loginScreen.setVisibility(View.INVISIBLE);
+                allTheMainThings.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
         layoutFreeLance.startAnimation(atg);
         layoutStory.startAnimation(atg);
         layoutPremiumStory.setAnimation(atg);

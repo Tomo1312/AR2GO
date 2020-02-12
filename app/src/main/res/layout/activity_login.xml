@@ -7,8 +7,6 @@
     android:background="@drawable/gradient"
     tools:context=".LoginActivity">
 
-
-
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
@@ -70,7 +68,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="130dp"
             android:layout_height="59dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/registerbtn"
             android:text="Login"
             android:layout_weight="1"
@@ -87,7 +85,7 @@
             android:layout_width="130dp"
             android:layout_height="60dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:background="@drawable/registerbtn"
             android:text="Register"
             android:layout_weight="1"

@@ -28,7 +28,7 @@ import java.util.Locale;
 
 public class Timer extends Service {
     private final static String TAG = "Timer";
-    protected static final long START_TIME_IN_MILIS = 30 * 60 * 1000;
+    protected static final long START_TIME_IN_MILIS = 20 * 60 * 1000;
     protected long mTimeLeftInMillis;
     protected CountDownTimer cdt = null;
     protected String userName, userEmail, unlockedSculptures;
@@ -47,7 +47,6 @@ public class Timer extends Service {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
-
 
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.O)
             startMyOwnForeground();
@@ -68,6 +67,8 @@ public class Timer extends Service {
 
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID);
         Notification notification = notificationBuilder.setOngoing(true)
+                .setSubText("Collecting lives")
+
                 .setPriority(NotificationManager.IMPORTANCE_MIN)
                 .setCategory(Notification.CATEGORY_SERVICE)
                 .build();
