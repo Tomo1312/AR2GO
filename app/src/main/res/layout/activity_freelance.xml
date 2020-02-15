@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FreeLanceActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".FreeLanceActivity">
 
     <ImageView
         android:id="@+id/ivBack"
@@ -21,16 +21,16 @@
         app:srcCompat="@android:drawable/ic_menu_revert" />
 
     <ImageView
-            android:id="@+id/ivColelction"
-            android:layout_width="51dp"
-            android:layout_height="51dp"
-            app:layout_constraintBottom_toBottomOf="@+id/map"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.71"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/collection" />
+        android:id="@+id/ivColelction"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/collection" />
 
     <fragment
         android:id="@+id/map"
@@ -61,57 +61,62 @@
         app:srcCompat="@drawable/menu" />
 
     <LinearLayout
+        android:id="@+id/toolbarLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp"
+        android:visibility="invisible"
         android:weightSum="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962"
-        android:id="@+id/toolbarLayout"
-        android:visibility="invisible">
+        app:layout_constraintVertical_bias="0.962">
+
         <ScrollView
+            android:id="@+id/scrollViewZaNazad"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.40"
             android:background="#55000000"
-            android:visibility="invisible"
-            android:id="@+id/scrollViewZaNazad"/>
+            android:visibility="invisible" />
 
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.60"
             android:background="@color/white">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxSculpureShown"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/tick"
-                        android:id="@+id/checkboxSculpureShown"/>
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
-                            android:id="@+id/showSculptures"
-                            android:layout_width="0dip"
-                            android:layout_weight="0.7"
-                            android:layout_height="wrap_content"
-                            android:text="Skulpture"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="10dp"
-                            android:textSize="18sp"
-                            android:textAlignment="center"/>
+                        android:id="@+id/showSculptures"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Skulpture"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -119,76 +124,84 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxArhitekture"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxArhitekture"
-                        android:visibility="invisible"/>
-                        <TextView
-                            android:id="@+id/showArhitekture"
-                            android:layout_width="0dip"
-                            android:layout_weight="0.7"
-                            android:layout_height="wrap_content"
-                            android:text="Arhitektura"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="10dp"
-                            android:textSize="18sp"
-                            android:textAlignment="center"/>
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/tick" />
+
+                    <TextView
+                        android:id="@+id/showArhitekture"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:text="Arhitektura"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxSpomenici"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxSpomenici"
-                        android:visibility="invisible"/>
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showSpomenici"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Spomenici"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Spomenici"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxFontante"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxFontante"
-                        android:visibility="invisible"/>
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showFontane"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Fontane"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Fontane"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>
-</LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

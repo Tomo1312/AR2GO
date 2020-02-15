@@ -25,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.squareup.picasso.Picasso;
+
 import java.io.Serializable;
 
 public class Pop extends Activity implements Serializable {
@@ -39,13 +40,13 @@ public class Pop extends Activity implements Serializable {
     private FirebaseDatabase firebaseDatabase;
     private StorageReference storageReference;
     private boolean firstTime;
-    private Animation confetiAnimation, atg,fadein;
+    private Animation confetiAnimation, atg, fadein;
 
     public Pop() {
     }
 
     public Pop(String NameOfSculpture, String ImageLocationOfSculpture, String DescriptionOfSculpture,
-                String AuthorOfSculpture) {
+               String AuthorOfSculpture) {
         this.nameOfSculpture = NameOfSculpture;
         this.imageLocationOfSculpture = ImageLocationOfSculpture;
         this.descriptionOfSculpture = DescriptionOfSculpture;
@@ -84,13 +85,14 @@ public class Pop extends Activity implements Serializable {
         this.authorOfSculpture = authorOfSculpture;
     }
 
-    public void setFirstTime(boolean time){
+    public void setFirstTime(boolean time) {
         this.firstTime = time;
     }
 
-    public Boolean getFirstTime(){
+    public Boolean getFirstTime() {
         return firstTime;
     }
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -106,7 +108,7 @@ public class Pop extends Activity implements Serializable {
         int height = dm.heightPixels;
 
         Intent i = getIntent();
-        Pop popSculpture = (Pop)i.getSerializableExtra("currentSculpture");
+        Pop popSculpture = (Pop) i.getSerializableExtra("currentSculpture");
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -116,7 +118,7 @@ public class Pop extends Activity implements Serializable {
 
         try {
             Resources res = getResources();
-            String mDrawableName = popSculpture.getImageLocationOfSculpture()+ ".jpg";
+            String mDrawableName = popSculpture.getImageLocationOfSculpture() + ".jpg";
             int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
             storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                 @Override
@@ -127,11 +129,11 @@ public class Pop extends Activity implements Serializable {
             nameSculpture.setText(popSculpture.getNameOfSculpture());
             authorSculpture.setText(popSculpture.getAuthorOfSculpture());
             destripticonSculpture.setText(popSculpture.getDescriptionOfSculpture());
-        }catch (Exception ex){
+        } catch (Exception ex) {
             Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
         }
 
-        if (popSculpture.getFirstTime()){
+        if (popSculpture.getFirstTime()) {
             conffeti.startAnimation(confetiAnimation);
             naisli.setAnimation(atg);
             showSculpture.startAnimation(atg);
@@ -199,7 +201,7 @@ public class Pop extends Activity implements Serializable {
                     });
                 }
             });
-        }else{
+        } else {
             firstLayout.setVisibility(View.INVISIBLE);
             secondLayout.startAnimation(fadein);
             fadein.setAnimationListener(new Animation.AnimationListener() {
@@ -226,24 +228,24 @@ public class Pop extends Activity implements Serializable {
                 finish();
             }
         });
-        getWindow().setLayout((int)(width*.7),(int)(height*.8));
+        getWindow().setLayout((int) (width * .7), (int) (height * .8));
     }
 
     private void setUiViews() {
 
-        nameSculpture = (TextView)findViewById(R.id.tvSculptureName);
-        authorSculpture = (TextView)findViewById(R.id.tvSculptureAuthor);
-        destripticonSculpture = (TextView)findViewById(R.id.tvSculptureDescription);
-        imageSculpture = (ImageView)findViewById(R.id.imageSculpture);
-        conffeti = (ImageView)findViewById(R.id.conffeti);
-        naisli = (TextView)findViewById(R.id.tvNaisli);
+        nameSculpture = (TextView) findViewById(R.id.tvSculptureName);
+        authorSculpture = (TextView) findViewById(R.id.tvSculptureAuthor);
+        destripticonSculpture = (TextView) findViewById(R.id.tvSculptureDescription);
+        imageSculpture = (ImageView) findViewById(R.id.imageSculpture);
+        conffeti = (ImageView) findViewById(R.id.conffeti);
+        naisli = (TextView) findViewById(R.id.tvNaisli);
         showSculpture = (Button) findViewById(R.id.btnShowSculpture);
-        firstLayout = (ConstraintLayout)findViewById(R.id.firstCard);
-        secondLayout = (ConstraintLayout)findViewById(R.id.secondCard);
-        confetiAnimation= AnimationUtils.loadAnimation(this, R.anim.confetianimation);
-        atg= AnimationUtils.loadAnimation(this, R.anim.atg);
-        fadein= AnimationUtils.loadAnimation(this, R.anim.fadein);
-        close = (ImageView)findViewById(R.id.ivClose);
+        firstLayout = (ConstraintLayout) findViewById(R.id.firstCard);
+        secondLayout = (ConstraintLayout) findViewById(R.id.secondCard);
+        confetiAnimation = AnimationUtils.loadAnimation(this, R.anim.confetianimation);
+        atg = AnimationUtils.loadAnimation(this, R.anim.atg);
+        fadein = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        close = (ImageView) findViewById(R.id.ivClose);
     }
 
 }

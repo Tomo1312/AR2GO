@@ -45,12 +45,12 @@ public class LoginActivity extends AppCompatActivity {
         setUiViews();
 
         ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, PackageManager.PERMISSION_GRANTED);
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},PackageManager.PERMISSION_GRANTED);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PackageManager.PERMISSION_GRANTED);
         firebaseAuth = FirebaseAuth.getInstance();
         progressDialog = new ProgressDialog(this);
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        if(user != null){
+        if (user != null) {
             finish();
             startActivity(new Intent(LoginActivity.this, SecondActivity.class));
         }
@@ -103,39 +103,38 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setUiViews() {
-        Name = (EditText)findViewById(R.id.etName);
-        Password = (EditText)findViewById(R.id.etUserPassword);
-        Login = (Button)findViewById(R.id.btnLogin);
-        userRegistration = (Button)findViewById(R.id.btnRegistration);
-        forgotPassword = (TextView)findViewById(R.id.tvForgotPassword);
-        problems = (TextView)findViewById(R.id.tvProblemsLogin);
+        Name = (EditText) findViewById(R.id.etName);
+        Password = (EditText) findViewById(R.id.etUserPassword);
+        Login = (Button) findViewById(R.id.btnLogin);
+        userRegistration = (Button) findViewById(R.id.btnRegistration);
+        forgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
+        problems = (TextView) findViewById(R.id.tvProblemsLogin);
     }
 
-    private void validate(@NonNull String userName, @NonNull String userPassword){
+    private void validate(@NonNull String userName, @NonNull String userPassword) {
         progressDialog.show();
 
         firebaseAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 progressDialog.dismiss();
-                if(task.isSuccessful()){
+                if (task.isSuccessful()) {
                     checkEmailVerification();
-                }else{
+                } else {
                     Toast.makeText(LoginActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
-    private void checkEmailVerification(){
+    private void checkEmailVerification() {
         FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
         Boolean emailFlag = firebaseUser.isEmailVerified();
 
-        if(emailFlag){
+        if (emailFlag) {
             Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(LoginActivity.this, SecondActivity.class));
-        }
-        else{
+        } else {
             Toast.makeText(this, "Verify your e-mail", Toast.LENGTH_SHORT).show();
             firebaseAuth.signOut();
         }

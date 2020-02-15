@@ -47,12 +47,12 @@ public class CollectionActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     protected static String unlockedSculptures;
-    protected static ArrayList<Sculpture> sculptures, arhitekture,spomenici, fontane;
+    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici, fontane;
     private TextView sculptureShown, arhitektureShown, spomeniciShown, fontaneShown, profileBodovi, title;
     private ImageView showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici, checkboxFontane;
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
     private LinearLayout toolbarLayout;
-    private Animation showToolbarAnimation,unshowToolbarAnimation;
+    private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
     private Typeface typeFace;
 
@@ -84,7 +84,7 @@ public class CollectionActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(CollectionActivity.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
+                Toast.makeText(CollectionActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
             }
         });
 
@@ -100,24 +100,24 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void setUiView() {
         profileBodovi = (TextView) findViewById(R.id.tvProfileBodovi);
-        title = (TextView)findViewById(R.id.tvTitle);
+        title = (TextView) findViewById(R.id.tvTitle);
         linearLayout = (LinearLayout) findViewById(R.id.scrollLinearLayout);
-        info = (ImageView)findViewById(R.id.ivInfo);
-        back = (ImageView)findViewById(R.id.ivBack);
-        toolbarLayout = (LinearLayout)findViewById(R.id.toolbarLayout);
-        showToolbar = (ImageView)findViewById(R.id.ivShowToolbar);
-        leftScrollView = (ScrollView)findViewById(R.id.scrollViewZaNazad);
+        info = (ImageView) findViewById(R.id.ivInfo);
+        back = (ImageView) findViewById(R.id.ivBack);
+        toolbarLayout = (LinearLayout) findViewById(R.id.toolbarLayout);
+        showToolbar = (ImageView) findViewById(R.id.ivShowToolbar);
+        leftScrollView = (ScrollView) findViewById(R.id.scrollViewZaNazad);
         showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttoleft);
         unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttoright);
-        arhitektureShown = (TextView)findViewById(R.id.showArhitekture);
-        sculptureShown = (TextView)findViewById(R.id.showSculptures);
-        spomeniciShown = (TextView)findViewById(R.id.showSpomenici);
-        fontaneShown = (TextView)findViewById(R.id.showFontane);
-        checkboxArhitekture = (ImageView)findViewById(R.id.checkboxArhitekture);
-        checkboxSculptures = (ImageView)findViewById(R.id.checkboxSculpureShown);
-        checkboxSpomenici = (ImageView)findViewById(R.id.checkboxSpomenici);
-        checkboxFontane = (ImageView)findViewById(R.id.checkboxFontante);
-        typeFace = Typeface.createFromAsset(getAssets(),"FREESCPT.TTF");
+        arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
+        sculptureShown = (TextView) findViewById(R.id.showSculptures);
+        spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
+        fontaneShown = (TextView) findViewById(R.id.showFontane);
+        checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
+        checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
+        checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
+        checkboxFontane = (ImageView) findViewById(R.id.checkboxFontante);
+        typeFace = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
         title.setTypeface(typeFace);
         toolbarShown = false;
         isSculptureShown = true;
@@ -139,7 +139,7 @@ public class CollectionActivity extends AppCompatActivity {
         showToolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!toolbarShown){
+                if (!toolbarShown) {
                     toolbarShown = true;
                     toolbarLayout.startAnimation(showToolbarAnimation);
                     showToolbarAnimation.setAnimationListener(new Animation.AnimationListener() {
@@ -159,8 +159,8 @@ public class CollectionActivity extends AppCompatActivity {
 
                         }
                     });
-                }else{
-                    toolbarShown=false;
+                } else {
+                    toolbarShown = false;
                     toolbarLayout.startAnimation(unshowToolbarAnimation);
                     unshowToolbarAnimation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
@@ -185,11 +185,11 @@ public class CollectionActivity extends AppCompatActivity {
         spomeniciShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isSpomeniciShown){
+                if (isSpomeniciShown) {
                     isSpomeniciShown = false;
                     checkboxSpomenici.setVisibility(View.INVISIBLE);
                     setShowAllArtToCollection();
-                }else{
+                } else {
                     isSpomeniciShown = true;
                     checkboxSpomenici.setVisibility(View.VISIBLE);
                     setShowAllArtToCollection();
@@ -200,11 +200,11 @@ public class CollectionActivity extends AppCompatActivity {
         sculptureShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isSculptureShown){
+                if (isSculptureShown) {
                     isSculptureShown = false;
                     checkboxSculptures.setVisibility(View.INVISIBLE);
                     setShowAllArtToCollection();
-                }else{
+                } else {
                     isSculptureShown = true;
                     checkboxSculptures.setVisibility(View.VISIBLE);
                     setShowAllArtToCollection();
@@ -215,11 +215,11 @@ public class CollectionActivity extends AppCompatActivity {
         arhitektureShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isArhitektureShown){
+                if (isArhitektureShown) {
                     isArhitektureShown = false;
                     checkboxArhitekture.setVisibility(View.INVISIBLE);
                     setShowAllArtToCollection();
-                }else{
+                } else {
                     isArhitektureShown = true;
                     checkboxArhitekture.setVisibility(View.VISIBLE);
                     setShowAllArtToCollection();
@@ -230,11 +230,11 @@ public class CollectionActivity extends AppCompatActivity {
         fontaneShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isFontaneShown){
+                if (isFontaneShown) {
                     isFontaneShown = false;
                     checkboxFontane.setVisibility(View.INVISIBLE);
                     setShowAllArtToCollection();
-                }else{
+                } else {
                     isFontaneShown = true;
                     checkboxFontane.setVisibility(View.VISIBLE);
                     setShowAllArtToCollection();
@@ -244,19 +244,19 @@ public class CollectionActivity extends AppCompatActivity {
 
     }
 
-    private void setShowAllArtToCollection(){
+    private void setShowAllArtToCollection() {
         linearLayout.removeAllViews();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            if (isSculptureShown){
+            if (isSculptureShown) {
                 showUnlockedSculptures(sculptures, R.drawable.backgroundcollectionsculptures);
             }
-            if (isSpomeniciShown){
+            if (isSpomeniciShown) {
                 showUnlockedSculptures(spomenici, R.drawable.backgroundcollectionspomenici);
             }
-            if (isArhitektureShown){
+            if (isArhitektureShown) {
                 showUnlockedSculptures(arhitekture, R.drawable.backgroundcollectionarhitekture);
             }
-            if (isFontaneShown){
+            if (isFontaneShown) {
                 showUnlockedSculptures(fontane, R.drawable.backgroundcollectionfontane);
             }
         }
@@ -273,9 +273,9 @@ public class CollectionActivity extends AppCompatActivity {
                 final String descriptionSculpture = sculpture.description;
                 final String authorSculpture = sculpture.author;
                 TextView tv = new TextView(this);
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 tv.setLayoutParams(params);
-                tv.setPadding(40,40,0,40);
+                tv.setPadding(40, 40, 0, 40);
                 tv.setVisibility(View.VISIBLE);
                 tv.setText(sculpture.name);
                 tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
@@ -315,56 +315,56 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
     @NonNull
-    private void getAllThingsForMap(){
+    private void getAllThingsForMap() {
         try {
             sculptures = getXmlFiles("sculptures.xml", "Sculpture");
             spomenici = getXmlFiles("spomenici.xml", "Spomenik");
             arhitekture = getXmlFiles("arhitekture.xml", "Arhitektura");
             fontane = getXmlFiles("fontane.xml", "Fontana");
-        }catch (XmlPullParserException ex){
+        } catch (XmlPullParserException ex) {
             Toast.makeText(CollectionActivity.this, "No data in XML", Toast.LENGTH_LONG).show();
-        }catch (IOException ex){
+        } catch (IOException ex) {
             Toast.makeText(CollectionActivity.this, "Couldn't open XML", Toast.LENGTH_LONG).show();
         }
     }
 
-    private ArrayList<Sculpture> getXmlFiles(String xmlFile, String firstTag)throws IOException, XmlPullParserException{
+    private ArrayList<Sculpture> getXmlFiles(String xmlFile, String firstTag) throws IOException, XmlPullParserException {
         XmlPullParserFactory parserFactory;
         XmlPullParser parser;
         parserFactory = XmlPullParserFactory.newInstance();
         parser = parserFactory.newPullParser();
-        try{
+        try {
             InputStream is = getAssets().open(xmlFile);
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(is, null);
-        }catch (IOException e){
+        } catch (IOException e) {
         }
         ArrayList<Sculpture> namesInXml = new ArrayList<>();
         int eventType = parser.getEventType();
         Sculpture currentSculpture = null;
 
-        while(eventType != XmlPullParser.END_DOCUMENT){
+        while (eventType != XmlPullParser.END_DOCUMENT) {
             String eltName = null;
-            switch (eventType){
+            switch (eventType) {
                 case XmlPullParser.START_TAG:
                     eltName = parser.getName();
-                    if(firstTag.equals(eltName)){
+                    if (firstTag.equals(eltName)) {
                         currentSculpture = new Sculpture();
                         namesInXml.add(currentSculpture);
-                    }else if (currentSculpture != null){
-                        if ("name".equals(eltName)){
+                    } else if (currentSculpture != null) {
+                        if ("name".equals(eltName)) {
                             currentSculpture.name = parser.nextText();
-                        }else if ("description".equals(eltName)){
-                            currentSculpture.description= parser.nextText();
-                        }else if ("author".equals(eltName)){
-                            currentSculpture.author= parser.nextText();
-                        }else if ("imagePath".equals(eltName)){
-                            currentSculpture.imagePath= parser.nextText();
-                        }else if ("points".equals(eltName)){
+                        } else if ("description".equals(eltName)) {
+                            currentSculpture.description = parser.nextText();
+                        } else if ("author".equals(eltName)) {
+                            currentSculpture.author = parser.nextText();
+                        } else if ("imagePath".equals(eltName)) {
+                            currentSculpture.imagePath = parser.nextText();
+                        } else if ("points".equals(eltName)) {
                             currentSculpture.points = parser.nextText();
-                        }else if ("latitude".equals(eltName)){
+                        } else if ("latitude".equals(eltName)) {
                             currentSculpture.latitude = parser.nextText();
-                        }else if ("longitude".equals(eltName)){
+                        } else if ("longitude".equals(eltName)) {
                             currentSculpture.longitude = parser.nextText();
                         }
                     }

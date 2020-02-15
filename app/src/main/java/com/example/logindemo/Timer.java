@@ -39,6 +39,7 @@ public class Timer extends Service {
     public boolean isFirst;
     protected Intent broadcastIntent;
     protected static long tempLeftMilis;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -53,8 +54,7 @@ public class Timer extends Service {
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    private void startMyOwnForeground()
-    {
+    private void startMyOwnForeground() {
         String NOTIFICATION_CHANNEL_ID = "example.permanence";
         String channelName = "Background Service";
         NotificationChannel chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_NONE);
@@ -74,6 +74,7 @@ public class Timer extends Service {
                 .build();
         startForeground(2, notification);
     }
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         super.onStartCommand(intent, flags, startId);
@@ -87,16 +88,17 @@ public class Timer extends Service {
                 userEmail = userProfile.getUserEmail();
                 lifes = userProfile.getUserLifes();
             }
+
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(Timer.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
+                Toast.makeText(Timer.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
             }
         });
         tempLeftMilis = Restarter.milisLeft;
 
-        if(tempLeftMilis > 0){
+        if (tempLeftMilis > 0) {
             mTimeLeftInMillis = tempLeftMilis;
-        }else {
+        } else {
             mTimeLeftInMillis = START_TIME_IN_MILIS;
         }
         isFirst = true;
@@ -119,35 +121,36 @@ public class Timer extends Service {
                 int minutes = (int) millisUntilFinished / 1000 / 60;
                 int seconds = (int) millisUntilFinished / 1000 % 60;
                 String timeLeftFormated = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
-                    try{
-                        if(timeLeftFormated.equals("00:00")){
-                            SecondActivity.time.setText("");
-                        }else{
-                            SecondActivity.time.setText(timeLeftFormated);
-                        }
-                        SecondActivity.mTimerRunning = true;
-                    }catch (Exception ex){
-
+                try {
+                    if (timeLeftFormated.equals("00:00")) {
+                        SecondActivity.time.setText("");
+                    } else {
+                        SecondActivity.time.setText(timeLeftFormated);
                     }
-                    tempLeftMilis = millisUntilFinished;
+                    SecondActivity.mTimerRunning = true;
+                } catch (Exception ex) {
+
+                }
+                tempLeftMilis = millisUntilFinished;
             }
         }.start();
     }
+
     @Override
     public IBinder onBind(Intent arg0) {
         return null;
     }
 
-    protected void updateLifes(){
+    protected void updateLifes() {
         lifes++;
         UserProfile addLifes = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
         databaseReference.setValue(addLifes);
 
-        if (lifes > 19){
+        if (lifes > 19) {
             stoptimertask();
             stopForeground(true);
             stopService(broadcastIntent);
-        }else{
+        } else {
             mTimeLeftInMillis = START_TIME_IN_MILIS;
             startTimer();
         }

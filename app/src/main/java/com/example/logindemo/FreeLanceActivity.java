@@ -63,7 +63,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     @Nullable
     private LocationManager locationManager;
     private LocationListener locationListener;
-    private ImageView back,collection,showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici, checkboxFontane;
+    private ImageView back, collection, showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici, checkboxFontane;
     @NonNull
     private Boolean flag = false;
     private boolean isFrist;
@@ -75,9 +75,9 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     protected int bodovi, lifes;
     protected String unlockedSculptures, userName, userEmail;
     private GoogleMap mMap;
-    protected static ArrayList<Sculpture> sculptures, arhitekture,spomenici, fontane;
+    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici, fontane;
     private LinearLayout toolbarLayout;
-    private Animation showToolbarAnimation,unshowToolbarAnimation;
+    private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
 
@@ -96,22 +96,22 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
 
         //Save xml file to var Sculptures
         getAllThingsForMap();
-        locationManager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
-        try{
-            if(ActivityCompat.checkSelfPermission(FreeLanceActivity.this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED ){
+        try {
+            if (ActivityCompat.checkSelfPermission(FreeLanceActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
                 getLastLocation = locationManager.getLastKnownLocation(LocationManager.PASSIVE_PROVIDER);
                 currentLocation = new LatLng(getLastLocation.getLatitude(), getLastLocation.getLongitude());
-            }}
-        catch(Exception ex){
+            }
+        } catch (Exception ex) {
             Toast.makeText(FreeLanceActivity.this, "Turn on location to continue", Toast.LENGTH_LONG).show();
-            ActivityCompat.requestPermissions(FreeLanceActivity.this,new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
+            ActivityCompat.requestPermissions(FreeLanceActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
         }
 
         unlockedSculptures = new String();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
-        userProfile= new UserProfile();
+        userProfile = new UserProfile();
         databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         databaseReference.addValueEventListener(
                 new ValueEventListener() {
@@ -123,7 +123,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                         userName = userProfile.getUserName();
                         userEmail = userProfile.getUserEmail();
                         lifes = userProfile.getUserLifes();
-                        if (lifes < 20){
+                        if (lifes < 20) {
                             mService = new Timer();
                             mServiceIntent = new Intent(FreeLanceActivity.this, Timer.class);
                             if (!isMyServiceRunning(mService.getClass())) {
@@ -131,19 +131,20 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                             }
                             Log.i("Broadcast", "Started service");
                         }
-                        if(mMap != null)
+                        if (mMap != null)
                             onMapReady(mMap);
                     }
+
                     @Override
                     public void onCancelled(@NonNull DatabaseError databaseError) {
-                        Toast.makeText(FreeLanceActivity.this,"Couldn't connect to database",Toast.LENGTH_LONG);
+                        Toast.makeText(FreeLanceActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG);
                     }
                 });
 
-        try{
+        try {
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
             mapFragment.getMapAsync(this);
-        }catch (Exception ex){
+        } catch (Exception ex) {
             Toast.makeText(FreeLanceActivity.this, "NEZZ KOJI K:" + ex, Toast.LENGTH_LONG).show();
         }
         menuBar();
@@ -151,10 +152,10 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         flag = displayGpsStatus();
         if (flag) {
             locationListener = new MyLocationListener();
-            try{
-                if(ActivityCompat.checkSelfPermission(FreeLanceActivity.this,Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 30, locationListener);}
-            catch(Exception ex){
+            try {
+                if (ActivityCompat.checkSelfPermission(FreeLanceActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+                    locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 5000, 30, locationListener);
+            } catch (Exception ex) {
                 Toast.makeText(FreeLanceActivity.this, "Location acces not granted ", Toast.LENGTH_LONG).show();
             }
 
@@ -168,11 +169,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
         for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
             if (serviceClass.getName().equals(service.service.getClassName())) {
-                Log.i ("Service status", "Running");
+                Log.i("Service status", "Running");
                 return true;
             }
         }
-        Log.i ("Service status", "Not running");
+        Log.i("Service status", "Not running");
         return false;
     }
 
@@ -197,72 +198,72 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         mMap = googleMap;
         mMap.clear();
 
-        if(sculptures != null && unlockedSculptures != null && isSculptureShown){
+        if (sculptures != null && unlockedSculptures != null && isSculptureShown) {
             for (Sculpture sculpture : sculptures) {
-                if(unlockedSculptures.contains(sculpture.imagePath)){
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude),Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                }else {
+                if (unlockedSculptures.contains(sculpture.imagePath)) {
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown"));
                 }
             }
         }
 
-        if(spomenici != null && unlockedSculptures != null && isSpomeniciShown){
+        if (spomenici != null && unlockedSculptures != null && isSpomeniciShown) {
             for (Sculpture sculpture : spomenici) {
-                if(unlockedSculptures.contains(sculpture.imagePath)){
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude),Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                }else {
+                if (unlockedSculptures.contains(sculpture.imagePath)) {
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
                 }
             }
         }
 
-        if(arhitekture != null && unlockedSculptures != null && isArhitektureShown){
+        if (arhitekture != null && unlockedSculptures != null && isArhitektureShown) {
             for (Sculpture sculpture : arhitekture) {
-                if(unlockedSculptures.contains(sculpture.imagePath)){
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude),Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                }else {
+                if (unlockedSculptures.contains(sculpture.imagePath)) {
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
                 }
             }
         }
 
-        if(fontane != null && unlockedSculptures != null && isFontaneShown){
+        if (fontane != null && unlockedSculptures != null && isFontaneShown) {
             for (Sculpture sculpture : fontane) {
-                if(unlockedSculptures.contains(sculpture.imagePath)){
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude),Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                }else {
+                if (unlockedSculptures.contains(sculpture.imagePath)) {
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
                 }
             }
         }
 
-        if(currentLocation != null && isFrist) {
+        if (currentLocation != null && isFrist) {
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15.5f));
             isFrist = false;
         }
         googleMap.setMyLocationEnabled(true);
     }
 
-    private void setuUiVeiws(){
+    private void setuUiVeiws() {
         //editLocation = (TextView)findViewById(R.id.editTextLocation);
         //textDistance = (TextView)findViewById(R.id.tvDistance);
         //textPopup = (TextView)findViewById(R.id.tvXML);
-        back = (ImageView)findViewById(R.id.ivBack);
-        collection = (ImageView)findViewById(R.id.ivColelction);
-        toolbarLayout = (LinearLayout)findViewById(R.id.toolbarLayout);
-        showToolbar = (ImageView)findViewById(R.id.ivShowToolbar);
-        leftScrollView = (ScrollView)findViewById(R.id.scrollViewZaNazad);
+        back = (ImageView) findViewById(R.id.ivBack);
+        collection = (ImageView) findViewById(R.id.ivColelction);
+        toolbarLayout = (LinearLayout) findViewById(R.id.toolbarLayout);
+        showToolbar = (ImageView) findViewById(R.id.ivShowToolbar);
+        leftScrollView = (ScrollView) findViewById(R.id.scrollViewZaNazad);
         showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttoleft);
         unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttoright);
-        arhitektureShown = (TextView)findViewById(R.id.showArhitekture);
-        sculptureShown = (TextView)findViewById(R.id.showSculptures);
-        spomeniciShown = (TextView)findViewById(R.id.showSpomenici);
-        fontaneShown = (TextView)findViewById(R.id.showFontane);
-        checkboxArhitekture = (ImageView)findViewById(R.id.checkboxArhitekture);
-        checkboxSculptures = (ImageView)findViewById(R.id.checkboxSculpureShown);
-        checkboxSpomenici = (ImageView)findViewById(R.id.checkboxSpomenici);
-        checkboxFontane = (ImageView)findViewById(R.id.checkboxFontante);
+        arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
+        sculptureShown = (TextView) findViewById(R.id.showSculptures);
+        spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
+        fontaneShown = (TextView) findViewById(R.id.showFontane);
+        checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
+        checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
+        checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
+        checkboxFontane = (ImageView) findViewById(R.id.checkboxFontante);
         toolbarShown = false;
         isSculptureShown = true;
         isArhitektureShown = false;
@@ -290,7 +291,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         showToolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!toolbarShown){
+                if (!toolbarShown) {
                     toolbarShown = true;
                     toolbarLayout.startAnimation(showToolbarAnimation);
                     showToolbarAnimation.setAnimationListener(new Animation.AnimationListener() {
@@ -311,8 +312,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
 
                         }
                     });
-                }else{
-                    toolbarShown=false;
+                } else {
+                    toolbarShown = false;
                     toolbarLayout.startAnimation(unshowToolbarAnimation);
                     unshowToolbarAnimation.setAnimationListener(new Animation.AnimationListener() {
                         @Override
@@ -337,11 +338,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         spomeniciShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isSpomeniciShown){
+                if (isSpomeniciShown) {
                     isSpomeniciShown = false;
                     checkboxSpomenici.setVisibility(View.INVISIBLE);
                     onMapReady(mMap);
-                }else{
+                } else {
                     isSpomeniciShown = true;
                     checkboxSpomenici.setVisibility(View.VISIBLE);
                     onMapReady(mMap);
@@ -352,11 +353,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         sculptureShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isSculptureShown){
+                if (isSculptureShown) {
                     isSculptureShown = false;
                     checkboxSculptures.setVisibility(View.INVISIBLE);
                     onMapReady(mMap);
-                }else{
+                } else {
                     isSculptureShown = true;
                     checkboxSculptures.setVisibility(View.VISIBLE);
                     onMapReady(mMap);
@@ -367,11 +368,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         arhitektureShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isArhitektureShown){
+                if (isArhitektureShown) {
                     isArhitektureShown = false;
                     checkboxArhitekture.setVisibility(View.INVISIBLE);
                     onMapReady(mMap);
-                }else{
+                } else {
                     isArhitektureShown = true;
                     checkboxArhitekture.setVisibility(View.VISIBLE);
                     onMapReady(mMap);
@@ -382,11 +383,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         fontaneShown.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(isFontaneShown){
+                if (isFontaneShown) {
                     isFontaneShown = false;
                     checkboxFontane.setVisibility(View.INVISIBLE);
                     onMapReady(mMap);
-                }else{
+                } else {
                     isFontaneShown = true;
                     checkboxFontane.setVisibility(View.VISIBLE);
                     onMapReady(mMap);
@@ -395,55 +396,56 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         });
     }
 
-    private void getAllThingsForMap(){
-         try {
-             sculptures = getXmlFiles("sculptures.xml", "Sculpture");
-             spomenici = getXmlFiles("spomenici.xml", "Spomenik");
-             arhitekture = getXmlFiles("arhitekture.xml", "Arhitektura");
-             fontane = getXmlFiles("fontane.xml", "Fontana");
-        }catch (XmlPullParserException ex){
+    private void getAllThingsForMap() {
+        try {
+            sculptures = getXmlFiles("sculptures.xml", "Sculpture");
+            spomenici = getXmlFiles("spomenici.xml", "Spomenik");
+            arhitekture = getXmlFiles("arhitekture.xml", "Arhitektura");
+            fontane = getXmlFiles("fontane.xml", "Fontana");
+        } catch (XmlPullParserException ex) {
             Toast.makeText(FreeLanceActivity.this, "No data in XML", Toast.LENGTH_LONG).show();
-        }catch (IOException ex){
+        } catch (IOException ex) {
             Toast.makeText(FreeLanceActivity.this, "Couldn't open XML", Toast.LENGTH_LONG).show();
         }
     }
-    private ArrayList<Sculpture> getXmlFiles(String xmlFile, String firstTag)throws IOException, XmlPullParserException{
+
+    private ArrayList<Sculpture> getXmlFiles(String xmlFile, String firstTag) throws IOException, XmlPullParserException {
         XmlPullParserFactory parserFactory;
         XmlPullParser parser;
         parserFactory = XmlPullParserFactory.newInstance();
         parser = parserFactory.newPullParser();
-        try{
+        try {
             InputStream is = getAssets().open(xmlFile);
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(is, null);
-        }catch (IOException e){
+        } catch (IOException e) {
         }
         ArrayList<Sculpture> namesInXml = new ArrayList<>();
         int eventType = parser.getEventType();
         Sculpture currentSculpture = null;
 
-        while(eventType != XmlPullParser.END_DOCUMENT){
+        while (eventType != XmlPullParser.END_DOCUMENT) {
             String eltName = null;
-            switch (eventType){
+            switch (eventType) {
                 case XmlPullParser.START_TAG:
                     eltName = parser.getName();
-                    if(firstTag.equals(eltName)){
+                    if (firstTag.equals(eltName)) {
                         currentSculpture = new Sculpture();
                         namesInXml.add(currentSculpture);
-                    }else if (currentSculpture != null){
-                        if ("name".equals(eltName)){
+                    } else if (currentSculpture != null) {
+                        if ("name".equals(eltName)) {
                             currentSculpture.name = parser.nextText();
-                        }else if ("description".equals(eltName)){
-                            currentSculpture.description= parser.nextText();
-                        }else if ("author".equals(eltName)){
-                            currentSculpture.author= parser.nextText();
-                        }else if ("imagePath".equals(eltName)){
-                            currentSculpture.imagePath= parser.nextText();
-                        }else if ("points".equals(eltName)){
+                        } else if ("description".equals(eltName)) {
+                            currentSculpture.description = parser.nextText();
+                        } else if ("author".equals(eltName)) {
+                            currentSculpture.author = parser.nextText();
+                        } else if ("imagePath".equals(eltName)) {
+                            currentSculpture.imagePath = parser.nextText();
+                        } else if ("points".equals(eltName)) {
                             currentSculpture.points = parser.nextText();
-                        }else if ("latitude".equals(eltName)){
+                        } else if ("latitude".equals(eltName)) {
                             currentSculpture.latitude = parser.nextText();
-                        }else if ("longitude".equals(eltName)){
+                        } else if ("longitude".equals(eltName)) {
                             currentSculpture.longitude = parser.nextText();
                         }
                     }
@@ -512,7 +514,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                     bodovi = bodovi + Integer.valueOf(sculpture.points);
                     unlockedSculptures = unlockedSculptures + ", " + sculpture.imagePath;
                     if (userName != null && userEmail != null) {
-                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes-1);
+                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes - 1);
                         databaseReference.setValue(addBodovi);
                         popSculpture.setFirstTime(true);
                         Intent i = new Intent(FreeLanceActivity.this, Pop.class);

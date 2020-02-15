@@ -6,11 +6,11 @@ public class UserProfile {
     public String userEmail;
     public String otkljucaneSkulputre;
 
-    public UserProfile(){
+    public UserProfile() {
 
     }
 
-    public UserProfile(String userName, String userEmail, int userBodovi, String otkljucaneSkulputre, int UserLifes){
+    public UserProfile(String userName, String userEmail, int userBodovi, String otkljucaneSkulputre, int UserLifes) {
         this.userName = userName;
         this.userEmail = userEmail;
         this.userBodovi = userBodovi;

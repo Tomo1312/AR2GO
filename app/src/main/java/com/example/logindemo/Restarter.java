@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 public class Restarter extends BroadcastReceiver {
     public static long milisLeft;
+
     @Override
     public void onReceive(Context context, Intent intent) {
         Log.i("Broadcast Listened", "Service tried to stop");
