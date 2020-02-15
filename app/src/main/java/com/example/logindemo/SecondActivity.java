@@ -13,6 +13,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.provider.Settings;
@@ -38,15 +40,16 @@ public class SecondActivity extends AppCompatActivity {
     protected static TextView time;
     private ImageView info, tickets, events, loginScreen;
     private String eventMessage;
-    private TextView freeLance, story, premiumStory, profileName, profileBodovi,collections, profileLifes;
+    private TextView freeLance, story, premiumStory, profileName, profileBodovi, collections, profileLifes;
     private ConstraintLayout layoutFreeLance, layoutStory, layoutPremiumStory, layoutCollections, allTheMainThings;
-    private Animation atg,fadein;
+    private Animation atg, fadein;
     private FirebaseAuth firebaseAuth;
     private static int lifes, bodovi;
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
     protected static boolean mTimerRunning = false;
     protected static String unlockedSculptures, userName, userEmail;
+    protected Boolean flag, internetConectivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,103 +57,118 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         setUiVeiws();
-
-        firebaseAuth = FirebaseAuth.getInstance();
-        firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
-        databaseReference.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
-                unlockedSculptures = userProfile.getOtkljucaneSkulputre();
-                bodovi = userProfile.getUserBodovi();
-                userName = userProfile.getUserName();
-                userEmail = userProfile.getUserEmail();
-                lifes = userProfile.getUserLifes();
-                profileName.setText(userProfile.getUserName());
-                profileBodovi.setText("= " + valueOf(bodovi));
-                profileLifes.setText("="+ valueOf(lifes));
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(SecondActivity.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
-            }
-        });
-        final DatabaseReference databaseReferenceOFEvents = firebaseDatabase.getReference("Events");
-        databaseReferenceOFEvents.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                eventMessage = new String();
-                for (DataSnapshot postSnapshot: dataSnapshot.getChildren()){
-                    MuseumEvent event = postSnapshot.getValue(MuseumEvent.class);
-                    String eventName = event.getName();
-                    String eventDescription = event.getDescription();
-                    String eventDuration = event.getDuration();
-
-                    eventMessage = eventMessage + eventName + "\n"+ eventDuration + "\n" + eventDescription + "\n\n";
+        if (internetConectivity) {
+            firebaseAuth = FirebaseAuth.getInstance();
+            firebaseDatabase = FirebaseDatabase.getInstance();
+            databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
+            databaseReference.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
+                    unlockedSculptures = userProfile.getOtkljucaneSkulputre();
+                    bodovi = userProfile.getUserBodovi();
+                    userName = userProfile.getUserName();
+                    userEmail = userProfile.getUserEmail();
+                    lifes = userProfile.getUserLifes();
+                    profileName.setText(userProfile.getUserName());
+                    profileBodovi.setText("= " + valueOf(bodovi));
+                    profileLifes.setText("=" + valueOf(lifes));
                 }
-            }
 
-            @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(SecondActivity.this,"Couldn't connect to database",Toast.LENGTH_LONG).show();
-            }
-        });
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(SecondActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
+                }
+            });
+            final DatabaseReference databaseReferenceOFEvents = firebaseDatabase.getReference("Events");
+            databaseReferenceOFEvents.addValueEventListener(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    eventMessage = new String();
+                    for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                        MuseumEvent event = postSnapshot.getValue(MuseumEvent.class);
+                        String eventName = event.getName();
+                        String eventDescription = event.getDescription();
+                        String eventDuration = event.getDuration();
 
-        layoutFreeLance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SecondActivity.this, FreeLanceActivity.class));
-            }
-        });
+                        eventMessage = eventMessage + eventName + "\n" + eventDuration + "\n" + eventDescription + "\n\n";
+                    }
+                }
 
-        layoutStory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
-            }
-        });
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    Toast.makeText(SecondActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
+                }
+            });
 
-        layoutPremiumStory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
-            }
-        });
+            layoutFreeLance.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(SecondActivity.this, FreeLanceActivity.class));
+                }
+            });
 
-        layoutCollections.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(SecondActivity.this, CollectionActivity.class));
-            }
-        });
+            layoutStory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
+                }
+            });
 
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showInfo();
-            }
-        });
+            layoutPremiumStory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
+                }
+            });
 
-        tickets.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
-            }
-        });
+            layoutCollections.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(SecondActivity.this, CollectionActivity.class));
+                }
+            });
 
-        events.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                eventBox();
-            }
-        });
+            info.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    showInfo();
+                }
+            });
 
-        Boolean flag = displayGpsStatus();
-        if(!flag){
-            alertbox("Gps Status!!", "Your GPS is: OFF");
+            tickets.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
+                }
+            });
+
+            events.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    eventBox();
+                }
+            });
+        } else {
+            Toast.makeText(SecondActivity.this, "There is no Internet Conectivity!", Toast.LENGTH_LONG);
         }
+        flag = displayGpsStatus();
+
+    }
+
+    protected Boolean checkIfNetworkAvailable() {
+
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).
+
+                getState() == NetworkInfo.State.CONNECTED ||
+                connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).
+
+                        getState() == NetworkInfo.State.CONNECTED) {
+            //we are connected to a networkret
+            return true;
+        } else
+            return false;
     }
 
     @Override
@@ -200,7 +218,7 @@ public class SecondActivity extends AppCompatActivity {
         alert.show();
     }
 
-    private void eventBox(){
+    private void eventBox() {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Current events available")
@@ -232,30 +250,31 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void setUiVeiws() {
-        loginScreen = (ImageView)findViewById(R.id.loginImage);
+        loginScreen = (ImageView) findViewById(R.id.loginImage);
 
-        info = (ImageView)findViewById(R.id.ivInfo);
-        tickets = (ImageView)findViewById(R.id.ivTickets);
-        events = (ImageView)findViewById(R.id.ivEvents);
-        freeLance = (TextView)findViewById(R.id.tvFreelance);
-        story = (TextView)findViewById(R.id.tvStory);
-        premiumStory = (TextView)findViewById(R.id.tvPremiumStory);
-        collections = (TextView)findViewById(R.id.tvColletions);
-        time = (TextView)findViewById(R.id.tvTime);
+        info = (ImageView) findViewById(R.id.ivInfo);
+        tickets = (ImageView) findViewById(R.id.ivTickets);
+        events = (ImageView) findViewById(R.id.ivEvents);
+        freeLance = (TextView) findViewById(R.id.tvFreelance);
+        story = (TextView) findViewById(R.id.tvStory);
+        premiumStory = (TextView) findViewById(R.id.tvPremiumStory);
+        collections = (TextView) findViewById(R.id.tvColletions);
+        time = (TextView) findViewById(R.id.tvTime);
 
-        allTheMainThings = (ConstraintLayout)findViewById(R.id.allMainStaff);
-        layoutFreeLance = (ConstraintLayout)findViewById(R.id.layoutFreelance);
-        layoutStory = (ConstraintLayout)findViewById(R.id.layoutStory);
-        layoutPremiumStory = (ConstraintLayout)findViewById(R.id.layoutPremiumStory);
-        layoutCollections = (ConstraintLayout)findViewById(R.id.layoutColletions);
+        allTheMainThings = (ConstraintLayout) findViewById(R.id.allMainStaff);
+        layoutFreeLance = (ConstraintLayout) findViewById(R.id.layoutFreelance);
+        layoutStory = (ConstraintLayout) findViewById(R.id.layoutStory);
+        layoutPremiumStory = (ConstraintLayout) findViewById(R.id.layoutPremiumStory);
+        layoutCollections = (ConstraintLayout) findViewById(R.id.layoutColletions);
 
         profileName = (TextView) findViewById(R.id.tvProfileName);
         profileBodovi = (TextView) findViewById(R.id.tvProfileBodovi);
-        profileLifes = (TextView)findViewById(R.id.tvProfileLifes);
+        profileLifes = (TextView) findViewById(R.id.tvProfileLifes);
 
-        fadein = AnimationUtils.loadAnimation(this,R.anim.fadein);
-        atg = AnimationUtils.loadAnimation(this,R.anim.atg);
-        Typeface typeface = Typeface.createFromAsset(getAssets(),"FREESCPT.TTF");
+        internetConectivity = checkIfNetworkAvailable();
+        fadein = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        atg = AnimationUtils.loadAnimation(this, R.anim.atg);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
         freeLance.setTypeface(typeface);
         story.setTypeface(typeface);
         premiumStory.setTypeface(typeface);
@@ -263,7 +282,7 @@ public class SecondActivity extends AppCompatActivity {
         startAnimations();
     }
 
-    private void startAnimations(){
+    private void startAnimations() {
         loginScreen.startAnimation(fadein);
         fadein.setAnimationListener(new Animation.AnimationListener() {
             @Override
@@ -280,6 +299,9 @@ public class SecondActivity extends AppCompatActivity {
                 }
                 loginScreen.setVisibility(View.INVISIBLE);
                 allTheMainThings.setVisibility(View.VISIBLE);
+                if (!flag) {
+                    alertbox("Gps Status!!", "Your GPS is: OFF");
+                }
             }
 
             @Override

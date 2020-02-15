@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView havingProblems;
     private Animation loginAnimation, registerAnimation;
     private FirebaseAuth firebaseAuth;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        if(user != null){
+        if (user != null) {
             finish();
             startActivity(new Intent(MainActivity.this, SecondActivity.class));
         }
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                startActivity(new Intent(MainActivity.this,LoginActivity.class));
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
             }
         });
 
@@ -80,9 +81,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUiVeiws() {
-        login = (Button)findViewById(R.id.btnLogin);
-        register = (Button)findViewById(R.id.btnRegister);
-        havingProblems = (TextView)findViewById(R.id.tvProblems);
+        login = (Button) findViewById(R.id.btnLogin);
+        register = (Button) findViewById(R.id.btnRegister);
+        havingProblems = (TextView) findViewById(R.id.tvProblems);
         loginAnimation = AnimationUtils.loadAnimation(this, R.anim.loginanimation);
         registerAnimation = AnimationUtils.loadAnimation(this, R.anim.registeranimation);
     }

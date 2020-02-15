@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CollectionActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    tools:context=".CollectionActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -24,11 +24,11 @@
         android:id="@+id/tvProfileBodovi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:text="=0"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="22sp"
-        android:layout_marginTop="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -40,8 +40,8 @@
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="80dp"
         android:paddingLeft="10dp"
         android:text="C O L L E C T I O N"
@@ -59,10 +59,10 @@
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/secondactivityscroll"
         android:paddingTop="50dp"
-        android:layout_marginTop="60dp"
         android:paddingBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -142,57 +142,62 @@
         app:srcCompat="@drawable/menu" />
 
     <LinearLayout
+        android:id="@+id/toolbarLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="60dp"
+        android:visibility="invisible"
         android:weightSum="1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.962"
-        android:id="@+id/toolbarLayout"
-        android:visibility="invisible">
+        app:layout_constraintVertical_bias="0.962">
+
         <ScrollView
+            android:id="@+id/scrollViewZaNazad"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.40"
             android:background="#55000000"
-            android:visibility="invisible"
-            android:id="@+id/scrollViewZaNazad"/>
+            android:visibility="invisible" />
 
         <ScrollView
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="0.60"
             android:background="@color/white">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxSculpureShown"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/tick"
-                        android:id="@+id/checkboxSculpureShown"/>
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showSculptures"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Skulpture"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Skulpture"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -200,69 +205,77 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxArhitekture"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxArhitekture"/>
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showArhitekture"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Arhitektura"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Arhitektura"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxSpomenici"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxSpomenici"/>
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showSpomenici"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Spomenici"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Spomenici"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:weightSum="1">
+
                     <ImageView
+                        android:id="@+id/checkboxFontante"
                         android:layout_width="0dip"
                         android:layout_height="match_parent"
                         android:layout_weight="0.3"
-                        app:srcCompat="@drawable/tick"
                         android:padding="5dp"
-                        android:id="@+id/checkboxFontante"/>
+                        app:srcCompat="@drawable/tick" />
+
                     <TextView
                         android:id="@+id/showFontane"
                         android:layout_width="0dip"
-                        android:layout_weight="0.7"
                         android:layout_height="wrap_content"
-                        android:text="Fontane"
+                        android:layout_weight="0.7"
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
-                        android:textSize="18sp"
-                        android:textAlignment="center"/>
+                        android:text="Fontane"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

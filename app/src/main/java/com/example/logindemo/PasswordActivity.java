@@ -25,25 +25,25 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
 
-        passwordEmail = (EditText)findViewById(R.id.etPasswordEmail);
-        resetPassword = (Button)findViewById(R.id.btnPasswordReset);
+        passwordEmail = (EditText) findViewById(R.id.etPasswordEmail);
+        resetPassword = (Button) findViewById(R.id.btnPasswordReset);
         firebaseAuth = FirebaseAuth.getInstance();
 
         resetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String userEmail = passwordEmail.getText().toString().trim();
-                if(userEmail.equals("")){
+                if (userEmail.equals("")) {
                     Toast.makeText(PasswordActivity.this, "Eneter email!", Toast.LENGTH_SHORT).show();
-                }else{
+                } else {
                     firebaseAuth.sendPasswordResetEmail(userEmail).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {
-                            if(task.isSuccessful()){
+                            if (task.isSuccessful()) {
                                 Toast.makeText(PasswordActivity.this, "Password reset send to e-mail!", Toast.LENGTH_SHORT).show();
                                 finish();
                                 startActivity(new Intent(PasswordActivity.this, LoginActivity.class));
-                            }else{
+                            } else {
                                 Toast.makeText(PasswordActivity.this, "Password reset NOT send to e-mail!", Toast.LENGTH_SHORT).show();
                             }
                         }
