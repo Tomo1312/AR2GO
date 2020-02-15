@@ -156,6 +156,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+
     protected Boolean checkIfNetworkAvailable() {
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
