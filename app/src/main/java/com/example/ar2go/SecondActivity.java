@@ -1,12 +1,11 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GestureDetectorCompat;
 
-import android.app.ActivityManager;
 import android.app.AlertDialog;
-import android.app.IntentService;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -16,9 +15,8 @@ import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Handler;
 import android.provider.Settings;
-import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -50,7 +48,7 @@ public class SecondActivity extends AppCompatActivity {
     protected static boolean mTimerRunning = false;
     protected static String unlockedSculptures, userName, userEmail;
     protected Boolean flag, internetConectivity;
-
+    private GestureDetectorCompat gestureDetectorCompat = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -105,13 +103,14 @@ public class SecondActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(SecondActivity.this, FreeLanceActivity.class));
+                    overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                 }
             });
 
             layoutStory.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(SecondActivity.this, "Not supported yet!", Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(SecondActivity.this, StoryActivity.class));
                 }
             });
 
@@ -155,7 +154,6 @@ public class SecondActivity extends AppCompatActivity {
         flag = displayGpsStatus();
 
     }
-
 
     protected Boolean checkIfNetworkAvailable() {
 
@@ -281,6 +279,16 @@ public class SecondActivity extends AppCompatActivity {
         premiumStory.setTypeface(typeface);
         collections.setTypeface(typeface);
         startAnimations();
+
+        DetectSwipeGestureListener gestureListener = new DetectSwipeGestureListener();
+        gestureListener.setActivitiy(this);
+        gestureDetectorCompat = new GestureDetectorCompat(this, gestureListener);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        gestureDetectorCompat.onTouchEvent(event);
+        return true;
     }
 
     private void startAnimations() {
@@ -315,5 +323,10 @@ public class SecondActivity extends AppCompatActivity {
         layoutPremiumStory.setAnimation(atg);
         layoutCollections.setAnimation(atg);
 
+    }
+
+    protected void startFreelance(){
+        startActivity(new Intent(SecondActivity.this, FreeLanceActivity.class));
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
 }

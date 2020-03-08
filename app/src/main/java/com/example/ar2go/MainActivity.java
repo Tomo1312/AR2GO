@@ -1,8 +1,7 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;

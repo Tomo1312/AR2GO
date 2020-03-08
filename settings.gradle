@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='LoginDemo'
+rootProject.name='ar2go'

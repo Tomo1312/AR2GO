@@ -1,4 +1,4 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -56,14 +56,14 @@ import static java.lang.Thread.sleep;
 public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     //private Double currentLongitude, currentLatitude;
-    private TextView sculptureShown, arhitektureShown, spomeniciShown, fontaneShown;
+    private TextView sculptureShown, arhitektureShown, spomeniciShown;
     private LatLng currentLocation;
     public static final int REQUEST_LOCATION = 99;
     private Location getLastLocation;
     @Nullable
     private LocationManager locationManager;
     private LocationListener locationListener;
-    private ImageView back, collection, showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici, checkboxFontane;
+    private ImageView back, collection, showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
     @NonNull
     private Boolean flag = false;
     private boolean isFrist;
@@ -75,11 +75,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     protected int bodovi, lifes;
     protected String unlockedSculptures, userName, userEmail;
     private GoogleMap mMap;
-    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici, fontane;
+    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici;
     private LinearLayout toolbarLayout;
     private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
-    private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
+    private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown;
 
     private Intent mServiceIntent;
     private Timer mService;
@@ -90,7 +90,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         setContentView(R.layout.activity_freelance);
 
         //if you want to lock screen for always Portrait mode
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
         setuUiVeiws();
 
@@ -228,16 +228,6 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             }
         }
 
-        if (fontane != null && unlockedSculptures != null && isFontaneShown) {
-            for (Sculpture sculpture : fontane) {
-                if (unlockedSculptures.contains(sculpture.imagePath)) {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
-                } else {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-                }
-            }
-        }
-
         if (currentLocation != null && isFrist) {
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15.5f));
             isFrist = false;
@@ -259,16 +249,13 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
         sculptureShown = (TextView) findViewById(R.id.showSculptures);
         spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
-        fontaneShown = (TextView) findViewById(R.id.showFontane);
         checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
         checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
         checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
-        checkboxFontane = (ImageView) findViewById(R.id.checkboxFontante);
         toolbarShown = false;
         isSculptureShown = true;
         isArhitektureShown = false;
         isSpomeniciShown = false;
-        isFontaneShown = false;
         isFrist = true;
     }
 
@@ -379,21 +366,6 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                 }
             }
         });
-
-        fontaneShown.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFontaneShown) {
-                    isFontaneShown = false;
-                    checkboxFontane.setVisibility(View.INVISIBLE);
-                    onMapReady(mMap);
-                } else {
-                    isFontaneShown = true;
-                    checkboxFontane.setVisibility(View.VISIBLE);
-                    onMapReady(mMap);
-                }
-            }
-        });
     }
 
     private void getAllThingsForMap() {
@@ -401,7 +373,6 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             sculptures = getXmlFiles("sculptures.xml", "Sculpture");
             spomenici = getXmlFiles("spomenici.xml", "Spomenik");
             arhitekture = getXmlFiles("arhitekture.xml", "Arhitektura");
-            fontane = getXmlFiles("fontane.xml", "Fontana");
         } catch (XmlPullParserException ex) {
             Toast.makeText(FreeLanceActivity.this, "No data in XML", Toast.LENGTH_LONG).show();
         } catch (IOException ex) {
@@ -490,10 +461,9 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             Location loc1 = new Location("");
             loc1.setLongitude(loc.getLongitude());
             loc1.setLatitude(loc.getLatitude());
-            if (sculptures != null && spomenici != null && fontane != null && arhitekture != null) {
+            if (sculptures != null && spomenici != null &&  arhitekture != null) {
                 checkIfCurrentLocationIsNear(sculptures, loc1);
                 checkIfCurrentLocationIsNear(spomenici, loc1);
-                checkIfCurrentLocationIsNear(fontane, loc1);
                 checkIfCurrentLocationIsNear(arhitekture, loc1);
             }
         }

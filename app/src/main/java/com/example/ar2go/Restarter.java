@@ -1,4 +1,4 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

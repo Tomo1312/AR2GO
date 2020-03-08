@@ -1,17 +1,16 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -47,15 +46,16 @@ public class CollectionActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     protected static String unlockedSculptures;
-    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici, fontane;
-    private TextView sculptureShown, arhitektureShown, spomeniciShown, fontaneShown, profileBodovi, title;
-    private ImageView showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici, checkboxFontane;
-    private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown, isFontaneShown;
+    protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici;
+    private TextView sculptureShown, arhitektureShown, spomeniciShown, profileBodovi, title;
+    private ImageView showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
+    private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown;
     private LinearLayout toolbarLayout;
     private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
     private Typeface typeFace;
 
+    @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,18 +112,15 @@ public class CollectionActivity extends AppCompatActivity {
         arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
         sculptureShown = (TextView) findViewById(R.id.showSculptures);
         spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
-        fontaneShown = (TextView) findViewById(R.id.showFontane);
         checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
         checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
         checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
-        checkboxFontane = (ImageView) findViewById(R.id.checkboxFontante);
         typeFace = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
         title.setTypeface(typeFace);
         toolbarShown = false;
         isSculptureShown = true;
         isArhitektureShown = true;
         isSpomeniciShown = true;
-        isFontaneShown = true;
     }
 
     private void menuBar() {
@@ -227,21 +224,6 @@ public class CollectionActivity extends AppCompatActivity {
             }
         });
 
-        fontaneShown.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (isFontaneShown) {
-                    isFontaneShown = false;
-                    checkboxFontane.setVisibility(View.INVISIBLE);
-                    setShowAllArtToCollection();
-                } else {
-                    isFontaneShown = true;
-                    checkboxFontane.setVisibility(View.VISIBLE);
-                    setShowAllArtToCollection();
-                }
-            }
-        });
-
     }
 
     private void setShowAllArtToCollection() {
@@ -255,9 +237,6 @@ public class CollectionActivity extends AppCompatActivity {
             }
             if (isArhitektureShown) {
                 showUnlockedSculptures(arhitekture, R.drawable.backgroundcollectionarhitekture);
-            }
-            if (isFontaneShown) {
-                showUnlockedSculptures(fontane, R.drawable.backgroundcollectionfontane);
             }
         }
     }
@@ -320,7 +299,6 @@ public class CollectionActivity extends AppCompatActivity {
             sculptures = getXmlFiles("sculptures.xml", "Sculpture");
             spomenici = getXmlFiles("spomenici.xml", "Spomenik");
             arhitekture = getXmlFiles("arhitekture.xml", "Arhitektura");
-            fontane = getXmlFiles("fontane.xml", "Fontana");
         } catch (XmlPullParserException ex) {
             Toast.makeText(CollectionActivity.this, "No data in XML", Toast.LENGTH_LONG).show();
         } catch (IOException ex) {

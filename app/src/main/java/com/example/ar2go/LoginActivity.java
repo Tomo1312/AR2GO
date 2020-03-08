@@ -1,4 +1,4 @@
-package com.example.logindemo;
+package com.example.ar2go;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;

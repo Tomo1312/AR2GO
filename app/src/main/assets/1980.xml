@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+    <Art>
+        <name>Almeria</name>
+        <description>2006</description>
+        <author>Marija Pivac i Miroslav Dragomanović</author>
+        <imagePath>arhitekturaalmeria</imagePath>
+        <points>1</points>
+        <latitude>45.802287</latitude>
+        <longitude>16.012501</longitude>
+    </Art>
+</Arts>
