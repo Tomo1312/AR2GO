@@ -244,8 +244,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         toolbarLayout = (LinearLayout) findViewById(R.id.toolbarLayout);
         showToolbar = (ImageView) findViewById(R.id.ivShowToolbar);
         leftScrollView = (ScrollView) findViewById(R.id.scrollViewZaNazad);
-        showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttoleft);
-        unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttoright);
+        showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttolefttoolbar);
+        unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttorighttoolbar);
         arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
         sculptureShown = (TextView) findViewById(R.id.showSculptures);
         spomeniciShown = (TextView) findViewById(R.id.showSpomenici);

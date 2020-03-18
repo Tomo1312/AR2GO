@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+    <Art>
+        <name>Krsto Frankopan</name>
+        <description>1884.</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Andrija Kačić Miošić</name>
+        <description>1891.</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Julije Klović</name>
+        <description>1878</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+    <Art>
+        <name>Andrija Medulić</name>
+        <description>1878.</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Josip Jelačić</name>
+        <description>1866.</description>
+        <author>Anton DOminik Fernkorn</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Petar Preradović</name>
+        <description>1895.</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Spomenik srpanjskim žrtvama</name>
+        <description>1845.</description>
+        <author></author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Napuljski ribar</name>
+        <description>1847.</description>
+        <author>Joseph Kässmann</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Sv. Juraj ubija zmaja</name>
+        <description>1853.</description>
+        <author>Anton Dominik Fernkorn</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Blizanci</name>
+        <description>Zrinjevac, 1894.</description>
+        <author>Hermann Bollé</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Česma</name>
+        <description>1887.</description>
+        <author>Kuno Waidman</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Fontana - Trg kralja Tomislava</name>
+        <description>1881.</description>
+        <author></author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Fontana - Trg maršala Tita</name>
+        <description>1881.</description>
+        <author>Ivan Rendić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Fontana-gljiva</name>
+        <description>Zrinjevac, 1893.</description>
+        <author>Hermann Bollé</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>HAZU - Hrv. akademija znanosti i ujetnosti</name>
+        <description>F. Schmidt</description>
+        <author>1879.</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>HNK - Hrv. narodno kazalište</name>
+        <description>1895.</description>
+        <author>Arh. ured Fellner i Helmer</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Rektorat</name>
+        <description>1859.</description>
+        <author>Ludwig von Zettl</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Rudolfova vojarna</name>
+        <description>1889.</description>
+        <author> F. Gruber, C. Völckner</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Starčevićev dom</name>
+        <description>1895.</description>
+        <author>Arh. ured Hönigsberg i Deutsch</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Šumarski dom</name>
+        <description>1898.</description>
+        <author> A. pl. Eigner, G. Carnelutti</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+	<Art>
+        <name>Umjetnički paviljon</name>
+        <description>1898.</description>
+        <author>Arh. ured Fellner i Helmer</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+    
+</Arts>
