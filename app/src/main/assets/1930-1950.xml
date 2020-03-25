@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Arts>
 	<Art>
-        <name>Matija Gubec</name>
-        <description>1923.</description>
-        <author>Vatroslav Drenski</author>
+        <name>Ribari</name>
+        <description>1947.</description>
+        <author>Frano Kršinić</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -11,9 +11,9 @@
     </Art>
 	
 	<Art>
-        <name>Josip Juraj Strossmayer</name>
-        <description>1924.</description>
-        <author>Ivan Meštrović</author>
+        <name>Žena s tačkama</name>
+        <description>1947.</description>
+        <author>Kosta Angeli Radovani</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -21,9 +21,9 @@
     </Art>
 	
 	<Art>
-        <name>Kralj Tomislav</name>
-        <description>1928</description>
-        <author>Robert Frangeš Mihanović</author>
+        <name>Petrica Kerempuh</name>
+        <description>1943.</description>
+        <author>Vanja Radauš</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -31,8 +31,38 @@
     </Art>
 	
 	<Art>
-        <name>Spomenik hrvatskim vojnicima u Prvom svjetskom ratu</name>
-        <description>1914-1918.</description>
+        <name>Nošenje ranjenika</name>
+        <description>1946.</description>
+        <author>Antun Augustinčić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Djevojka s knjigom</name>
+        <description>1940.</description>
+        <author>Frano Kršinić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Brijunski akt</name>
+        <description>1948.</description>
+        <author>Antun Augustinčić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Spomenik žrtvama u Bleiburgu i na križnim putovima</name>
+        <description>1945.</description>
         <author></author>
         <imagePath></imagePath>
         <points>1</points>
@@ -41,68 +71,8 @@
     </Art>
 	
 	<Art>
-        <name>August Šenoa</name>
-        <description>1914.</description>
-        <author>Ivan Rendić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ivan Mažuranić</name>
-        <description>1911.</description>
-        <author>Rudolf Valdec</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ivan pl. Kukuljević</name>
-        <description>1911.</description>
-        <author>Rudolf Valdec</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
         <name>Ante Starčević</name>
-        <description>1903.</description>
-        <author>Ivan Rendić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Udovica</name>
-        <description>1908.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Stup života</name>
-        <description>1922.</description>
-        <author>Robert Frangeš Hihanović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Dijana</name>
-        <description>1927.</description>
+        <description>1941.</description>
         <author>Frano Kršinić</author>
         <imagePath></imagePath>
         <points>1</points>
@@ -111,8 +81,18 @@
     </Art>
 	
 	<Art>
-        <name>Žena</name>
-        <description>1929.</description>
+        <name>Vatroslav Lisinski</name>
+        <description>1940.</description>
+        <author>Vanja Radauš</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Andrija Medulić</name>
+        <description>1930.</description>
         <author>Ivan Meštrović</author>
         <imagePath></imagePath>
         <points>1</points>
@@ -121,9 +101,9 @@
     </Art>
 	
 	<Art>
-        <name>Zlatarovo zlato</name>
-        <description>1929.</description>
-        <author>Ivo Kerdić</author>
+        <name>Eugen Kumičić</name>
+        <description>1934.</description>
+        <author>Frano Kršinić</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -131,8 +111,18 @@
     </Art>
 	
 	<Art>
-        <name>Mali dječak</name>
-        <description>1928.</description>
+        <name>Julije Klović</name>
+        <description>1930.</description>
+        <author>Frano Kršinić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Josip Kozarac</name>
+        <description>1936.</description>
         <author>Emil Bohutinsky</author>
         <imagePath></imagePath>
         <points>1</points>
@@ -141,9 +131,9 @@
     </Art>
 	
 	<Art>
-        <name>Lavlji most</name>
-        <description>1928.</description>
-        <author>Jozo Turkalj</author>
+        <name>Fran Žaver Kesterčanek</name>
+        <description>1936.</description>
+        <author>Emil Bohutinsky</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -151,9 +141,9 @@
     </Art>
 	
 	<Art>
-        <name>Hrvatski sokol</name>
-        <description>1925/1995.</description>
-        <author>A.Freundenreich/M.Mikulin</author>
+        <name>Dragutin Domjanić</name>
+        <description>1939.</description>
+        <author>Vanja Radauš</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -161,9 +151,9 @@
     </Art>
 	
 	<Art>
-        <name>Frulaš</name>
-        <description>1926.</description>
-        <author>Frano Kršinić</author>
+        <name>Đuro Deželić</name>
+        <description>1937.</description>
+        <author>Frane Cota</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -171,9 +161,9 @@
     </Art>
 	
 	<Art>
-        <name>Egipćani</name>
-        <description>1928.</description>
-        <author>Jozo Turkalj</author>
+        <name>Sv. Juraj</name>
+        <description>1937.</description>
+        <author>A. Kompatscher i A. Winder</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -181,9 +171,9 @@
     </Art>
 	
 	<Art>
-        <name>Elegija</name>
-        <description>1911.</description>
-        <author>Robert Frangeš Mihanović</author>
+        <name>Ranjenik</name>
+        <description>1938.</description>
+        <author>Vanja Radauš</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -191,8 +181,8 @@
     </Art>
 	
 	<Art>
-        <name>Zdenac života</name>
-        <description>1905.</description>
+        <name>Povijest Hrvata</name>
+        <description>1932.</description>
         <author>Ivan Meštrović</author>
         <imagePath></imagePath>
         <points>1</points>
@@ -201,9 +191,9 @@
     </Art>
 	
 	<Art>
-        <name>Ribar (Borba)</name>
-        <description>1906.</description>
-        <author>Simeon Roksandić</author>
+        <name>Majka i dijete</name>
+        <description>1938.</description>
+        <author>Vanja Radauš</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -211,9 +201,9 @@
     </Art>
 	
 	<Art>
-        <name>Hotel Esplanade (Regent)</name>
-        <description>1925.</description>
-        <author>projektanti Adolf Loos/Dionis Sunko</author>
+        <name>Majka doji dijete</name>
+        <description>1930.</description>
+        <author>Ivan Meštrović</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -221,9 +211,9 @@
     </Art>
 	
 	<Art>
-        <name>Palača burze</name>
-        <description>1927.</description>
-        <author>Viktor Kovačić</author>
+        <name>Zdenac Zodijak</name>
+        <description>1939.</description>
+        <author>Zorkovačka - Josip Seissel</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -231,9 +221,19 @@
     </Art>
 	
 	<Art>
-        <name>Hrvatski sabor</name>
-        <description>1910.</description>
-        <author>projektant Lavoslav Kalda</author>
+        <name>Naše more - Šubićeva</name>
+        <description></description>
+        <author>Šubićevac, Ž. Janeš</author>
+        <imagePath>1937.</imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Kozmički ciklus vode</name>
+        <description>1935.</description>
+        <author>Ciril Jeglič i Josip Seissl</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -241,9 +241,9 @@
     </Art>
 	
 	<Art>
-        <name>Državni arhiv</name>
-        <description>1913.</description>
-        <author>Rudolf Lubynski</author>
+        <name>Matica hrv. obrtnika</name>
+        <description>1937.</description>
+        <author> Arh. ured Freundenreich i Deutsch</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
@@ -251,19 +251,9 @@
     </Art>
 	
 	<Art>
-        <name>Hrvatske Željeznice</name>
-        <description>1903.</description>
-        <author>projektant Ferenc Pfaff</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Etnografski muzej</name>
-        <description>1904.</description>
-        <author>Vjekoslav Bastl</author>
+        <name>Dom likovnih umjetnika</name>
+        <description>1938.</description>
+        <author>Ivan Meštrović</author>
         <imagePath></imagePath>
         <points>1</points>
         <latitude></latitude>
