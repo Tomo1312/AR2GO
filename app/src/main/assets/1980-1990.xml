@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Klinička bolnica Dubrava</name>
+        <description>1988.</description>
+        <author></author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Džamija</name>
+        <description>1981.-1987.</description>
+        <author>Mirza Gološ i Džemal Čelić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Cibona</name>
+        <description>1987.</description>
+        <author>M. Hržić, I. Piteša i B. Šerbetić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Chromos</name>
+        <description>1989.</description>
+        <author>Marijan Turkulin, Petar Vouk</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Tratinčica za Tita</name>
+        <description>Vukovarska - 1982.</description>
+        <author>Marijan Kocković</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Manduševac</name>
+        <description>1987.</description>
+        <author>M.Kranjc, B.Silađin, B.Šerbetić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Fontana džamije</name>
+        <description>Gavellina - 1987.</description>
+        <author>M.Gološ i Dž.Čelić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Fontana</name>
+        <description>Botanički vrt - 1980.</description>
+        <author></author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Tvrdalj</name>
+        <description>1988.</description>
+        <author>Petar Barišić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Torzo</name>
+        <description>1986.</description>
+        <author>Hamo Čavrk</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Svlačenje</name>
+        <description>1987.</description>
+        <author>Branko Ružić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Skupina</name>
+        <description>1985.</description>
+        <author>Zlatko Zlatić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ruža vjetrova</name>
+        <description>1983.</description>
+        <author>Ivan Kožarić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Plavi oblik</name>
+        <description>1988.</description>
+        <author>Vladimir Gašparić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Organski oblik</name>
+        <description>1986.</description>
+        <author>Ljubomir Strahov</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Nađengrad</name>
+        <description>1986.</description>
+        <author>Ante Rašić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Jedra</name>
+        <description>1986.</description>
+        <author>Šime Vulas</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Grad/Mogila</name>
+        <description>1984.</description>
+        <author>Dora Kovačević</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Stup svečanosti</name>
+        <description>1985.</description>
+        <author>Milena Lah</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Slovni stup</name>
+        <description>1988.</description>
+        <author>Ratko Petrić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Putovanje barbara</name>
+        <description>1986.</description>
+        <author>Peruško Bogdanić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ptica</name>
+        <description>1988.</description>
+        <author>Jasminka Podgorski-Antolović</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Pionirska majka</name>
+        <description>1985.</description>
+        <author>Drago Belina</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Mali konjanik</name>
+        <description>1984.</description>
+        <author>Miro Vuco</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Majka i dijete</name>
+        <description>1987.</description>
+        <author>Josip i Ivan Cikač</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Drvo mladosti</name>
+        <description>1985.</description>
+        <author>Jozo Vila</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Trkač</name>
+        <description>1987.</description>
+        <author>Marija Ujević-Galetović</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Mačka</name>
+        <description>1986.</description>
+        <author>Branko Ružić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Čovjek s kolutom</name>
+        <description>1986.</description>
+        <author>Mladen Mikulin</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ranjenik</name>
+        <description>1985.</description>
+        <author>Stipe Sikirica</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Mladenci</name>
+        <description>1986.</description>
+        <author>Ivan Lesiak</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Žaba</name>
+        <description>1981.</description>
+        <author>Stjepan Gračan</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Tri uha</name>
+        <description>1981.</description>
+        <author>Valerije Michieli Tomić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Tri kugle</name>
+        <description>1985.</description>
+        <author>Ante Jakić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Spomenik Josipu Račiću</name>
+        <description>1980.</description>
+        <author>Ratko Petrić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ruka prijateljstva/Pozdrav</name>
+        <description>1987.</description>
+        <author>Milena Lah</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Poezija prostora - Stepenice</name>
+        <description>1981.</description>
+        <author>Milena Lah</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Otvorena vrata</name>
+        <description>1988.</description>
+        <author>Stipe Sikirica</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Obelisk I i II</name>
+        <description>1987.</description>
+        <author>Petar Barišić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Mali princ</name>
+        <description>1985.</description>
+        <author>Nada Orel</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Let u prostor (Galeb)</name>
+        <description>1989.</description>
+        <author>Milena Lah</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Krilo materino</name>
+        <description>1980.</description>
+        <author>Mila Kumbatović</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Dodir</name>
+        <description>1989.</description>
+        <author>Ivan Briski</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>AKZ</name>
+        <description>1987.</description>
+        <author>Dušan Džamonja</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Akt</name>
+        <description>1989.</description>
+        <author>Miroslav Župančić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Poginulim Zagrepčanima u NOB</name>
+        <description>1981.</description>
+        <author>K.A.Radovani</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Poginulim revolucionarima Zagreba</name>
+        <description>1984.</description>
+        <author>S.Luketić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Poginulima u oslobođenju Zagreba</name>
+        <description>1981.</description>
+        <author>B.Ružić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Spomenik strijeljanima u Lukšiću</name>
+        <description>1983.</description>
+        <author>Petar Barišić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Spomenik palim Kustošijancima u NOB-u</name>
+        <description>1985.</description>
+        <author>Nikola Bolčević</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>August Šenoa</name>
+        <description>1987.</description>
+        <author>Marija Ujević Galetović</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Charlie Chaplin</name>
+        <description>1983.</description>
+        <author>Ratko Petrić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Joža Vlahović</name>
+        <description>1981.</description>
+        <author>Stipe Sikirica</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Grigor Vitez</name>
+        <description>1981.</description>
+        <author>Josip Poljan</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Stjepan Radić</name>
+        <description>1989.</description>
+        <author>Ratko Peraić</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Pavle Papp</name>
+        <description>1980.</description>
+        <author>Aleksandar Jovanovski</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ivan Meštrović</name>
+        <description>1984.</description>
+        <author>Stipe Sikirica</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Josip Debeljak</name>
+        <description>1981.</description>
+        <author>Ante Starčević</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Anka Butorac</name>
+        <description>1981.</description>
+        <author>Aleksandar Jovanovski</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+	
+	<Art>
+        <name>Ruđer Bošković</name>
+        <description>1988.</description>
+        <author>Marijan Gajšak</author>
+        <imagePath></imagePath>
+        <points>1</points>
+        <latitude></latitude>
+        <longitude></longitude>
+    </Art>
+</Arts>
