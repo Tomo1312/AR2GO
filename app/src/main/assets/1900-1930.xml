@@ -4,269 +4,269 @@
         <name>Matija Gubec</name>
         <description>1923.</description>
         <author>Vatroslav Drenski</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikmatijagubecdrenski</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8159652</latitude>
+        <longitude>15.973588</longitude>
     </Art>
 	
 	<Art>
         <name>Josip Juraj Strossmayer</name>
-        <description>1924.</description>
+        <description>1924. postavljeno 1926.</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikjosipjurajstrossmayer</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8088441</latitude>
+        <longitude>15.9785504</longitude>
     </Art>
 	
 	<Art>
         <name>Kralj Tomislav</name>
-        <description>1928</description>
+        <description>1928.-1938. -  postavljen 1947.</description>
         <author>Robert Frangeš Mihanović</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikkraljtomislav</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Spomenik hrvatskim vojnicima u Prvom svjetskom ratu</name>
-        <description>1914-1918.</description>
-        <author></author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.805668</latitude>
+        <longitude>15.978713</longitude>
     </Art>
 	
 	<Art>
         <name>August Šenoa</name>
         <description>1914.</description>
         <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikaugustsenoarendic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8085901</latitude>
+        <longitude>15.9792366</longitude>
     </Art>
 	
 	<Art>
         <name>Ivan Mažuranić</name>
         <description>1911.</description>
         <author>Rudolf Valdec</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikivanmazuranic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8094491</latitude>
+        <longitude>15.9779282</longitude>
     </Art>
 	
 	<Art>
         <name>Ivan pl. Kukuljević</name>
         <description>1911.</description>
         <author>Rudolf Valdec</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikivanplkukuljevic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ante Starčević</name>
-        <description>1903.</description>
-        <author>Ivan Rendić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8095421</latitude>
+        <longitude>15.9789963</longitude>
     </Art>
 	
 	<Art>
         <name>Udovica</name>
-        <description>1908.</description>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1908.-postavljeno 1985.) </description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>udovica</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
     </Art>
 	
 	<Art>
         <name>Stup života</name>
-        <description>1922.</description>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (1922.)  </description>
         <author>Robert Frangeš Hihanović</author>
-        <imagePath></imagePath>
+        <imagePath>stupzivota</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
     </Art>
 	
 	<Art>
         <name>Dijana</name>
-        <description>1927.</description>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1927.-postavljeno 1995.) </description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
+        <imagePath>skulpturadijana</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
     </Art>
 	
 	<Art>
         <name>Žena</name>
-        <description>1929.</description>
+        <description>Ul. Franje Račkog, Smičiklasova, Ul. Ignjata Đorđića 1929.</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>zenamestrovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.810969</latitude>
+        <longitude>15.985275</longitude>
     </Art>
 	
 	<Art>
-        <name>Zlatarovo zlato</name>
-        <description>1929.</description>
+        <name>Zlatarevo zlato</name>
+        <description>Kamenita vrata, ali i u ALU Ilica (1929.) </description>
         <author>Ivo Kerdić</author>
-        <imagePath></imagePath>
+        <imagePath>zlatarevozlato</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8157768</latitude>
+        <longitude>15.9750547</longitude>
     </Art>
 	
 	<Art>
         <name>Mali dječak</name>
-        <description>1928.</description>
+        <description>Trg kralja Petra Krešimira IV.(1928.)</description>
         <author>Emil Bohutinsky</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>malidjecak</imagePath>
+        <points>2</points>
+        <latitude>45.808444</latitude>
+        <longitude>15.991085</longitude>
     </Art>
 	
 	<Art>
         <name>Lavlji most</name>
-        <description>1928.</description>
+        <description>" Zoološki vrt(1925.)</description>
         <author>Jozo Turkalj</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>lavljimost</imagePath>
+        <points>3</points>
+        <latitude>45.8214779</latitude>
+        <longitude>16.0210374</longitude>
     </Art>
 	
 	<Art>
         <name>Hrvatski sokol</name>
-        <description>1925/1995.</description>
+        <description>Park Maksimir(1925.)</description>
         <author>A.Freundenreich/M.Mikulin</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>hrvatskisokol</imagePath>
+        <points>4</points>
+        <latitude>45.8236017</latitude>
+        <longitude>16.0155561</longitude>
     </Art>
 	
 	<Art>
         <name>Frulaš</name>
-        <description>1926.</description>
+        <description>Rokov Perivoj 4(1926.)</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>frulas</imagePath>
+        <points>3</points>
+        <latitude>45.8151249</latitude>
+        <longitude>15.9675644</longitude>
     </Art>
 	
 	<Art>
-        <name>Egipćani</name>
-        <description>1928.</description>
+        <name>Egipčanin</name>
+        <description>Zoološki vrt, ispred zgrade s gmazovima 1928.</description>
         <author>Jozo Turkalj</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>egipcanin</imagePath>
+        <points>4</points>
+        <latitude>45.8208764</latitude>
+        <longitude>16.0198501</longitude>
     </Art>
 	
 	<Art>
         <name>Elegija</name>
-        <description>1911.</description>
+        <description>1911. postavljen 1994.</description>
         <author>Robert Frangeš Mihanović</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturaelegija</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8147947</latitude>
+        <longitude>15.9676496</longitude>
     </Art>
 	
 	<Art>
-        <name>Zdenac života</name>
-        <description>1905.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <name>Hotel Esplanade</name>
+        <description>(1925.)</description>
+        <author>Otto Rechnig, Dionis Sunko </author>
+        <imagePath>arhitekturahotelesplanade</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ribar (Borba)</name>
-        <description>1906.</description>
-        <author>Simeon Roksandić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Hotel Esplanade (Regent)</name>
-        <description>1925.</description>
-        <author>projektanti Adolf Loos/Dionis Sunko</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8054686</latitude>
+        <longitude>15.9737187</longitude>
     </Art>
 	
 	<Art>
         <name>Palača burze</name>
-        <description>1927.</description>
+        <description>(1927.)</description>
         <author>Viktor Kovačić</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturaburza</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.81163</latitude>
+        <longitude>15.983902</longitude>
     </Art>
 	
 	<Art>
         <name>Hrvatski sabor</name>
-        <description>1910.</description>
-        <author>projektant Lavoslav Kalda</author>
-        <imagePath></imagePath>
+        <description>(1910.)</description>
+        <author>Lavoslav Kalda </author>
+        <imagePath>arhitekturasabor</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.81615</latitude>
+        <longitude>15.973979</longitude>
     </Art>
 	
 	<Art>
         <name>Državni arhiv</name>
-        <description>1913.</description>
+        <description>(1913.)</description>
         <author>Rudolf Lubynski</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturadrzavniarhivrudolf</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.806016</latitude>
+        <longitude>15.970203</longitude>
     </Art>
 	
 	<Art>
-        <name>Hrvatske Željeznice</name>
-        <description>1903.</description>
-        <author>projektant Ferenc Pfaff</author>
-        <imagePath></imagePath>
+        <name>Zgrada uprave Hrvatske Željeznice</name>
+        <description>(1903.)</description>
+        <author>Ferenc Pfaff</author>
+        <imagePath>arhitekturahz</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8050783</latitude>
+        <longitude>15.973985</longitude>
     </Art>
 	
 	<Art>
         <name>Etnografski muzej</name>
-        <description>1904.</description>
-        <author>Vjekoslav Bastl</author>
-        <imagePath></imagePath>
+        <description>(1904.)</description>
+        <author>Vjekoslav Alojz Bastl </author>
+        <imagePath>arhitekturaetnografskimuzej</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.80836</latitude>
+        <longitude>15.9669245</longitude>
     </Art>
+	
+	<!-- <Art> -->
+        <!-- <name>Spomenik hrvatskim vojnicima u Prvom svjetskom ratu</name> -->
+        <!-- <description>1914-1918.</description> -->
+        <!-- <author></author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Ante Starčević</name> -->
+        <!-- <description>1903.</description> -->
+        <!-- <author>Ivan Rendić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Zdenac života</name> -->
+        <!-- <description>1905.</description> -->
+        <!-- <author>Ivan Meštrović</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Ribar (Borba)</name> -->
+        <!-- <description>1906.</description> -->
+        <!-- <author>Simeon Roksandić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
 </Arts>

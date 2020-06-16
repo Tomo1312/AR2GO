@@ -4,210 +4,209 @@
         <name>Krsto Frankopan</name>
         <description>1884.</description>
         <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikkrstofrankopan</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8095282</latitude>
+        <longitude>15.9781534</longitude>
     </Art>
     
 	<Art>
         <name>Andrija Kačić Miošić</name>
         <description>1891.</description>
         <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikandrijakacicmiosic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8133793</latitude>
+        <longitude>15.9702755</longitude>
     </Art>
     
 	<Art>
         <name>Julije Klović</name>
-        <description>1878</description>
+        <description>1891.</description>
         <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikjulijeklovicrendic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8096184</latitude>
+        <longitude>15.9784975</longitude>
     </Art>
 	
     <Art>
         <name>Andrija Medulić</name>
-        <description>1878.</description>
-        <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <description>1930.- postavljeno 1932.</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>spomenikandrijamedulicmestrovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8075141</latitude>
+        <longitude>15.9786412</longitude>
     </Art>
     
 	<Art>
         <name>Josip Jelačić</name>
         <description>1866.</description>
-        <author>Anton DOminik Fernkorn</author>
-        <imagePath></imagePath>
+        <author>Anton Dominik Fernkorn</author>
+        <imagePath>spomenikjosipjelacic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.813202</latitude>
+        <longitude>15.977275</longitude>
     </Art>
     
 	<Art>
         <name>Petar Preradović</name>
         <description>1895.</description>
         <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikpetarpreradovicrendic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8123897</latitude>
+        <longitude>15.9739632</longitude>
     </Art>
     
 	<Art>
-        <name>Spomenik srpanjskim žrtvama</name>
-        <description>1845.</description>
-        <author></author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-    
-	<Art>
-        <name>Napuljski ribar</name>
-        <description>1847.</description>
-        <author>Joseph Kässmann</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-    
-	<Art>
-        <name>Sv. Juraj ubija zmaja</name>
-        <description>1853.</description>
+        <name>Sv.Juraj ubija zmaja</name>
+        <description>blabla</description>
         <author>Anton Dominik Fernkorn</author>
-        <imagePath></imagePath>
+        <imagePath>svjurajubijazmaja</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8092842</latitude>
+        <longitude>15.9690857</longitude>
     </Art>
     
 	<Art>
         <name>Blizanci</name>
-        <description>Zrinjevac, 1894.</description>
-        <author>Hermann Bollé</author>
-        <imagePath></imagePath>
+        <description>1984.</description>
+        <author>Helena Paver-Njirić</author>
+        <imagePath>arhitekturablizancifontane</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8099367</latitude>
+        <longitude>15.9783729</longitude>
     </Art>
     
 	<Art>
-        <name>Česma</name>
-        <description>1887.</description>
-        <author>Kuno Waidman</author>
-        <imagePath></imagePath>
+        <name>Gljiva</name>
+        <description>1893. replika 1974.</description>
+        <author>Hermann Bollé </author>
+        <imagePath>arhitekturafontanagljiva</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.810869</latitude>
+        <longitude> 15.977892</longitude>
     </Art>
     
 	<Art>
-        <name>Fontana - Trg kralja Tomislava</name>
-        <description>1881.</description>
-        <author></author>
-        <imagePath></imagePath>
+        <name>Hrvatska akademija znanosti i umjetnosti</name>
+        <description>(1880.)</description>
+        <author>Friedrich Schmidt</author>
+        <imagePath>arhitekturahazu</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.809142</latitude>
+        <longitude>15.978536</longitude>
     </Art>
     
 	<Art>
-        <name>Fontana - Trg maršala Tita</name>
-        <description>1881.</description>
-        <author>Ivan Rendić</author>
-        <imagePath></imagePath>
+        <name>Hrvatsko narodno kazalište</name>
+        <description>(1895.)</description>
+        <author>Ferdinand Fellner i Hermann Helmer </author>
+        <imagePath>arhitekturahnkorigigi</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-    
-	<Art>
-        <name>Fontana-gljiva</name>
-        <description>Zrinjevac, 1893.</description>
-        <author>Hermann Bollé</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-    
-	<Art>
-        <name>HAZU - Hrv. akademija znanosti i ujetnosti</name>
-        <description>F. Schmidt</description>
-        <author>1879.</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-    
-	<Art>
-        <name>HNK - Hrv. narodno kazalište</name>
-        <description>1895.</description>
-        <author>Arh. ured Fellner i Helmer</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.809463</latitude>
+        <longitude>15.970066</longitude>
     </Art>
     
 	<Art>
         <name>Rektorat</name>
-        <description>1859.</description>
+        <description>(1859.)</description>
         <author>Ludwig von Zettl</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturarektorat</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.810561</latitude>
+        <longitude>15.969822</longitude>
     </Art>
     
 	<Art>
         <name>Rudolfova vojarna</name>
-        <description>1889.</description>
-        <author> F. Gruber, C. Völckner</author>
-        <imagePath></imagePath>
+        <description>(1889.)</description>
+        <author>Ferdinand Gruber i Carl Völckner</author>
+        <imagePath>arhitekturarudolf</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8106588</latitude>
+        <longitude>15.9567672</longitude>
     </Art>
     
 	<Art>
         <name>Starčevićev dom</name>
-        <description>1895.</description>
-        <author>Arh. ured Hönigsberg i Deutsch</author>
-        <imagePath></imagePath>
+        <description>(1894.)</description>
+        <author>arh. ured Hönigsberg &amp; Deutsch </author>
+        <imagePath>arhitekturastarcevicdom</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.805845</latitude>
+        <longitude>15.977728</longitude>
     </Art>
     
 	<Art>
         <name>Šumarski dom</name>
-        <description>1898.</description>
-        <author> A. pl. Eigner, G. Carnelutti</author>
-        <imagePath></imagePath>
+        <description>(1898..)</description>
+        <author>Alexander pl. Eigner, Gjuro Carnelutti </author>
+        <imagePath>arhitekturasumarskidomalexander</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.808315</latitude>
+        <longitude>15.9670213</longitude>
     </Art>
     
 	<Art>
         <name>Umjetnički paviljon</name>
-        <description>1898.</description>
-        <author>Arh. ured Fellner i Helmer</author>
-        <imagePath></imagePath>
+        <description>(1898.)</description>
+        <author>Fellner i Helmer</author>
+        <imagePath>arhitekturaumjetnickipaviljon</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.807115</latitude>
+        <longitude>15.978661</longitude>
     </Art>
     
+	<!-- <Art> -->
+        <!-- <name>Spomenik srpanjskim žrtvama</name> -->
+        <!-- <description>1845.</description> -->
+        <!-- <author></author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+    
+	<!-- <Art> -->
+        <!-- <name>Napuljski ribar</name> -->
+        <!-- <description>1847.</description> -->
+        <!-- <author>Joseph Kässmann</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+    
+	<!-- <Art> -->
+        <!-- <name>Česma</name> -->
+        <!-- <description>1887.</description> -->
+        <!-- <author>Kuno Waidman</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Fontana - Trg kralja Tomislava</name> -->
+        <!-- <description>1881.</description> -->
+        <!-- <author></author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+    
+	<!-- <Art> -->
+        <!-- <name>Fontana - Trg maršala Tita</name> -->
+        <!-- <description>1881.</description> -->
+        <!-- <author>Ivan Rendić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
 </Arts>

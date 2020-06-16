@@ -44,14 +44,14 @@
         <name>AKZ</name>
         <description>Avenija Marina Drzica 4 (1987.)</description>
         <author>Dusan Dzamnonja</author>
-        <imagePath>akz</imagePath>
+        <imagePath>skulpturaakz</imagePath>
         <points>2</points>
         <latitude>45.8032035</latitude>
         <longitude>15.9940703</longitude>
     </Sculpture>
 
     <Sculpture>
-        <name>Bacac diska</name>
+        <name>Bacač diska</name>
         <description>Ispred Dinamovog stadiona Maksimirska cesta 123 (1957.)</description>
         <author>Vanja Radaus</author>
         <imagePath>bacacdiska</imagePath>
@@ -64,7 +64,7 @@
         <name>Brijunski akt</name>
         <description>Park Ribnjak (1954.)</description>
         <author>Antun Augustincic</author>
-        <imagePath>brijunski</imagePath>
+        <imagePath>brijunskiakt</imagePath>
         <points>1</points>
         <latitude>45.8162752</latitude>
         <longitude>15.980527</longitude>
@@ -532,7 +532,7 @@
     </Sculpture>
 
     <Sculpture>
-        <name>Sv.Juraj</name>
+        <name>Sv. Juraj</name>
         <description>Trg Braće hrvatskog zmaja, ispred Kamenitih vrata (1937.)</description>
         <author>A. Kompatscher i A. Winder</author>
         <imagePath>svjurajwinder</imagePath>
@@ -545,7 +545,7 @@
         <name>Školjka</name>
         <description>Trg Ivana Meštrovića, Zapruđe</description>
         <author>Nikola Koydl</author>
-        <imagePath>skoljka</imagePath>
+        <imagePath>skulpturaskoljka</imagePath>
         <points>4</points>
         <latitude>45.779315</latitude>
         <longitude>15.9962938</longitude>
@@ -575,7 +575,7 @@
         <name>Tuga</name>
         <description>Mošćenička 1, Dječje kazalište "Trešnja"(izrađeno 1976. - postavljeno 1999.)</description>
         <author>Lujo Lozica</author>
-        <imagePath>tuga</imagePath>
+        <imagePath>skulpturatuga</imagePath>
         <points>4</points>
         <latitude>45.7944917</latitude>
         <longitude>15.9440185</longitude>
@@ -613,9 +613,9 @@
 
     <Sculpture>
         <name>Veliki torzo</name>
-        <description>blabla</description>
+        <description>N/A</description>
         <author>Raul Goldoni</author>
-        <imagePath>velikitorzo</imagePath>
+        <imagePath>skulpturavelikitorzo</imagePath>
         <points>1</points>
         <latitude>45.8130229</latitude>
         <longitude>15.9804987</longitude>
@@ -753,7 +753,7 @@
 
     <Sculpture>
         <name>Majka i dijete</name>
-        <description> </description>
+        <description>1938.</description>
         <author>Dušan Džamonja</author>
         <imagePath>majkaidijetedzamonja</imagePath>
         <points>1</points>
@@ -905,7 +905,7 @@
         <name>Dijana</name>
         <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1927.-postavljeno 1995.) </description>
         <author>Frano Kršinić</author>
-        <imagePath>dijana</imagePath>
+        <imagePath>skulpturadijana</imagePath>
         <points>1</points>
         <latitude>45.811944</latitude>
         <longitude>15.9619928</longitude>

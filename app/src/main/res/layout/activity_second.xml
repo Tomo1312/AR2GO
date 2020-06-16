@@ -5,8 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/ic_launcher_background"
     tools:context=".SecondActivity">
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/allMainStaff"
@@ -15,17 +16,15 @@
         android:visibility="invisible">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginEnd="180dp"
-            android:layout_marginBottom="550dp"
-            app:layout_constraintBottom_toBottomOf="@id/layoutColletions"
-            app:layout_constraintEnd_toStartOf="@+id/ivEvents"
+            android:id="@+id/imageView"
+            android:layout_width="456dp"
+            android:layout_height="182dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/sculupturelogo" />
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/back" />
 
         <ImageView
             android:id="@+id/ivTickets"
@@ -33,7 +32,6 @@
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/circle"
             android:padding="7dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/ivInfo"
@@ -49,7 +47,7 @@
             android:layout_height="45dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/circle"
+            android:background="@drawable/cerclebackground"
             android:padding="7dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/ivTickets"
@@ -64,15 +62,14 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="35dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/shade"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintTop_toBottomOf="@+id/tvTime"
+            app:layout_constraintVertical_bias="0.179"
             tools:ignore="MissingConstraints">
 
             <ImageView
@@ -94,7 +91,7 @@
                 android:padding="11dp"
                 android:text="F R E E L A N C E"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +109,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/shade"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -138,7 +135,7 @@
                 android:padding="11dp"
                 android:text="S T O R Y"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -154,7 +151,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/shade"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -180,7 +177,7 @@
                 android:padding="11dp"
                 android:text="C I T Y  A R T   P A S S"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -196,7 +193,7 @@
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/shade"
+            android:background="@drawable/rounded_corner"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -222,7 +219,7 @@
                 android:padding="10dp"
                 android:text="C O L L E C T I O N"
                 android:textAlignment="center"
-                android:textColor="@android:color/white"
+                android:textColor="@android:color/black"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -249,18 +246,17 @@
             android:id="@+id/tvProfileName"
             android:layout_width="136dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginBottom="20dp"
             android:text=""
             android:textColor="@android:color/black"
             android:textSize="26dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.065"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ivInfo"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0" />
 
         <ImageView
@@ -269,13 +265,12 @@
             android:layout_height="49dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginEnd="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.148"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvProfileName"
-            app:layout_constraintVertical_bias="0.009"
+            app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/lightbulb" />
 
         <TextView
@@ -298,12 +293,12 @@
             android:id="@+id/imageViewLifes"
             android:layout_width="46dp"
             android:layout_height="49dp"
-            android:layout_marginStart="7dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintHorizontal_bias="0.042"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView7"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/unlock" />
@@ -332,7 +327,7 @@
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.796"
+            app:layout_constraintHorizontal_bias="0.153"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewLifes"
             app:layout_constraintVertical_bias="0.0" />
@@ -342,7 +337,7 @@
         android:id="@+id/loginImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ar2go"
+        app:srcCompat="@drawable/ar2gologo"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="5dp" />
 

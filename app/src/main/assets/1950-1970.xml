@@ -2,361 +2,361 @@
 <Arts>
 	<Art>
         <name>Gradsko poglavarstvo</name>
-        <description>1955.</description>
+        <description>(1955.)</description>
         <author>Kazimir Ostrogović</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturagradskopoglavarstvo</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.801251</latitude>
+        <longitude>15.977014</longitude>
     </Art>
 	
 	<Art>
-        <name>Jelen - Studentski centar</name>
+        <name>Jelen</name>
         <description>1958.</description>
         <author>Dušan Džamonja</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturafontanajelen</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.803746</latitude>
+        <longitude>15.966069</longitude>
     </Art>
 	
 	<Art>
         <name>Dječak</name>
-        <description>Svačićev trg - 1950.</description>
+        <description>1950.</description>
         <author>Antun Augustinčić</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturadjecak</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.807137</latitude>
+        <longitude>15.974561</longitude>
     </Art>
 	
 	<Art>
         <name>Dječačić</name>
         <description>1959.</description>
         <author>Stjepan Frankić</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturadjecacic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ljubavno putovanje</name>
-        <description>1959.</description>
-        <author>Ivan Lesiak</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.818278</latitude>
+        <longitude>16.024000</longitude>
     </Art>
 	
 	<Art>
         <name>Strijeljanje talaca</name>
-        <description>1951.</description>
+        <description>Strossmayerov trg (1951.) </description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
+        <imagePath>stijeljanjetalaca</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8076699</latitude>
+        <longitude>15.9785467</longitude>
     </Art>
 	
 	<Art>
         <name>Njegovateljica ruža</name>
-        <description>1953.</description>
+        <description>Trg kralja Petra Krešimira IV. (1953.)</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Probodeni oblici</name>
-        <description>1951.</description>
-        <author>Belizar Bahorić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>njegovateljicaruza</imagePath>
+        <points>2</points>
+        <latitude>45.808372</latitude>
+        <longitude>15.990650</longitude>
     </Art>
 	
 	<Art>
         <name>Majka i dijete</name>
-        <description>1958.</description>
-        <author>Ćiril Mihanović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <description>Zorkovačka 44, unutar parka</description>
+        <author>Lujo Lozica</author>
+        <imagePath>majkaidijetelujolozica</imagePath>
+        <points>4</points>
+        <latitude>45.8013657</latitude>
+        <longitude>15.9475497</longitude>
     </Art>
 	
 	<Art>
         <name>Majka i dijete</name>
-        <description>1952.</description>
+        <description>1938.</description>
         <author>Dušan Džamonja</author>
-        <imagePath></imagePath>
+        <imagePath>majkaidijetedzamonja</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8092675</latitude>
+        <longitude>15.9628213</longitude>
     </Art>
 	
 	<Art>
-        <name>Kupač (pod tušem)</name>
-        <description>1955.</description>
+        <name>Kupač</name>
+        <description>Avenija Većeslava Holjevca 10, ispred INE(Izradena 1955. - postavljena 1999.)</description>
         <author>Ivan Kožarić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>kupac</imagePath>
+        <points>4</points>
+        <latitude>45.7776723</latitude>
+        <longitude>15.9788862</longitude>
     </Art>
 	
 	<Art>
         <name>Bacač diska</name>
-        <description>1957.</description>
-        <author>Vanja Radauš</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <description>Ispred Dinamovog stadiona Maksimirska cesta 123 (1957.)</description>
+        <author>Vanja Radaus</author>
+        <imagePath>bacacdiska</imagePath>
+        <points>3</points>
+        <latitude>45.8186251</latitude>
+        <longitude>16.0136092</longitude>
     </Art>
 	
 	<Art>
-        <name>Plamen - spomenik ilegalcima</name>
-        <description>1957.</description>
+        <name>Plamen – Spomenik Ilegalcima</name>
+        <description>1957.  postavljeno 1959.</description>
         <author>Ivan Sabolić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikplamenspomenikilegalcima</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8198094</latitude>
+        <longitude>15.9385445</longitude>
     </Art>
 	
 	<Art>
         <name>Nikola Tesla</name>
         <description>1955.</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>spomeniknikolatesla</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8112458</latitude>
+        <longitude>15.9743088</longitude>
     </Art>
 	
 	<Art>
         <name>Eugen Podaubsky</name>
         <description>1959.</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikeugenpodaubsky</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.806156</latitude>
+        <longitude>16.008799</longitude>
     </Art>
 	
 	<Art>
         <name>Moša Pijade</name>
         <description>1954.</description>
         <author>Antun Augustinčić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikmosapijade</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Rade Končar</name>
-        <description>1952.</description>
-        <author>Vanja Radauš</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.824611</latitude>
+        <longitude>16.010083</longitude>
     </Art>
 	
 	<Art>
         <name>Janko Gredelj</name>
         <description>1959.</description>
         <author>Mirko Bračun</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikjankogredelj</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8054722</latitude>
+        <longitude>16.049311</longitude>
     </Art>
 	
 	<Art>
-        <name>Rakete (Richterovi neboderi)</name>
-        <description>1968.</description>
-        <author>Centar 51, V. Richter i dr.</author>
-        <imagePath></imagePath>
+        <name>Rakete – Richterovi neboderi</name>
+        <description>(1968.)</description>
+        <author>Centar 51 - Berislav Šerbetić, Ljubo Iveta, Vjenceslav Richter, Olga Korenik</author>
+        <imagePath>arhitekturarakete</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.799912</latitude>
+        <longitude>15.981084</longitude>
     </Art>
 	
 	<Art>
         <name>Kockica</name>
-        <description>1968.</description>
-        <author>projektant Ivan Vitić</author>
-        <imagePath></imagePath>
+        <description>(1968.)</description>
+        <author>Ivan Vitić</author>
+        <imagePath>arhitekturakockica</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.790734</latitude>
+        <longitude>15.969289</longitude>
     </Art>
 	
 	<Art>
         <name>Fakultet elektrotehnike i računarstva</name>
         <description>1963.</description>
-        <author></author>
-        <imagePath></imagePath>
+        <author>N/A</author>
+        <imagePath>arhitekturafer</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8014318</latitude>
+        <longitude>15.971116700000039</longitude>
     </Art>
 	
 	<Art>
-        <name>Meta</name>
-        <description>1963.</description>
-        <author> Valerije Michieli Tomić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Hokej '66.</name>
-        <description>1966.</description>
+        <name>Hokej '66</name>
+        <description>Hokejski klub Šalata(1966.)</description>
         <author>Tomislav Ostoja</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>hokej66</imagePath>
+        <points>2</points>
+        <latitude>45.8157669</latitude>
+        <longitude>15.9845969</longitude>
     </Art>
 	
 	<Art>
         <name>Silviju Strahimiru Kranjčeviću</name>
-        <description>1962.</description>
+        <description>Ivana Lučića 3, pored Filozofskog fakulteta (1962.)</description>
         <author>Tomislav Ostoja</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>silvijustrahimirukranjcevicu</imagePath>
+        <points>2</points>
+        <latitude>45.796734</latitude>
+        <longitude>15.9706292</longitude>
     </Art>
 	
 	<Art>
         <name>Razlistana forma</name>
-        <description>1961.</description>
+        <description>Gajeva ulica , Ilica 1 (izrađeno 1961. - postavljeno 1987.) </description>
         <author>Vojin Bakić</author>
-        <imagePath></imagePath>
+        <imagePath>razlistanaforma</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8124585</latitude>
+        <longitude>15.9764193</longitude>
     </Art>
 	
 	<Art>
         <name>Prosinačke žrtve</name>
-        <description>1960.</description>
+        <description>okretište tramvaja Dubrava (1960.)</description>
         <author>Dušan Džamonja</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Orfej</name>
-        <description>1963.</description>
-        <author>Stipe Sikirica</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>prosinackezrtve</imagePath>
+        <points>3</points>
+        <latitude>45.8244816</latitude>
+        <longitude>16.0383225</longitude>
     </Art>
 	
 	<Art>
         <name>Oblik prostora XIII</name>
-        <description>1965.</description>
+        <description>Avenija Dubrovnik 17 Terasa Muzeja suvremene umjetnosti (1965.)</description>
         <author>Ivan Kožarić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>oblikprostoraxiii</imagePath>
+        <points>4</points>
+        <latitude>45.7785724</latitude>
+        <longitude>15.9811319</longitude>
     </Art>
 	
 	<Art>
         <name>Majčina igra</name>
-        <description>1962.</description>
+        <description>Mirogojska ulica 16 (izrađeno 1962. postavljeno 1978.)</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Korablja</name>
-        <description>1966.</description>
-        <author>Branko Ružić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>majcinaigra</imagePath>
+        <points>2</points>
+        <latitude>45.8319351</latitude>
+        <longitude>15.9803814</longitude>
     </Art>
 	
 	<Art>
         <name>Ivan Goran Kovačić</name>
-        <description>1964.</description>
+        <description>Park Ribnjak(1964.)</description>
         <author>Vojin Bakić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>ivangorankovacic</imagePath>
+        <points>2</points>
+        <latitude>45.8179944</latitude>
+        <longitude>15.9798458</longitude>
     </Art>
 	
 	<Art>
-        <name>Spomenik strijeljanima/Dolina grobova</name>
-        <description>1962.</description>
-        <author>V.Bakić</author>
-        <imagePath></imagePath>
+        <name>Spomenik streljanima/Dolina grobova</name>
+        <description>Spomenik strenjanima 1941.-1945., Spomen park Dotrščina 1962.</description>
+        <author>Vojin Bakić</author>
+        <imagePath>spomenikspomenikstreljanima</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.842897</latitude>
+        <longitude>16.027830</longitude>
     </Art>
 	
 	<Art>
-        <name>Dolina grobova</name>
+        <name>Dolina Grobova</name>
         <description>1968.</description>
-        <author>V.Bakić</author>
-        <imagePath></imagePath>
+        <author>Vojin Bakić</author>
+        <imagePath>spomenikdolinagrobova</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.844639</latitude>
+        <longitude>16.026417</longitude>
     </Art>
 	
 	<Art>
         <name>Pablo Picasso</name>
         <description>1965.</description>
         <author>Ivan Sabolić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikpablopicasso</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.821917</latitude>
+        <longitude>15.971417</longitude>
     </Art>
 	
 	<Art>
-        <name>Matija Gubec</name>
+        <name>Matija Gubec </name>
         <description>1968.</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikmatijagubecradaus</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8196588</latitude>
+        <longitude>15.8330622</longitude>
     </Art>
 	
 	<Art>
         <name>Đuro Đaković</name>
-        <description>1969.</description>
+        <description>izrađeno 1969. postavljeno 1986.</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikdurodakovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8193531</latitude>
+        <longitude>15.9795286</longitude>
     </Art>
+	
+	<!-- <Art> -->
+        <!-- <name>Ljubavno putovanje</name> -->
+        <!-- <description>1959.</description> -->
+        <!-- <author>Ivan Lesiak</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Probodeni oblici</name> -->
+        <!-- <description>1951.</description> -->
+        <!-- <author>Belizar Bahorić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Rade Končar</name> -->
+        <!-- <description>1952.</description> -->
+        <!-- <author>Vanja Radauš</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Meta</name> -->
+        <!-- <description>1963.</description> -->
+        <!-- <author> Valerije Michieli Tomić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Orfej</name> -->
+        <!-- <description>1963.</description> -->
+        <!-- <author>Stipe Sikirica</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Korablja</name> -->
+        <!-- <description>1966.</description> -->
+        <!-- <author>Branko Ružić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
 </Arts>

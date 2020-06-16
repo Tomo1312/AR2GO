@@ -204,7 +204,7 @@
         <name>Većeslav Holjevac</name>
         <description>1972.</description>
         <author>Ivan Sabolić</author>
-        <imagePath>spomenikveceslavholjevac</imagePath>
+        <imagePath>spomenikveceslavholjevacsabolic</imagePath>
         <points>1</points>
         <latitude>45.7728001</latitude>
         <longitude>15.9706366</longitude>
@@ -554,7 +554,7 @@
         <name>Većeslav Holjevac</name>
         <description>1994.</description>
         <author>Zvonimir Gračan</author>
-        <imagePath>spomenikveceslavholjevac</imagePath>
+        <imagePath>spomenikveceslavholjevacgracan</imagePath>
         <points>1</points>
         <latitude>45.793911</latitude>
         <longitude>15.979330</longitude>
@@ -731,7 +731,7 @@
     </Spomenik>
 	
     <Spomenik>
-        <name>Pablopicasso</name>
+        <name>Pablo Picasso</name>
         <description>1965.</description>
         <author>Ivan Sabolić</author>
         <imagePath>spomenikpablopicasso</imagePath>

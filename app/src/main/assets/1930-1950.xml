@@ -2,261 +2,261 @@
 <Arts>
 	<Art>
         <name>Ribari</name>
-        <description>1947.</description>
+        <description>Ilica 197 (Klinika za tumore) (1947.)</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>ribari</imagePath>
+        <points>3</points>
+        <latitude>45.8116372</latitude>
+        <longitude>15.9433649</longitude>
     </Art>
 	
 	<Art>
         <name>Žena s tačkama</name>
-        <description>1947.</description>
+        <description> Grad mladih – Granešina (izrađeno 1947.- postavljeno 1988.)</description>
         <author>Kosta Angeli Radovani</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>zenastackama</imagePath>
+        <points>5</points>
+        <latitude>45.8525217</latitude>
+        <longitude>16.0518867</longitude>
     </Art>
 	
 	<Art>
         <name>Petrica Kerempuh</name>
-        <description>1943.</description>
+        <description>" Opatovina (izrađeno 1943. - postavljeno 1955.)</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Nošenje ranjenika</name>
-        <description>1946.</description>
-        <author>Antun Augustinčić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>petricakerempuh</imagePath>
+        <points>2</points>
+        <latitude>45.8146896</latitude>
+        <longitude>15.9774771</longitude>
     </Art>
 	
 	<Art>
         <name>Djevojka s knjigom</name>
-        <description>1940.</description>
+        <description>Šalata 3, kod Medicinskog fakulteta (izrađena 1940., postavljena 1981.)</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>djevojkasaknjigom</imagePath>
+        <points>3</points>
+        <latitude>45.8196578</latitude>
+        <longitude>15.9844695</longitude>
     </Art>
 	
 	<Art>
         <name>Brijunski akt</name>
-        <description>1948.</description>
-        <author>Antun Augustinčić</author>
-        <imagePath></imagePath>
+        <description>Park Ribnjak (1954.)</description>
+        <author>Antun Augustincic</author>
+        <imagePath>brijunskiakt</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Spomenik žrtvama u Bleiburgu i na križnim putovima</name>
-        <description>1945.</description>
-        <author></author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Ante Starčević</name>
-        <description>1941.</description>
-        <author>Frano Kršinić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8162752</latitude>
+        <longitude>15.980527</longitude>
     </Art>
 	
 	<Art>
         <name>Vatroslav Lisinski</name>
-        <description>1940.</description>
+        <description>izrađeno 1940. postavljeno 1969.</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikvatroslavlisinskiradaus</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8224842</latitude>
+        <longitude>15.9757802</longitude>
     </Art>
 	
 	<Art>
         <name>Andrija Medulić</name>
-        <description>1930.</description>
+        <description>1930.- postavljeno 1932.</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikandrijamedulicmestrovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8075141</latitude>
+        <longitude>15.9786412</longitude>
     </Art>
 	
 	<Art>
         <name>Eugen Kumičić</name>
-        <description>1934.</description>
+        <description>1934. -postavljeno 1937.</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikeugenkumicic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8086241</latitude>
+        <longitude>15.9679932</longitude>
     </Art>
 	
 	<Art>
         <name>Julije Klović</name>
         <description>1930.</description>
         <author>Frano Kršinić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikjulijeklovickrsinic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.815122</latitude>
+        <longitude>15.974829</longitude>
     </Art>
 	
 	<Art>
         <name>Josip Kozarac</name>
         <description>1936.</description>
         <author>Emil Bohutinsky</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikjosipkozarac</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8073352</latitude>
+        <longitude>15.9691959</longitude>
     </Art>
 	
 	<Art>
         <name>Fran Žaver Kesterčanek</name>
         <description>1936.</description>
         <author>Emil Bohutinsky</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikfranzaverkestercanek</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8073844</latitude>
+        <longitude>15.968559</longitude>
     </Art>
 	
 	<Art>
         <name>Dragutin Domjanić</name>
         <description>1939.</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikdragutindomjanic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Đuro Deželić</name>
-        <description>1937.</description>
-        <author>Frane Cota</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8079102</latitude>
+        <longitude>15.9780085</longitude>
     </Art>
 	
 	<Art>
         <name>Sv. Juraj</name>
-        <description>1937.</description>
+        <description>Trg Braće hrvatskog zmaja, ispred Kamenitih vrata (1937.)</description>
         <author>A. Kompatscher i A. Winder</author>
-        <imagePath></imagePath>
+        <imagePath>svjurajwinder</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8159029</latitude>
+        <longitude>15.9755332</longitude>
     </Art>
 	
 	<Art>
         <name>Ranjenik</name>
-        <description>1938.</description>
+        <description>Hebrangova 1, u prolazu (izrađeno 1938. - postavljeno 1951.)</description>
         <author>Vanja Radauš</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>ranjenikradaus</imagePath>
+        <points>2</points>
+        <latitude>45.8093002</latitude>
+        <longitude>15.9776976</longitude>
     </Art>
 	
 	<Art>
         <name>Povijest Hrvata</name>
-        <description>1932.</description>
+        <description>Trg Republike Hrvatske 14 ispred Pravnog fakulteta (1932.)</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <imagePath>povijesthrvata</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8104324</latitude>
+        <longitude>15.9697552</longitude>
     </Art>
 	
 	<Art>
         <name>Majka i dijete</name>
         <description>1938.</description>
-        <author>Vanja Radauš</author>
-        <imagePath></imagePath>
+        <author>Dušan Džamonja</author>
+        <imagePath>majkaidijetedzamonja</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8092675</latitude>
+        <longitude>15.9628213</longitude>
     </Art>
 	
 	<Art>
         <name>Majka doji dijete</name>
-        <description>1930.</description>
+        <description>Rockefellerova 4, Škola narodnog zdravlja Andrija Štampar (izrađeno 1930.>postavljeno 1940.)</description>
         <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Zdenac Zodijak</name>
-        <description>1939.</description>
-        <author>Zorkovačka - Josip Seissel</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Naše more - Šubićeva</name>
-        <description></description>
-        <author>Šubićevac, Ž. Janeš</author>
-        <imagePath>1937.</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>majkadojidijete</imagePath>
+        <points>3</points>
+        <latitude>45.8286537</latitude>
+        <longitude>15.9816384</longitude>
     </Art>
 	
 	<Art>
         <name>Kozmički ciklus vode</name>
         <description>1935.</description>
-        <author>Ciril Jeglič i Josip Seissl</author>
-        <imagePath></imagePath>
+        <author>Ćiril Jeglič i Josip Seissl</author>
+        <imagePath>arhitekturafontanakozmickiciklusvode</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8082523</latitude>
+        <longitude>15.9903038</longitude>
     </Art>
 	
 	<Art>
-        <name>Matica hrv. obrtnika</name>
-        <description>1937.</description>
-        <author> Arh. ured Freundenreich i Deutsch</author>
-        <imagePath></imagePath>
+        <name>Matica hrvatskih obrtnika</name>
+        <description>(1939.)</description>
+        <author>Aleksandar Freudenreich i Zvonimir Požgaj</author>
+        <imagePath>arhitekturamho</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8131512</latitude>
+        <longitude>15.9658444</longitude>
     </Art>
 	
 	<Art>
         <name>Dom likovnih umjetnika</name>
-        <description>1938.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath></imagePath>
+        <description>(1938.)</description>
+        <author>Ivan Meštrović </author>
+        <imagePath>arhitekturadomlikovnihumjetnika</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.809957</latitude>
+        <longitude>15.987185</longitude>
     </Art>
+	
+	<!-- <Art> -->
+        <!-- <name>Nošenje ranjenika</name> -->
+        <!-- <description>1946.</description> -->
+        <!-- <author>Antun Augustinčić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Spomenik žrtvama u Bleiburgu i na križnim putovima</name> -->
+        <!-- <description>1945.</description> -->
+        <!-- <author></author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Ante Starčević</name> -->
+        <!-- <description>1941.</description> -->
+        <!-- <author>Frano Kršinić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Đuro Deželić</name> -->
+        <!-- <description>1937.</description> -->
+        <!-- <author>Frane Cota</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Zdenac Zodijak</name> -->
+        <!-- <description>1939.</description> -->
+        <!-- <author>Zorkovačka - Josip Seissel</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Naše more - Šubićeva</name> -->
+        <!-- <description></description> -->
+        <!-- <author>Šubićevac, Ž. Janeš</author> -->
+        <!-- <imagePath>1937.</imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
 </Arts>

@@ -1,302 +1,302 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Arts>
 	<Art>
-        <name>Palača pravde </name>
-        <description>1970.</description>
-        <author>Ninoslav Kučan</author>
-        <imagePath></imagePath>
+        <name>Palača pravde</name>
+        <description>(1970.)</description>
+        <author>Ninosalv Kučan </author>
+        <imagePath>arhitekturapravda</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.81163</latitude>
+        <longitude>15.983902</longitude>
     </Art>
 	
 	<Art>
-        <name>KD Vatroslav Lisinski</name>
-        <description>1973.</description>
-        <author>M. Haberle, M. Jurković, T. Zdvořak</author>
-        <imagePath></imagePath>
+        <name>Koncertna dvorana Vatroslav Lisinski</name>
+        <description>(1973.)</description>
+        <author>Marijan Haberle, Minko Jurković, Tanja Zdvořak </author>
+        <imagePath>arhitekturalisinski</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.801031</latitude>
+        <longitude>15.980296</longitude>
     </Art>
 	
 	<Art>
-        <name>Zdenac s tučkom</name>
-        <description>Zapruđe - 1972.</description>
-        <author>Ante Orlić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Zdenac mladosti</name>
-        <description>Park ciglenica - 1976.</description>
-        <author>Tomislav Ostoja</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Pojilište za ptice</name>
-        <description>1973.</description>
-        <author>Smiljan Klaić</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Kupačica</name>
-        <description>Trg sportova - 1977.</description>
+        <name>Kupačica (Igre s vodom)</name>
+        <description>1977. izrađeno - postavljeno 1987.</description>
         <author>Lujo Lozica</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturafontanakupacica</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Fontana</name>
-        <description>Zapruđe - 1972.</description>
-        <author>D. Kiš, P. Vovk</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.806361</latitude>
+        <longitude>15.952444</longitude>
     </Art>
 	
 	<Art>
         <name>Čekanje</name>
         <description>1975.</description>
         <author>Mile Grgas</author>
-        <imagePath></imagePath>
+        <imagePath>arhitekturacekanje</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.814667</latitude>
+        <longitude>16.008528</longitude>
     </Art>
 	
 	<Art>
         <name>Veliki torzo</name>
-        <description>1973.</description>
+        <description>blabla</description>
         <author>Raul Goldoni</author>
-        <imagePath></imagePath>
+        <imagePath>velikitorzo</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8130229</latitude>
+        <longitude>15.9804987</longitude>
     </Art>
 	
 	<Art>
         <name>Tuga</name>
-        <description>1976.</description>
+        <description>Mošćenička 1, Dječje kazalište "Trešnja"(izrađeno 1976. - postavljeno 1999.)</description>
         <author>Lujo Lozica</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>tuga</imagePath>
+        <points>4</points>
+        <latitude>45.7944917</latitude>
+        <longitude>15.9440185</longitude>
     </Art>
 	
 	<Art>
         <name>Trstik</name>
-        <description>1973.</description>
+        <description>Sachsova 4 (1973.)</description>
         <author>Ante Vulin</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>trsik</imagePath>
+        <points>2</points>
+        <latitude>45.7947235</latitude>
+        <longitude>16.0087996</longitude>
     </Art>
 	
 	<Art>
         <name>Školjka</name>
-        <description>1977.</description>
+        <description>Trg Ivana Meštrovića, Zapruđe</description>
         <author>Nikola Koydl</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>skulpturaskoljka</imagePath>
+        <points>4</points>
+        <latitude>45.779315</latitude>
+        <longitude>15.9962938</longitude>
     </Art>
 	
 	<Art>
         <name>Stup proizvodnje</name>
-        <description>1977.</description>
+        <description>Avenija Dubrovnik 15, Velesaja (1977.)</description>
         <author>Mila Kumbatović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>stupprizvodnje</imagePath>
+        <points>4</points>
+        <latitude>45.7775415</latitude>
+        <longitude>15.9705698</longitude>
     </Art>
 	
 	<Art>
         <name>Ranjenik</name>
-        <description>1979.</description>
+        <description>Ivana Matetića Ronjgova 67</description>
         <author>Lujo Lozica</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>ranjeniklozica</imagePath>
+        <points>5</points>
+        <latitude>45.7944971</latitude>
+        <longitude>15.897576</longitude>
     </Art>
 	
 	<Art>
-        <name>Odmor/Zaljubljeni</name>
-        <description>1975.</description>
+        <name>Zaljubljeni</name>
+        <description>Trg Otokara Keršovanija(1975.) </description>
         <author>Ćiril Mihanović</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>zaljubljeni</imagePath>
+        <points>4</points>
+        <latitude>45.8172439</latitude>
+        <longitude>15.9987421</longitude>
     </Art>
 	
 	<Art>
         <name>Mladenci</name>
-        <description>1971.</description>
+        <description>u Parku Mladenaca, Siget (1974.)</description>
         <author>Stipe Sikirica</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Art>
-	
-	<Art>
-        <name>Dječak</name>
-        <description>1979.</description>
-        <author>Tomislav Ostoja</author>
-        <imagePath></imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <imagePath>mladencisikirica</imagePath>
+        <points>5</points>
+        <latitude>45.7760852</latitude>
+        <longitude>16.0132694</longitude>
     </Art>
 	
 	<Art>
         <name>Anđelija</name>
-        <description>1975.</description>
+        <description> </description>
         <author>Stipe Sikirica</author>
-        <imagePath></imagePath>
+        <imagePath>andelija</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8118939</latitude>
+        <longitude>15.9347116</longitude>
     </Art>
 	
 	<Art>
         <name>Spomenik palim borcima NOB-e</name>
         <description>1972.</description>
         <author>Tomislav Ostoja</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikpalimborcimanoba</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.806639</latitude>
+        <longitude>15.944167</longitude>
     </Art>
 	
 	<Art>
         <name>Vladimir Nazor</name>
         <description>1972.</description>
         <author>Stjepan Gračan</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikvladimirnazor</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8214903</latitude>
+        <longitude>15.9689246</longitude>
     </Art>
 	
 	<Art>
         <name>Antun Gustav Matoš</name>
         <description>1973.</description>
         <author>Ivan Kožarić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikantungustavmatos</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8142724</latitude>
+        <longitude>15.9742886</longitude>
     </Art>
 	
 	<Art>
         <name>Petar Preradović</name>
         <description>1978.</description>
-        <author></author>
-        <imagePath></imagePath>
+        <author>Nepoznato</author>
+        <imagePath>spomenikpetarpreradovicnepoznato</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8077105</latitude>
+        <longitude>16.0232488</longitude>
     </Art>
 	
 	<Art>
         <name>Krsto Ljubičić</name>
         <description>1978.</description>
         <author>Luka Musulin</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikkrstoljubicic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8108567</latitude>
+        <longitude>15.9649574</longitude>
     </Art>
 	
 	<Art>
         <name>Dragica Končar</name>
         <description>1976.</description>
         <author>Lujo Lozica</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikdragicakoncar</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.7921899</latitude>
+        <longitude>15.9463555</longitude>
     </Art>
 	
 	<Art>
         <name>Većeslav Holjevac</name>
         <description>1972.</description>
         <author>Ivan Sabolić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikveceslavholjevacsabolic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.7728001</latitude>
+        <longitude>15.9706366</longitude>
     </Art>
 	
 	<Art>
         <name>Ivan Filipović</name>
         <description>1976.</description>
         <author>Šimo Klaić</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikivanfilipovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.7971723</latitude>
+        <longitude>15.9610007</longitude>
     </Art>
 	
 	<Art>
         <name>August Cesarec</name>
         <description>1979.</description>
         <author>Stjepan Gračan</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikaugustcesarecgračan</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8161042</latitude>
+        <longitude>15.9765153</longitude>
     </Art>
 	
 	<Art>
         <name>August Cesarec</name>
         <description>1974.</description>
         <author>Kruno Bošnjak</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikaugustcesarecbosnjak</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.801719</latitude>
+        <longitude>16.023554</longitude>
     </Art>
 	
 	<Art>
         <name>Blagoje Bersa</name>
         <description>1973.</description>
         <author>Josip Poljan</author>
-        <imagePath></imagePath>
+        <imagePath>spomenikblagojebersa</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.8122012</latitude>
+        <longitude>15.9887301</longitude>
     </Art>
 	
 	<Art>
         <name>Sestre Baković</name>
         <description>1977.</description>
         <author>Ivan Sabolić</author>
-        <imagePath></imagePath>
+        <imagePath>spomeniksestrebakovic</imagePath>
         <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
+        <latitude>45.811803</latitude>
+        <longitude>15.97013</longitude>
     </Art>
+	
+	<!-- <Art> -->
+        <!-- <name>Zdenac s tučkom</name> -->
+        <!-- <description>Zapruđe - 1972.</description> -->
+        <!-- <author>Ante Orlić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Zdenac mladosti</name> -->
+        <!-- <description>Park ciglenica - 1976.</description> -->
+        <!-- <author>Tomislav Ostoja</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Pojilište za ptice</name> -->
+        <!-- <description>1973.</description> -->
+        <!-- <author>Smiljan Klaić</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Fontana</name> -->
+        <!-- <description>Zapruđe - 1972.</description> -->
+        <!-- <author>D. Kiš, P. Vovk</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
+	
+	<!-- <Art> -->
+        <!-- <name>Dječak</name> -->
+        <!-- <description>1979.</description> -->
+        <!-- <author>Tomislav Ostoja</author> -->
+        <!-- <imagePath></imagePath> -->
+        <!-- <points>1</points> -->
+        <!-- <latitude></latitude> -->
+        <!-- <longitude></longitude> -->
+    <!-- </Art> -->
 </Arts>

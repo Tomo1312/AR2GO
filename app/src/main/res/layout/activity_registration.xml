@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/white"
     tools:context=".RegistrationActivity">
 
     <ImageView
@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ar2go" />
+        app:srcCompat="@drawable/ar2gologo" />
 
     <EditText
         android:id="@+id/etUserName"
@@ -93,7 +93,7 @@
         android:paddingTop="15dp"
         android:paddingRight="40dp"
         android:paddingBottom="15dp"
-        android:scrollbarThumbHorizontal="@color/button_text_color"
+        android:scrollbarThumbHorizontal="@color/white"
         android:text="Register"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -109,7 +109,7 @@
         android:layout_marginTop="10dp"
         android:paddingLeft="4dp"
         android:text="Already registered? Sign in!"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

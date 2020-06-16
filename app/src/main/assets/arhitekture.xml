@@ -11,16 +11,6 @@
     </Arhitektura>
 	
     <Arhitektura>
-        <name>Chromos toranj</name>
-        <description>JEDAN JAKO DOBAR TORANJ</description>
-        <author>Marijan Turkulin i Petar Vouk</author>
-        <imagePath>arhitekturachromostoranj</imagePath>
-        <points>1</points>
-        <latitude>45.802818</latitude>
-        <longitude>16.008936</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
         <name>Arena</name>
         <description>Arena</description>
         <author>Arhitektonski ured UPI-2M</author>
@@ -184,7 +174,7 @@
         <name>Hotel Esplanade</name>
         <description>(1925.)</description>
         <author>Otto Rechnig, Dionis Sunko </author>
-        <imagePath>arhitektura</imagePath>
+        <imagePath>arhitekturahotelesplanade</imagePath>
         <points>1</points>
         <latitude>45.8054686</latitude>
         <longitude>15.9737187</longitude>
@@ -374,7 +364,7 @@
         <name>Umjetnički paviljon</name>
         <description>(1898.)</description>
         <author>Fellner i Helmer</author>
-        <imagePath>arhitekturaumjetnickipaviljon</imagePath>
+        <imagePath>arhitekturaumjetnickipaviljonfellnerihemler</imagePath>
         <points>1</points>
         <latitude>45.807115</latitude>
         <longitude>15.978661</longitude>
@@ -774,7 +764,7 @@
         <name>Umjetnički paviljon - motivi</name>
         <description>N/A</description>
         <author>N/A</author>
-        <imagePath>arhitekturakraljtomislav</imagePath>
+        <imagePath>arhitekturaumjetnickipaviljonmotivi</imagePath>
         <points>1</points>
         <latitude>45.8071199</latitude>
         <longitude>15.9785638</longitude>
@@ -789,8 +779,7 @@
         <latitude>45.8150612</latitude>
         <longitude>15.9536495</longitude>
     </Arhitektura>
-    
-    
+
 	<Arhitektura>
         <name>Vlaška 74 – ulaz u zgradu</name>
         <description>N/A</description>
@@ -822,7 +811,7 @@
     </Arhitektura>
 	
     <Arhitektura>
-        <name>Bliznaci</name>
+        <name>Blizanci</name>
         <description>1984.</description>
         <author>Helena Paver-Njirić</author>
         <imagePath>arhitekturablizancifontane</imagePath>
@@ -1134,7 +1123,7 @@
     <Arhitektura>
         <name>Fontana</name>
         <description>1991.</description>
-        <author>Zoran Hebar </author>
+        <author>Zoran Hebar</author>
         <imagePath>arhitekturafontanadvadesetisedam</imagePath>
         <points>1</points>
         <latitude>45.812198</latitude>
@@ -1238,7 +1227,7 @@
         <imagePath>arhitekturafontanagljiva</imagePath>
         <points>1</points>
         <latitude>45.810869</latitude>
-        <longitude> 15.977892</longitude>
+        <longitude>15.977892</longitude>
     </Arhitektura>
 	
     <Arhitektura>
