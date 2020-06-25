@@ -16,7 +16,7 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
 
-        back = (ImageView) findViewById(R.id.ivBack);
+        back = findViewById(R.id.ivBack);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

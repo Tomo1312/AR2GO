@@ -25,8 +25,8 @@ public class PasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password);
 
-        passwordEmail = (EditText) findViewById(R.id.etPasswordEmail);
-        resetPassword = (Button) findViewById(R.id.btnPasswordReset);
+        passwordEmail = findViewById(R.id.etPasswordEmail);
+        resetPassword = findViewById(R.id.btnPasswordReset);
         firebaseAuth = FirebaseAuth.getInstance();
 
         resetPassword.setOnClickListener(new View.OnClickListener() {

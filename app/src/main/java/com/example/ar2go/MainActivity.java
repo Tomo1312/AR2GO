@@ -80,9 +80,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setUiVeiws() {
-        login = (Button) findViewById(R.id.btnLogin);
-        register = (Button) findViewById(R.id.btnRegister);
-        havingProblems = (TextView) findViewById(R.id.tvProblems);
+        login = findViewById(R.id.btnLogin);
+        register = findViewById(R.id.btnRegister);
+        havingProblems = findViewById(R.id.tvProblems);
         loginAnimation = AnimationUtils.loadAnimation(this, R.anim.loginanimation);
         registerAnimation = AnimationUtils.loadAnimation(this, R.anim.registeranimation);
     }

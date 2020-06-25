@@ -36,9 +36,9 @@ public class Pop extends Activity implements Serializable {
     private Button showSculpture;
     private ImageView imageSculpture, conffeti, close;
     private FirebaseStorage firebaseStorage;
+    private StorageReference storageReference;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
-    private StorageReference storageReference;
     private boolean firstTime;
     private Animation confetiAnimation, atg, fadein;
 
@@ -233,19 +233,19 @@ public class Pop extends Activity implements Serializable {
 
     private void setUiViews() {
 
-        nameSculpture = (TextView) findViewById(R.id.tvSculptureName);
-        authorSculpture = (TextView) findViewById(R.id.tvSculptureAuthor);
-        destripticonSculpture = (TextView) findViewById(R.id.tvSculptureDescription);
-        imageSculpture = (ImageView) findViewById(R.id.imageSculpture);
-        conffeti = (ImageView) findViewById(R.id.conffeti);
-        naisli = (TextView) findViewById(R.id.tvNaisli);
-        showSculpture = (Button) findViewById(R.id.btnShowSculpture);
-        firstLayout = (ConstraintLayout) findViewById(R.id.firstCard);
-        secondLayout = (ConstraintLayout) findViewById(R.id.secondCard);
+        nameSculpture = findViewById(R.id.tvSculptureName);
+        authorSculpture = findViewById(R.id.tvSculptureAuthor);
+        destripticonSculpture = findViewById(R.id.tvSculptureDescription);
+        imageSculpture = findViewById(R.id.imageSculpture);
+        conffeti = findViewById(R.id.conffeti);
+        naisli = findViewById(R.id.tvNaisli);
+        showSculpture = findViewById(R.id.btnShowSculpture);
+        firstLayout = findViewById(R.id.firstCard);
+        secondLayout = findViewById(R.id.secondCard);
         confetiAnimation = AnimationUtils.loadAnimation(this, R.anim.confetianimation);
         atg = AnimationUtils.loadAnimation(this, R.anim.atg);
         fadein = AnimationUtils.loadAnimation(this, R.anim.fadein);
-        close = (ImageView) findViewById(R.id.ivClose);
+        close = findViewById(R.id.ivClose);
     }
 
 }

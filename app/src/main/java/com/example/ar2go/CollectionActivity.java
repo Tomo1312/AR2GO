@@ -9,25 +9,40 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.GlideException;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
@@ -48,13 +63,15 @@ public class CollectionActivity extends AppCompatActivity {
     protected static String unlockedSculptures;
     protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici;
     private TextView sculptureShown, arhitektureShown, spomeniciShown, profileBodovi, title;
-    private ImageView showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
+    private ImageView imageSculpture,showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown;
     private LinearLayout toolbarLayout;
     private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
     private Typeface typeFace;
 
+    private FirebaseStorage firebaseStorage;
+    private StorageReference storageReference;
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +87,7 @@ public class CollectionActivity extends AppCompatActivity {
         unlockedSculptures = new String();
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
+
 
         DatabaseReference databaseReference = firebaseDatabase.getReference(firebaseAuth.getUid());
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -99,22 +117,23 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
     private void setUiView() {
-        profileBodovi = (TextView) findViewById(R.id.tvProfileBodovi);
-        title = (TextView) findViewById(R.id.tvTitle);
-        linearLayout = (LinearLayout) findViewById(R.id.scrollLinearLayout);
-        info = (ImageView) findViewById(R.id.ivInfo);
-        back = (ImageView) findViewById(R.id.ivBack);
-        toolbarLayout = (LinearLayout) findViewById(R.id.toolbarLayout);
-        showToolbar = (ImageView) findViewById(R.id.ivShowToolbar);
-        leftScrollView = (ScrollView) findViewById(R.id.scrollViewZaNazad);
+        profileBodovi =  findViewById(R.id.tvProfileBodovi);
+        title = findViewById(R.id.tvTitle);
+        linearLayout =  findViewById(R.id.scrollLinearLayout);
+        info = findViewById(R.id.ivInfo);
+        back = findViewById(R.id.ivBack);
+        toolbarLayout = findViewById(R.id.toolbarLayout);
+        showToolbar = findViewById(R.id.ivShowToolbar);
+        leftScrollView = findViewById(R.id.scrollViewZaNazad);
         showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttolefttoolbar);
         unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttorighttoolbar);
-        arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
-        sculptureShown = (TextView) findViewById(R.id.showSculptures);
-        spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
-        checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
-        checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
-        checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
+        arhitektureShown =  findViewById(R.id.showArhitekture);
+        sculptureShown =  findViewById(R.id.showSculptures);
+        spomeniciShown =findViewById(R.id.showSpomenici);
+        checkboxArhitekture =  findViewById(R.id.checkboxArhitekture);
+        checkboxSculptures =  findViewById(R.id.checkboxSculpureShown);
+        checkboxSpomenici =  findViewById(R.id.checkboxSpomenici);
+        imageSculpture = findViewById(R.id.sculptureImage);
         typeFace = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
         title.setTypeface(typeFace);
         toolbarShown = false;
@@ -242,7 +261,7 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    protected void showUnlockedSculptures(ArrayList<Sculpture> thing, int thingBackground) {
+    protected void showUnlockedSculptures(ArrayList<Sculpture> thing,final int thingBackground) {
         String xmlString = new String();
         linearLayout.setVerticalGravity(0);
         for (Sculpture sculpture : thing) {
@@ -251,27 +270,96 @@ public class CollectionActivity extends AppCompatActivity {
                 final String imagePathSculpture = sculpture.imagePath;
                 final String descriptionSculpture = sculpture.description;
                 final String authorSculpture = sculpture.author;
-                TextView tv = new TextView(this);
-                LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-                tv.setLayoutParams(params);
-                tv.setPadding(40, 40, 0, 40);
+                firebaseStorage = FirebaseStorage.getInstance();
+                storageReference = firebaseStorage.getReference();
+
+                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+                params.setMargins(10, 0 , 20, 0);
+                final RelativeLayout liner = new RelativeLayout(this);
+                //liner.setOrientation(LinearLayout.HORIZONTAL);
+                liner.setLayoutParams(params);
+                liner.getLayoutParams().width = 400;
+                liner.getLayoutParams().height = 400;
+                final ImageView image = new ImageView(this);
+                image.setLayoutParams(params);
+                image.getLayoutParams().width= 400;
+
+                final TextView tv = new TextView(this);
+                RelativeLayout.LayoutParams tvparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+
+                tvparams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+                tv.setLayoutParams(tvparams);
+                try {
+                    Resources res = getResources();
+                    String mDrawableName = imagePathSculpture + ".jpg";
+                    int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
+                    storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            try{
+                                Glide.with(CollectionActivity.this).load(uri).centerCrop().into(image);
+                            }catch (Exception ex){
+                                liner.setBackground(getDrawable(thingBackground));//<-TREBA NACI GDJE DODATI DA STA NEMA SLIKU SE STAVI BOJA
+                            }
+//                            Picasso.get().load(uri).into(new Target() {
+//                                @Override
+//                                public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+//                                    liner.setBackground(new BitmapDrawable(bitmap));
+//                                }
+//
+//                                @Override
+//                                public void onBitmapFailed(Exception e, Drawable errorDrawable) {
+//
+//                                }
+//
+//                                @Override
+//                                public void onPrepareLoad(Drawable placeHolderDrawable) {
+//
+//                                }
+//                            });
+                        }
+                    });
+                } catch (Exception ex) {
+                    Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
+                }
+
+                tv.setPadding(40, 0, 40, 0);
                 tv.setVisibility(View.VISIBLE);
                 tv.setText(sculpture.name);
+                tv.setGravity(Gravity.BOTTOM);
+                tv.setHeight(100);
+                tv.setTextColor(getResources().getColor(R.color.white));
+                tv.setBackgroundResource(R.color.black);
                 tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-                tv.setTextSize(18);
-                tv.setTextColor(Color.parseColor("#424242"));
-                tv.setBackground(getDrawable(thingBackground));
-                tv.setOnClickListener(new View.OnClickListener() {
+                tv.setTextSize(14);
+                tv.setGravity(View.TEXT_ALIGNMENT_CENTER);
+                liner.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Pop popSculpture = new Pop(nameSculpture, imagePathSculpture, descriptionSculpture, authorSculpture);
-                        popSculpture.setFirstTime(false);
-                        Intent i = new Intent(CollectionActivity.this, Pop.class);
-                        i.putExtra("currentSculpture", popSculpture);
-                        startActivity(i);
+                        try {
+                            Resources res = getResources();
+                            String mDrawableName = imagePathSculpture + ".jpg";
+                            int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
+                            storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    Glide.with(CollectionActivity.this).load(uri).into(imageSculpture);
+                                    //Picasso.get().load(uri).into(imageSculpture);
+                                }
+                            });
+                        } catch (Exception ex) {
+                            Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
+                        }
+//                        Pop popSculpture = new Pop(nameSculpture, imagePathSculpture, descriptionSculpture, authorSculpture);
+//                        popSculpture.setFirstTime(false);
+//                        Intent i = new Intent(CollectionActivity.this, Pop.class);
+//                        i.putExtra("currentSculpture", popSculpture);
+//                        startActivity(i);
                     }
                 });
-                linearLayout.addView(tv);
+                liner.addView(image);
+                liner.addView(tv);
+                linearLayout.addView(liner);
             }
         }
         //textunlockedSculputres.setText(xmlString);

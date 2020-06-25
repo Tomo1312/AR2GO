@@ -69,8 +69,8 @@ public class SecondActivity extends AppCompatActivity {
                     userEmail = userProfile.getUserEmail();
                     lifes = userProfile.getUserLifes();
                     profileName.setText(userProfile.getUserName());
-                    profileBodovi.setText("= " + valueOf(bodovi));
-                    profileLifes.setText("=" + valueOf(lifes));
+                    profileBodovi.setText("= " + bodovi);
+                    profileLifes.setText("=" + lifes);
                 }
 
                 @Override
@@ -82,7 +82,7 @@ public class SecondActivity extends AppCompatActivity {
             databaseReferenceOFEvents.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    eventMessage = new String();
+                    eventMessage = "";
                     for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
                         MuseumEvent event = postSnapshot.getValue(MuseumEvent.class);
                         String eventName = event.getName();
@@ -158,16 +158,13 @@ public class SecondActivity extends AppCompatActivity {
     protected Boolean checkIfNetworkAvailable() {
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        if (connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).
+        //we are connected to a networkret
+        return connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).
 
                 getState() == NetworkInfo.State.CONNECTED ||
                 connectivityManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI).
 
-                        getState() == NetworkInfo.State.CONNECTED) {
-            //we are connected to a networkret
-            return true;
-        } else
-            return false;
+                        getState() == NetworkInfo.State.CONNECTED;
     }
 
     @Override
@@ -183,12 +180,7 @@ public class SecondActivity extends AppCompatActivity {
         boolean gpsStatus = Settings.Secure
                 .isLocationProviderEnabled(contentResolver,
                         LocationManager.GPS_PROVIDER);
-        if (gpsStatus) {
-            return true;
-
-        } else {
-            return false;
-        }
+        return gpsStatus;
     }
 
     /*----------Method to create an AlertBox ------------- */
@@ -249,26 +241,26 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void setUiVeiws() {
-        loginScreen = (ImageView) findViewById(R.id.loginImage);
+        loginScreen = findViewById(R.id.loginImage);
 
-        info = (ImageView) findViewById(R.id.ivInfo);
-        tickets = (ImageView) findViewById(R.id.ivTickets);
-        events = (ImageView) findViewById(R.id.ivEvents);
-        freeLance = (TextView) findViewById(R.id.tvFreelance);
-        story = (TextView) findViewById(R.id.tvStory);
-        premiumStory = (TextView) findViewById(R.id.tvPremiumStory);
-        collections = (TextView) findViewById(R.id.tvColletions);
-        time = (TextView) findViewById(R.id.tvTime);
+        info = findViewById(R.id.ivInfo);
+        tickets = findViewById(R.id.ivTickets);
+        events = findViewById(R.id.ivEvents);
+        freeLance = findViewById(R.id.tvFreelance);
+        story = findViewById(R.id.tvStory);
+        premiumStory = findViewById(R.id.tvPremiumStory);
+        collections = findViewById(R.id.tvColletions);
+        time = findViewById(R.id.tvTime);
 
-        allTheMainThings = (ConstraintLayout) findViewById(R.id.allMainStaff);
-        layoutFreeLance = (ConstraintLayout) findViewById(R.id.layoutFreelance);
-        layoutStory = (ConstraintLayout) findViewById(R.id.layoutStory);
-        layoutPremiumStory = (ConstraintLayout) findViewById(R.id.layoutPremiumStory);
-        layoutCollections = (ConstraintLayout) findViewById(R.id.layoutColletions);
+        allTheMainThings = findViewById(R.id.allMainStaff);
+        layoutFreeLance = findViewById(R.id.layoutFreelance);
+        layoutStory = findViewById(R.id.layoutStory);
+        layoutPremiumStory = findViewById(R.id.layoutPremiumStory);
+        layoutCollections = findViewById(R.id.layoutColletions);
 
-        profileName = (TextView) findViewById(R.id.tvProfileName);
-        profileBodovi = (TextView) findViewById(R.id.tvProfileBodovi);
-        profileLifes = (TextView) findViewById(R.id.tvProfileLifes);
+        profileName = findViewById(R.id.tvProfileName);
+        profileBodovi = findViewById(R.id.tvProfileBodovi);
+        profileLifes = findViewById(R.id.tvProfileLifes);
 
         internetConectivity = checkIfNetworkAvailable();
         fadein = AnimationUtils.loadAnimation(this, R.anim.fadein);

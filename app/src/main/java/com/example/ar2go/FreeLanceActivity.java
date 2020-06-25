@@ -108,7 +108,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             ActivityCompat.requestPermissions(FreeLanceActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, REQUEST_LOCATION);
         }
 
-        unlockedSculptures = new String();
+        unlockedSculptures = "";
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         userProfile = new UserProfile();
@@ -185,12 +185,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         boolean gpsStatus = Settings.Secure
                 .isLocationProviderEnabled(contentResolver,
                         LocationManager.GPS_PROVIDER);
-        if (gpsStatus) {
-            return true;
-
-        } else {
-            return false;
-        }
+        return gpsStatus;
     }
 
     @Override
@@ -239,19 +234,19 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         //editLocation = (TextView)findViewById(R.id.editTextLocation);
         //textDistance = (TextView)findViewById(R.id.tvDistance);
         //textPopup = (TextView)findViewById(R.id.tvXML);
-        back = (ImageView) findViewById(R.id.ivBack);
-        collection = (ImageView) findViewById(R.id.ivColelction);
-        toolbarLayout = (LinearLayout) findViewById(R.id.toolbarLayout);
-        showToolbar = (ImageView) findViewById(R.id.ivShowToolbar);
-        leftScrollView = (ScrollView) findViewById(R.id.scrollViewZaNazad);
+        back = findViewById(R.id.ivBack);
+        collection = findViewById(R.id.ivColelction);
+        toolbarLayout = findViewById(R.id.toolbarLayout);
+        showToolbar = findViewById(R.id.ivShowToolbar);
+        leftScrollView = findViewById(R.id.scrollViewZaNazad);
         showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttolefttoolbar);
         unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttorighttoolbar);
-        arhitektureShown = (TextView) findViewById(R.id.showArhitekture);
-        sculptureShown = (TextView) findViewById(R.id.showSculptures);
-        spomeniciShown = (TextView) findViewById(R.id.showSpomenici);
-        checkboxArhitekture = (ImageView) findViewById(R.id.checkboxArhitekture);
-        checkboxSculptures = (ImageView) findViewById(R.id.checkboxSculpureShown);
-        checkboxSpomenici = (ImageView) findViewById(R.id.checkboxSpomenici);
+        arhitektureShown = findViewById(R.id.showArhitekture);
+        sculptureShown = findViewById(R.id.showSculptures);
+        spomeniciShown = findViewById(R.id.showSpomenici);
+        checkboxArhitekture = findViewById(R.id.checkboxArhitekture);
+        checkboxSculptures = findViewById(R.id.checkboxSculpureShown);
+        checkboxSpomenici = findViewById(R.id.checkboxSpomenici);
         toolbarShown = false;
         isSculptureShown = true;
         isArhitektureShown = false;
@@ -496,9 +491,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         }
 
         protected boolean checkIfSculptureUnlocked(@NonNull String name) {
-            if (unlockedSculptures.contains(name))
-                return false;
-            return true;
+            return !unlockedSculptures.contains(name);
 
         }
 

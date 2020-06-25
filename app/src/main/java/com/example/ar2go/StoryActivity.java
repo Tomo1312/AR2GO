@@ -19,9 +19,9 @@ public class StoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
-        year = (Button) findViewById(R.id.btnStoryYears);
-        author = (Button) findViewById(R.id.btnStoryAuthors);
-        back = (ImageView) findViewById(R.id.ivBack);
+        year = findViewById(R.id.btnStoryYears);
+        author = findViewById(R.id.btnStoryAuthors);
+        back = findViewById(R.id.ivBack);
 
         leftToRight = AnimationUtils.loadAnimation(this, R.anim.lefttoright);
         rightToLeft = AnimationUtils.loadAnimation(this, R.anim.righttoleft);

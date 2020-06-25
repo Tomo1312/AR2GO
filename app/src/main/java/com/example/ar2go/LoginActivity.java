@@ -103,12 +103,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void setUiViews() {
-        Name = (EditText) findViewById(R.id.etName);
-        Password = (EditText) findViewById(R.id.etUserPassword);
-        Login = (Button) findViewById(R.id.btnLogin);
-        userRegistration = (Button) findViewById(R.id.btnRegistration);
-        forgotPassword = (TextView) findViewById(R.id.tvForgotPassword);
-        problems = (TextView) findViewById(R.id.tvProblemsLogin);
+        Name = findViewById(R.id.etName);
+        Password = findViewById(R.id.etUserPassword);
+        Login = findViewById(R.id.btnLogin);
+        userRegistration = findViewById(R.id.btnRegistration);
+        forgotPassword = findViewById(R.id.tvForgotPassword);
+        problems = findViewById(R.id.tvProblemsLogin);
     }
 
     private void validate(@NonNull String userName, @NonNull String userPassword) {
@@ -128,7 +128,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void checkEmailVerification() {
-        FirebaseUser firebaseUser = firebaseAuth.getInstance().getCurrentUser();
+        FirebaseUser firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         Boolean emailFlag = firebaseUser.isEmailVerified();
 
         if (emailFlag) {
