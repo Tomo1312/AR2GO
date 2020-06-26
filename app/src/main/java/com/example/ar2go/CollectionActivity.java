@@ -84,7 +84,7 @@ public class CollectionActivity extends AppCompatActivity {
         setUiView();
         getAllThingsForMap();
 
-        unlockedSculptures = new String();
+        unlockedSculptures = "";
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
 
@@ -95,7 +95,7 @@ public class CollectionActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
-                profileBodovi.setText("=" + valueOf(userProfile.getUserBodovi()));
+                profileBodovi.setText("=" + userProfile.getUserBodovi());
                 unlockedSculptures = userProfile.getOtkljucaneSkulputre();
                 setShowAllArtToCollection();
             }
@@ -107,13 +107,6 @@ public class CollectionActivity extends AppCompatActivity {
         });
 
         menuBar();
-
-        info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                showInfo();
-            }
-        });
     }
 
     private void setUiView() {
@@ -262,9 +255,9 @@ public class CollectionActivity extends AppCompatActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     protected void showUnlockedSculptures(ArrayList<Sculpture> thing,final int thingBackground) {
-        String xmlString = new String();
+        String xmlString = "";
         linearLayout.setVerticalGravity(0);
-        for (Sculpture sculpture : thing) {
+        for (final Sculpture sculpture : thing) {
             if (unlockedSculptures != null && unlockedSculptures.contains(sculpture.imagePath)) {
                 final String nameSculpture = sculpture.name;
                 final String imagePathSculpture = sculpture.imagePath;
@@ -336,6 +329,12 @@ public class CollectionActivity extends AppCompatActivity {
                 liner.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        info.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                showInfo(sculpture.name, sculpture.description, sculpture.author);
+                            }
+                        });
                         try {
                             Resources res = getResources();
                             String mDrawableName = imagePathSculpture + ".jpg";
@@ -365,11 +364,11 @@ public class CollectionActivity extends AppCompatActivity {
         //textunlockedSculputres.setText(xmlString);
     }
 
-    private void showInfo() {
+    private void showInfo(String Name, String Description, String Author) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setMessage("ar2go is app for exploring the beauty of the city and collecting cards of sculptures to get some points that you can change for various tickets")
+        builder.setMessage(Description + "\n" + Author)
                 .setCancelable(false)
-                .setTitle("** INFO **")
+                .setTitle(Name)
                 .setNeutralButton("Okay!",
                         new DialogInterface.OnClickListener() {
                             public void onClick(@NonNull DialogInterface dialog, int id) {
