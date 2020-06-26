@@ -2,6 +2,7 @@ package com.example.ar2go;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -34,6 +35,14 @@ public class StoryActivity extends AppCompatActivity {
             public void onClick(View v) {
                 back.setBackgroundColor(Color.parseColor("#55000000"));
                 finish();
+            }
+        });
+        year.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                finish();
+                startActivity(new Intent(StoryActivity.this, YearsActivity.class));
             }
         });
     }
