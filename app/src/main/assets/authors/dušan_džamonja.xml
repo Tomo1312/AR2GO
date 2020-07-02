@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Prosinačke žrtve</name>
+        <description>okretište tramvaja Dubrava (1960.)</description>
+        <author>Dušan Džamonja</author>
+        <imagePath>prosinackezrtve</imagePath>
+        <points>3</points>
+        <latitude>45.8244816</latitude>
+        <longitude>16.0383225</longitude>
+    </Art>
+    
+	<Art>
+        <name>Majka i dijete</name>
+        <description>1938.</description>
+        <author>Dušan Džamonja</author>
+        <imagePath>majkaidijetedzamonja</imagePath>
+        <points>1</points>
+        <latitude>45.8092675</latitude>
+        <longitude>15.9628213</longitude>
+    </Art>
+    
+	<Art>
+        <name>Kugla</name>
+        <description>Jurkovićeva</description>
+        <author>Dušan Džamonja</author>
+        <imagePath>kugla</imagePath>
+        <points>2</points>
+        <latitude>45.8156103</latitude>
+        <longitude>15.9890223</longitude>
+    </Art>
+    
+	<Art>
+        <name>AKZ</name>
+        <description>Avenija Marina Drzica 4 (1987.)</description>
+        <author>Dusan Dzamnonja</author>
+        <imagePath>skulpturaakz</imagePath>
+        <points>2</points>
+        <latitude>45.8032035</latitude>
+        <longitude>15.9940703</longitude>
+    </Art>
+    
+	<Art>
+        <name>Jelen</name>
+        <description>1958.</description>
+        <author>Dušan Džamonja</author>
+        <imagePath>arhitekturafontanajelen</imagePath>
+        <points>1</points>
+        <latitude>45.803746</latitude>
+        <longitude>15.966069</longitude>
+    </Art>
+</Arts>

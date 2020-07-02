@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Antun Gustav Matoš</name>
+        <description>1973.</description>
+        <author>Ivan Kožarić</author>
+        <imagePath>spomenikantungustavmatos</imagePath>
+        <points>1</points>
+        <latitude>45.8142724</latitude>
+        <longitude>15.9742886</longitude>
+    </Art>
+    
+	<Art>
+        <name>Oblik prostora XIII</name>
+        <description>Avenija Dubrovnik 17 Terasa Muzeja suvremene umjetnosti (1965.)</description>
+        <author>Ivan Kožarić</author>
+        <imagePath>oblikprostoraxiii</imagePath>
+        <points>4</points>
+        <latitude>45.7785724</latitude>
+        <longitude>15.9811319</longitude>
+    </Art>
+    
+	<Art>
+        <name>Prizemljeno sunce</name>
+        <description>Bogovićeva ul. 1B (1994.)</description>
+        <author>Ivan Kožarić</author>
+        <imagePath>prizemljenosunce</imagePath>
+        <points>1</points>
+        <latitude>45.8123978</latitude>
+        <longitude>15.9754657</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ruka</name>
+        <description> Skup skulptura na nasipu/Aleja skulptura  (2011.)</description>
+        <author>Ivan Kožarić</author>
+        <imagePath>ruka</imagePath>
+        <points>4</points>
+        <latitude>45.7883848</latitude>
+        <longitude>15.9620857</longitude>
+    </Art>
+</Arts>

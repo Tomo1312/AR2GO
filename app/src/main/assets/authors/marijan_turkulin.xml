@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Chromos</name>
+        <description>(1989.)</description>
+        <author>Marijan Turkulin, Petar Vouk </author>
+        <imagePath>arhitekturachromos</imagePath>
+        <points>1</points>
+        <latitude>45.802818</latitude>
+        <longitude>16.008936</longitude>
+    </Art>
+    
+	<Art>
+        <name>Hoto Tower</name>
+        <description>(2005.)</description>
+        <author>Marijan Turkulin</author>
+        <imagePath>arhitekturahoto</imagePath>
+        <points>1</points>
+        <latitude>45.801842</latitude>
+        <longitude>15.963603</longitude>
+    </Art>
+</Arts>

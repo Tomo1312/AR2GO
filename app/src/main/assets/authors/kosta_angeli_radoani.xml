@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Ivan Krstitelj Rabljanin</name>
+        <description>1995.</description>
+        <author>Kosta Angeli Radovani </author>
+        <imagePath>spomenikivankrstiteljrabljanin</imagePath>
+        <points>1</points>
+        <latitude>45.8037098</latitude>
+        <longitude>15.9647352</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ivo Lola Riber</name>
+        <description>Nepoznato</description>
+        <author>Kosta Angeli Radovani</author>
+        <imagePath>spomenikivololariber</imagePath>
+        <points>1</points>
+        <latitude>45.811666</latitude>
+        <longitude>15.9428557</longitude>
+    </Art>
+    
+	<Art>
+        <name>Faust Vrančić</name>
+        <description>1993.</description>
+        <author>Kosta Angeli Radovani</author>
+        <imagePath>spomenikfaustvrancic</imagePath>
+        <points>1</points>
+        <latitude>45.8036957</latitude>
+        <longitude>15.9645035</longitude>
+    </Art>
+    
+	<Art>
+        <name>Spomenik poginulim Zagrepčanima u NOB</name>
+        <description>Spomenik Zagrepčanima poginulim u NOBU, Spomen park Dotrščina 1989.</description>
+        <author>Kosta angeli Radovani</author>
+        <imagePath>spomenikdotrscinaradovani</imagePath>
+        <points>1</points>
+        <latitude>45.846664</latitude>
+        <longitude>16.024278</longitude>
+    </Art>
+    
+	<Art>
+        <name>Franjo Bučar</name>
+        <description>1991.</description>
+        <author>Kosta Angeli Radoani</author>
+        <imagePath>spomenikfranjobucar</imagePath>
+        <points>1</points>
+        <latitude>45.806639</latitude>
+        <longitude>15.952056</longitude>
+    </Art>
+    
+	<Art>
+        <name>Žena s tačkama</name>
+        <description> Grad mladih – Granešina (izrađeno 1947.- postavljeno 1988.)</description>
+        <author>Kosta Angeli Radovani</author>
+        <imagePath>zenastackama</imagePath>
+        <points>5</points>
+        <latitude>45.8525217</latitude>
+        <longitude>16.0518867</longitude>
+    </Art>
+</Arts>

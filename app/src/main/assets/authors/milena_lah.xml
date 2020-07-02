@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Let u prostoru</name>
+        <description>Schlosserove stube 2</description>
+        <author>Milena Lah</author>
+        <imagePath>letuprostoru</imagePath>
+        <points>2</points>
+        <latitude>45.815627</latitude>
+        <longitude>15.9842683</longitude>
+    </Art>
+    
+	<Art>
+        <name>Poezija prostora</name>
+        <description>Maksimirski park (1981.)</description>
+        <author>Milena Lah</author>
+        <imagePath>poezijaprostora</imagePath>
+        <points>3</points>
+        <latitude>45.8322808</latitude>
+        <longitude>16.0263334</longitude>
+    </Art>
+    
+	<Art>
+        <name>Pozdrav</name>
+        <description>Križanje Branimirove i Harambašičeve, Svetic (1987.)</description>
+        <author>Milena Lah</author>
+        <imagePath>pozdrav</imagePath>
+        <points>3</points>
+        <latitude>45.8116232</latitude>
+        <longitude>16.013095</longitude>
+    </Art>
+    
+	<Art>
+        <name>Stup svečanosti</name>
+        <description> Grad mladih – Granešina (1985.)  </description>
+        <author>Milena Lah</author>
+        <imagePath>stupsvecanosti</imagePath>
+        <points>5</points>
+        <latitude>45.8537117</latitude>
+        <longitude>16.05128</longitude>
+    </Art>
+    
+	<Art>
+        <name>Kotač vremena</name>
+        <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1993. postavljeno 2000.) </description>
+        <author>Milena Lah</author>
+        <imagePath>kotacvremena</imagePath>
+        <points>4</points>
+        <latitude>45.7906058</latitude>
+        <longitude>15.9751631</longitude>
+    </Art>
+</Arts>

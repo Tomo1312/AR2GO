@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>August Cesarec</name>
+        <description>1919.</description>
+        <author>Stjepan Gračan</author>
+        <imagePath>spomenikaugustcesarecgračan</imagePath>
+        <points>1</points>
+        <latitude>45.8161042</latitude>
+        <longitude>15.9765153</longitude>
+    </Art>
+    
+	<Art>
+        <name>David Schwarz</name>
+        <description>2000.</description>
+        <author>Stjepan Gračan</author>
+        <imagePath>spomenikdavidschwarz</imagePath>
+        <points>1</points>
+        <latitude>45.8037259</latitude>
+        <longitude>15.9646174</longitude>
+    </Art>
+	
+	<Art>
+        <name>Marija Jurić Zagorka</name>
+        <description>1996.</description>
+        <author>Stjepan Gračan</author>
+        <imagePath>spomenikmarijajuriczagorka</imagePath>
+        <points>1</points>
+        <latitude>45.786528</latitude>
+        <longitude>15.924639</longitude>
+    </Art>
+    
+	<Art>
+        <name>Vladimir Nazor</name>
+        <description>1972.</description>
+        <author>Stjepan Gračan</author>
+        <imagePath>spomenikvladimirnazor</imagePath>
+        <points>1</points>
+        <latitude>45.8214903</latitude>
+        <longitude>15.9689246</longitude>
+    </Art>
+	
+	<Art>
+        <name>Kumica Barica</name>
+        <description>Tržnica dolac</description>
+        <author>Stjepan Gračan</author>
+        <imagePath>kumicabarica</imagePath>
+        <points>1</points>
+        <latitude>45.8138417</latitude>
+        <longitude>15.9768164</longitude>
+    </Art>
+    
+	<Art>
+        <name>Žabinjak</name>
+        <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1994.-postavljeno 2000.) </description>
+        <author>Stjepan Gračan</author>
+        <imagePath>zabinjak</imagePath>
+        <points>4</points>
+        <latitude>45.7906058</latitude>
+        <longitude>15.9751631</longitude>
+    </Art>
+</Arts>

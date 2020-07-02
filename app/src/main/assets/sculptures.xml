@@ -34,7 +34,7 @@
         <name>Akt</name>
         <description>Tkalciceva 14, Centar(1989.)</description>
         <author>Miroslav Zupancic</author>
-        <imagePath>akt</imagePath>
+        <imagePath>aktzupancic</imagePath>
         <points>1</points>
         <latitude>45.8148105</latitude>
         <longitude>15.9761339</longitude>
@@ -492,16 +492,6 @@
     </Sculpture>
 
     <Sculpture>
-        <name>Spomenik Josipu Račiću</name>
-        <description>Srednjaci 30 ispred OŠ Josipa Račića (1980.)</description>
-        <author>Ratko Petrić</author>
-        <imagePath>spomenikjosipuracicu</imagePath>
-        <points>4</points>
-        <latitude>45.7894534</latitude>
-        <longitude>15.9409573</longitude>
-    </Sculpture>
-
-    <Sculpture>
         <name>Strijeljanje talaca</name>
         <description>Strossmayerov trg (1951.) </description>
         <author>Frano Kršinić</author>
@@ -644,7 +634,7 @@
     <Sculpture>
         <name>Žena mačka</name>
         <description>Prilaz baruna Filipovića 23, Lauba (2001.)</description>
-        <author>Marija Ujević>Galetović</author>
+        <author>Marija Ujević Galetović</author>
         <imagePath>zenamacka</imagePath>
         <points>3</points>
         <latitude>45.811818</latitude>

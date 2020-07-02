@@ -44,6 +44,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.regex.Pattern;
 
 public class FinalYearActivity extends AppCompatActivity {
 
@@ -57,21 +58,33 @@ public class FinalYearActivity extends AppCompatActivity {
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
-
+    TextView naslov;
+    String filename;
+    String dir;
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collection);
+        setContentView(R.layout.activity_final_year);
 
         //if you want to lock screen for always Portrait mode
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
 
         setUiView();
         menuBar();
-
         Intent i = getIntent();
-        String filename = i.getStringExtra("filename");
+        filename = i.getStringExtra("filename");
+        if (Pattern.matches("^\\d\\d\\d\\d.*", filename)) {
+            dir = "years";
+            naslov.setText(filename.replaceFirst("[.][^.]+$", ""));
+        } else {
+            dir = "authors";
+            String first = filename;
+            String second = first.replaceFirst("[.][^.]+$", "");
+            String third = second.replace("_", " ");
+            naslov.setText(YearsActivity.toTitleCase(third));
+        }
+
         try {
             art = getXmlFiles(filename, "Art");
         } catch (IOException e) {
@@ -99,6 +112,17 @@ public class FinalYearActivity extends AppCompatActivity {
                 Toast.makeText(FinalYearActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
             }
         });
+
+//
+//        if (Pattern.matches("^\\d\\d\\d\\d.*", filename)) {
+//            naslov.setText(filename.replaceFirst("[.][^.]+$", ""));
+//        } else {
+//            String first = filename;
+//            String second = first.replaceFirst("[.][^.]+$", "");
+//            String third = second.replace("_", " ");
+//            naslov.setText(YearsActivity.toTitleCase(third));
+//        }
+
     }
 
     private void setUiView() {
@@ -106,6 +130,7 @@ public class FinalYearActivity extends AppCompatActivity {
         info = findViewById(R.id.ivInfo);
         back = findViewById(R.id.ivBack);
         imageSculpture = findViewById(R.id.sculptureImage);
+        naslov = findViewById(R.id.TVGodine);
     }
 
     private void menuBar() {
@@ -124,87 +149,87 @@ public class FinalYearActivity extends AppCompatActivity {
     protected void showUnlockedSculptures(ArrayList<Sculpture> thing) {
         linearLayout.setVerticalGravity(0);
         for (final Sculpture sculpture : thing) {
-                final String imagePathSculpture = sculpture.imagePath;
-                firebaseStorage = FirebaseStorage.getInstance();
-                storageReference = firebaseStorage.getReference();
+            final String imagePathSculpture = sculpture.imagePath;
+            firebaseStorage = FirebaseStorage.getInstance();
+            storageReference = firebaseStorage.getReference();
 
-                RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
-                params.setMargins(10, 0, 20, 0);
-                final RelativeLayout liner = new RelativeLayout(this);
-                liner.setLayoutParams(params);
-                liner.getLayoutParams().width = 400;
-                liner.getLayoutParams().height = 400;
-                final ImageView image = new ImageView(this);
-                image.setLayoutParams(params);
-                image.getLayoutParams().width = 400;
+            RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
+            params.setMargins(10, 0, 20, 0);
+            final RelativeLayout liner = new RelativeLayout(this);
+            liner.setLayoutParams(params);
+            liner.getLayoutParams().width = 400;
+            liner.getLayoutParams().height = 400;
+            final ImageView image = new ImageView(this);
+            image.setLayoutParams(params);
+            image.getLayoutParams().width = 400;
 
-                final TextView tv = new TextView(this);
-                RelativeLayout.LayoutParams tvparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+            final TextView tv = new TextView(this);
+            RelativeLayout.LayoutParams tvparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
 
-                tvparams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
-                tv.setLayoutParams(tvparams);
-                final String TAG = FinalYearActivity.class.getSimpleName();
-                Log.i(TAG, "UNLOCKED SCULPTURES: " + unlockedSculptures);
-                if (unlockedSculptures != null && unlockedSculptures.contains(sculpture.imagePath)) {
-                    try {
-                        Resources res = getResources();
-                        String mDrawableName = imagePathSculpture + ".jpg";
-                        int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
-                        storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                try {
-                                    Glide.with(FinalYearActivity.this).load(uri).centerCrop().into(image);
-                                } catch (Exception ex) {
-                                    //liner.setBackground(getDrawable(thingBackground));//<-TREBA NACI GDJE DODATI DA STA NEMA SLIKU SE STAVI BOJA
-                                }
-                            }
-                        });
-                        tv.setPadding(40, 0, 40, 0);
-                        tv.setVisibility(View.VISIBLE);
-                        tv.setText(sculpture.name);
-                        tv.setGravity(Gravity.BOTTOM);
-                        tv.setHeight(100);
-                        tv.setTextColor(getResources().getColor(R.color.white));
-                        tv.setBackgroundResource(R.color.black);
-                        tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
-                        tv.setTextSize(14);
-                        tv.setGravity(View.TEXT_ALIGNMENT_CENTER);
-                    } catch (Exception ex) {
-                        Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
-                    }
-
-                    liner.setOnClickListener(new View.OnClickListener() {
+            tvparams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+            tv.setLayoutParams(tvparams);
+            final String TAG = FinalYearActivity.class.getSimpleName();
+            Log.i(TAG, "UNLOCKED SCULPTURES: " + unlockedSculptures);
+            if (unlockedSculptures != null && unlockedSculptures.contains(sculpture.imagePath)) {
+                try {
+                    Resources res = getResources();
+                    String mDrawableName = imagePathSculpture + ".jpg";
+                    int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
+                    storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
-                        public void onClick(View v) {
-                            info.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    showInfo(sculpture.name, sculpture.description, sculpture.author);
-                                }
-                            });
+                        public void onSuccess(Uri uri) {
                             try {
-                                Resources res = getResources();
-                                String mDrawableName = imagePathSculpture + ".jpg";
-                                int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
-                                storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                                    @Override
-                                    public void onSuccess(Uri uri) {
-                                        Glide.with(FinalYearActivity.this).load(uri).into(imageSculpture);
-                                    }
-                                });
+                                Glide.with(FinalYearActivity.this).load(uri).centerCrop().into(image);
                             } catch (Exception ex) {
-                                Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
+                                //liner.setBackground(getDrawable(thingBackground));//<-TREBA NACI GDJE DODATI DA STA NEMA SLIKU SE STAVI BOJA
                             }
                         }
                     });
-                }else{
-                    Glide.with(FinalYearActivity.this).load("https://imageog.flaticon.com/icons/png/512/36/36601.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF").centerCrop().into(image);
-
+                    tv.setPadding(40, 0, 40, 0);
+                    tv.setVisibility(View.VISIBLE);
+                    tv.setText(sculpture.name);
+                    tv.setGravity(Gravity.BOTTOM);
+                    tv.setHeight(100);
+                    tv.setTextColor(getResources().getColor(R.color.white));
+                    tv.setBackgroundResource(R.color.black);
+                    tv.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
+                    tv.setTextSize(14);
+                    tv.setGravity(View.TEXT_ALIGNMENT_CENTER);
+                } catch (Exception ex) {
+                    Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
                 }
-                liner.addView(image);
-                liner.addView(tv);
-                linearLayout.addView(liner);
+
+                liner.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        info.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                showInfo(sculpture.name, sculpture.description, sculpture.author);
+                            }
+                        });
+                        try {
+                            Resources res = getResources();
+                            String mDrawableName = imagePathSculpture + ".jpg";
+                            int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
+                            storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                                @Override
+                                public void onSuccess(Uri uri) {
+                                    Glide.with(FinalYearActivity.this).load(uri).into(imageSculpture);
+                                }
+                            });
+                        } catch (Exception ex) {
+                            Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
+            } else {
+                Glide.with(FinalYearActivity.this).load("https://imageog.flaticon.com/icons/png/512/36/36601.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF").centerCrop().into(image);
+
+            }
+            liner.addView(image);
+            liner.addView(tv);
+            linearLayout.addView(liner);
         }
     }
 
@@ -230,7 +255,7 @@ public class FinalYearActivity extends AppCompatActivity {
         parserFactory = XmlPullParserFactory.newInstance();
         parser = parserFactory.newPullParser();
         try {
-            InputStream is = getAssets().open("years/" + xmlFile);
+            InputStream is = getAssets().open(dir + "/" + xmlFile);
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
             parser.setInput(is, null);
         } catch (IOException e) {

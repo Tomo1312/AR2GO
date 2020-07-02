@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Ivan Meštrović</name>
+        <description>1984.</description>
+        <author>Stipe Sikirica </author>
+        <imagePath>spomenikivanmestrovic</imagePath>
+        <points>1</points>
+        <latitude>45.7887065</latitude>
+        <longitude>15.9331413</longitude>
+    </Art>
+    
+	<Art>
+        <name>Mladenci</name>
+        <description>u Parku Mladenaca, Siget (1974.)</description>
+        <author>Stipe Sikirica</author>
+        <imagePath>mladencisikirica</imagePath>
+        <points>5</points>
+        <latitude>45.7760852</latitude>
+        <longitude>16.0132694</longitude>
+    </Art>
+    
+	<Art>
+        <name>Otvorena vrata</name>
+        <description> </description>
+        <author>Stipe Sikirica</author>
+        <imagePath>otvorenavrata</imagePath>
+        <points>1</points>
+        <latitude>45.8328271</latitude>
+        <longitude>16.0404933</longitude>
+    </Art>
+    
+	<Art>
+        <name>Anđelija</name>
+        <description> </description>
+        <author>Stipe Sikirica</author>
+        <imagePath>andelija</imagePath>
+        <points>1</points>
+        <latitude>45.8118939</latitude>
+        <longitude>15.9347116</longitude>
+    </Art>
+</Arts>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Dječak</name>
+        <description>1950.</description>
+        <author>Antun Augustinčić</author>
+        <imagePath>arhitekturadjecak</imagePath>
+        <points>1</points>
+        <latitude>45.807137</latitude>
+        <longitude>15.974561</longitude>
+    </Art>
+    
+	<Art>
+        <name>Moša Pijade</name>
+        <description>1954.</description>
+        <author>Antun Augustinčić</author>
+        <imagePath>spomenikmosapijade</imagePath>
+        <points>1</points>
+        <latitude>45.824611</latitude>
+        <longitude>16.010083</longitude>
+    </Art>
+    
+	<Art>
+        <name>Brijunski akt</name>
+        <description>Park Ribnjak (1954.)</description>
+        <author>Antun Augustincic</author>
+        <imagePath>brijunskiakt</imagePath>
+        <points>1</points>
+        <latitude>45.8162752</latitude>
+        <longitude>15.980527</longitude>
+    </Art>
+</Arts>

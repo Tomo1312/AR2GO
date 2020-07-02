@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Trg Bana Jelačića - reljef</name>
+        <description>N/A</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>arhitekturatrgbanajelacicareljef</imagePath>
+        <points>1</points>
+        <latitude>45.8134054</latitude>
+        <longitude>15.976802</longitude>
+    </Art>
+    
+	<Art>
+        <name>Andrija Medulić</name>
+        <description>1930.- postavljeno 1932.</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>spomenikandrijamedulicmestrovic</imagePath>
+        <points>1</points>
+        <latitude>45.8075141</latitude>
+        <longitude>15.9786412</longitude>
+    </Art>
+	
+	<Art>
+        <name>Josip Juraj Strossmayer</name>
+        <description>1924. postavljeno 1926.</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>spomenikjosipjurajstrossmayer</imagePath>
+        <points>1</points>
+        <latitude>45.8088441</latitude>
+        <longitude>15.9785504</longitude>
+    </Art>
+	
+	<Art>
+        <name>Nikola Tesla</name>
+        <description>1955.</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>spomeniknikolatesla</imagePath>
+        <points>1</points>
+        <latitude>45.8112458</latitude>
+        <longitude>15.9743088</longitude>
+    </Art>
+	
+	<Art>
+        <name>Nikola Tesla</name>
+        <description>1955.</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>spomeniknikolatesla</imagePath>
+        <points>1</points>
+        <latitude>45.8112458</latitude>
+        <longitude>15.9743088</longitude>
+    </Art>
+	
+	<Art>
+        <name>Dom likovnih umjetnika</name>
+        <description>(1938.)</description>
+        <author>Ivan Meštrović </author>
+        <imagePath>arhitekturadomlikovnihumjetnika</imagePath>
+        <points>1</points>
+        <latitude>45.809957</latitude>
+        <longitude>15.987185</longitude>
+    </Art>
+	
+	<Art>
+        <name>Majka doji dijete</name>
+        <description>Rockefellerova 4, Škola narodnog zdravlja Andrija Štampar (izrađeno 1930.>postavljeno 1940.)</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>majkadojidijete</imagePath>
+        <points>3</points>
+        <latitude>45.8286537</latitude>
+        <longitude>15.9816384</longitude>
+    </Art>
+	
+	<Art>
+        <name>Povijest Hrvata</name>
+        <description>Trg Republike Hrvatske 14 ispred Pravnog fakulteta (1932.)</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>povijesthrvata</imagePath>
+        <points>1</points>
+        <latitude>45.8104324</latitude>
+        <longitude>15.9697552</longitude>
+    </Art>
+	
+	<Art>
+        <name>Žena</name>
+        <description>Ul. Franje Račkog, Smičiklasova, Ul. Ignjata Đorđića</description>
+        <author>Ivan Meštrović</author>
+        <imagePath>zenamestrovic</imagePath>
+        <points>1</points>
+        <latitude>45.810969</latitude>
+        <longitude>15.985275</longitude>
+    </Art>
+	
+	<Art>
+        <name>Udovica</name>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1908.-postavljeno 1985.) </description>
+        <author>Ivan Meštrović</author>
+        <imagePath>udovica</imagePath>
+        <points>1</points>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
+    </Art>
+</Arts>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Kupačica (Igre s vodom)</name>
+        <description>1977. izrađeno - postavljeno 1987.</description>
+        <author>Lujo Lozica</author>
+        <imagePath>arhitekturafontanakupacica</imagePath>
+        <points>1</points>
+        <latitude>45.806361</latitude>
+        <longitude>15.952444</longitude>
+    </Art>
+    
+	<Art>
+        <name>Dragica Končar</name>
+        <description>1976.</description>
+        <author>Lujo Lozica</author>
+        <imagePath>spomenikdragicakoncar</imagePath>
+        <points>1</points>
+        <latitude>45.7921899</latitude>
+        <longitude>15.9463555</longitude>
+    </Art>
+	
+	<Art>
+        <name>Ranjenik</name>
+        <description>Ivana Matetića Ronjgova 67</description>
+        <author>Lujo Lozica</author>
+        <imagePath>ranjeniklozica</imagePath>
+        <points>5</points>
+        <latitude>45.7944971</latitude>
+        <longitude>15.897576</longitude>
+    </Art>
+	
+	<Art>
+        <name>Tuga</name>
+        <description>Mošćenička 1, Dječje kazalište "Trešnja"(izrađeno 1976. - postavljeno 1999.)</description>
+        <author>Lujo Lozica</author>
+        <imagePath>skulpturatuga</imagePath>
+        <points>4</points>
+        <latitude>45.7944917</latitude>
+        <longitude>15.9440185</longitude>
+    </Art>
+	
+	<Art>
+        <name>Majka i dijete</name>
+        <description>Zorkovačka 44, unutar parka</description>
+        <author>Lujo Lozica</author>
+        <imagePath>majkaidijetelujolozica</imagePath>
+        <points>4</points>
+        <latitude>45.8013657</latitude>
+        <longitude>15.9475497</longitude>
+    </Art>
+</Arts>

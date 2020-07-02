@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Juraj Habdelić</name>
+        <description>2000.</description>
+        <author>Mladen Mikulin</author>
+        <imagePath>spomenikjurajhabdelic</imagePath>
+        <points>1</points>
+        <latitude>45.8275315</latitude>
+        <longitude>15.9984132</longitude>
+    </Art>
+    
+	<Art>
+        <name>Velimir Lojda</name>
+        <description>1999.</description>
+        <author>Mladen Mikulin</author>
+        <imagePath>spomenikvelimirlojda</imagePath>
+        <points>1</points>
+        <latitude>45.7822663</latitude>
+        <longitude>15.9589175</longitude>
+    </Art>
+    
+	<Art>
+        <name>Fra Grgo Martić</name>
+        <description>1994.</description>
+        <author>Mladen Mikulin</author>
+        <imagePath>spomenikfragrgomartic</imagePath>
+        <points>1</points>
+        <latitude>45.8123412</latitude>
+        <longitude>15.9887995</longitude>
+    </Art>
+    
+	<Art>
+        <name>Hrvatski sokol</name>
+        <description>Park Maksimir(1925.)</description>
+        <author>A.Freundenreich/M.Mikulin</author>
+        <imagePath>hrvatskisokol</imagePath>
+        <points>4</points>
+        <latitude>45.8236017</latitude>
+        <longitude>16.0155561</longitude>
+    </Art>
+    
+	<Art>
+        <name>Čovjek s kolutom</name>
+        <description>Skup skulptura na nasipu, Aleja skulptura (1986.)</description>
+        <author>Mladen Mikulin</author>
+        <imagePath>covjekskolutom</imagePath>
+        <points>4</points>
+        <latitude>45.7906058</latitude>
+        <longitude>15.9751631</longitude>
+    </Art>
+</Arts>

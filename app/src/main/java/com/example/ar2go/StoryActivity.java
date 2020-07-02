@@ -40,9 +40,17 @@ public class StoryActivity extends AppCompatActivity {
         year.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                finish();
-                startActivity(new Intent(StoryActivity.this, YearsActivity.class));
+                Intent i = new Intent(StoryActivity.this, YearsActivity.class);
+                i.putExtra("story", "years");
+                startActivity(i);
+            }
+        });
+        author.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(StoryActivity.this, YearsActivity.class);
+                i.putExtra("story", "authors");
+                startActivity(i);
             }
         });
     }

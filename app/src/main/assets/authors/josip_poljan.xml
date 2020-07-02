@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Blagoje Bersa</name>
+        <description>1973.</description>
+        <author>Josip Poljan</author>
+        <imagePath>spomenikblagojebersa</imagePath>
+        <points>1</points>
+        <latitude>45.8122012</latitude>
+        <longitude>15.9887301</longitude>
+    </Art>
+    
+	<Art>
+        <name>Grigor Vitez</name>
+        <description>1981.</description>
+        <author>Josip Poljan</author>
+        <imagePath>spomenikgrigorvitez</imagePath>
+        <points>1</points>
+        <latitude>45.7983873</latitude>
+        <longitude>15.9868635</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ante Starčević</name>
+        <description>1999.</description>
+        <author>Josip Poljan</author>
+        <imagePath>spomenikantestarcevicpoljan</imagePath>
+        <points>1</points>
+        <latitude>45.8057684</latitude>
+        <longitude>15.9778886</longitude>
+    </Art>
+</Arts>

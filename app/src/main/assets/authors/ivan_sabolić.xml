@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Sestre Baković</name>
+        <description>1977.</description>
+        <author>Ivan Sabolić</author>
+        <imagePath>spomeniksestrebakovic</imagePath>
+        <points>1</points>
+        <latitude>45.811803</latitude>
+        <longitude>15.97013</longitude>
+    </Art>
+    
+	<Art>
+        <name>Većeslav Holjevac</name>
+        <description>1972.</description>
+        <author>Ivan Sabolić</author>
+        <imagePath>spomenikveceslavholjevacsabolic</imagePath>
+        <points>1</points>
+        <latitude>45.7728001</latitude>
+        <longitude>15.9706366</longitude>
+    </Art>
+	
+	<Art>
+    </Art>
+    
+	<Art>
+        <name>Pablo Picasso</name>
+        <description>1965.</description>
+        <author>Ivan Sabolić</author>
+        <imagePath>spomenikpablopicasso</imagePath>
+        <points>1</points>
+        <latitude>45.821917</latitude>
+        <longitude>15.971417</longitude>
+    </Art>
+	
+	<Art>
+        <name>Plamen – Spomenik Ilegalcima</name>
+        <description>1957.  postavljeno 1959.</description>
+        <author>Ivan Sabolić</author>
+        <imagePath>spomenikplamenspomenikilegalcima</imagePath>
+        <points>1</points>
+        <latitude>45.8198094</latitude>
+        <longitude>15.9385445</longitude>
+    </Art>
+    
+	<Art>
+    </Art>
+</Arts>

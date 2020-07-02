@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Josip Kozarac</name>
+        <description>1936.</description>
+        <author>Emil Bohutinsky</author>
+        <imagePath>spomenikjosipkozarac</imagePath>
+        <points>1</points>
+        <latitude>45.8073352</latitude>
+        <longitude>15.9691959</longitude>
+    </Art>
+    
+	<Art>
+        <name>Fran Žaver Kesterčanek</name>
+        <description>1936.</description>
+        <author>Emil Bohutinsky</author>
+        <imagePath>spomenikfranzaverkestercanek</imagePath>
+        <points>1</points>
+        <latitude>45.8073844</latitude>
+        <longitude>15.968559</longitude>
+    </Art>
+
+    <Art>
+        <name>Mali dječak</name>
+        <description>Trg kralja Petra Krešimira IV.(1928.)</description>
+        <author>Emil Bohutinsky</author>
+        <imagePath>malidjecak</imagePath>
+        <points>2</points>
+        <latitude>45.808444</latitude>
+        <longitude>15.991085</longitude>
+    </Art>
+</Arts>

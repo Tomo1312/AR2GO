@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Franjo Hanaman</name>
+        <description>2001.</description>
+        <author>Stanko Jančić</author>
+        <imagePath>spomenikfranjohanaman</imagePath>
+        <points>1</points>
+        <latitude>45.8036808</latitude>
+        <longitude>15.9644465</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ferdinand Kovačević</name>
+        <description>1999.</description>
+        <author>Stanko Jančić</author>
+        <imagePath>spomenikferdinandkovacevic</imagePath>
+        <points>1</points>
+        <latitude>45.803712</latitude>
+        <longitude>15.9645586</longitude>
+    </Art>
+	
+	<Art>
+        <name>Košarkaši</name>
+        <description>Trg doma sportova(1991.)</description>
+        <author>Stanko Jančić</author>
+        <imagePath>kosarkasi</imagePath>
+        <points>3</points>
+        <latitude>45.806715</latitude>
+        <longitude>15.9527871</longitude>
+    </Art>
+</Arts>

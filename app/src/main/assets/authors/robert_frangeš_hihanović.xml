@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Zagrebačka katedrala - ulaz</name>
+        <description>N/A</description>
+        <author>Dragutin Morak, Ignjat Franz, Robert Frangeš Mihanović</author>
+        <imagePath>arhitekturakatedrala</imagePath>
+        <points>1</points>
+        <latitude>45.8145084</latitude>
+        <longitude>15.9798007</longitude>
+    </Art>
+    
+	<Art>
+        <name>Elegija</name>
+        <description>1911. postavljen 1994.</description>
+        <author>Robert Frangeš Mihanović</author>
+        <imagePath>arhitekturaelegija</imagePath>
+        <points>1</points>
+        <latitude>45.8147947</latitude>
+        <longitude>15.9676496</longitude>
+    </Art>
+    
+	<Art>
+        <name>Kralj Tomislav</name>
+        <description>1928.-1938. -  postavljen 1947.</description>
+        <author>Robert Frangeš Mihanović</author>
+        <imagePath>spomenikkraljtomislav</imagePath>
+        <points>1</points>
+        <latitude>45.805668</latitude>
+        <longitude>15.978713</longitude>
+    </Art>
+    
+	<Art>
+        <name>Stup života</name>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (1922.)  </description>
+        <author>Robert Frangeš Hihanović</author>
+        <imagePath>stupzivota</imagePath>
+        <points>1</points>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
+    </Art>
+    
+	<Art>
+    </Art>
+</Arts>

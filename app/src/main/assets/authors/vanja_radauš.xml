@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Vatroslav Lisinski</name>
+        <description>izrađeno 1940. postavljeno 1969.</description>
+        <author>Vanja Radauš</author>
+        <imagePath>spomenikvatroslavlisinskiradaus</imagePath>
+        <points>1</points>
+        <latitude>45.8224842</latitude>
+        <longitude>15.9757802</longitude>
+    </Art>
+    
+	<Art>
+        <name>Matija Gubec </name>
+        <description>1968.</description>
+        <author>Vanja Radauš</author>
+        <imagePath>spomenikmatijagubecradaus</imagePath>
+        <points>1</points>
+        <latitude>45.8196588</latitude>
+        <longitude>15.8330622</longitude>
+    </Art>
+	
+	<Art>
+        <name>Đuro Đaković</name>
+        <description>izrađeno 1969. postavljeno 1986.</description>
+        <author>Vanja Radauš</author>
+        <imagePath>spomenikdurodakovic</imagePath>
+        <points>1</points>
+        <latitude>45.8193531</latitude>
+        <longitude>15.9795286</longitude>
+    </Art>
+    
+	<Art>
+        <name>Dragutin Domjanić</name>
+        <description>1939.</description>
+        <author>Vanja Radauš</author>
+        <imagePath>spomenikdragutindomjanic</imagePath>
+        <points>1</points>
+        <latitude>45.8079102</latitude>
+        <longitude>15.9780085</longitude>
+    </Art>
+	
+	<Art>
+        <name>Eugen Podaubsky</name>
+        <description>1959.</description>
+        <author>Vanja Radauš</author>
+        <imagePath>spomenikeugenpodaubsky</imagePath>
+        <points>1</points>
+        <latitude>45.806156</latitude>
+        <longitude>16.008799</longitude>
+    </Art>
+    
+	<Art>
+        <name>Bacač diska</name>
+        <description>Ispred Dinamovog stadiona Maksimirska cesta 123 (1957.)</description>
+        <author>Vanja Radaus</author>
+        <imagePath>bacacdiska</imagePath>
+        <points>3</points>
+        <latitude>45.8186251</latitude>
+        <longitude>16.0136092</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ranjenik</name>
+        <description>Hebrangova 1, u prolazu (izrađeno 1938. - postavljeno 1951.)</description>
+        <author>Vanja Radauš</author>
+        <imagePath>ranjenikradaus</imagePath>
+        <points>2</points>
+        <latitude>45.8093002</latitude>
+        <longitude>15.9776976</longitude>
+    </Art>
+    
+	<Art>
+        <name>Petrica Kerempuh</name>
+        <description>" Opatovina (izrađeno 1943. - postavljeno 1955.)</description>
+        <author>Vanja Radauš</author>
+        <imagePath>petricakerempuh</imagePath>
+        <points>2</points>
+        <latitude>45.8146896</latitude>
+        <longitude>15.9774771</longitude>
+    </Art>
+    
+	<Art>
+        <name>Majka i dijete</name>
+        <description> </description>
+        <author>Vanja Radauš</author>
+        <imagePath>majkaidijeteradaus</imagePath>
+        <points>1</points>
+        <latitude>45.8096327</latitude>
+        <longitude>15.962236 </longitude>
+    </Art>
+</Arts>

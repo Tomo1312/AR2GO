@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Mirogoj</name>
+        <description>20.st.</description>
+        <author>Hermann Bollé</author>
+        <imagePath>arhitekturamirogoj</imagePath>
+        <points>1</points>
+        <latitude>45.835826</latitude>
+        <longitude>15.983998</longitude>
+    </Art>
+    
+	<Art>
+        <name>Gljiva</name>
+        <description>1893. replika 1974.</description>
+        <author>Hermann Bollé</author>
+        <imagePath>arhitekturafontanagljiva</imagePath>
+        <points>1</points>
+        <latitude>45.810869</latitude>
+        <longitude>15.977892</longitude>
+    </Art>
+</Arts>

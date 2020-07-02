@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Dolina Grobova</name>
+        <description>1968.</description>
+        <author>Vojin Bakić</author>
+        <imagePath>spomenikdolinagrobova</imagePath>
+        <points>1</points>
+        <latitude>45.844639</latitude>
+        <longitude>16.026417</longitude>
+    </Art>
+    
+	<Art>
+        <name>Spomenik streljanima/Dolina grobova</name>
+        <description>Spomenik strenjanima 1941.-1945., Spomen park Dotrščina 1962.</description>
+        <author>Vojin Bakić</author>
+        <imagePath>spomenikspomenikstreljanima</imagePath>
+        <points>1</points>
+        <latitude>45.842897</latitude>
+        <longitude>16.027830</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ivan Goran Kovačić</name>
+        <description>Park Ribnjak(1964.)</description>
+        <author>Vojin Bakić</author>
+        <imagePath>ivangorankovacic</imagePath>
+        <points>2</points>
+        <latitude>45.8179944</latitude>
+        <longitude>15.9798458</longitude>
+    </Art>
+    
+	<Art>
+        <name>Razlistana forma</name>
+        <description>Gajeva ulica , Ilica 1 (izrađeno 1961. - postavljeno 1987.) </description>
+        <author>Vojin Bakić</author>
+        <imagePath>razlistanaforma</imagePath>
+        <points>1</points>
+        <latitude>45.8124585</latitude>
+        <longitude>15.9764193</longitude>
+    </Art>
+</Arts>

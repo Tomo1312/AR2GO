@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Čekanje</name>
+        <description>1975.</description>
+        <author>Mile Grgas</author>
+        <imagePath>arhitekturacekanje</imagePath>
+        <points>1</points>
+        <latitude>45.814667</latitude>
+        <longitude>16.008528</longitude>
+    </Art>
+    
+	<Art>
+        <name>Vatroslav Lisinski</name>
+        <description>2004.</description>
+        <author>Mile Grgas</author>
+        <imagePath>spomenikvatroslavlisinskigrgas</imagePath>
+        <points>1</points>
+        <latitude>45.8005011</latitude>
+        <longitude>15.979643</longitude>
+    </Art>
+    
+	<Art>
+        <name>Bartol Kašić</name>
+        <description>2001.</description>
+        <author>Mile Grgas</author>
+        <imagePath>spomenikbartolkasic</imagePath>
+        <points>1</points>
+        <latitude>45.786533</latitude>
+        <longitude>15.924640</longitude>
+    </Art>
+</Arts>

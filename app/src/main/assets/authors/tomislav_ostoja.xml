@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Spomenik palim borcima NOB-e</name>
+        <description>1972.</description>
+        <author>Tomislav Ostoja</author>
+        <imagePath>spomenikpalimborcimanoba</imagePath>
+        <points>1</points>
+        <latitude>45.806639</latitude>
+        <longitude>15.944167</longitude>
+    </Art>
+    
+	<Art>
+        <name>Djecak</name>
+        <description>Park Gric(1979.)</description>
+        <author>Tomisalv Ostoja</author>
+        <imagePath>djecakostoja</imagePath>
+        <points>2</points>
+        <latitude>45.814746</latitude>
+        <longitude>15.971742</longitude>
+    </Art>
+    
+	<Art>
+        <name>Hokej '66</name>
+        <description>Hokejski klub Šalata(1966.)</description>
+        <author>Tomislav Ostoja</author>
+        <imagePath>hokej66</imagePath>
+        <points>2</points>
+        <latitude>45.8157669</latitude>
+        <longitude>15.9845969</longitude>
+    </Art>
+</Arts>

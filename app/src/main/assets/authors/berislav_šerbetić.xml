@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Koncertna dvorana Vatroslav Lisinski</name>
+        <description>(1973.)</description>
+        <author>Marijan Haberle, Minko Jurković, Tanja Zdvořak </author>
+        <imagePath>arhitekturalisinski</imagePath>
+        <points>1</points>
+        <latitude>45.801031</latitude>
+        <longitude>15.980296</longitude>
+    </Art>
+	
+	<Art>
+        <name>Fontana</name>
+        <description>1973.</description>
+        <author>Marijan Haberle, Minka Jurković-Haberle, Tatiana Zdvořak Erlich </author>
+        <imagePath>arhitekturafontanatridesetijedan</imagePath>
+        <points>1</points>
+        <latitude>45.801694</latitude>
+        <longitude>15.979802</longitude>
+    </Art>
+	
+	<Art>
+        <name>Cibona</name>
+        <description>(1987.)</description>
+        <author>Marijan Hržić, Ivan Piteša i Berislav Šerbetić </author>
+        <imagePath>arhitekturacibona</imagePath>
+        <points>1</points>
+        <latitude>45.802814</latitude>
+        <longitude>15.963506</longitude>
+    </Art>
+    
+	<Art>
+        <name>Rakete – Richterovi neboderi</name>
+        <description>(1968.)</description>
+        <author>Centar 51 - Berislav Šerbetić, Ljubo Iveta, Vjenceslav Richter, Olga Korenik</author>
+        <imagePath>arhitekturarakete</imagePath>
+        <points>1</points>
+        <latitude>45.799912</latitude>
+        <longitude>15.981084</longitude>
+    </Art>
+<Arts>

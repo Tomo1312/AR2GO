@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Eugen Kumičić</name>
+        <description>1934. -postavljeno 1937.</description>
+        <author>Frano Kršinić</author>
+        <imagePath>spomenikeugenkumicic</imagePath>
+        <points>1</points>
+        <latitude>45.8086241</latitude>
+        <longitude>15.9679932</longitude>
+    </Art>
+    
+	<Art>
+        <name>Julije Klović</name>
+        <description>1930.</description>
+        <author>Frano Kršinić</author>
+        <imagePath>spomenikjulijeklovickrsinic</imagePath>
+        <points>1</points>
+        <latitude>45.815122</latitude>
+        <longitude>15.974829</longitude>
+    </Art>
+    
+	<Art>
+        <name>Djevojka s knjigom</name>
+        <description>Šalata 3, kod Medicinskog fakulteta (izrađena 1940., postavljena 1981.)</description>
+        <author>Frano Kršinić</author>
+        <imagePath>djevojkasaknjigom</imagePath>
+        <points>3</points>
+        <latitude>45.8196578</latitude>
+        <longitude>15.9844695</longitude>
+    </Art>
+    
+	<Art>
+        <name>Frulaš</name>
+        <description>Rokov Perivoj 4(1926.)</description>
+        <author>Frano Kršinić</author>
+        <imagePath>frulas</imagePath>
+        <points>3</points>
+        <latitude>45.8151249</latitude>
+        <longitude>15.9675644</longitude>
+    </Art>
+    
+	<Art>
+        <name>Majčina igra</name>
+        <description>Mirogojska ulica 16 (izrađeno 1962. postavljeno 1978.)</description>
+        <author>Frano Kršinić</author>
+        <imagePath>majcinaigra</imagePath>
+        <points>2</points>
+        <latitude>45.8319351</latitude>
+        <longitude>15.9803814</longitude>
+    </Art>
+    
+	<Art>
+        <name>Njegovateljica ruža</name>
+        <description>Trg kralja Petra Krešimira IV. (1953.)</description>
+        <author>Frano Kršinić</author>
+        <imagePath>njegovateljicaruza</imagePath>
+        <points>2</points>
+        <latitude>45.808372</latitude>
+        <longitude>15.990650</longitude>
+    </Art>
+    
+	<Art>
+        <name>Ribari</name>
+        <description>Ilica 197 (Klinika za tumore) (1947.)</description>
+        <author>Frano Kršinić</author>
+        <imagePath>ribari</imagePath>
+        <points>3</points>
+        <latitude>45.8116372</latitude>
+        <longitude>15.9433649</longitude>
+    </Art>
+    
+	<Art>
+        <name>Strijeljanje talaca</name>
+        <description>Strossmayerov trg (1951.) </description>
+        <author>Frano Kršinić</author>
+        <imagePath>stijeljanjetalaca</imagePath>
+        <points>1</points>
+        <latitude>45.8076699</latitude>
+        <longitude>15.9785467</longitude>
+    </Art>
+    
+	<Art>
+        <name>Dijana</name>
+        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1927.-postavljeno 1995.) </description>
+        <author>Frano Kršinić</author>
+        <imagePath>skulpturadijana</imagePath>
+        <points>1</points>
+        <latitude>45.811944</latitude>
+        <longitude>15.9619928</longitude>
+    </Art>
+</Arts>

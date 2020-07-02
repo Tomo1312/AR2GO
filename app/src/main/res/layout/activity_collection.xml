@@ -50,12 +50,12 @@
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:paddingLeft="10dp"
         android:text="C O L L E C T I O N"
-        android:textAlignment="viewStart"
         android:textColor="@color/black"
         android:textSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -252,32 +252,6 @@
                         android:paddingTop="10dp"
                         android:paddingBottom="10dp"
                         android:text="Spomenici"
-                        android:textAlignment="center"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="1">
-
-                    <ImageView
-                        android:id="@+id/checkboxFontante"
-                        android:layout_width="0dip"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.3"
-                        android:padding="5dp"
-                        app:srcCompat="@drawable/tick" />
-
-                    <TextView
-                        android:id="@+id/showFontane"
-                        android:layout_width="0dip"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.7"
-                        android:paddingTop="10dp"
-                        android:paddingBottom="10dp"
-                        android:text="Fontane"
                         android:textAlignment="center"
                         android:textSize="18sp" />
                 </LinearLayout>

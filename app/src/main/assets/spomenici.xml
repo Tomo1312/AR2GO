@@ -541,6 +541,16 @@
     </Spomenik>
 	
     <Spomenik>
+        <name>Spomenik Josipu Račiću</name>
+        <description>Srednjaci 30 ispred OŠ Josipa Račića (1980.)</description>
+        <author>Ratko Petrić</author>
+        <imagePath>spomenikjosipuracicu</imagePath>
+        <points>4</points>
+        <latitude>45.7894534</latitude>
+        <longitude>15.9409573</longitude>
+    </Spomenik>
+	
+    <Spomenik>
         <name>Franjo Bučar</name>
         <description>1991.</description>
         <author>Kosta Angeli Radoani</author>

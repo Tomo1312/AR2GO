@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Josip Jelačić</name>
+        <description>1866.</description>
+        <author>Anton Dominik Fernkorn</author>
+        <imagePath>spomenikjosipjelacic</imagePath>
+        <points>1</points>
+        <latitude>45.813202</latitude>
+        <longitude>15.977275</longitude>
+    </Art>
+    
+	<Art>
+        <name>Hotel Dubrovnik - Merkur</name>
+        <description>N/A</description>
+        <author>Anton Dominik Fernkorn</author>
+        <imagePath>arhitekturamerkurdubrovnik</imagePath>
+        <points>1</points>
+        <latitude>45.8112612</latitude>
+        <longitude>15.9761483</longitude>
+    </Art>
+	
+	<Art>
+        <name>Sv.Juraj ubija zmaja</name>
+        <description>blabla</description>
+        <author>Anton Dominik Fernkorn</author>
+        <imagePath>svjurajubijazmaja</imagePath>
+        <points>1</points>
+        <latitude>45.8092842</latitude>
+        <longitude>15.9690857</longitude>
+    </Art>
+</Arts>

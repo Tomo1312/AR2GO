@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Atrij MUO</name>
+        <description>1881.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>arhitekturafontanaartij</imagePath>
+        <points>1</points>
+        <latitude>45.809308</latitude>
+        <longitude>15.968297</longitude>
+    </Art>
+    
+	<Art>
+        <name>Krsto Frankopan</name>
+        <description>1884.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikkrstofrankopan</imagePath>
+        <points>1</points>
+        <latitude>45.8095282</latitude>
+        <longitude>15.9781534</longitude>
+    </Art>
+    
+	<Art>
+        <name>Nikola Jurišić</name>
+        <description>1886.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomeniknikolajurisic</imagePath>
+        <points>1</points>
+        <latitude>45.8095873</latitude>
+        <longitude>15.978422</longitude>
+    </Art>
+    
+	<Art>
+        <name>Andrija Kačić Miošić</name>
+        <description>1891.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikandrijakacicmiosic</imagePath>
+        <points>1</points>
+        <latitude>45.8133793</latitude>
+        <longitude>15.9702755</longitude>
+    </Art>
+    
+	<Art>
+        <name>Julije Klović</name>
+        <description>1891.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikjulijeklovicrendic</imagePath>
+        <points>1</points>
+        <latitude>45.8096184</latitude>
+        <longitude>15.9784975</longitude>
+    </Art>
+    
+	<Art>
+        <name>Andrija Medulič</name>
+        <description>1878.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikandrijamedulicrendic</imagePath>
+        <points>1</points>
+        <latitude>45.8095873</latitude>
+        <longitude>15.978422</longitude>
+    </Art>
+    
+	<Art>
+        <name>August Šenoa</name>
+        <description>1914.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikaugustsenoarendic</imagePath>
+        <points>1</points>
+        <latitude>45.8085901</latitude>
+        <longitude>15.9792366</longitude>
+    </Art>
+    
+	<Art>
+        <name>Petar Preradović</name>
+        <description>1895.</description>
+        <author>Ivan Rendić</author>
+        <imagePath>spomenikpetarpreradovicrendic</imagePath>
+        <points>1</points>
+        <latitude>45.8123897</latitude>
+        <longitude>15.9739632</longitude>
+    </Art>
+    
+	<Art>
+    </Art>
+    
+	<Art>
+    </Art>
+</Arts>

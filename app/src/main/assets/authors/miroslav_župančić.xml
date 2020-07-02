@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Akt</name>
+        <description>Tkalciceva 14, Centar(1989.)</description>
+        <author>Miroslav Zupancic</author>
+        <imagePath>aktzupancic</imagePath>
+        <points>1</points>
+        <latitude>45.8148105</latitude>
+        <longitude>15.9761339</longitude>
+    </Art>
+    
+	<Art>
+        <name>Grozdana</name>
+        <description>Prisavlje 2, Bočarski dom(1996.)</description>
+        <author>Miroslav Župančić</author>
+        <imagePath>grozdana</imagePath>
+        <points>4</points>
+        <latitude>45.7894299</latitude>
+        <longitude>15.9611435</longitude>
+    </Art>
+    
+	<Art>
+        <name>Igra</name>
+        <description>Ilica 532 ispred Knjižnice(1992.)</description>
+        <author>Miroslav Župančić</author>
+        <imagePath>igramiroslavzupancic</imagePath>
+        <points>5</points>
+        <latitude>45.8124494</latitude>
+        <longitude>15.8987759</longitude>
+    </Art>
+</Arts>

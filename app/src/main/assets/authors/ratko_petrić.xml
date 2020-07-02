@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Arts>
+	<Art>
+        <name>Charlie Chaplin</name>
+        <description>1983.</description>
+        <author>Ratko Petrić</author>
+        <imagePath>spomenikcharliechaplin</imagePath>
+        <points>1</points>
+        <latitude>45.8151747</latitude>
+        <longitude>15.9697627</longitude>
+    </Art>
+    
+	<Art>
+        <name>Spomenik Josipu Račiću</name>
+        <description>Srednjaci 30 ispred OŠ Josipa Račića (1980.)</description>
+        <author>Ratko Petrić</author>
+        <imagePath>spomenikjosipuracicu</imagePath>
+        <points>4</points>
+        <latitude>45.7894534</latitude>
+        <longitude>15.9409573</longitude>
+    </Art>
+    
+	<Art>
+        <name>Kapi</name>
+        <description>Skup skulptura na nasipu, Aleja skulptura (1991.) </description>
+        <author>Ratko Petrić</author>
+        <imagePath>kapi</imagePath>
+        <points>4</points>
+        <latitude>45.7893768</latitude>
+        <longitude>15.9659141</longitude>
+    </Art>
+    
+	<Art>
+        <name>Slonovi stup</name>
+        <description> Grad mladih - Granešina (1988.) </description>
+        <author>Ratko Petrić</author>
+        <imagePath>slonovnistup</imagePath>
+        <points>5</points>
+        <latitude>45.8525217</latitude>
+        <longitude>16.0518867</longitude>
+    </Art>
+</Arts>
