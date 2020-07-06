@@ -3,6 +3,7 @@ package com.example.ar2go;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -45,6 +46,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.regex.Pattern;
+
+import zoominimage.ZoomInImageViewAttacher;
 
 public class FinalYearActivity extends AppCompatActivity {
 
@@ -211,6 +214,8 @@ public class FinalYearActivity extends AppCompatActivity {
                         try {
                             Resources res = getResources();
                             String mDrawableName = imagePathSculpture + ".jpg";
+                            ZoomInImageViewAttacher mIvAttacter = new ZoomInImageViewAttacher();
+                            mIvAttacter.attachImageView(imageSculpture);
                             int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
                             storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
@@ -227,6 +232,7 @@ public class FinalYearActivity extends AppCompatActivity {
                 Glide.with(FinalYearActivity.this).load("https://imageog.flaticon.com/icons/png/512/36/36601.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF").centerCrop().into(image);
 
             }
+
             liner.addView(image);
             liner.addView(tv);
             linearLayout.addView(liner);
