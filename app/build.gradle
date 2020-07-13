@@ -52,6 +52,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
     //circle imageview
     implementation 'de.hdodenhof:circleimageview:2.2.0'
-
 }
 apply plugin: 'com.google.gms.google-services'

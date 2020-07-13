@@ -1,21 +1,22 @@
-package com.example.ar2go;
+package Gesture;
 
-import android.content.Intent;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
-public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureListener {
+import com.example.ar2go.FinalYearActivity;
+
+public class FinalYearSwipeListener extends GestureDetector.SimpleOnGestureListener {
     private static int MIN_SWIPE_DISTANCE_Y = 100;
 
-    private static int MAX_SWIPE_DISTANCE_Y = 1500;
+    private static int MAX_SWIPE_DISTANCE_Y = 1000;
 
-    private SecondActivity activitiy = null;
+    private FinalYearActivity activitiy = null;
 
-    public SecondActivity getActivity() {
+    public FinalYearActivity getActivity() {
         return activitiy;
     }
 
-    public void setActivitiy(SecondActivity activitiy) {
+    public void setActivitiy(FinalYearActivity activitiy) {
         this.activitiy = activitiy;
     }
 
@@ -26,10 +27,14 @@ public class DetectSwipeGestureListener extends GestureDetector.SimpleOnGestureL
         float deltaYAbs = Math.abs(deltaY);
 
         if (deltaYAbs >= MIN_SWIPE_DISTANCE_Y && deltaYAbs <= MAX_SWIPE_DISTANCE_Y) {
-            if(deltaY > 0){
-                this.activitiy.startFreelance();
+            if (deltaY > 0) {
+                this.activitiy.showOneArt();
+            } else if (deltaY < 0) {
+                this.activitiy.showAllArt();
             }
+
         }
         return true;
     }
 }
+

@@ -3,23 +3,28 @@ package com.example.ar2go;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+import androidx.core.view.GestureDetectorCompat;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
+import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
 import android.graphics.Color;
-import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -53,7 +58,7 @@ public class FinalYearActivity extends AppCompatActivity {
 
 
     private LinearLayout linearLayout;
-    private ImageView info, back, imageSculpture;
+    private ImageView info, back, imageSculpture, imageSculpture2;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
     protected static String unlockedSculptures;
@@ -61,9 +66,18 @@ public class FinalYearActivity extends AppCompatActivity {
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
-    TextView naslov;
+
+    ScrollView scrollDescription, scrollArts;
+    TextView nameArt, descriptionArt, authorArt, naslov;
     String filename;
     String dir;
+
+    Animation slideInLeft, slideInRight, slideOutLeft, slideOutRight;
+    Animation fadein;
+    boolean infoVisible = true;
+
+    private GestureDetectorCompat gestureDetectorCompat = null;
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -128,12 +142,29 @@ public class FinalYearActivity extends AppCompatActivity {
 
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private void setUiView() {
         linearLayout = findViewById(R.id.scrollLinearLayout);
         info = findViewById(R.id.ivInfo);
         back = findViewById(R.id.ivBack);
+        scrollArts = findViewById(R.id.scrollViewArts);
+
         imageSculpture = findViewById(R.id.sculptureImage);
+        imageSculpture2 = findViewById(R.id.sculptureImage2);
+        nameArt = findViewById(R.id.sculptureName);
+        descriptionArt = findViewById(R.id.sculptureDescription);
+        authorArt = findViewById(R.id.sculptureAuthor);
         naslov = findViewById(R.id.TVGodine);
+        scrollDescription = findViewById(R.id.scroll);
+
+        fadein = AnimationUtils.loadAnimation(this, R.anim.fadein);
+        slideOutLeft = AnimationUtils.loadAnimation(this, R.anim.slide_out_left);
+        slideOutRight = AnimationUtils.loadAnimation(this, R.anim.slide_out_right);
+        slideInLeft = AnimationUtils.loadAnimation(this, R.anim.slide_in_left);
+        slideInRight = AnimationUtils.loadAnimation(this, R.anim.slide_in_right);
+//        FinalYearSwipeListener gestureListener = new FinalYearSwipeListener();
+//        gestureListener.setActivitiy(this);
+//        gestureDetectorCompat = new GestureDetectorCompat(this, gestureListener);
     }
 
     private void menuBar() {
@@ -205,13 +236,9 @@ public class FinalYearActivity extends AppCompatActivity {
                 liner.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        info.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                showInfo(sculpture.name, sculpture.description, sculpture.author);
-                            }
-                        });
                         try {
+//                            TextView sculptureName = findViewById(R.id.sculptureNaslov);
+//                            sculptureName.setText(sculpture.name);
                             Resources res = getResources();
                             String mDrawableName = imagePathSculpture + ".jpg";
                             ZoomInImageViewAttacher mIvAttacter = new ZoomInImageViewAttacher();
@@ -221,16 +248,42 @@ public class FinalYearActivity extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Uri uri) {
                                     Glide.with(FinalYearActivity.this).load(uri).into(imageSculpture);
+                                    Glide.with(FinalYearActivity.this).load(uri).into(imageSculpture2);
                                 }
                             });
+
+//                            imageSculpture.setOnTouchListener(new View.OnTouchListener() {
+//                                @SuppressLint("ClickableViewAccessibility")
+//                                @Override
+//                                public boolean onTouch(final View view, final MotionEvent event) {
+//                                    gestureDetectorCompat.onTouchEvent(event);
+//                                    return true;
+//                                }
+//
+//                            });
+                            nameArt.setText(sculpture.name);
+                            descriptionArt.setText(sculpture.description);
+                            authorArt.setText(sculpture.author);
                         } catch (Exception ex) {
                             Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
                         }
+
+                        info.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                if (infoVisible) {
+                                    showOneArt();
+                                    infoVisible = false;
+                                } else {
+                                    showAllArt();
+                                    infoVisible = true;
+                                }
+                            }
+                        });
                     }
                 });
             } else {
                 Glide.with(FinalYearActivity.this).load("https://imageog.flaticon.com/icons/png/512/36/36601.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF").centerCrop().into(image);
-
             }
 
             liner.addView(image);
@@ -300,5 +353,76 @@ public class FinalYearActivity extends AppCompatActivity {
             eventType = parser.next();
         }
         return namesInXml;
+    }
+
+    public void showOneArt() {
+        imageSculpture.setVisibility(View.VISIBLE);
+        scrollArts.setVisibility(View.VISIBLE);
+        final ObjectAnimator oa1 = ObjectAnimator.ofFloat(info, "scaleX", 1f, 0f);
+        final ObjectAnimator oa2 = ObjectAnimator.ofFloat(info, "scaleX", 0f, 1f);
+        oa1.setInterpolator(new DecelerateInterpolator());
+        oa2.setInterpolator(new AccelerateDecelerateInterpolator());
+        oa1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                info.setImageResource(R.drawable.collection);
+                oa2.start();
+            }
+        });
+        oa1.start();
+
+        slideOutLeft.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                imageSculpture.setVisibility(View.INVISIBLE);
+                scrollArts.setVisibility(View.INVISIBLE);
+
+                imageSculpture2.setVisibility(View.VISIBLE);
+                nameArt.setVisibility(View.VISIBLE);
+                scrollDescription.setVisibility(View.VISIBLE);
+                authorArt.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        imageSculpture.startAnimation(slideOutLeft);
+        scrollArts.startAnimation(slideOutRight);
+    }
+
+
+    public void showAllArt() {
+
+        imageSculpture.setVisibility(View.VISIBLE);
+        scrollArts.setVisibility(View.VISIBLE);
+        imageSculpture.startAnimation(slideInLeft);
+        scrollArts.startAnimation(slideInRight);
+
+        final ObjectAnimator oa1 = ObjectAnimator.ofFloat(info, "scaleX", 1f, 0f);
+        final ObjectAnimator oa2 = ObjectAnimator.ofFloat(info, "scaleX", 0f, 1f);
+        oa1.setInterpolator(new DecelerateInterpolator());
+        oa2.setInterpolator(new AccelerateDecelerateInterpolator());
+        oa1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                info.setImageResource(R.drawable.info);
+                oa2.start();
+            }
+        });
+        oa1.start();
+
+        imageSculpture2.setVisibility(View.INVISIBLE);
+        nameArt.setVisibility(View.INVISIBLE);
+        scrollDescription.setVisibility(View.INVISIBLE);
+        authorArt.setVisibility(View.INVISIBLE);
     }
 }

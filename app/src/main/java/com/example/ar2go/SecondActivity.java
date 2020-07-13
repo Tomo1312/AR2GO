@@ -31,6 +31,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import Gesture.SecondActivitySwipeListener;
+
 import static java.lang.String.valueOf;
 
 public class SecondActivity extends AppCompatActivity {
@@ -272,7 +274,7 @@ public class SecondActivity extends AppCompatActivity {
         collections.setTypeface(typeface);
         startAnimations();
 
-        DetectSwipeGestureListener gestureListener = new DetectSwipeGestureListener();
+        SecondActivitySwipeListener gestureListener = new SecondActivitySwipeListener();
         gestureListener.setActivitiy(this);
         gestureDetectorCompat = new GestureDetectorCompat(this, gestureListener);
     }
@@ -317,7 +319,7 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
-    protected void startFreelance(){
+    public void startFreelance(){
         startActivity(new Intent(SecondActivity.this, FreeLanceActivity.class));
         overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
     }
