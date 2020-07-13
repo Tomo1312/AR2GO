@@ -4,6 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -21,8 +24,10 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -52,6 +57,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
+import zoominimage.ZoomInImageViewAttacher;
+
 import static java.lang.String.valueOf;
 
 public class CollectionActivity extends AppCompatActivity {
@@ -62,16 +69,26 @@ public class CollectionActivity extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     protected static String unlockedSculptures;
     protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici;
-    private TextView sculptureShown, arhitektureShown, spomeniciShown, profileBodovi, title;
-    private ImageView imageSculpture,showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
+    private TextView sculptureShown, arhitektureShown, spomeniciShown, title;
+    private ImageView imageSculpture, imageSculptureSecond;
+    private ImageView showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
     private boolean toolbarShown, isSculptureShown, isArhitektureShown, isSpomeniciShown;
     private LinearLayout toolbarLayout;
     private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
+
+    ScrollView scrollDescription, scrollArts;
+    TextView nameArt, descriptionArt, authorArt, naslov;
+
+    Animation slideInLeft, slideInRight, slideOutLeft, slideOutRight;
+
     private Typeface typeFace;
 
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
+
+    boolean infoVisible = true;
+
     @SuppressLint("SourceLockedOrientationActivity")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,7 +112,6 @@ public class CollectionActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 UserProfile userProfile = dataSnapshot.getValue(UserProfile.class);
-                profileBodovi.setText("=" + userProfile.getUserBodovi());
                 unlockedSculptures = userProfile.getOtkljucaneSkulputre();
                 setShowAllArtToCollection();
             }
@@ -110,29 +126,45 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
     private void setUiView() {
-        profileBodovi =  findViewById(R.id.tvProfileBodovi);
         title = findViewById(R.id.tvTitle);
-        linearLayout =  findViewById(R.id.scrollLinearLayout);
+        linearLayout = findViewById(R.id.scrollLinearLayout);
         info = findViewById(R.id.ivInfo);
         back = findViewById(R.id.ivBack);
+
         toolbarLayout = findViewById(R.id.toolbarLayout);
         showToolbar = findViewById(R.id.ivShowToolbar);
         leftScrollView = findViewById(R.id.scrollViewZaNazad);
         showToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.righttolefttoolbar);
         unshowToolbarAnimation = AnimationUtils.loadAnimation(this, R.anim.lefttorighttoolbar);
-        arhitektureShown =  findViewById(R.id.showArhitekture);
-        sculptureShown =  findViewById(R.id.showSculptures);
-        spomeniciShown =findViewById(R.id.showSpomenici);
-        checkboxArhitekture =  findViewById(R.id.checkboxArhitekture);
-        checkboxSculptures =  findViewById(R.id.checkboxSculpureShown);
-        checkboxSpomenici =  findViewById(R.id.checkboxSpomenici);
-        imageSculpture = findViewById(R.id.sculptureImage);
-        typeFace = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
-        title.setTypeface(typeFace);
+        arhitektureShown = findViewById(R.id.showArhitekture);
+        sculptureShown = findViewById(R.id.showSculptures);
+        spomeniciShown = findViewById(R.id.showSpomenici);
+        checkboxArhitekture = findViewById(R.id.checkboxArhitekture);
+        checkboxSculptures = findViewById(R.id.checkboxSculpureShown);
+        checkboxSpomenici = findViewById(R.id.checkboxSpomenici);
+
         toolbarShown = false;
         isSculptureShown = true;
         isArhitektureShown = true;
         isSpomeniciShown = true;
+
+        imageSculpture = findViewById(R.id.sculptureImage);
+        imageSculptureSecond = findViewById(R.id.sculptureImage2);
+        nameArt = findViewById(R.id.sculptureName);
+        descriptionArt = findViewById(R.id.sculptureDescription);
+        authorArt = findViewById(R.id.sculptureAuthor);
+        naslov = findViewById(R.id.TVGodine);
+        scrollDescription = findViewById(R.id.scroll);
+        scrollArts = findViewById(R.id.scrollViewArts);
+
+        slideOutLeft = AnimationUtils.loadAnimation(this, R.anim.slide_out_left);
+        slideOutRight = AnimationUtils.loadAnimation(this, R.anim.slide_out_right);
+        slideInLeft = AnimationUtils.loadAnimation(this, R.anim.slide_in_left);
+        slideInRight = AnimationUtils.loadAnimation(this, R.anim.slide_in_right);
+
+
+        typeFace = Typeface.createFromAsset(getAssets(), "FREESCPT.TTF");
+        title.setTypeface(typeFace);
     }
 
     private void menuBar() {
@@ -254,7 +286,7 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    protected void showUnlockedSculptures(ArrayList<Sculpture> thing,final int thingBackground) {
+    protected void showUnlockedSculptures(ArrayList<Sculpture> thing, final int thingBackground) {
         String xmlString = "";
         linearLayout.setVerticalGravity(0);
         for (final Sculpture sculpture : thing) {
@@ -267,7 +299,7 @@ public class CollectionActivity extends AppCompatActivity {
                 storageReference = firebaseStorage.getReference();
 
                 RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.MATCH_PARENT);
-                params.setMargins(10, 0 , 20, 0);
+                params.setMargins(10, 0, 20, 0);
                 final RelativeLayout liner = new RelativeLayout(this);
                 //liner.setOrientation(LinearLayout.HORIZONTAL);
                 liner.setLayoutParams(params);
@@ -275,7 +307,7 @@ public class CollectionActivity extends AppCompatActivity {
                 liner.getLayoutParams().height = 400;
                 final ImageView image = new ImageView(this);
                 image.setLayoutParams(params);
-                image.getLayoutParams().width= 400;
+                image.getLayoutParams().width = 400;
 
                 final TextView tv = new TextView(this);
                 RelativeLayout.LayoutParams tvparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
@@ -289,9 +321,9 @@ public class CollectionActivity extends AppCompatActivity {
                     storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                         @Override
                         public void onSuccess(Uri uri) {
-                            try{
+                            try {
                                 Glide.with(CollectionActivity.this).load(uri).centerCrop().into(image);
-                            }catch (Exception ex){
+                            } catch (Exception ex) {
                                 liner.setBackground(getDrawable(thingBackground));//<-TREBA NACI GDJE DODATI DA STA NEMA SLIKU SE STAVI BOJA
                             }
 //                            Picasso.get().load(uri).into(new Target() {
@@ -338,22 +370,35 @@ public class CollectionActivity extends AppCompatActivity {
                         try {
                             Resources res = getResources();
                             String mDrawableName = imagePathSculpture + ".jpg";
+                            ZoomInImageViewAttacher mIvAttacter = new ZoomInImageViewAttacher();
+                            mIvAttacter.attachImageView(imageSculpture);
                             int resID = res.getIdentifier(mDrawableName, "drawable", getPackageName());
                             storageReference.child("Images").child(mDrawableName).getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
                                 @Override
                                 public void onSuccess(Uri uri) {
                                     Glide.with(CollectionActivity.this).load(uri).into(imageSculpture);
+                                    Glide.with(CollectionActivity.this).load(uri).into(imageSculptureSecond);
                                     //Picasso.get().load(uri).into(imageSculpture);
                                 }
                             });
                         } catch (Exception ex) {
                             Toast.makeText(getBaseContext(), "ex: " + ex, Toast.LENGTH_LONG).show();
                         }
-//                        Pop popSculpture = new Pop(nameSculpture, imagePathSculpture, descriptionSculpture, authorSculpture);
-//                        popSculpture.setFirstTime(false);
-//                        Intent i = new Intent(CollectionActivity.this, Pop.class);
-//                        i.putExtra("currentSculpture", popSculpture);
-//                        startActivity(i);
+                        nameArt.setText(sculpture.name);
+                        descriptionArt.setText(sculpture.description);
+                        authorArt.setText(sculpture.author);
+                        info.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                if (infoVisible) {
+                                    showOneArt();
+                                    infoVisible = false;
+                                } else {
+                                    showAllArt();
+                                    infoVisible = true;
+                                }
+                            }
+                        });
                     }
                 });
                 liner.addView(image);
@@ -438,5 +483,76 @@ public class CollectionActivity extends AppCompatActivity {
             eventType = parser.next();
         }
         return namesInXml;
+    }
+
+    public void showOneArt() {
+        imageSculpture.setVisibility(View.VISIBLE);
+        scrollArts.setVisibility(View.VISIBLE);
+        final ObjectAnimator oa1 = ObjectAnimator.ofFloat(info, "scaleX", 1f, 0f);
+        final ObjectAnimator oa2 = ObjectAnimator.ofFloat(info, "scaleX", 0f, 1f);
+        oa1.setInterpolator(new DecelerateInterpolator());
+        oa2.setInterpolator(new AccelerateDecelerateInterpolator());
+        oa1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                info.setImageResource(R.drawable.collection);
+                oa2.start();
+            }
+        });
+        oa1.start();
+
+        slideOutLeft.setAnimationListener(new Animation.AnimationListener() {
+            @Override
+            public void onAnimationStart(Animation animation) {
+
+            }
+
+            @Override
+            public void onAnimationEnd(Animation animation) {
+                imageSculpture.setVisibility(View.INVISIBLE);
+                scrollArts.setVisibility(View.INVISIBLE);
+
+                imageSculptureSecond.setVisibility(View.VISIBLE);
+                nameArt.setVisibility(View.VISIBLE);
+                scrollDescription.setVisibility(View.VISIBLE);
+                authorArt.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onAnimationRepeat(Animation animation) {
+
+            }
+        });
+        imageSculpture.startAnimation(slideOutLeft);
+        scrollArts.startAnimation(slideOutRight);
+    }
+
+
+    public void showAllArt() {
+
+        imageSculpture.setVisibility(View.VISIBLE);
+        scrollArts.setVisibility(View.VISIBLE);
+        imageSculpture.startAnimation(slideInLeft);
+        scrollArts.startAnimation(slideInRight);
+
+        final ObjectAnimator oa1 = ObjectAnimator.ofFloat(info, "scaleX", 1f, 0f);
+        final ObjectAnimator oa2 = ObjectAnimator.ofFloat(info, "scaleX", 0f, 1f);
+        oa1.setInterpolator(new DecelerateInterpolator());
+        oa2.setInterpolator(new AccelerateDecelerateInterpolator());
+        oa1.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+                info.setImageResource(R.drawable.info);
+                oa2.start();
+            }
+        });
+        oa1.start();
+
+        imageSculptureSecond.setVisibility(View.INVISIBLE);
+        nameArt.setVisibility(View.INVISIBLE);
+        scrollDescription.setVisibility(View.INVISIBLE);
+        authorArt.setVisibility(View.INVISIBLE);
     }
 }

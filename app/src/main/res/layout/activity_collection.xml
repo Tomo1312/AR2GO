@@ -8,6 +8,20 @@
     tools:context=".CollectionActivity">
 
     <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="53dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageView
         android:id="@+id/sculptureImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,41 +33,12 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:layout_constraintVertical_bias="1.0" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="39dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="56dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.354"
-        app:layout_constraintStart_toEndOf="@+id/tvProfileName"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.384"
-        app:srcCompat="@drawable/lightbulb" />
-
-    <TextView
-        android:id="@+id/tvProfileBodovi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="=0"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="match_parent"
-        android:gravity="center"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:gravity="center"
         android:paddingLeft="10dp"
         android:text="C O L L E C T I O N"
         android:textColor="@color/black"
@@ -66,10 +51,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <ScrollView
-        android:id="@+id/scrollView3"
+        android:id="@+id/scrollViewArts"
         android:layout_width="match_parent"
         android:layout_height="280dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="70dp"
         android:paddingTop="50dp"
         android:paddingBottom="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -87,48 +72,9 @@
                 android:id="@+id/scrollLinearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <!--                <LinearLayout-->
-                <!--                    android:id="@+id/bla"-->
-                <!--                    android:layout_width="100dp"-->
-                <!--                    android:layout_height="100dp"-->
-                <!--                    android:orientation="horizontal">-->
-                <!--                <ImageView-->
-                <!--                    android:layout_width="match_parent"-->
-                <!--                    android:layout_height="match_parent"-->
-                <!--                    android:id="@+id/slikica"-->
-                <!--                    android:src="@drawable/ar2go"/>-->
-                <!--                </LinearLayout>-->
-            </LinearLayout>
+                android:orientation="horizontal"></LinearLayout>
         </HorizontalScrollView>
     </ScrollView>
-
-    <ImageView
-        android:id="@+id/ivBack"
-        android:layout_width="53dp"
-        android:layout_height="39dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.017"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@android:drawable/ic_menu_revert" />
-
-    <ImageView
-        android:id="@+id/ivInfo"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:padding="6dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.875"
-        app:srcCompat="@drawable/info" />
 
     <ImageView
         android:id="@+id/ivShowToolbar"
@@ -144,6 +90,77 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/menu" />
 
+    <ImageView
+        android:id="@+id/sculptureImage2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sculptureName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sculptureImage2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sculptureName"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/sculptureDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|start"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/sculptureAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="end"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/scroll"
+        app:layout_constraintVertical_bias="0.0" />
 
     <LinearLayout
         android:id="@+id/toolbarLayout"
@@ -255,30 +272,21 @@
                         android:textAlignment="center"
                         android:textSize="18sp" />
                 </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="1">
-                        <ImageView
-                            android:id="@+id/checkboxFontante"
-                            android:layout_width="0dip"
-                            android:layout_height="match_parent"
-                            android:layout_weight="0.3"
-                            android:padding="5dp"
-                            app:srcCompat="@drawable/tick" />
-                        <TextView
-                            android:id="@+id/showFontane"
-                            android:layout_width="0dip"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="0.7"
-                            android:paddingTop="10dp"
-                            android:paddingBottom="10dp"
-                            android:text="Fontane"
-                            android:textAlignment="center"
-                            android:textSize="18sp" />
-                    </LinearLayout>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:padding="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/info" />
 </androidx.constraintlayout.widget.ConstraintLayout>

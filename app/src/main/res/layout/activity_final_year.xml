@@ -48,13 +48,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            android:layout_marginTop="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/TVGodine"
             app:layout_constraintVertical_bias="0.791" />
+
         <ScrollView
             android:id="@+id/scrollViewArts"
             android:layout_width="match_parent"
@@ -80,6 +81,7 @@
                     android:orientation="horizontal"></LinearLayout>
             </HorizontalScrollView>
         </ScrollView>
+
         <ImageView
             android:id="@+id/sculptureImage2"
             android:layout_width="match_parent"
@@ -154,8 +156,6 @@
 
             app:layout_constraintTop_toBottomOf="@+id/scroll"
             app:layout_constraintVertical_bias="0.0" />
-
-
 
         <ImageView
             android:id="@+id/ivInfo"
