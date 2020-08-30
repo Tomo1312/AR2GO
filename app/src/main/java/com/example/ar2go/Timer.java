@@ -28,7 +28,7 @@ import java.util.Locale;
 
 public class Timer extends Service {
     private final static String TAG = "Timer";
-    protected static final long START_TIME_IN_MILIS = 20 * 60 * 1000;
+    protected static final long START_TIME_IN_MILIS = 7 * 60 * 1000;
     protected long mTimeLeftInMillis;
     protected CountDownTimer cdt = null;
     protected String userName, userEmail, unlockedSculptures;
@@ -56,7 +56,7 @@ public class Timer extends Service {
     @RequiresApi(Build.VERSION_CODES.O)
     private void startMyOwnForeground() {
         String NOTIFICATION_CHANNEL_ID = "example.permanence";
-        String channelName = "Background Service";
+        String channelName = "Collecting lives";
         NotificationChannel chan = new NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, NotificationManager.IMPORTANCE_NONE);
         chan.setLightColor(Color.BLUE);
         chan.setLockscreenVisibility(Notification.VISIBILITY_PRIVATE);

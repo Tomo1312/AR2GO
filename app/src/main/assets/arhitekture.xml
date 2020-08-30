@@ -1,1382 +1,1146 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Arhitekture>
-    <Arhitektura>
-        <name>Almeria</name>
-        <description>2006</description>
-        <author>Marija Pivac i Miroslav Dragomanović</author>
-        <imagePath>arhitekturaalmeria</imagePath>
-        <points>1</points>
-        <latitude>45.802287</latitude>
-        <longitude>16.012501</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Arena</name>
-        <description>Arena</description>
-        <author>Arhitektonski ured UPI-2M</author>
-        <imagePath>arhitekturaarenazagreb</imagePath>
-        <points>1</points>
-        <latitude>45.771325</latitude>
-        <longitude>15.943615</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Banski dvori</name>
-        <description>19.st.</description>
-        <author>N/A</author>
-        <imagePath>arhitekturabanskidvori</imagePath>
-        <points>1</points>
-        <latitude>45.816322</latitude>
-        <longitude>15.973086</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Chromos</name>
-        <description>(1989.)</description>
-        <author>Marijan Turkulin, Petar Vouk </author>
-        <imagePath>arhitekturachromos</imagePath>
-        <points>1</points>
-        <latitude>45.802818</latitude>
-        <longitude>16.008936</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Cibona</name>
-        <description>(1987.)</description>
-        <author>Marijan Hržić, Ivan Piteša i Berislav Šerbetić </author>
-        <imagePath>arhitekturacibona</imagePath>
-        <points>1</points>
-        <latitude>45.802814</latitude>
-        <longitude>15.963506</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Croatia osiguranje</name>
-        <description>KURČINA OD OSIGURANJA</description>
-        <author>Velimir Neidhardt</author>
-        <imagePath>arhitekturacroatiaosiguranje</imagePath>
-        <points>1</points>
-        <latitude>45.801752</latitude>
-        <longitude>15.973907</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Crkva Sv. Marka</name>
-        <description>14. stoljeće</description>
-        <author>N/A</author>
-        <imagePath>arhitekturacrkvasvmarka</imagePath>
-        <points>1</points>
-        <latitude>45.816414</latitude>
-        <longitude>15.973633</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Dom likovnih umjetnika</name>
-        <description>(1938.)</description>
-        <author>Ivan Meštrović </author>
-        <imagePath>arhitekturadomlikovnihumjetnika</imagePath>
-        <points>1</points>
-        <latitude>45.809957</latitude>
-        <longitude>15.987185</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Državni arhiv</name>
-        <description>(1913.)</description>
-        <author>Rudolf Lubynski</author>
-        <imagePath>arhitekturadrzavniarhivrudolf</imagePath>
-        <points>1</points>
-        <latitude>45.806016</latitude>
-        <longitude>15.970203</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Etnografski muzej</name>
-        <description>(1904.)</description>
-        <author>Vjekoslav Alojz Bastl </author>
-        <imagePath>arhitekturaetnografskimuzej</imagePath>
-        <points>1</points>
-        <latitude>45.80836</latitude>
-        <longitude>15.9669245</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Džamija</name>
-        <description>(1987.)</description>
-        <author>Mirza Gološ, Džemal Čelić </author>
-        <imagePath>arhitekturadzamija</imagePath>
-        <points>1</points>
-        <latitude>45.791243</latitude>
-        <longitude>16.011575</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Fakultet elektrotehnike i računarstva</name>
-        <description>1963.</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafer</imagePath>
-        <points>1</points>
-        <latitude>45.8014318</latitude>
-        <longitude>15.971116700000039</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Gradsko poglavarstvo</name>
-        <description>(1955.)</description>
-        <author>Kazimir Ostrogović</author>
-        <imagePath>arhitekturagradskopoglavarstvo</imagePath>
-        <points>1</points>
-        <latitude>45.801251</latitude>
-        <longitude>15.977014</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Grand Centar</name>
-        <description>(2006.)</description>
-        <author>Vesna Kresnik-Vojnović, Željka Sestrić </author>
-        <imagePath>arhitekturagrandcentar</imagePath>
-        <points>1</points>
-        <latitude>45.804624</latitude>
-        <longitude>15.995628</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hrvatska akademija znanosti i umjetnosti</name>
-        <description>(1880.)</description>
-        <author>Friedrich Schmidt</author>
-        <imagePath>arhitekturahazu</imagePath>
-        <points>1</points>
-        <latitude>45.809142</latitude>
-        <longitude>15.978536</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hrvatsko narodno kazalište</name>
-        <description>(1895.)</description>
-        <author>Ferdinand Fellner i Hermann Helmer </author>
-        <imagePath>arhitekturahnkorigigi</imagePath>
-        <points>1</points>
-        <latitude>45.809463</latitude>
-        <longitude>15.970066</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hoto Tower</name>
-        <description>(2005.)</description>
-        <author>Marijan Turkulin</author>
-        <imagePath>arhitekturahoto</imagePath>
-        <points>1</points>
-        <latitude>45.801842</latitude>
-        <longitude>15.963603</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hotel Esplanade</name>
-        <description>(1925.)</description>
-        <author>Otto Rechnig, Dionis Sunko </author>
-        <imagePath>arhitekturahotelesplanade</imagePath>
-        <points>1</points>
-        <latitude>45.8054686</latitude>
-        <longitude>15.9737187</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hrvatski sabor</name>
-        <description>(1910.)</description>
-        <author>Lavoslav Kalda </author>
-        <imagePath>arhitekturasabor</imagePath>
-        <points>1</points>
-        <latitude>45.81615</latitude>
-        <longitude>15.973979</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Zgrada uprave Hrvatske Željeznice</name>
-        <description>(1903.)</description>
-        <author>Ferenc Pfaff</author>
-        <imagePath>arhitekturahz</imagePath>
-        <points>1</points>
-        <latitude>45.8050783</latitude>
-        <longitude>15.973985</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hypo centar</name>
-        <description>(2007.)</description>
-        <author>Thom Mayne/Tehnozone </author>
-        <imagePath>arhitekturahypo</imagePath>
-        <points>1</points>
-        <latitude>45.793726</latitude>
-        <longitude>15.969879</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Klinička bolnica Dubrava</name>
-        <description>(1988.)</description>
-        <author>Avenija Gojka Šuška </author>
-        <imagePath>arhitekturadubrava</imagePath>
-        <points>1</points>
-        <latitude>45.834496</latitude>
-        <longitude>16.035168</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Kockica</name>
-        <description>(1968.)</description>
-        <author>Ivan Vitić</author>
-        <imagePath>arhitekturakockica</imagePath>
-        <points>1</points>
-        <latitude>45.790734</latitude>
-        <longitude>15.969289</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Koncertna dvorana Vatroslav Lisinski</name>
-        <description>(1973.)</description>
-        <author>Marijan Haberle, Minko Jurković, Tanja Zdvořak </author>
-        <imagePath>arhitekturalisinski</imagePath>
-        <points>1</points>
-        <latitude>45.801031</latitude>
-        <longitude>15.980296</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Matica hrvatskih obrtnika</name>
-        <description>(1939.)</description>
-        <author>Aleksandar Freudenreich i Zvonimir Požgaj</author>
-        <imagePath>arhitekturamho</imagePath>
-        <points>1</points>
-        <latitude>45.8131512</latitude>
-        <longitude>15.9658444</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mimara</name>
-        <description>(1895.)</description>
-        <author>LUDWIG i HÜLSNER </author>
-        <imagePath>arhitekturamimara</imagePath>
-        <points>1</points>
-        <latitude>45.8082229</latitude>
-        <longitude>15.9650765</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mirogoj</name>
-        <description>20.st.</description>
-        <author>Hermann Bollé</author>
-        <imagePath>arhitekturamirogoj</imagePath>
-        <points>1</points>
-        <latitude>45.835826</latitude>
-        <longitude>15.983998</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Muzej suvremene umjetnosti</name>
-        <description>N/A</description>
-        <author>Igor Franić</author>
-        <imagePath>arhitekturamsu</imagePath>
-        <points>1</points>
-        <latitude>45.778479</latitude>
-        <longitude>15.981884</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Nacionalna sveučilišna biblioteka</name>
-        <description>(1995.)</description>
-        <author>M. Hržić. Z. Krznarić, D. Mance i V. Neidhardt</author>
-        <imagePath>arhitekturansb</imagePath>
-        <points>1</points>
-        <latitude>45.797469</latitude>
-        <longitude>15.9765631</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Palača burze</name>
-        <description>(1927.)</description>
-        <author>Viktor Kovačić</author>
-        <imagePath>arhitekturaburza</imagePath>
-        <points>1</points>
-        <latitude>45.81163</latitude>
-        <longitude>15.983902</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Palača pravde</name>
-        <description>(1970.)</description>
-        <author>Ninosalv Kučan </author>
-        <imagePath>arhitekturapravda</imagePath>
-        <points>1</points>
-        <latitude>45.81163</latitude>
-        <longitude>15.983902</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Rakete – Richterovi neboderi</name>
-        <description>(1968.)</description>
-        <author>Centar 51 - Berislav Šerbetić, Ljubo Iveta, Vjenceslav Richter, Olga Korenik</author>
-        <imagePath>arhitekturarakete</imagePath>
-        <points>1</points>
-        <latitude>45.799912</latitude>
-        <longitude>15.981084</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Rektorat</name>
-        <description>(1859.)</description>
-        <author>Ludwig von Zettl</author>
-        <imagePath>arhitekturarektorat</imagePath>
-        <points>1</points>
-        <latitude>45.810561</latitude>
-        <longitude>15.969822</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Rudolfova vojarna</name>
-        <description>(1889.)</description>
-        <author>Ferdinand Gruber i Carl Völckner</author>
-        <imagePath>arhitekturarudolf</imagePath>
-        <points>1</points>
-        <latitude>45.8106588</latitude>
-        <longitude>15.9567672</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Starčevićev dom</name>
-        <description>(1894.)</description>
-        <author>arh. ured Hönigsberg &amp; Deutsch </author>
-        <imagePath>arhitekturastarcevicdom</imagePath>
-        <points>1</points>
-        <latitude>45.805845</latitude>
-        <longitude>15.977728</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Šumarski dom</name>
-        <description>(1898..)</description>
-        <author>Alexander pl. Eigner, Gjuro Carnelutti </author>
-        <imagePath>arhitekturasumarskidomalexander</imagePath>
-        <points>1</points>
-        <latitude>45.808315</latitude>
-        <longitude>15.9670213</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Umjetnički paviljon</name>
-        <description>(1898.)</description>
-        <author>Fellner i Helmer</author>
-        <imagePath>arhitekturaumjetnickipaviljonfellnerihemler</imagePath>
-        <points>1</points>
-        <latitude>45.807115</latitude>
-        <longitude>15.978661</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Zagreb Tower</name>
-        <description>(2006.)</description>
-        <author>Otto Barić </author>
-        <imagePath>arhitekturazgtower</imagePath>
-        <points>1</points>
-        <latitude>45.802022</latitude>
-        <longitude>16.003439</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Zagrepčanka</name>
-        <description>N/A</description>
-        <author>Slavko Jelinek i Berislav Vinković</author>
-        <imagePath>arhitekturazagrepcanka</imagePath>
-        <points>1</points>
-        <latitude>45.798431</latitude>
-        <longitude>15.962489</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Boškovićeva 8 – reljefi na fasadi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaboskoviceva8</imagePath>
-        <points>1</points>
-        <latitude>45.8094988</latitude>
-        <longitude>15.9783084</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Bošovićeva 14 – stari grb</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaboskoviceva14</imagePath>
-        <points>1</points>
-        <latitude>45.8095514</latitude>
-        <longitude>15.9789751</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Boškovićeva 15 – reljefi na fasadi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaboskoviceva15</imagePath>
-        <points>1</points>
-        <latitude>45.8098523</latitude>
-        <longitude>15.9803081</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Boškovićeva 26 – reljefi na fasadi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaboskoviceva26</imagePath>
-        <points>1</points>
-        <latitude>45.8097118</latitude>
-        <longitude>15.9807263</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Branimirova 19 – ulaz u zgradu</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturabranimirova19</imagePath>
-        <points>1</points>
-        <latitude>45.8055814</latitude>
-        <longitude>15.9807301</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Dalmatinska 8 - ulaz</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturadalmatinska8</imagePath>
-        <points>1</points>
-        <latitude>45.8116697</latitude>
-        <longitude>15.9662129</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Državni arhiv - pročelje</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturadrzavniarhivprocelje</imagePath>
-        <points>1</points>
-        <latitude>45.806414</latitude>
-        <longitude>15.9688063</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Cvjetni trg - ulaz</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturacvjetnitrg</imagePath>
-        <points>1</points>
-        <latitude>45.812093</latitude>
-        <longitude>15.974132</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Ćirilometodska 1 – ulaz i reljefi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturacirilometodska1</imagePath>
-        <points>1</points>
-        <latitude>45.8150243</latitude>
-        <longitude>15.9711303</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Ćirilometodska 5 – Gradska skupština</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturacirilometodska5</imagePath>
-        <points>1</points>
-        <latitude>45.815775</latitude>
-        <longitude>15.9712025</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hrvatsko narodno kazalište - pročelje</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturahnkprocelje</imagePath>
-        <points>1</points>
-        <latitude>45.8093983</latitude>
-        <longitude>15.9678524</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hotel Palace – Balkon</name>
-        <description>N/A</description>
-        <author>Dragutin Morak</author>
-        <imagePath>arhitekturapalacebalkon</imagePath>
-        <points>1</points>
-        <latitude>45.8085611</latitude>
-        <longitude>15.9755091</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Hotel Dubrovnik - Merkur</name>
-        <description>N/A</description>
-        <author>Anton Dominik Fernkorn</author>
-        <imagePath>arhitekturamerkurdubrovnik</imagePath>
-        <points>1</points>
-        <latitude>45.8112612</latitude>
-        <longitude>15.9761483</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Jurišićeva 2</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturajurisicevareljef1</imagePath>
-        <points>1</points>
-        <latitude>45.8124685</latitude>
-        <longitude>15.9762691</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Jurišićeva 2</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturajurisicevareljef2</imagePath>
-        <points>1</points>
-        <latitude>45.8124685</latitude>
-        <longitude>15.9762691</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Jurišićeva 17 – motivi/figure</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturajurisiceva17</imagePath>
-        <points>1</points>
-        <latitude>45.8123168</latitude>
-        <longitude>15.9798716</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Križanićeva 14 - fasada</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturakrizaniceva14</imagePath>
-        <points>1</points>
-        <latitude>45.8088394</latitude>
-        <longitude>15.9862907</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Kukuljevićeva 11 – psihijatrijska bolnica za djecu</name>
-        <description>N/A</description>
-        <author>Mila Wood</author>
-        <imagePath>arhitekturakukuljeviceva11</imagePath>
-        <points>1</points>
-        <latitude>45.8150032</latitude>
-        <longitude>15.9610791</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Muzej za umjetnost i obrt - pročelje</name>
-        <description>N/A</description>
-        <author>Dragutin Morak</author>
-        <imagePath>arhitekturamuoprocelje</imagePath>
-        <points>1</points>
-        <latitude>45.809418</latitude>
-        <longitude>15.968735</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Maksimir – ulazna vrata</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturamaksimirulaz</imagePath>
-        <points>1</points>
-        <latitude>45.8196962</latitude>
-        <longitude>16.0152371</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Markov trg – grb na Saboru</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturasaborgrb</imagePath>
-        <points>1</points>
-        <latitude>45.8132976</latitude>
-        <longitude>15.9781769</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mažuranićev trg 14 – Šumarski dom</name>
-        <description>N/A</description>
-        <author>Rudolf Valdec</author>
-        <imagePath>arhitekturasumarskidomrudolf</imagePath>
-        <points>1</points>
-        <latitude>45.8083637</latitude>
-        <longitude>15.9669245</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mesnička 10 - ulaz</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturamesnicka10</imagePath>
-        <points>1</points>
-        <latitude>45.8142814</latitude>
-        <longitude>15.9685675</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mesnička 28 - ulaz</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturamesnicka28</imagePath>
-        <points>1</points>
-        <latitude>45.8167409</latitude>
-        <longitude>15.9693839</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Mihanovićeva – ulaz Hrvatskog zavoda za zdravstveno osiguranje</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturahzzo</imagePath>
-        <points>1</points>
-        <latitude>45.8054667</latitude>
-        <longitude>15.9724947</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Palmotićeva - ulaz</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturapalmoticeva</imagePath>
-        <points>1</points>
-        <latitude>45.8117251</latitude>
-        <longitude>15.9796058</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Petrova 6 - fasada</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturapetrova6</imagePath>
-        <points>1</points>
-        <latitude>45.81994</latitude>
-        <longitude>16.0014293</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Praška 2 - balkon</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturapraska2</imagePath>
-        <points>1</points>
-        <latitude>45.8125187</latitude>
-        <longitude>15.9753024</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Radićeva 4 – reljefi na fasadi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaradiceva4</imagePath>
-        <points>1</points>
-        <latitude>45.8136138</latitude>
-        <longitude>15.9739499</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Radićeva 30 – skulptura prelje</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaradiceva30</imagePath>
-        <points>1</points>
-        <latitude>45.8156171</latitude>
-        <longitude>15.9734598</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Rooseveltov trg – fasada Hrvatske gospodarske komore</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturarooseveltovtrg</imagePath>
-        <points>1</points>
-        <latitude>45.808214</latitude>
-        <longitude>15.968446</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg Bana Jelačića - balkon</name>
-        <description>N/A</description>
-        <author>Kuno Waidmann</author>
-        <imagePath>arhitekturatrgbanajelacicabalkon</imagePath>
-        <points>1</points>
-        <latitude>45.8133247</latitude>
-        <longitude>15.9773151</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg Bana Jelačića - reljef</name>
-        <description>N/A</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>arhitekturatrgbanajelacicareljef</imagePath>
-        <points>1</points>
-        <latitude>45.8134054</latitude>
-        <longitude>15.976802</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg Josipa Juraja Strossmayera – ulaz Hrvatske banke za obnovu i razvitak</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturahbor</imagePath>
-        <points>1</points>
-        <latitude>45.8081808</latitude>
-        <longitude>15.977715</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg Josipa Juraja Strossmayera – Hrvatska akademija znanosti i umjetnosti</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturahazu</imagePath>
-        <points>1</points>
-        <latitude>45.8082022</latitude>
-        <longitude>15.9785758</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg kralja Tomislava 28 – figura na krovu</name>
-        <description>N/A</description>
-        <author>N/AN</author>
-        <imagePath>arhitekturatomislav28</imagePath>
-        <points>1</points>
-        <latitude>45.8076036</latitude>
-        <longitude>15.9764011</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Trg Republike Hrvatske - HIDRA</name>
-        <description>N/A</description>
-        <author>hidra hrvatska informacijsko dokumentacijska referalna agencija</author>
-        <imagePath>arhitekturahidra</imagePath>
-        <points>1</points>
-        <latitude>45.809705</latitude>
-        <longitude>15.9704204</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Umjetnički paviljon - motivi</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturaumjetnickipaviljonmotivi</imagePath>
-        <points>1</points>
-        <latitude>45.8071199</latitude>
-        <longitude>15.9785638</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Vinogradska – pročelje bolnice</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturavinogradska</imagePath>
-        <points>1</points>
-        <latitude>45.8150612</latitude>
-        <longitude>15.9536495</longitude>
-    </Arhitektura>
-
-	<Arhitektura>
-        <name>Vlaška 74 – ulaz u zgradu</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturavlaska</imagePath>
-        <points>1</points>
-        <latitude>45.8137432</latitude>
-        <longitude>15.9875605</longitude>
-    </Arhitektura>
-    
-	<Arhitektura>
-        <name>Zagrebačka katedrala - ulaz</name>
-        <description>N/A</description>
-        <author>Dragutin Morak, Ignjat Franz, Robert Frangeš Mihanović</author>
-        <imagePath>arhitekturakatedrala</imagePath>
-        <points>1</points>
-        <latitude>45.8145084</latitude>
-        <longitude>15.9798007</longitude>
-    </Arhitektura>
-	
-	<Arhitektura>
-        <name>Bandićeve fontane</name>
-        <description>2012.</description>
-        <author>Helena Paver-Njirić</author>
-        <imagePath>arhitekturabandicevefotnane</imagePath>
-        <points>1</points>
-        <latitude>45.797572</latitude>
-        <longitude>15.9791426</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Blizanci</name>
-        <description>1984.</description>
-        <author>Helena Paver-Njirić</author>
-        <imagePath>arhitekturablizancifontane</imagePath>
-        <points>1</points>
-        <latitude>45.8099367</latitude>
-        <longitude>15.9783729</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Dječačić</name>
-        <description>1959.</description>
-        <author>Stjepan Frankić</author>
-        <imagePath>arhitekturadjecacic</imagePath>
-        <points>1</points>
-        <latitude>45.818278</latitude>
-        <longitude>16.024000</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Dječak</name>
-        <description>1950.</description>
-        <author>Antun Augustinčić</author>
-        <imagePath>arhitekturadjecak</imagePath>
-        <points>1</points>
-        <latitude>45.807137</latitude>
-        <longitude>15.974561</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Čekanje</name>
-        <description>1975.</description>
-        <author>Mile Grgas</author>
-        <imagePath>arhitekturacekanje</imagePath>
-        <points>1</points>
-        <latitude>45.814667</latitude>
-        <longitude>16.008528</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Elegija</name>
-        <description>1911. postavljen 1994.</description>
-        <author>Robert Frangeš Mihanović</author>
-        <imagePath>arhitekturaelegija</imagePath>
-        <points>1</points>
-        <latitude>45.8147947</latitude>
-        <longitude>15.9676496</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>2008.</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanajedan</imagePath>
-        <points>1</points>
-        <latitude>45.7713013</latitude>
-        <longitude>15.9411802</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1945.</description>
-        <author>Zvonimir Kani</author>
-        <imagePath>arhitekturafontanadva</imagePath>
-        <points>1</points>
-        <latitude>45.815667</latitude>
-        <longitude>15.897306</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanatri</imagePath>
-        <points>1</points>
-        <latitude>45.804972</latitude>
-        <longitude>15.970487</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanacetiri</imagePath>
-        <points>1</points>
-        <latitude>45.813583</latitude>
-        <longitude>15.964389</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanapet</imagePath>
-        <points>1</points>
-        <latitude>45.824340</latitude>
-        <longitude>16.010417</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanasest</imagePath>
-        <points>1</points>
-        <latitude>45.814096</latitude>
-        <longitude>15.991242</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanasedam</imagePath>
-        <points>1</points>
-        <latitude>45.805896</latitude>
-        <longitude>15.993468</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanaosam</imagePath>
-        <points>1</points>
-        <latitude>45.791943</latitude>
-        <longitude>16.010606</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>Ivan Valek</author>
-        <imagePath>arhitekturafontanadevet</imagePath>
-        <points>1</points>
-        <latitude>45.807070</latitude>
-        <longitude>15.966681</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadeset</imagePath>
-        <points>1</points>
-        <latitude>45.813864</latitude>
-        <longitude>15.973775</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>Boris Magaš</author>
-        <imagePath>arhitekturafontanajedanaest</imagePath>
-        <points>1</points>
-        <latitude>45.804409</latitude>
-        <longitude>16.020633</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadvanaest</imagePath>
-        <points>1</points>
-        <latitude>45.798294</latitude>
-        <longitude>15.863238</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>Branko Kincl 2000</author>
-        <imagePath>arhitekturafontanatrinaest</imagePath>
-        <points>1</points>
-        <latitude>45.8204274</latitude>
-        <longitude>15.9764467</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanacetrnaest</imagePath>
-        <points>1</points>
-        <latitude>45.814489</latitude>
-        <longitude>15.997121</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanapetnaest</imagePath>
-        <points>1</points>
-        <latitude>45.7872385</latitude>
-        <longitude>15.9796941</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Hermann Bollé </name>
-        <description>N/A</description>
-        <author>1890-tih.</author>
-        <imagePath>arhitekturafontanasesnaest</imagePath>
-        <points>1</points>
-        <latitude>45.817121</latitude>
-        <longitude>15.9748646</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanasedamnaest</imagePath>
-        <points>1</points>
-        <latitude>45.786608</latitude>
-        <longitude>15.928341</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1947.</description>
-        <author>Zvonimir Fröhlich</author>
-        <imagePath>arhitekturafontanaosamnaest</imagePath>
-        <points>1</points>
-        <latitude>45.816294</latitude>
-        <longitude>15.980628</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadevetnaest</imagePath>
-        <points>1</points>
-        <latitude>45.817790</latitude>
-        <longitude>15.832538</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>2016.</author>
-        <imagePath>arhitekturafontanadvadeset</imagePath>
-        <points>1</points>
-        <latitude>45.8037341</latitude>
-        <longitude>15.9992133</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadvadesetijedan</imagePath>
-        <points>1</points>
-        <latitude>45.8211303</latitude>
-        <longitude>16.0285566</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadvadesetidva</imagePath>
-        <points>1</points>
-        <latitude>45.777364</latitude>
-        <longitude>15.988433</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1987.</description>
-        <author>Dinko Tabain</author>
-        <imagePath>arhitekturafontanadvadesetitri</imagePath>
-        <points>1</points>
-        <latitude>45.799766</latitude>
-        <longitude>15.953404</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadvadeseticetiri</imagePath>
-        <points>1</points>
-        <latitude>45.775083</latitude>
-        <longitude>15.962500</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1993.</description>
-        <author>Zoran Jerčinović, Gabrijela Kiš-Jerčinović</author>
-        <imagePath>arhitekturafontanadvadesetipet</imagePath>
-        <points>1</points>
-        <latitude>45.805294</latitude>
-        <longitude>15.977165</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1997.</description>
-        <author>Jelena Županić</author>
-        <imagePath>arhitekturafontanadvadesetisest</imagePath>
-        <points>1</points>
-        <latitude>45.812632</latitude>
-        <longitude>15.984845</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1991.</description>
-        <author>Zoran Hebar</author>
-        <imagePath>arhitekturafontanadvadesetisedam</imagePath>
-        <points>1</points>
-        <latitude>45.812198</latitude>
-        <longitude>15.996582</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanadvadesetiosam</imagePath>
-        <points>1</points>
-        <latitude>45.803172</latitude>
-        <longitude>15.963811</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1943.</description>
-        <author>Stjepan Planić</author>
-        <imagePath>arhitekturafontanadvadesetidevet</imagePath>
-        <points>1</points>
-        <latitude>45.8120053</latitude>
-        <longitude>15.9841177</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1895.</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanatrideset</imagePath>
-        <points>1</points>
-        <latitude>45.806365</latitude>
-        <longitude>15.978662</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Atrij MUO</name>
-        <description>1881.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>arhitekturafontanaartij</imagePath>
-        <points>1</points>
-        <latitude>45.809308</latitude>
-        <longitude>15.968297</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1973.</description>
-        <author>Marijan Haberle, Minka Jurković-Haberle, Tatiana Zdvořak Erlich </author>
-        <imagePath>arhitekturafontanatridesetijedan</imagePath>
-        <points>1</points>
-        <latitude>45.801694</latitude>
-        <longitude>15.979802</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanatridesetidva</imagePath>
-        <points>1</points>
-        <latitude>45.810224</latitude>
-        <longitude>15.986727</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Prirodoslovna škola Vladimira Preloga</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanaprirodoslovnaskolavladimirapreloga</imagePath>
-        <points>1</points>
-        <latitude>45.801808</latitude>
-        <longitude>16.000758</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>N/A</description>
-        <author>N/A</author>
-        <imagePath>arhitekturafontanatridesetitri</imagePath>
-        <points>1</points>
-        <latitude>45.813453</latitude>
-        <longitude>15.905575</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1972</description>
-        <author>Dragutin Kiš, Petar Vovk</author>
-        <imagePath>arhitekturafontanatrideseticetiri</imagePath>
-        <points>1</points>
-        <latitude>45.778974</latitude>
-        <longitude>15.996236</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Gljiva</name>
-        <description>1893. replika 1974.</description>
-        <author>Hermann Bollé </author>
-        <imagePath>arhitekturafontanagljiva</imagePath>
-        <points>1</points>
-        <latitude>45.810869</latitude>
-        <longitude>15.977892</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Fontana</name>
-        <description>1987.</description>
-        <author>Mirza Gološ i Džemal Čelić</author>
-        <imagePath>arhitekturafontanatridesetipet</imagePath>
-        <points>1</points>
-        <latitude>45.791489</latitude>
-        <longitude>16.011372</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Jelen</name>
-        <description>1958.</description>
-        <author>Dušan Džamonja</author>
-        <imagePath>arhitekturafontanajelen</imagePath>
-        <points>1</points>
-        <latitude>45.803746</latitude>
-        <longitude>15.966069</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Kozmički ciklus vode</name>
-        <description>1935.</description>
-        <author>Ćiril Jeglič i Josip Seissl</author>
-        <imagePath>arhitekturafontanakozmickiciklusvode</imagePath>
-        <points>1</points>
-        <latitude>45.8082523</latitude>
-        <longitude>15.9903038</longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name>Kupačica (Igre s vodom)</name>
-        <description>1977. izrađeno - postavljeno 1987.</description>
-        <author>Lujo Lozica</author>
-        <imagePath>arhitekturafontanakupacica</imagePath>
-        <points>1</points>
-        <latitude>45.806361</latitude>
-        <longitude>15.952444</longitude>
-    </Arhitektura>
-	
-<!--    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>
-	
-    <Arhitektura>
-        <name></name>
-        <description>N/A</description>
-        <author></author>
-        <imagePath>arhitekturafontana</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Arhitektura>-->
-</Arhitekture>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Arhitektura>
+    <name>Almeria</name>
+    <description>2006</description>
+    <author>Marija Pivac i Miroslav Dragomanović</author>
+    <imagePath>arhitekturaalmeria</imagePath>
+    <points>1</points>
+    <latitude>45.802287</latitude>
+    <longitude>16.012501</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Arena</name>
+    <description>Arena</description>
+    <author>Arhitektonski ured UPI-2M</author>
+    <imagePath>arhitekturaarenazagreb</imagePath>
+    <points>1</points>
+    <latitude>45.771325</latitude>
+    <longitude>15.943615</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Atrij MUO</name>
+    <description>1881.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>arhitekturafontanaartij</imagePath>
+    <points>1</points>
+    <latitude>45.809308</latitude>
+    <longitude>15.968297</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Bandićeve fontane</name>
+    <description>2012.</description>
+    <author>Helena Paver-Njirić</author>
+    <imagePath>arhitekturabandicevefotnane</imagePath>
+    <points>1</points>
+    <latitude>45.797572</latitude>
+    <longitude>15.9791426</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Banski dvori</name>
+    <description>19.st.</description>
+    <author>N/A</author>
+    <imagePath>arhitekturabanskidvori</imagePath>
+    <points>1</points>
+    <latitude>45.816322</latitude>
+    <longitude>15.973086</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Blizanci</name>
+    <description>1984.</description>
+    <author>Helena Paver-Njirić</author>
+    <imagePath>arhitekturablizancifontane</imagePath>
+    <points>1</points>
+    <latitude>45.8099367</latitude>
+    <longitude>15.9783729</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Boškovićeva 15 – reljefi na fasadi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaboskoviceva15</imagePath>
+    <points>1</points>
+    <latitude>45.8098523</latitude>
+    <longitude>15.9803081</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Boškovićeva 26 – reljefi na fasadi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaboskoviceva26</imagePath>
+    <points>1</points>
+    <latitude>45.8097118</latitude>
+    <longitude>15.9807263</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Boškovićeva 8 – reljefi na fasadi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaboskoviceva8</imagePath>
+    <points>1</points>
+    <latitude>45.8094988</latitude>
+    <longitude>15.9783084</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Bošovićeva 14 – stari grb</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaboskoviceva14</imagePath>
+    <points>1</points>
+    <latitude>45.8095514</latitude>
+    <longitude>15.9789751</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Branimirova 19 – ulaz u zgradu</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturabranimirova19</imagePath>
+    <points>1</points>
+    <latitude>45.8055814</latitude>
+    <longitude>15.9807301</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Chromos</name>
+    <description>(1989.)</description>
+    <author>Marijan Turkulin, Petar Vouk </author>
+    <imagePath>arhitekturachromos</imagePath>
+    <points>1</points>
+    <latitude>45.802818</latitude>
+    <longitude>16.008936</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Cibona</name>
+    <description>(1987.)</description>
+    <author>Marijan Hržić, Ivan Piteša i Berislav Šerbetić </author>
+    <imagePath>arhitekturacibona</imagePath>
+    <points>1</points>
+    <latitude>45.802814</latitude>
+    <longitude>15.963506</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Crkva Sv. Marka</name>
+    <description>14. stoljeće</description>
+    <author>N/A</author>
+    <imagePath>arhitekturacrkvasvmarka</imagePath>
+    <points>1</points>
+    <latitude>45.816414</latitude>
+    <longitude>15.973633</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Croatia osiguranje</name>
+    <description>KURČINA OD OSIGURANJA</description>
+    <author>Velimir Neidhardt</author>
+    <imagePath>arhitekturacroatiaosiguranje</imagePath>
+    <points>1</points>
+    <latitude>45.801752</latitude>
+    <longitude>15.973907</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Cvjetni trg - ulaz</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturacvjetnitrg</imagePath>
+    <points>1</points>
+    <latitude>45.812093</latitude>
+    <longitude>15.974132</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Čekanje</name>
+    <description>1975.</description>
+    <author>Mile Grgas</author>
+    <imagePath>arhitekturacekanje</imagePath>
+    <points>1</points>
+    <latitude>45.814667</latitude>
+    <longitude>16.008528</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Ćirilometodska 1 – ulaz i reljefi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturacirilometodska1</imagePath>
+    <points>1</points>
+    <latitude>45.8150243</latitude>
+    <longitude>15.9711303</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Ćirilometodska 5 – Gradska skupština</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturacirilometodska5</imagePath>
+    <points>1</points>
+    <latitude>45.815775</latitude>
+    <longitude>15.9712025</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Dalmatinska 8 - ulaz</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturadalmatinska8</imagePath>
+    <points>1</points>
+    <latitude>45.8116697</latitude>
+    <longitude>15.9662129</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Dječačić</name>
+    <description>1959.</description>
+    <author>Stjepan Frankić</author>
+    <imagePath>arhitekturadjecacic</imagePath>
+    <points>1</points>
+    <latitude>45.818278</latitude>
+    <longitude>16.024000</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Dječak</name>
+    <description>1950.</description>
+    <author>Antun Augustinčić</author>
+    <imagePath>arhitekturadjecak</imagePath>
+    <points>1</points>
+    <latitude>45.807137</latitude>
+    <longitude>15.974561</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Dom likovnih umjetnika</name>
+    <description>(1938.)</description>
+    <author>Ivan Meštrović </author>
+    <imagePath>arhitekturadomlikovnihumjetnika</imagePath>
+    <points>1</points>
+    <latitude>45.809957</latitude>
+    <longitude>15.987185</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Državni arhiv</name>
+    <description>(1913.)</description>
+    <author>Rudolf Lubynski</author>
+    <imagePath>arhitekturadrzavniarhivrudolf</imagePath>
+    <points>1</points>
+    <latitude>45.806016</latitude>
+    <longitude>15.970203</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Državni arhiv - pročelje</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturadrzavniarhivprocelje</imagePath>
+    <points>1</points>
+    <latitude>45.806414</latitude>
+    <longitude>15.9688063</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Džamija</name>
+    <description>(1987.)</description>
+    <author>Mirza Gološ, Džemal Čelić </author>
+    <imagePath>arhitekturadzamija</imagePath>
+    <points>1</points>
+    <latitude>45.791243</latitude>
+    <longitude>16.011575</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Elegija</name>
+    <description>1911. postavljen 1994.</description>
+    <author>Robert Frangeš Mihanović</author>
+    <imagePath>arhitekturaelegija</imagePath>
+    <points>1</points>
+    <latitude>45.8147947</latitude>
+    <longitude>15.9676496</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Etnografski muzej</name>
+    <description>(1904.)</description>
+    <author>Vjekoslav Alojz Bastl </author>
+    <imagePath>arhitekturaetnografskimuzej</imagePath>
+    <points>1</points>
+    <latitude>45.80836</latitude>
+    <longitude>15.9669245</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fakultet elektrotehnike i računarstva</name>
+    <description>1963.</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafer</imagePath>
+    <points>1</points>
+    <latitude>45.8014318</latitude>
+    <longitude>15.971116700000039</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>Boris Magaš</author>
+    <imagePath>arhitekturafontanajedanaest</imagePath>
+    <points>1</points>
+    <latitude>45.804409</latitude>
+    <longitude>16.020633</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>Branko Kincl 2000</author>
+    <imagePath>arhitekturafontanatrinaest</imagePath>
+    <points>1</points>
+    <latitude>45.8204274</latitude>
+    <longitude>15.9764467</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadvanaest</imagePath>
+    <points>1</points>
+    <latitude>45.798294</latitude>
+    <longitude>15.863238</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadeset</imagePath>
+    <points>1</points>
+    <latitude>45.813864</latitude>
+    <longitude>15.973775</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanacetrnaest</imagePath>
+    <points>1</points>
+    <latitude>45.814489</latitude>
+    <longitude>15.997121</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanasest</imagePath>
+    <points>1</points>
+    <latitude>45.814096</latitude>
+    <longitude>15.991242</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanasedamnaest</imagePath>
+    <points>1</points>
+    <latitude>45.786608</latitude>
+    <longitude>15.928341</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanacetiri</imagePath>
+    <points>1</points>
+    <latitude>45.813583</latitude>
+    <longitude>15.964389</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanatri</imagePath>
+    <points>1</points>
+    <latitude>45.804972</latitude>
+    <longitude>15.970487</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanasedam</imagePath>
+    <points>1</points>
+    <latitude>45.805896</latitude>
+    <longitude>15.993468</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanaosam</imagePath>
+    <points>1</points>
+    <latitude>45.791943</latitude>
+    <longitude>16.010606</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>2008.</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanajedan</imagePath>
+    <points>1</points>
+    <latitude>45.7713013</latitude>
+    <longitude>15.9411802</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1993.</description>
+    <author>Zoran Jerčinović, Gabrijela Kiš-Jerčinović</author>
+    <imagePath>arhitekturafontanadvadesetipet</imagePath>
+    <points>1</points>
+    <latitude>45.805294</latitude>
+    <longitude>15.977165</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1947.</description>
+    <author>Zvonimir Fröhlich</author>
+    <imagePath>arhitekturafontanaosamnaest</imagePath>
+    <points>1</points>
+    <latitude>45.816294</latitude>
+    <longitude>15.980628</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadevetnaest</imagePath>
+    <points>1</points>
+    <latitude>45.817790</latitude>
+    <longitude>15.832538</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1997.</description>
+    <author>Jelena Županić</author>
+    <imagePath>arhitekturafontanadvadesetisest</imagePath>
+    <points>1</points>
+    <latitude>45.812632</latitude>
+    <longitude>15.984845</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>2016.</author>
+    <imagePath>arhitekturafontanadvadeset</imagePath>
+    <points>1</points>
+    <latitude>45.8037341</latitude>
+    <longitude>15.9992133</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1991.</description>
+    <author>Zoran Hebar</author>
+    <imagePath>arhitekturafontanadvadesetisedam</imagePath>
+    <points>1</points>
+    <latitude>45.812198</latitude>
+    <longitude>15.996582</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadvadesetiosam</imagePath>
+    <points>1</points>
+    <latitude>45.803172</latitude>
+    <longitude>15.963811</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1943.</description>
+    <author>Stjepan Planić</author>
+    <imagePath>arhitekturafontanadvadesetidevet</imagePath>
+    <points>1</points>
+    <latitude>45.8120053</latitude>
+    <longitude>15.9841177</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadvadesetijedan</imagePath>
+    <points>1</points>
+    <latitude>45.8211303</latitude>
+    <longitude>16.0285566</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1973.</description>
+    <author>Marijan Haberle, Minka Jurković-Haberle, Tatiana Zdvořak Erlich </author>
+    <imagePath>arhitekturafontanatridesetijedan</imagePath>
+    <points>1</points>
+    <latitude>45.801694</latitude>
+    <longitude>15.979802</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadvadesetidva</imagePath>
+    <points>1</points>
+    <latitude>45.777364</latitude>
+    <longitude>15.988433</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1987.</description>
+    <author>Dinko Tabain</author>
+    <imagePath>arhitekturafontanadvadesetitri</imagePath>
+    <points>1</points>
+    <latitude>45.799766</latitude>
+    <longitude>15.953404</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanapetnaest</imagePath>
+    <points>1</points>
+    <latitude>45.7872385</latitude>
+    <longitude>15.9796941</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanapet</imagePath>
+    <points>1</points>
+    <latitude>45.824340</latitude>
+    <longitude>16.010417</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1945.</description>
+    <author>Zvonimir Kani</author>
+    <imagePath>arhitekturafontanadva</imagePath>
+    <points>1</points>
+    <latitude>45.815667</latitude>
+    <longitude>15.897306</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1987.</description>
+    <author>Mirza Gološ i Džemal Čelić</author>
+    <imagePath>arhitekturafontanatridesetipet</imagePath>
+    <points>1</points>
+    <latitude>45.791489</latitude>
+    <longitude>16.011372</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1972</description>
+    <author>Dragutin Kiš, Petar Vovk</author>
+    <imagePath>arhitekturafontanatrideseticetiri</imagePath>
+    <points>1</points>
+    <latitude>45.778974</latitude>
+    <longitude>15.996236</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanatridesetitri</imagePath>
+    <points>1</points>
+    <latitude>45.813453</latitude>
+    <longitude>15.905575</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanatridesetidva</imagePath>
+    <points>1</points>
+    <latitude>45.810224</latitude>
+    <longitude>15.986727</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>1895.</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanatrideset</imagePath>
+    <points>1</points>
+    <latitude>45.806365</latitude>
+    <longitude>15.978662</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanadvadeseticetiri</imagePath>
+    <points>1</points>
+    <latitude>45.775083</latitude>
+    <longitude>15.962500</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Fontana</name>
+    <description>N/A</description>
+    <author>Ivan Valek</author>
+    <imagePath>arhitekturafontanadevet</imagePath>
+    <points>1</points>
+    <latitude>45.807070</latitude>
+    <longitude>15.966681</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Gljiva</name>
+    <description>1893. replika 1974.</description>
+    <author>Hermann Bollé </author>
+    <imagePath>arhitekturafontanagljiva</imagePath>
+    <points>1</points>
+    <latitude>45.810869</latitude>
+    <longitude>15.977892</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Gradsko poglavarstvo</name>
+    <description>(1955.)</description>
+    <author>Kazimir Ostrogović</author>
+    <imagePath>arhitekturagradskopoglavarstvo</imagePath>
+    <points>1</points>
+    <latitude>45.801251</latitude>
+    <longitude>15.977014</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Grand Centar</name>
+    <description>(2006.)</description>
+    <author>Vesna Kresnik-Vojnović, Željka Sestrić </author>
+    <imagePath>arhitekturagrandcentar</imagePath>
+    <points>1</points>
+    <latitude>45.804624</latitude>
+    <longitude>15.995628</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hermann Bollé </name>
+    <description>N/A</description>
+    <author>1890-tih.</author>
+    <imagePath>arhitekturafontanasesnaest</imagePath>
+    <points>1</points>
+    <latitude>45.817121</latitude>
+    <longitude>15.9748646</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hotel Dubrovnik - Merkur</name>
+    <description>N/A</description>
+    <author>Anton Dominik Fernkorn</author>
+    <imagePath>arhitekturamerkurdubrovnik</imagePath>
+    <points>1</points>
+    <latitude>45.8112612</latitude>
+    <longitude>15.9761483</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hotel Esplanade</name>
+    <description>(1925.)</description>
+    <author>Otto Rechnig, Dionis Sunko </author>
+    <imagePath>arhitekturahotelesplanade</imagePath>
+    <points>1</points>
+    <latitude>45.8054686</latitude>
+    <longitude>15.9737187</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hotel Palace – Balkon</name>
+    <description>N/A</description>
+    <author>Dragutin Morak</author>
+    <imagePath>arhitekturapalacebalkon</imagePath>
+    <points>1</points>
+    <latitude>45.8085611</latitude>
+    <longitude>15.9755091</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hoto Tower</name>
+    <description>(2005.)</description>
+    <author>Marijan Turkulin</author>
+    <imagePath>arhitekturahoto</imagePath>
+    <points>1</points>
+    <latitude>45.801842</latitude>
+    <longitude>15.963603</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hrvatska akademija znanosti i umjetnosti</name>
+    <description>(1880.)</description>
+    <author>Friedrich Schmidt</author>
+    <imagePath>arhitekturahazu</imagePath>
+    <points>1</points>
+    <latitude>45.809142</latitude>
+    <longitude>15.978536</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hrvatski sabor</name>
+    <description>(1910.)</description>
+    <author>Lavoslav Kalda </author>
+    <imagePath>arhitekturasabor</imagePath>
+    <points>1</points>
+    <latitude>45.81615</latitude>
+    <longitude>15.973979</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hrvatsko narodno kazalište</name>
+    <description>(1895.)</description>
+    <author>Ferdinand Fellner i Hermann Helmer </author>
+    <imagePath>arhitekturahnkorigigi</imagePath>
+    <points>1</points>
+    <latitude>45.809463</latitude>
+    <longitude>15.970066</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hrvatsko narodno kazalište - pročelje</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturahnkprocelje</imagePath>
+    <points>1</points>
+    <latitude>45.8093983</latitude>
+    <longitude>15.9678524</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Hypo centar</name>
+    <description>(2007.)</description>
+    <author>Thom Mayne/Tehnozone </author>
+    <imagePath>arhitekturahypo</imagePath>
+    <points>1</points>
+    <latitude>45.793726</latitude>
+    <longitude>15.969879</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Jelen</name>
+    <description>1958.</description>
+    <author>Dušan Džamonja</author>
+    <imagePath>arhitekturafontanajelen</imagePath>
+    <points>1</points>
+    <latitude>45.803746</latitude>
+    <longitude>15.966069</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Jurišićeva 17 – motivi/figure</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturajurisiceva17</imagePath>
+    <points>1</points>
+    <latitude>45.8123168</latitude>
+    <longitude>15.9798716</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Jurišićeva 2</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturajurisicevareljef2</imagePath>
+    <points>1</points>
+    <latitude>45.8124685</latitude>
+    <longitude>15.9762691</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Jurišićeva 2</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturajurisicevareljef1</imagePath>
+    <points>1</points>
+    <latitude>45.8124685</latitude>
+    <longitude>15.9762691</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Klinička bolnica Dubrava</name>
+    <description>(1988.)</description>
+    <author>Avenija Gojka Šuška </author>
+    <imagePath>arhitekturadubrava</imagePath>
+    <points>1</points>
+    <latitude>45.834496</latitude>
+    <longitude>16.035168</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Kockica</name>
+    <description>(1968.)</description>
+    <author>Ivan Vitić</author>
+    <imagePath>arhitekturakockica</imagePath>
+    <points>1</points>
+    <latitude>45.790734</latitude>
+    <longitude>15.969289</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Koncertna dvorana Vatroslav Lisinski</name>
+    <description>(1973.)</description>
+    <author>Marijan Haberle, Minko Jurković, Tanja Zdvořak </author>
+    <imagePath>arhitekturalisinski</imagePath>
+    <points>1</points>
+    <latitude>45.801031</latitude>
+    <longitude>15.980296</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Kozmički ciklus vode</name>
+    <description>1935.2</description>
+    <author>Ćiril Jeglič i Josip Seissl</author>
+    <imagePath>arhitekturafontanakozmickiciklusvode</imagePath>
+    <points>1</points>
+    <latitude>45.8082523</latitude>
+    <longitude>15.9903038</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Križanićeva 14 - fasada</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturakrizaniceva14</imagePath>
+    <points>1</points>
+    <latitude>45.8088394</latitude>
+    <longitude>15.9862907</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Kukuljevićeva 11 – psihijatrijska bolnica za djecu</name>
+    <description>N/A</description>
+    <author>Mila Wood</author>
+    <imagePath>arhitekturakukuljeviceva11</imagePath>
+    <points>1</points>
+    <latitude>45.8150032</latitude>
+    <longitude>15.9610791</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Kupačica (Igre s vodom)</name>
+    <description>1977. izrađeno - postavljeno 1987.</description>
+    <author>Lujo Lozica</author>
+    <imagePath>arhitekturafontanakupacica</imagePath>
+    <points>1</points>
+    <latitude>45.806361</latitude>
+    <longitude>15.952444</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Maksimir – ulazna vrata</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturamaksimirulaz</imagePath>
+    <points>1</points>
+    <latitude>45.8196962</latitude>
+    <longitude>16.0152371</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Markov trg – grb na Saboru</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturasaborgrb</imagePath>
+    <points>1</points>
+    <latitude>45.8132976</latitude>
+    <longitude>15.9781769</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Matica hrvatskih obrtnika</name>
+    <description>(1939.)</description>
+    <author>Aleksandar Freudenreich i Zvonimir Požgaj</author>
+    <imagePath>arhitekturamho</imagePath>
+    <points>1</points>
+    <latitude>45.8131512</latitude>
+    <longitude>15.9658444</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mažuranićev trg 14 – Šumarski dom</name>
+    <description>N/A</description>
+    <author>Rudolf Valdec</author>
+    <imagePath>arhitekturasumarskidomrudolf</imagePath>
+    <points>1</points>
+    <latitude>45.8083637</latitude>
+    <longitude>15.9669245</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mesnička 10 - ulaz</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturamesnicka10</imagePath>
+    <points>1</points>
+    <latitude>45.8142814</latitude>
+    <longitude>15.9685675</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mesnička 28 - ulaz</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturamesnicka28</imagePath>
+    <points>1</points>
+    <latitude>45.8167409</latitude>
+    <longitude>15.9693839</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mihanovićeva – ulaz Hrvatskog zavoda za zdravstveno osiguranje</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturahzzo</imagePath>
+    <points>1</points>
+    <latitude>45.8054667</latitude>
+    <longitude>15.9724947</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mimara</name>
+    <description>(1895.)</description>
+    <author>LUDWIG i HÜLSNER </author>
+    <imagePath>arhitekturamimara</imagePath>
+    <points>1</points>
+    <latitude>45.8082229</latitude>
+    <longitude>15.9650765</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Mirogoj</name>
+    <description>20.st.</description>
+    <author>Hermann Bollé</author>
+    <imagePath>arhitekturamirogoj</imagePath>
+    <points>1</points>
+    <latitude>45.835826</latitude>
+    <longitude>15.983998</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Muzej suvremene umjetnosti</name>
+    <description>N/A</description>
+    <author>Igor Franić</author>
+    <imagePath>arhitekturamsu</imagePath>
+    <points>1</points>
+    <latitude>45.778479</latitude>
+    <longitude>15.981884</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Muzej za umjetnost i obrt - pročelje</name>
+    <description>N/A</description>
+    <author>Dragutin Morak</author>
+    <imagePath>arhitekturamuoprocelje</imagePath>
+    <points>1</points>
+    <latitude>45.809418</latitude>
+    <longitude>15.968735</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Nacionalna sveučilišna biblioteka</name>
+    <description>(1995.)</description>
+    <author>M. Hržić. Z. Krznarić, D. Mance i V. Neidhardt</author>
+    <imagePath>arhitekturansb</imagePath>
+    <points>1</points>
+    <latitude>45.797469</latitude>
+    <longitude>15.9765631</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Palača burze</name>
+    <description>(1927.)</description>
+    <author>Viktor Kovačić</author>
+    <imagePath>arhitekturaburza</imagePath>
+    <points>1</points>
+    <latitude>45.81163</latitude>
+    <longitude>15.983902</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Palača pravde</name>
+    <description>(1970.)</description>
+    <author>Ninosalv Kučan </author>
+    <imagePath>arhitekturapravda</imagePath>
+    <points>1</points>
+    <latitude>45.81163</latitude>
+    <longitude>15.983902</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Palmotićeva - ulaz</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturapalmoticeva</imagePath>
+    <points>1</points>
+    <latitude>45.8117251</latitude>
+    <longitude>15.9796058</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Petrova 6 - fasada</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturapetrova6</imagePath>
+    <points>1</points>
+    <latitude>45.81994</latitude>
+    <longitude>16.0014293</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Praška 2 - balkon</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturapraska2</imagePath>
+    <points>1</points>
+    <latitude>45.8125187</latitude>
+    <longitude>15.9753024</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Prirodoslovna škola Vladimira Preloga</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturafontanaprirodoslovnaskolavladimirapreloga</imagePath>
+    <points>1</points>
+    <latitude>45.801808</latitude>
+    <longitude>16.000758</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Radićeva 30 – skulptura prelje</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaradiceva30</imagePath>
+    <points>1</points>
+    <latitude>45.8156171</latitude>
+    <longitude>15.9734598</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Radićeva 4 – reljefi na fasadi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaradiceva4</imagePath>
+    <points>1</points>
+    <latitude>45.8136138</latitude>
+    <longitude>15.9739499</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Rakete – Richterovi neboderi</name>
+    <description>(1968.)</description>
+    <author>Centar 51 - Berislav Šerbetić, Ljubo Iveta, Vjenceslav Richter, Olga Korenik</author>
+    <imagePath>arhitekturarakete</imagePath>
+    <points>1</points>
+    <latitude>45.799912</latitude>
+    <longitude>15.981084</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Rektorat</name>
+    <description>(1859.)</description>
+    <author>Ludwig von Zettl</author>
+    <imagePath>arhitekturarektorat</imagePath>
+    <points>1</points>
+    <latitude>45.810561</latitude>
+    <longitude>15.969822</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Rooseveltov trg – fasada Hrvatske gospodarske komore</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturarooseveltovtrg</imagePath>
+    <points>1</points>
+    <latitude>45.808214</latitude>
+    <longitude>15.968446</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Rudolfova vojarna</name>
+    <description>(1889.)</description>
+    <author>Ferdinand Gruber i Carl Völckner</author>
+    <imagePath>arhitekturarudolf</imagePath>
+    <points>1</points>
+    <latitude>45.8106588</latitude>
+    <longitude>15.9567672</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Starčevićev dom</name>
+    <description>(1894.)</description>
+    <author>arh. ured Hönigsberg &amp; Deutsch </author>
+    <imagePath>arhitekturastarcevicdom</imagePath>
+    <points>1</points>
+    <latitude>45.805845</latitude>
+    <longitude>15.977728</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Šumarski dom</name>
+    <description>(1898..)</description>
+    <author>Alexander pl. Eigner, Gjuro Carnelutti </author>
+    <imagePath>arhitekturasumarskidomalexander</imagePath>
+    <points>1</points>
+    <latitude>45.808315</latitude>
+    <longitude>15.9670213</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg Bana Jelačića - balkon</name>
+    <description>N/A</description>
+    <author>Kuno Waidmann</author>
+    <imagePath>arhitekturatrgbanajelacicabalkon</imagePath>
+    <points>1</points>
+    <latitude>45.8133247</latitude>
+    <longitude>15.9773151</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg Bana Jelačića - reljef</name>
+    <description>N/A</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>arhitekturatrgbanajelacicareljef</imagePath>
+    <points>1</points>
+    <latitude>45.8134054</latitude>
+    <longitude>15.976802</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg Josipa Juraja Strossmayera – Hrvatska akademija znanosti i umjetnosti</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturahazu</imagePath>
+    <points>1</points>
+    <latitude>45.8082022</latitude>
+    <longitude>15.9785758</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg Josipa Juraja Strossmayera – ulaz Hrvatske banke za obnovu i razvitak</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturahbor</imagePath>
+    <points>1</points>
+    <latitude>45.8081808</latitude>
+    <longitude>15.977715</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg kralja Tomislava 28 – figura na krovu</name>
+    <description>N/A</description>
+    <author>N/AN</author>
+    <imagePath>arhitekturatomislav28</imagePath>
+    <points>1</points>
+    <latitude>45.8076036</latitude>
+    <longitude>15.9764011</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Trg Republike Hrvatske - HIDRA</name>
+    <description>N/A</description>
+    <author>hidra hrvatska informacijsko dokumentacijska referalna agencija</author>
+    <imagePath>arhitekturahidra</imagePath>
+    <points>1</points>
+    <latitude>45.809705</latitude>
+    <longitude>15.9704204</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Umjetnički paviljon</name>
+    <description>(1898.)</description>
+    <author>Fellner i Helmer</author>
+    <imagePath>arhitekturaumjetnickipaviljonfellnerihemler</imagePath>
+    <points>1</points>
+    <latitude>45.807115</latitude>
+    <longitude>15.978661</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Umjetnički paviljon - motivi</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturaumjetnickipaviljonmotivi</imagePath>
+    <points>1</points>
+    <latitude>45.8071199</latitude>
+    <longitude>15.9785638</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Vinogradska – pročelje bolnice</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturavinogradska</imagePath>
+    <points>1</points>
+    <latitude>45.8150612</latitude>
+    <longitude>15.9536495</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Vlaška 74 – ulaz u zgradu</name>
+    <description>N/A</description>
+    <author>N/A</author>
+    <imagePath>arhitekturavlaska</imagePath>
+    <points>1</points>
+    <latitude>45.8137432</latitude>
+    <longitude>15.9875605</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Zagreb Tower</name>
+    <description>(2006.)</description>
+    <author>Otto Barić </author>
+    <imagePath>arhitekturazgtower</imagePath>
+    <points>1</points>
+    <latitude>45.802022</latitude>
+    <longitude>16.003439</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Zagrebačka katedrala - ulaz</name>
+    <description>N/A</description>
+    <author>Dragutin Morak, Ignjat Franz, Robert Frangeš Mihanović</author>
+    <imagePath>arhitekturakatedrala</imagePath>
+    <points>1</points>
+    <latitude>45.8145084</latitude>
+    <longitude>15.9798007</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Zagrepčanka</name>
+    <description>N/A</description>
+    <author>Slavko Jelinek i Berislav Vinković</author>
+    <imagePath>arhitekturazagrepcanka</imagePath>
+    <points>1</points>
+    <latitude>45.798431</latitude>
+    <longitude>15.962489</longitude>
+  </Arhitektura>
+  <Arhitektura>
+    <name>Zgrada uprave Hrvatske Željeznice</name>
+    <description>(1903.)</description>
+    <author>Ferenc Pfaff</author>
+    <imagePath>arhitekturahz</imagePath>
+    <points>1</points>
+    <latitude>45.8050783</latitude>
+    <longitude>15.973985</longitude>
+  </Arhitektura>
+</NewDataSet>

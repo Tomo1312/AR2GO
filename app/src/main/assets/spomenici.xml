@@ -1,1047 +1,912 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Spomenici>
-    <Spomenik>
-        <name>Matija Supina</name>
-        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus diam non tortor cursus, ac consequat neque maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet porttitor ipsum. Fusce iaculis sagittis massa, eu aliquam libero imperdiet non. Proin ullamcorper vulputate ligula, sit amet dictum mauris finibus non. Quisque sit amet luctus tortor. Cras gravida tortor vestibulum, ornare libero eget, ultrices magna. Fusce efficitur congue ligula ac accumsan. Donec ut quam imperdiet, sagittis nunc sit amet, tincidunt risus. Mauris ornare lectus tortor, ut malesuada neque congue at.</description>
-        <author>mama i tata</author>
-        <imagePath>matija</imagePath>
-        <points>10</points>
-        <latitude>45.86621149487807</latitude>
-        <longitude>15.792399123994073</longitude>
-    </Spomenik>
-
-    <Spomenik>
-        <name>Sestre Baković</name>
-        <description>1977.</description>
-        <author>Ivan Sabolić</author>
-        <imagePath>spomeniksestrebakovic</imagePath>
-        <points>1</points>
-        <latitude>45.811803</latitude>
-        <longitude>15.97013</longitude>
-    </Spomenik>
-
-    <Spomenik>
-        <name>Blagoje Bersa</name>
-        <description>1973.</description>
-        <author>Josip Poljan</author>
-        <imagePath>spomenikblagojebersa</imagePath>
-        <points>1</points>
-        <latitude>45.8122012</latitude>
-        <longitude>15.9887301</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ruđer Bošković</name>
-        <description>1996.</description>
-        <author>Stjepan Divković</author>
-        <imagePath>spomenikruderboskovicdivkovic</imagePath>
-        <points>1</points>
-        <latitude>45.803971</latitude>
-        <longitude>15.963985</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ruđer Bošković</name>
-        <description>1988.</description>
-        <author>Marijan Gajšak</author>
-        <imagePath>spomenikruderboskovicgajšak</imagePath>
-        <points>1</points>
-        <latitude>45.804136</latitude>
-        <longitude>16.027087</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ruđer Bošković</name>
-        <description>1911.</description>
-        <author>Toma Rosandić</author>
-        <imagePath>spomenikruderboskovicrosandic</imagePath>
-        <points>1</points>
-        <latitude>45.809260</latitude>
-        <longitude>15.978982</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spiridon Brusina</name>
-        <description>Nepoznato</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikspiridonbrusina</imagePath>
-        <points>1</points>
-        <latitude>45.8170606</latitude>
-        <longitude>15.9724073</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Anka Butorac</name>
-        <description>1981.</description>
-        <author>Aleksandar Jovanovski</author>
-        <imagePath>spomenikankabutorac</imagePath>
-        <points>1</points>
-        <latitude>45.8129916</latitude>
-        <longitude>15.991859</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>August Cesarec</name>
-        <description>1974.</description>
-        <author>Kruno Bošnjak</author>
-        <imagePath>spomenikaugustcesarecbosnjak</imagePath>
-        <points>1</points>
-        <latitude>45.801719</latitude>
-        <longitude>16.023554</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>August Cesarec</name>
-        <description>1919.</description>
-        <author>Stjepan Gračan</author>
-        <imagePath>spomenikaugustcesarecgračan</imagePath>
-        <points>1</points>
-        <latitude>45.8161042</latitude>
-        <longitude>15.9765153</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Josip Debeljak</name>
-        <description>1981.</description>
-        <author>Ante Starčević</author>
-        <imagePath>spomenikjosipdebeljak</imagePath>
-        <points>1</points>
-        <latitude>45.8149244</latitude>
-        <longitude>16.014859</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Janko Gredelj</name>
-        <description>1959.</description>
-        <author>Mirko Bračun</author>
-        <imagePath>spomenikjankogredelj</imagePath>
-        <points>1</points>
-        <latitude>45.8054722</latitude>
-        <longitude>16.049311</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Henri Dunant</name>
-        <description>2011.</description>
-        <author>Tomislav Kršnjavi</author>
-        <imagePath>spomenikhenridunant</imagePath>
-        <points>1</points>
-        <latitude>45.8145356</latitude>
-        <longitude>15.9375214</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan Filipović</name>
-        <description>1976.</description>
-        <author>Šimo Klaić</author>
-        <imagePath>spomenikivanfilipovic</imagePath>
-        <points>1</points>
-        <latitude>45.7971723</latitude>
-        <longitude>15.9610007</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Krsto Frankopan</name>
-        <description>1884.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikkrstofrankopan</imagePath>
-        <points>1</points>
-        <latitude>45.8095282</latitude>
-        <longitude>15.9781534</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Matija Gubec</name>
-        <description>1923.</description>
-        <author>Vatroslav Drenski</author>
-        <imagePath>spomenikmatijagubecdrenski</imagePath>
-        <points>1</points>
-        <latitude>45.8159652</latitude>
-        <longitude>15.973588</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Matija Gubec </name>
-        <description>1968.</description>
-        <author>Vanja Radauš</author>
-        <imagePath>spomenikmatijagubecradaus</imagePath>
-        <points>1</points>
-        <latitude>45.8196588</latitude>
-        <longitude>15.8330622</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Petar Guberina</name>
-        <description>izradeno 1996. postavljeno 2006.</description>
-        <author>Vladimir Herljević</author>
-        <imagePath>spomenikpetarguberina</imagePath>
-        <points>1</points>
-        <latitude>45.8083837</latitude>
-        <longitude>15.9935817</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Juraj Habdelić</name>
-        <description>2000.</description>
-        <author>Mladen Mikulin</author>
-        <imagePath>spomenikjurajhabdelic</imagePath>
-        <points>1</points>
-        <latitude>45.8275315</latitude>
-        <longitude>15.9984132</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Franjo Hanaman</name>
-        <description>2001.</description>
-        <author>Stanko Jančić</author>
-        <imagePath>spomenikfranjohanaman</imagePath>
-        <points>1</points>
-        <latitude>45.8036808</latitude>
-        <longitude>15.9644465</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Većeslav Holjevac</name>
-        <description>1972.</description>
-        <author>Ivan Sabolić</author>
-        <imagePath>spomenikveceslavholjevacsabolic</imagePath>
-        <points>1</points>
-        <latitude>45.7728001</latitude>
-        <longitude>15.9706366</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Vera Johanides</name>
-        <description>2011.</description>
-        <author>Slavomir Drinković</author>
-        <imagePath>spomenikverajohanides</imagePath>
-        <points>1</points>
-        <latitude>45.8074864</latitude>
-        <longitude>15.9636901</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Nikola Jurišić</name>
-        <description>1886.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomeniknikolajurisic</imagePath>
-        <points>1</points>
-        <latitude>45.8095873</latitude>
-        <longitude>15.978422</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Andrija Kačić Miošić</name>
-        <description>1891.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikandrijakacicmiosic</imagePath>
-        <points>1</points>
-        <latitude>45.8133793</latitude>
-        <longitude>15.9702755</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Fran Žaver Kesterčanek</name>
-        <description>1936.</description>
-        <author>Emil Bohutinsky</author>
-        <imagePath>spomenikfranzaverkestercanek</imagePath>
-        <points>1</points>
-        <latitude>45.8073844</latitude>
-        <longitude>15.968559</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Julije Klović</name>
-        <description>1891.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikjulijeklovicrendic</imagePath>
-        <points>1</points>
-        <latitude>45.8096184</latitude>
-        <longitude>15.9784975</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Dragica Končar</name>
-        <description>1976.</description>
-        <author>Lujo Lozica</author>
-        <imagePath>spomenikdragicakoncar</imagePath>
-        <points>1</points>
-        <latitude>45.7921899</latitude>
-        <longitude>15.9463555</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ferdinand Kovačević</name>
-        <description>1999.</description>
-        <author>Stanko Jančić</author>
-        <imagePath>spomenikferdinandkovacevic</imagePath>
-        <points>1</points>
-        <latitude>45.803712</latitude>
-        <longitude>15.9645586</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Josip Kozarac</name>
-        <description>1936.</description>
-        <author>Emil Bohutinsky</author>
-        <imagePath>spomenikjosipkozarac</imagePath>
-        <points>1</points>
-        <latitude>45.8073352</latitude>
-        <longitude>15.9691959</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan Krstitelj Rabljanin</name>
-        <description>1995.</description>
-        <author>Kosta Angeli Radovani </author>
-        <imagePath>spomenikivankrstiteljrabljanin</imagePath>
-        <points>1</points>
-        <latitude>45.8037098</latitude>
-        <longitude>15.9647352</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Oton Kučera</name>
-        <description>1998.</description>
-        <author>Marija Ujeić Galetović</author>
-        <imagePath>spomenikotonkucera</imagePath>
-        <points>1</points>
-        <latitude>45.8037098</latitude>
-        <longitude>15.9647352</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan pl. Kukuljević</name>
-        <description>1911.</description>
-        <author>Rudolf Valdec</author>
-        <imagePath>spomenikivanplkukuljevic</imagePath>
-        <points>1</points>
-        <latitude>45.8095421</latitude>
-        <longitude>15.9789963</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Vatroslav Lisinski</name>
-        <description>2004.</description>
-        <author>Mile Grgas</author>
-        <imagePath>spomenikvatroslavlisinskigrgas</imagePath>
-        <points>1</points>
-        <latitude>45.8005011</latitude>
-        <longitude>15.979643</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Vatroslav Lisinski</name>
-        <description>izrađeno 1940. postavljeno 1969.</description>
-        <author>Vanja Radauš</author>
-        <imagePath>spomenikvatroslavlisinskiradaus</imagePath>
-        <points>1</points>
-        <latitude>45.8224842</latitude>
-        <longitude>15.9757802</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Velimir Lojda</name>
-        <description>1999.</description>
-        <author>Mladen Mikulin</author>
-        <imagePath>spomenikvelimirlojda</imagePath>
-        <points>1</points>
-        <latitude>45.7822663</latitude>
-        <longitude>15.9589175</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Krsto Ljubičić</name>
-        <description>1978.</description>
-        <author>Luka Musulin</author>
-        <imagePath>spomenikkrstoljubicic</imagePath>
-        <points>1</points>
-        <latitude>45.8108567</latitude>
-        <longitude>15.9649574</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan Mažuranić</name>
-        <description>1911.</description>
-        <author>Rudolf Valdec</author>
-        <imagePath>spomenikivanmazuranic</imagePath>
-        <points>1</points>
-        <latitude>45.8094491</latitude>
-        <longitude>15.9779282</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Andrija Medulič</name>
-        <description>1878.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikandrijamedulicrendic</imagePath>
-        <points>1</points>
-        <latitude>45.8095873</latitude>
-        <longitude>15.978422</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan Merz</name>
-        <description>2007.</description>
-        <author>Vid Vučak</author>
-        <imagePath>spomenikivanmerz</imagePath>
-        <points>1</points>
-        <latitude>45.8113958</latitude>
-        <longitude>15.9844484</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivan Meštrović</name>
-        <description>1984.</description>
-        <author>Stipe Sikirica </author>
-        <imagePath>spomenikivanmestrovic</imagePath>
-        <points>1</points>
-        <latitude>45.7887065</latitude>
-        <longitude>15.9331413</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Jokai Mor</name>
-        <description>2019.</description>
-        <author>Gyorgy Adam</author>
-        <imagePath>spomenikjokaimor</imagePath>
-        <points>1</points>
-        <latitude>45.7845756</latitude>
-        <longitude>15.9837025</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Pavle Papp</name>
-        <description>1980.</description>
-        <author>Aleksandar Jovanovski</author>
-        <imagePath>spomenikpavlepapp</imagePath>
-        <points>1</points>
-        <latitude>45.8129916</latitude>
-        <longitude>15.991859</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Slavoljub Penkala</name>
-        <description>2004.</description>
-        <author>Linda Milić Kršnjavi</author>
-        <imagePath>spomenikslavoljubpenkala</imagePath>
-        <points>1</points>
-        <latitude>45.8037098</latitude>
-        <longitude>15.9647352</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Petar Preradović</name>
-        <description>1978.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikpetarpreradovicnepoznato</imagePath>
-        <points>1</points>
-        <latitude>45.8077105</latitude>
-        <longitude>16.0232488</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Aleksandar Sergejevič Puškin</name>
-        <description>2016.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikaleksandarsergejevicpuskin</imagePath>
-        <points>1</points>
-        <latitude>45.7842273</latitude>
-        <longitude>15.9849715</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ivo Lola Riber</name>
-        <description>Nepoznato</description>
-        <author>Kosta Angeli Radovani</author>
-        <imagePath>spomenikivololariber</imagePath>
-        <points>1</points>
-        <latitude>45.811666</latitude>
-        <longitude>15.9428557</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>David Schwarz</name>
-        <description>2000.</description>
-        <author>Stjepan Gračan</author>
-        <imagePath>spomenikdavidschwarz</imagePath>
-        <points>1</points>
-        <latitude>45.8037259</latitude>
-        <longitude>15.9646174</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Joe Strummer</name>
-        <description>2013.</description>
-        <author>Marin Marinić</author>
-        <imagePath>spomenikjoestrummer</imagePath>
-        <points>1</points>
-        <latitude>45.8074646</latitude>
-        <longitude>15.9814024</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>August Šenoa</name>
-        <description>1914.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikaugustsenoarendic</imagePath>
-        <points>1</points>
-        <latitude>45.8085901</latitude>
-        <longitude>15.9792366</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Taras Ševčenko</name>
-        <description>2015.</description>
-        <author>Konstantin Dobrjansky</author>
-        <imagePath>spomeniktarassevcenko</imagePath>
-        <points>1</points>
-        <latitude>45.7723236</latitude>
-        <longitude>15.9917727</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Nikola Šubić Zrinski</name>
-        <description>2017.</description>
-        <author>Vladimir Herljević</author>
-        <imagePath>spomeniknikolasubiczrinski</imagePath>
-        <points>1</points>
-        <latitude>45.8093092</latitude>
-        <longitude>15.9781997</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Grigor Vitez</name>
-        <description>1981.</description>
-        <author>Josip Poljan</author>
-        <imagePath>spomenikgrigorvitez</imagePath>
-        <points>1</points>
-        <latitude>45.7983873</latitude>
-        <longitude>15.9868635</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Faust Vrančić</name>
-        <description>1993.</description>
-        <author>Kosta Angeli Radovani</author>
-        <imagePath>spomenikfaustvrancic</imagePath>
-        <points>1</points>
-        <latitude>45.8036957</latitude>
-        <longitude>15.9645035</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Charlie Chaplin</name>
-        <description>1983.</description>
-        <author>Ratko Petrić</author>
-        <imagePath>spomenikcharliechaplin</imagePath>
-        <points>1</points>
-        <latitude>45.8151747</latitude>
-        <longitude>15.9697627</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik Josipu Račiću</name>
-        <description>Srednjaci 30 ispred OŠ Josipa Račića (1980.)</description>
-        <author>Ratko Petrić</author>
-        <imagePath>spomenikjosipuracicu</imagePath>
-        <points>4</points>
-        <latitude>45.7894534</latitude>
-        <longitude>15.9409573</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Franjo Bučar</name>
-        <description>1991.</description>
-        <author>Kosta Angeli Radoani</author>
-        <imagePath>spomenikfranjobucar</imagePath>
-        <points>1</points>
-        <latitude>45.806639</latitude>
-        <longitude>15.952056</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Većeslav Holjevac</name>
-        <description>1994.</description>
-        <author>Zvonimir Gračan</author>
-        <imagePath>spomenikveceslavholjevacgracan</imagePath>
-        <points>1</points>
-        <latitude>45.793911</latitude>
-        <longitude>15.979330</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Josip Jelačić</name>
-        <description>1866.</description>
-        <author>Anton Dominik Fernkorn</author>
-        <imagePath>spomenikjosipjelacic</imagePath>
-        <points>1</points>
-        <latitude>45.813202</latitude>
-        <longitude>15.977275</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Marija Jurić Zagorka</name>
-        <description>1996.</description>
-        <author>Stjepan Gračan</author>
-        <imagePath>spomenikmarijajuriczagorka</imagePath>
-        <points>1</points>
-        <latitude>45.786528</latitude>
-        <longitude>15.924639</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Bartol Kašić</name>
-        <description>2001.</description>
-        <author>Mile Grgas</author>
-        <imagePath>spomenikbartolkasic</imagePath>
-        <points>1</points>
-        <latitude>45.786533</latitude>
-        <longitude>15.924640</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Julije Klović</name>
-        <description>1930.</description>
-        <author>Frano Kršinić</author>
-        <imagePath>spomenikjulijeklovickrsinic</imagePath>
-        <points>1</points>
-        <latitude>45.815122</latitude>
-        <longitude>15.974829</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Benedikt Kotruljević</name>
-        <description>2007.</description>
-        <author>Ante Despot</author>
-        <imagePath>spomenikbenediktkotruljevic</imagePath>
-        <points>1</points>
-        <latitude>45.8079275</latitude>
-        <longitude>15.9842088</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Kralj Tomislav</name>
-        <description>1928.-1938. -  postavljen 1947.</description>
-        <author>Robert Frangeš Mihanović</author>
-        <imagePath>spomenikkraljtomislav</imagePath>
-        <points>1</points>
-        <latitude>45.805668</latitude>
-        <longitude>15.978713</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Miroslav Krleža</name>
-        <description>2004.</description>
-        <author>Marija Ujević Galetović</author>
-        <imagePath>spomenikmiroslavkrleza</imagePath>
-        <points>1</points>
-        <latitude>45.8177263</latitude>
-        <longitude>15.9712635</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Jurij Gagarin</name>
-        <description>2016.</description>
-        <author>Aleksej Leonov</author>
-        <imagePath>spomenikjurijgagarin</imagePath>
-        <points>1</points>
-        <latitude>45.798803</latitude>
-        <longitude>15.949377</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Đuro Đaković</name>
-        <description>izrađeno 1969. postavljeno 1986.</description>
-        <author>Vanja Radauš</author>
-        <imagePath>spomenikdurodakovic</imagePath>
-        <points>1</points>
-        <latitude>45.8193531</latitude>
-        <longitude>15.9795286</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Dragutin Domjanić</name>
-        <description>1939.</description>
-        <author>Vanja Radauš</author>
-        <imagePath>spomenikdragutindomjanic</imagePath>
-        <points>1</points>
-        <latitude>45.8079102</latitude>
-        <longitude>15.9780085</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Eugen Kumičić</name>
-        <description>1934. -postavljeno 1937.</description>
-        <author>Frano Kršinić</author>
-        <imagePath>spomenikeugenkumicic</imagePath>
-        <points>1</points>
-        <latitude>45.8086241</latitude>
-        <longitude>15.9679932</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Fra Grgo Martić</name>
-        <description>1994.</description>
-        <author>Mladen Mikulin</author>
-        <imagePath>spomenikfragrgomartic</imagePath>
-        <points>1</points>
-        <latitude>45.8123412</latitude>
-        <longitude>15.9887995</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Marko Marulić</name>
-        <description>1999.</description>
-        <author>Vlado Radas</author>
-        <imagePath>spomenikmarkomarulic</imagePath>
-        <points>1</points>
-        <latitude>45.8069617</latitude>
-        <longitude>15.97013</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Antun Gustav Matoš</name>
-        <description>1973.</description>
-        <author>Ivan Kožarić</author>
-        <imagePath>spomenikantungustavmatos</imagePath>
-        <points>1</points>
-        <latitude>45.8142724</latitude>
-        <longitude>15.9742886</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Andrija Medulić</name>
-        <description>1930.- postavljeno 1932.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>spomenikandrijamedulicmestrovic</imagePath>
-        <points>1</points>
-        <latitude>45.8075141</latitude>
-        <longitude>15.9786412</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Vladimir Nazor</name>
-        <description>1972.</description>
-        <author>Stjepan Gračan</author>
-        <imagePath>spomenikvladimirnazor</imagePath>
-        <points>1</points>
-        <latitude>45.8214903</latitude>
-        <longitude>15.9689246</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Dražen Petrović</name>
-        <description>2006.</description>
-        <author>Kuzma Kovačić</author>
-        <imagePath>spomenikdrazenpetrovic</imagePath>
-        <points>1</points>
-        <latitude>45.803056</latitude>
-        <longitude>15.963778</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Pablo Picasso</name>
-        <description>1965.</description>
-        <author>Ivan Sabolić</author>
-        <imagePath>spomenikpablopicasso</imagePath>
-        <points>1</points>
-        <latitude>45.821917</latitude>
-        <longitude>15.971417</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Moša Pijade</name>
-        <description>1954.</description>
-        <author>Antun Augustinčić</author>
-        <imagePath>spomenikmosapijade</imagePath>
-        <points>1</points>
-        <latitude>45.824611</latitude>
-        <longitude>16.010083</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Eugen Podaubsky</name>
-        <description>1959.</description>
-        <author>Vanja Radauš</author>
-        <imagePath>spomenikeugenpodaubsky</imagePath>
-        <points>1</points>
-        <latitude>45.806156</latitude>
-        <longitude>16.008799</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Petar Preradović</name>
-        <description>1895.</description>
-        <author>Ivan Rendić</author>
-        <imagePath>spomenikpetarpreradovicrendic</imagePath>
-        <points>1</points>
-        <latitude>45.8123897</latitude>
-        <longitude>15.9739632</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Stjepan Radić</name>
-        <description>2007.</description>
-        <author>Zoran Jurić</author>
-        <imagePath>spomenikstjepanradic</imagePath>
-        <points>1</points>
-        <latitude>45.81248</latitude>
-        <longitude>15.9789742</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Josip Juraj Strossmayer</name>
-        <description>1924. postavljeno 1926.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>spomenikjosipjurajstrossmayer</imagePath>
-        <points>1</points>
-        <latitude>45.8088441</latitude>
-        <longitude>15.9785504</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Ante Starčević</name>
-        <description>1999.</description>
-        <author>Josip Poljan</author>
-        <imagePath>spomenikantestarcevicpoljan</imagePath>
-        <points>1</points>
-        <latitude>45.8057684</latitude>
-        <longitude>15.9778886</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>August Šenoa</name>
-        <description>1987.</description>
-        <author>Marija Ujević Galetović</author>
-        <imagePath>spomenikaugustsenoagaletovic</imagePath>
-        <points>1</points>
-        <latitude>45.813778</latitude>
-        <longitude>15.981667</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Nikola Tesla</name>
-        <description>1955.</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>spomeniknikolatesla</imagePath>
-        <points>1</points>
-        <latitude>45.8112458</latitude>
-        <longitude>15.9743088</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Tin Ujević</name>
-        <description>1991.</description>
-        <author>Miro Vuco</author>
-        <imagePath>spomeniktinujevic</imagePath>
-        <points>1</points>
-        <latitude>45.8119511</latitude>
-        <longitude>15.9731975</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomen-park Bošnjacima </name>
-        <description>Borovje, 2012.</description>
-        <author>nepoznato</author>
-        <imagePath>spomenikbosnjacima</imagePath>
-        <points>1</points>
-        <latitude>45.7918931</latitude>
-        <longitude>16.0108563</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima</name>
-        <description>Črnomerec</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimacrnomerec</imagePath>
-        <points>1</points>
-        <latitude>45.813271</latitude>
-        <longitude>15.9274256</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima</name>
-        <description>Dubrava, 2000.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimadubrava</imagePath>
-        <points>1</points>
-        <latitude>45.829472</latitude>
-        <longitude>16.053722</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik Braniteljima</name>
-        <description>Maksimir, 1999.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimamaksimir</imagePath>
-        <points>1</points>
-        <latitude>45.825302</latitude>
-        <longitude>16.010379</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik Braniteljima </name>
-        <description>Peščenica, 2000.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimapescenica</imagePath>
-        <points>1</points>
-        <latitude>45.804217</latitude>
-        <longitude>16.019745</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima / Prvoj oružanoj dragovoljačkoj postrojbi u Domovinskom ratu</name>
-        <description>Podsused, nepoznato</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimapodsused</imagePath>
-        <points>1</points>
-        <latitude>45.8165678</latitude>
-        <longitude>15.8353387</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima</name>
-        <description>Trešnjevka, 2001.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimatresnjevka</imagePath>
-        <points>1</points>
-        <latitude>45.798321</latitude>
-        <longitude>15.948670</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima </name>
-        <description>Vrapče,1997.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimavrapce</imagePath>
-        <points>1</points>
-        <latitude>45.814336</latitude>
-        <longitude>15.905634</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik braniteljima</name>
-        <description>Zapruđe, 1999.</description>
-        <author>Nepoznato</author>
-        <imagePath>spomenikbraniteljimazaprude</imagePath>
-        <points>1</points>
-        <latitude>45.780585</latitude>
-        <longitude>15.996035</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Plamen – Spomenik Ilegalcima</name>
-        <description>1957.  postavljeno 1959.</description>
-        <author>Ivan Sabolić</author>
-        <imagePath>spomenikplamenspomenikilegalcima</imagePath>
-        <points>1</points>
-        <latitude>45.8198094</latitude>
-        <longitude>15.9385445</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik palim borcima NOB-e</name>
-        <description>1972.</description>
-        <author>Tomislav Ostoja</author>
-        <imagePath>spomenikpalimborcimanoba</imagePath>
-        <points>1</points>
-        <latitude>45.806639</latitude>
-        <longitude>15.944167</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik palim Kustošijancima u NOB-u</name>
-        <description>1985.</description>
-        <author>Nikola Bolčević</author>
-        <imagePath>spomenikpalimkustosijancimaunobu</imagePath>
-        <points>1</points>
-        <latitude>45.831390</latitude>
-        <longitude>15.922430</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Dolina Grobova</name>
-        <description>1968.</description>
-        <author>Vojin Bakić</author>
-        <imagePath>spomenikdolinagrobova</imagePath>
-        <points>1</points>
-        <latitude>45.844639</latitude>
-        <longitude>16.026417</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Dotrščina – Ružić</name>
-        <description>Spomenik poginulima za oslobođenja Zagreba 1941.-1945., 1981.</description>
-        <author>Branko Ružić</author>
-        <imagePath>spomenikdotrscinaruzic</imagePath>
-        <points>1</points>
-        <latitude>45.846768</latitude>
-        <longitude>16.026757</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik poginulim revolucionarima Zagreba</name>
-        <description>Spomenik palim revolucionarima Zagreba 1919. - -1941., napravljeno 1984. postavljeno 1985.</description>
-        <author>Stevan Luketić</author>
-        <imagePath>spomenikdotrscinaluketic</imagePath>
-        <points>1</points>
-        <latitude>45.850625</latitude>
-        <longitude>16.025147</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik poginulim Zagrepčanima u NOB</name>
-        <description>Spomenik Zagrepčanima poginulim u NOBU, Spomen park Dotrščina 1989.</description>
-        <author>Kosta angeli Radovani</author>
-        <imagePath>spomenikdotrscinaradovani</imagePath>
-        <points>1</points>
-        <latitude>45.846664</latitude>
-        <longitude>16.024278</longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Spomenik streljanima/Dolina grobova</name>
-        <description>Spomenik strenjanima 1941.-1945., Spomen park Dotrščina 1962.</description>
-        <author>Vojin Bakić</author>
-        <imagePath>spomenikspomenikstreljanima</imagePath>
-        <points>1</points>
-        <latitude>45.842897</latitude>
-        <longitude>16.027830</longitude>
-    </Spomenik>
-	
-	
-	
-	
-	
-<!--    <Spomenik>
-        <name>Krešimir Ćosić</name>
-        <description>1996.</description>
-        <author>Anto Jurkić</author>
-        <imagePath>spomenikkresimircosic</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Spomenik>
-	
-    <Spomenik>
-        <name>Sergej Aleksandrovič Jesenjin</name>
-        <description>2017.</description>
-        <author>Aleksandar Zvjagin</author>
-        <imagePath>spomeniksergejaleksandrovicjesenjin</imagePath>
-        <points>1</points>
-        <latitude></latitude>
-        <longitude></longitude>
-    </Spomenik>
-	
-	OVE KOORDINATE SU MOZDA KRIVE JER PISE DA SE PRIVREMENO VJEROJATNO PREBACIO KIP U VATROGASNI DOM
-    <Spomenik>
-        <name>Đuro Deželić</name>
-        <description>1937.</description>
-        <author>France Cota</author>
-        <imagePath>spomenikđurodezelic</imagePath>
-        <points>1</points>
-        <latitude>45.8102489</latitude>
-        <longitude>15.9687902</longitude>
-    </Spomenik>-->
-</Spomenici>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Spomenik>
+    <name>Josip Jelačić</name>
+    <description>1866., Spomenik banu Josipu Jelačiću (1801.-1859.), jednom od najznačajnijih ličnosti hrvatske povijesti, te „najopjevanijoj osobi hrvatskog naroda“. Zaslužan je za ukidanje kmetstva na područjima današnje hrvatske, te brojne pobjede u nizu bitaka protiv Habsburške monarhije. Borio se za dobrobit hrvatskoga naroda i pravedan položaj Trojedne kraljevine u doba Habsburške Monarhije.</description>
+    <author>Anton Dominik Fernkorn</author>
+    <imagePath>spomenikjosipjelacic</imagePath>
+    <points>1</points>
+    <latitude>45.813202</latitude>
+    <longitude>15.977275</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Andrija Medulič</name>
+    <description>1878., Spomenik Andriji Meduliću (1510.-1563.), hrvatsko-talijanskom slikaru i bakrorezcu iz perioda talijanskog manirizma.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikandrijamedulicrendic</imagePath>
+    <points>1</points>
+    <latitude>45.8095873</latitude>
+    <longitude>15.978422</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Krsto Frankopan</name>
+    <description>1884., Spomenik Krsti Frankopanu (1482.-1527.)hrvatskom knezu. Obitelj Frankopan jedna je od najstarijih, najpoznatijih i najznačajnijih velikaških rodova u Hrvatskoj.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikkrstofrankopan</imagePath>
+    <points>1</points>
+    <latitude>45.8095282</latitude>
+    <longitude>15.9781534</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Nikola Jurišić</name>
+    <description>1886., Spomenik Nikoli Barunu Jurišiću od Kisega (1490.-1545.) hrvatskom plemiću, vojskovođi i diplomatu. Po njemu je nazvana jedna od glavnih ulica u Zagrebu, te dvorac i trg u Kisegu.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomeniknikolajurisic</imagePath>
+    <points>1</points>
+    <latitude>45.8095873</latitude>
+    <longitude>15.978422</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Andrija Kačić Miošić</name>
+    <description>1891., Spomenik Andriji Kačiću Miošiću (1704.-1760.), pučkom pjesniku i fratru. Njegova knjiga Razgovor ugodni naroda slovinskog iz 1756. jedno je od najvrijednijih djela hrvatske književnosti, te jedna od najčitanijih i najizdavanijih knjiga hrvatske doprerporrodne književnosti.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikandrijakacicmiosic</imagePath>
+    <points>1</points>
+    <latitude>45.8133793</latitude>
+    <longitude>15.9702755</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Julije Klović</name>
+    <description>1891., Spomenik Juliju Kloviću (1498.-1578.), hrvatskom slikaru i predstavniku minijaturne umjetnosti u doba kada ona doživljava svoj pad.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikjulijeklovicrendic</imagePath>
+    <points>1</points>
+    <latitude>45.8096184</latitude>
+    <longitude>15.9784975</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Petar Preradović</name>
+    <description>1895., Spomenik Petru Preradoviću (1818.-1871.), vojniku i hrvatskom pjesniku. Jedan je od najplodnijih i najcjenjenijih književnika hrvatske književnosti 19. stoljeća, naročito hrvatskog romantizma.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikpetarpreradovicrendic</imagePath>
+    <points>1</points>
+    <latitude>45.8123897</latitude>
+    <longitude>15.9739632</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan pl. Kukuljević</name>
+    <description>1911., Bista Ivana Kukuljevića Sakcinskog (1816.-1889.), hrvatskog povjesničara, književnika i političara.</description>
+    <author>Rudolf Valdec</author>
+    <imagePath>spomenikivanplkukuljevic</imagePath>
+    <points>1</points>
+    <latitude>45.8095421</latitude>
+    <longitude>15.9789963</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan Mažuranić</name>
+    <description>1911., Bista Ivana Mažuranića (1814.-1890.), hrvatskog pjesnika i političara. On je najznačajnija osobnost perioda hrvatskog narodnog preporoda, te je poznat po nadimku Ban Pučanin.</description>
+    <author>Rudolf Valdec</author>
+    <imagePath>spomenikivanmazuranic</imagePath>
+    <points>1</points>
+    <latitude>45.8094491</latitude>
+    <longitude>15.9779282</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ruđer Bošković</name>
+    <description>1911., Spomenik Ruđeru Josipu Boškoviću (1711.-1787.), hrvatskom matematičaru, astronomu, fizičaru i filozofu. Po njemu je nazvan i Mjesečev krater Boscovich. </description>
+    <author>Toma Rosandić</author>
+    <imagePath>spomenikruderboskovicrosandic</imagePath>
+    <points>1</points>
+    <latitude>45.809260</latitude>
+    <longitude>15.978982</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>August Šenoa</name>
+    <description>1914., Spomenik Augustu Šenoi (1838.-1881.), jednom od najvećih osobnosti hrvatske književnosti, te najutjecajnijem hrvatskom književniku 19. stoljeća.</description>
+    <author>Ivan Rendić</author>
+    <imagePath>spomenikaugustsenoarendic</imagePath>
+    <points>1</points>
+    <latitude>45.8085901</latitude>
+    <longitude>15.9792366</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>August Cesarec</name>
+    <description>1919., Spomenik hrvatskom književniku i publicistu Augustu Cesarcu (1893.-1941.)</description>
+    <author>Stjepan Gračan</author>
+    <imagePath>spomenikaugustcesarecgračan</imagePath>
+    <points>1</points>
+    <latitude>45.8161042</latitude>
+    <longitude>15.9765153</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Matija Gubec</name>
+    <description>1923., Skulptura Matije Gupca na rubu zgrade na Trgu sv. Marka, gdje je taj isti Matija Gubec navodno bio pogubljen 1573. Također je djelovao kao vođa seljačke bune u Hrvatskoj i Sloveniji.</description>
+    <author>Vatroslav Drenski</author>
+    <imagePath>spomenikmatijagubecdrenski</imagePath>
+    <points>1</points>
+    <latitude>45.8159652</latitude>
+    <longitude>15.973588</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Josip Juraj Strossmayer</name>
+    <description>1924. postavljeno 1926., Spomenik Josipu Juraju Strossmayeru (1815.-1905.), biskupu, teologu,te hrvatskom političaru, koji je zastupao ideju o ustavnom i federalnom uređenju Habsburške Monarhije.</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>spomenikjosipjurajstrossmayer</imagePath>
+    <points>1</points>
+    <latitude>45.8088441</latitude>
+    <longitude>15.9785504</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Kralj Tomislav</name>
+    <description>1928.-1938. -  postavljen 1947., Spomenik kralju Tomislavu koji je vladao Hrvatskom od 910. do 928. godine. Poznat je po tome što je bio prvi hrvatski kralj, tijekom čega je ujedinio Panonsku i Primorsku Hrvatsku. Trg na kojemu se nalazi njegov kip često se naziva i „Tomislavac“.</description>
+    <author>Robert Frangeš Mihanović</author>
+    <imagePath>spomenikkraljtomislav</imagePath>
+    <points>1</points>
+    <latitude>45.805668</latitude>
+    <longitude>15.978713</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Andrija Medulić</name>
+    <description>1930.- postavljeno 1932., Spomenik Andrije Medulića (1510.-1563.), renesansnog slikara i grafičara, te jednog od najistaknutijih predstavnika talijanskkog manirizma.</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>spomenikandrijamedulicmestrovic</imagePath>
+    <points>1</points>
+    <latitude>45.8075141</latitude>
+    <longitude>15.9786412</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Julije Klović</name>
+    <description>1930., Spomenik Juliju Kloviću (1498.-1578.), hrvatskom slikaru i predstavniku minijaturne umjetnosti u doba kada ona doživljava svoj pad.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>spomenikjulijeklovickrsinic</imagePath>
+    <points>1</points>
+    <latitude>45.815122</latitude>
+    <longitude>15.974829</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Eugen Kumičić</name>
+    <description>1934. -postavljeno 1937., Spomenik Eugenu Kumičiću (1850.-1904.), hrvvatskom književniku i političaru. Smatra se predvodnikom naturalizma u hrvatskoj književnosti.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>spomenikeugenkumicic</imagePath>
+    <points>1</points>
+    <latitude>45.8086241</latitude>
+    <longitude>15.9679932</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Fran Žaver Kesterčanek</name>
+    <description>1936., Bista Frana Kesterčaneka (1856.-1915.), hrvatskog šumarskog stručnjaka i osnivača suvremenog šumarstva u na području nastave, šumarske upravne službe, te stručne i znanstvene literature.</description>
+    <author>Emil Bohutinsky</author>
+    <imagePath>spomenikfranzaverkestercanek</imagePath>
+    <points>1</points>
+    <latitude>45.8073844</latitude>
+    <longitude>15.968559</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Josip Kozarac</name>
+    <description>1936., Bista Josipa Kozarca (1858.-1906.), hrvatskog novelista, pjesnika, diplomiranog inžinjera šumarstva, te jednog od najpoznatijih hrvatskih šumara.</description>
+    <author>Emil Bohutinsky</author>
+    <imagePath>spomenikjosipkozarac</imagePath>
+    <points>1</points>
+    <latitude>45.8073352</latitude>
+    <longitude>15.9691959</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Dragutin Domjanić</name>
+    <description>1939., Spomenik Dragutinu Domjaniću (185.-1933.), hrvatskom kajkavskom pjesniku, zaslužnom za prepoznatljivost melodije i ritma kajkavskog dijalektalnog izraza.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>spomenikdragutindomjanic</imagePath>
+    <points>1</points>
+    <latitude>45.8079102</latitude>
+    <longitude>15.9780085</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Moša Pijade</name>
+    <description>1954., Spomenik Moši Pijadi (1890.-1957.), istaknutom srpskom političkom radniku i državniku u Jugoslaviji</description>
+    <author>Antun Augustinčić</author>
+    <imagePath>spomenikmosapijade</imagePath>
+    <points>1</points>
+    <latitude>45.824611</latitude>
+    <longitude>16.010083</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Nikola Tesla</name>
+    <description>1955., Spomenik Nikoli Tesli (1856.-1943.), hrvatskom izumitelju izmjenične električne struje. Mjerna jedinica magnetske indukcije, tesla (T), dobila je ime po njemu, što ga čini jedinim Slavenom prema kojemu se naziva neka mjerna jedinica.</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>spomeniknikolatesla</imagePath>
+    <points>1</points>
+    <latitude>45.8112458</latitude>
+    <longitude>15.9743088</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Plamen – Spomenik Ilegalcima</name>
+    <description>1957.  postavljeno 1959., Spomenik  u spomen na 75 palih boraca općine Črnomerec postavljen ispred Opće bolnice Sveti Duh, osim spomenika, u predvorju bolnice stoji spomen-ploča podignuta u čast liječnika i bolničkog osoblja koji su poginuli ili nestali tijekom NOB-a. </description>
+    <author>Ivan Sabolić</author>
+    <imagePath>spomenikplamenspomenikilegalcima</imagePath>
+    <points>1</points>
+    <latitude>45.8198094</latitude>
+    <longitude>15.9385445</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Eugen Podaubsky</name>
+    <description>1959., Spomenik Eugenu Podaubskom (1869.-1935.), hrvatskom veterinaru i prvom dekanu Veterinarskog fakulteta u Zagrebu.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>spomenikeugenpodaubsky</imagePath>
+    <points>1</points>
+    <latitude>45.806156</latitude>
+    <longitude>16.008799</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Janko Gredelj</name>
+    <description>1959., Spomenik Janku Gredelju (1916.-1941.), komunistu i narodnom heroju</description>
+    <author>Mirko Bračun</author>
+    <imagePath>spomenikjankogredelj</imagePath>
+    <points>1</points>
+    <latitude>45.8054722</latitude>
+    <longitude>16.049311</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik streljanima/Dolina grobova</name>
+    <description>1962., Spomenik streljanima 1941.-1945. u sklopu spomen-parka Dotrščina.</description>
+    <author>Vojin Bakić</author>
+    <imagePath>spomenikspomenikstreljanima</imagePath>
+    <points>1</points>
+    <latitude>45.842897</latitude>
+    <longitude>16.027830</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Pablo Picasso</name>
+    <description>1965., Spomenik španjolskom slikaru Pablu Picassu (1881.-1973.), začetniku kubizma, te jednom od najznačajnijih slikara 20. stoljeća.</description>
+    <author>Ivan Sabolić</author>
+    <imagePath>spomenikpablopicasso</imagePath>
+    <points>1</points>
+    <latitude>45.821917</latitude>
+    <longitude>15.971417</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Dolina Grobova</name>
+    <description>1968., Jedan od spomenika u sklopu spomen-parka Dotrščina, jednog od največih stratišta Drugog svjetskog rata u Hrvatskoj.</description>
+    <author>Vojin Bakić</author>
+    <imagePath>spomenikdolinagrobova</imagePath>
+    <points>1</points>
+    <latitude>45.844639</latitude>
+    <longitude>16.026417</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Matija Gubec </name>
+    <description>1968., Spomenik Matiji Gupcu (1548.-1573.), vođi Seljačke bune.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>spomenikmatijagubecradaus</imagePath>
+    <points>1</points>
+    <latitude>45.8196588</latitude>
+    <longitude>15.8330622</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik palim borcima NOB-e</name>
+    <description>1972., Spomenik palim borcima Ciglenice podignut je u znak sjećanja na 65 članica i članova društva "Ciglenica" koji su poginuli u NOB-i. Sjedište društva bilo je u blizu lokacije na kojoj se nalazi spomenik, današnjeg parka Pravednika među narodima.</description>
+    <author>Tomislav Ostoja</author>
+    <imagePath>spomenikpalimborcimanoba</imagePath>
+    <points>1</points>
+    <latitude>45.806639</latitude>
+    <longitude>15.944167</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Većeslav Holjevac</name>
+    <description>1972., Spomenik Većeslavu Holjevcu (1917.-1970.), hrvatskom političaru, te učesniku antifašističke borbe tijekom Drugog svjetskog rata.</description>
+    <author>Ivan Sabolić</author>
+    <imagePath>spomenikveceslavholjevacsabolic</imagePath>
+    <points>1</points>
+    <latitude>45.7728001</latitude>
+    <longitude>15.9706366</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Vladimir Nazor</name>
+    <description>1972., Spomenik Vladimira Nazora (1876.-1949.), hrvatskog političara i pjesnika, te prvog predsjednika Narodne Republike Hrvatske.</description>
+    <author>Stjepan Gračan</author>
+    <imagePath>spomenikvladimirnazor</imagePath>
+    <points>1</points>
+    <latitude>45.8214903</latitude>
+    <longitude>15.9689246</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Antun Gustav Matoš</name>
+    <description>1973., Skulptura Antuna Gustava Matoša (1873.-1914.), hrvatskog pjesnika, novelista, te putopisca. Prostor pored lika A.G. Matoša poziva sugovornika da mu se pridruži na klupi.</description>
+    <author>Ivan Kožarić</author>
+    <imagePath>spomenikantungustavmatos</imagePath>
+    <points>1</points>
+    <latitude>45.8142724</latitude>
+    <longitude>15.9742886</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Blagoje Bersa</name>
+    <description>1973., Spomenik najznačajnijem predstavniku hrvatske glazbene moderne, te glazbenom pedagogu Blagoju Bersi </description>
+    <author>Josip Poljan</author>
+    <imagePath>spomenikblagojebersa</imagePath>
+    <points>1</points>
+    <latitude>45.8122012</latitude>
+    <longitude>15.9887301</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>August Cesarec</name>
+    <description>1974., Spomenik hrvatskom književniku i publicistu Augustu Cesarcu (1893.-1941.). Djelovao je pod pseudonimima Budislav Mirković i Vuk Korneli.</description>
+    <author>Kruno Bošnjak</author>
+    <imagePath>spomenikaugustcesarecbosnjak</imagePath>
+    <points>1</points>
+    <latitude>45.801719</latitude>
+    <longitude>16.023554</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Dragica Končar</name>
+    <description>1976., Bista Dragice Končar (1915.-1945.), sudionice Narodnooslobodilačke borbe, i narodni heroj Jugoslavije.</description>
+    <author>Lujo Lozica</author>
+    <imagePath>spomenikdragicakoncar</imagePath>
+    <points>1</points>
+    <latitude>45.7921899</latitude>
+    <longitude>15.9463555</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan Filipović</name>
+    <description>1976., Bista Ivana Filipovića (1823.-1895.), hrvatskog pedagoga i književnika. Bio je vođa hrvatskih učitelja, urednik nekoliko časopisa, te osnivač Saveza hrvatskih učiteljskih društava.</description>
+    <author>Šimo Klaić</author>
+    <imagePath>spomenikivanfilipovic</imagePath>
+    <points>1</points>
+    <latitude>45.7971723</latitude>
+    <longitude>15.9610007</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Sestre Baković</name>
+    <description>1977., Spomenik Zdenki i Rajki Baković (20.st.), članicama antifašističkog pokreta otpora </description>
+    <author>Ivan Sabolić</author>
+    <imagePath>spomeniksestrebakovic</imagePath>
+    <points>1</points>
+    <latitude>45.811803</latitude>
+    <longitude>15.97013</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Krsto Ljubičić</name>
+    <description>1978., Bista Krste Ljubičića (1915.-1937.),prve žrtve ustaškog terora na Zagrebačkom Sveučilištu. Bista se nalazi u dvorištu vrtića koji je nekada nosio njegovo ime.</description>
+    <author>Luka Musulin</author>
+    <imagePath>spomenikkrstoljubicic</imagePath>
+    <points>1</points>
+    <latitude>45.8108567</latitude>
+    <longitude>15.9649574</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Petar Preradović</name>
+    <description>1978., Spomenik Petru Preradoviću (1818.-1871.), vojniku i hrvatskom pjesniku. Jedan je od najplodnijih i najcjenjenijih književnika hrvatske književnosti 19. stoljeća, naročito hrvatskog romantizma.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikpetarpreradovicnepoznato</imagePath>
+    <points>1</points>
+    <latitude>45.8077105</latitude>
+    <longitude>16.0232488</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Pavle Papp</name>
+    <description>1980. Spomenik Pavlu Pappu (1914.-1941.), studentu medicine i članu Centralnog komiteta Komunističke partije Jugoslavije. Pavle Papp je 5. srpnja 1951. godine proglašen za narodnog heroja Jugoslavije povodom sudjelovanja u Narodnooslobodilačkom pokretu.</description>
+    <author>Aleksandar Jovanovski</author>
+    <imagePath>spomenikpavlepapp</imagePath>
+    <points>1</points>
+    <latitude>45.8129916</latitude>
+    <longitude>15.991859</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Josip Debeljak</name>
+    <description>1981, Spomenik Josipu Debeljaku (1902.-1931.), članu Centralnog komiteta Komunističke partije Jugoslavije.</description>
+    <author>Ante Starčević</author>
+    <imagePath>spomenikjosipdebeljak</imagePath>
+    <points>1</points>
+    <latitude>45.8149244</latitude>
+    <longitude>16.014859</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Anka Butorac</name>
+    <description>1981., Spomenik Anke Butorac (1903.-1942.), hrvatske revolucionarke i narodnog heroja Jugoslavenskog narodnooslobodilačkog pokreta. Osnovna škola Matka Laginje koja se nalazi pokraj kipa, nekada je nosila ime Osnovna škola Anka Butorac</description>
+    <author>Aleksandar Jovanovski</author>
+    <imagePath>spomenikankabutorac</imagePath>
+    <points>1</points>
+    <latitude>45.8129916</latitude>
+    <longitude>15.991859</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Grigor Vitez</name>
+    <description>1981., Spomenik Grigoru Vitezu (1911.-1966.), hrvatskom pjesniku i prevoditelju. Poznat je po brojnim pjesmama i dječjim pričama, te se zbog svog djelovanja u tom području, smatra začetnikom moderne hrvatske dječje književnosti.</description>
+    <author>Josip Poljan</author>
+    <imagePath>spomenikgrigorvitez</imagePath>
+    <points>1</points>
+    <latitude>45.7983873</latitude>
+    <longitude>15.9868635</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Dotrščina – Ružić</name>
+    <description>1981., Spomenik poginulima za vrijeme oslobođenja Zagreba 1941.-1945. Tijekom tog perioda od strane fašista ubijeno je 18 000 Zagrepčana i Zagrepčanki od kojih je nekoliko tisuća i streljano na tom području.</description>
+    <author>Branko Ružić</author>
+    <imagePath>spomenikdotrscinaruzic</imagePath>
+    <points>1</points>
+    <latitude>45.846768</latitude>
+    <longitude>16.026757</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Charlie Chaplin</name>
+    <description>1983., Spomenik Sir Charlesu Spenceru Chaplinu (1889.-1977.), britanskom komičaru, glumcu, producentu, te režiseru, uvaženom kao jednim od najbitnijih ličnosti u povijesti filma.</description>
+    <author>Ratko Petrić</author>
+    <imagePath>spomenikcharliechaplin</imagePath>
+    <points>1</points>
+    <latitude>45.8151747</latitude>
+    <longitude>15.9697627</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan Meštrović</name>
+    <description>1984., Spomenik Ivanu Meštroviću (1883.-1962.), najistaknutijem kiparu hrvatske moderne skulpture i vodeća ličnost umjetničkog života u Zagrebu početkom 20. stoljeća.</description>
+    <author>Stipe Sikirica </author>
+    <imagePath>spomenikivanmestrovic</imagePath>
+    <points>1</points>
+    <latitude>45.7887065</latitude>
+    <longitude>15.9331413</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik palim Kustošijancima u NOB-u</name>
+    <description>1985., Spomenik borcima Narodnooslobodilačke borbe sa područja Kustošije.</description>
+    <author>Nikola Bolčević</author>
+    <imagePath>spomenikpalimkustosijancimaunobu</imagePath>
+    <points>1</points>
+    <latitude>45.831390</latitude>
+    <longitude>15.922430</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>August Šenoa</name>
+    <description>1987., Spomenik Augustu Šenoi (1838.-1881.), jednom od najvećih osobnosti hrvatske književnosti, te najutjecajnijem hrvatskom književniku 19. stoljeća.</description>
+    <author>Marija Ujević Galetović</author>
+    <imagePath>spomenikaugustsenoagaletovic</imagePath>
+    <points>1</points>
+    <latitude>45.813778</latitude>
+    <longitude>15.981667</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ruđer Bošković</name>
+    <description>1988., Spomenik Ruđeru Josipu Boškoviću (1711.-1787.), hrvatskom matematičaru, astronomu, fizičaru i filozofu. Po njemu je nazvan i Mjesečev krater Boscovich. </description>
+    <author>Marijan Gajšak</author>
+    <imagePath>spomenikruderboskovicgajšak</imagePath>
+    <points>1</points>
+    <latitude>45.804136</latitude>
+    <longitude>16.027087</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik poginulim Zagrepčanima u NOB</name>
+    <description>1989., Spomenik Zagrepčanima poginulim u NOBU u sklopu spomen-parka Dotrščina</description>
+    <author>Kosta angeli Radovani</author>
+    <imagePath>spomenikdotrscinaradovani</imagePath>
+    <points>1</points>
+    <latitude>45.846664</latitude>
+    <longitude>16.024278</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Tin Ujević</name>
+    <description>1991., Spomenik Tinu Ujeviću (1891.-1955.), jednom od najvećih hvatskih pjesnika 20. stoljeća. Tematika njegovih pjesama najčešče je neuzvraćena ljubav i otuđenost, te je simboličan jer zaokupljuje hrvatsku književnu tradiciju i europsku modernističku književnost.</description>
+    <author>Miro Vuco</author>
+    <imagePath>spomeniktinujevic</imagePath>
+    <points>1</points>
+    <latitude>45.8119511</latitude>
+    <longitude>15.9731975</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Franjo Bučar</name>
+    <description>1991.. Spomenik Franji Bučaru (1866.-1947.), hrvatskom sportskom djelatniku, povjesničaru književnosti, te publicistu. Smatra se pionirom popularizacije sporta u Hrvatskoj, što je titula koju zaslužuje svojim doprinosom u modernizaciji školske nastave tjelesnog odgoja, te zalagavši se za uključivanje hrvatskih sportaša u međunarodna natjecanja.</description>
+    <author>Kosta Angeli Radoani</author>
+    <imagePath>spomenikfranjobucar</imagePath>
+    <points>1</points>
+    <latitude>45.806639</latitude>
+    <longitude>15.952056</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Faust Vrančić</name>
+    <description>1993., Spomenik Faustu Vrančiću (1551.-1617.), Hrvatskom jezikoslovcu, izumitelju, diplomatu i svečeniku. Najpoznatiji je po tome što je dizajnirao prvu funkcionalnu konstrukciju padobrana.</description>
+    <author>Kosta Angeli Radovani</author>
+    <imagePath>spomenikfaustvrancic</imagePath>
+    <points>1</points>
+    <latitude>45.8036957</latitude>
+    <longitude>15.9645035</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Fra Grgo Martić</name>
+    <description>1994., Kip Fra Grge Martića (1822.-1905.), hrvatskog franjevca, pjesnika, te političkog djelatnika.</description>
+    <author>Mladen Mikulin</author>
+    <imagePath>spomenikfragrgomartic</imagePath>
+    <points>1</points>
+    <latitude>45.8123412</latitude>
+    <longitude>15.9887995</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Većeslav Holjevac</name>
+    <description>1994., Spomenik Većeslavu Holjevcu (1917.-1970.), hrvatskom generalu i političaru, te gradonačelniku Zagreba u periodu od 1952. do 1962. godine.</description>
+    <author>Zvonimir Gračan</author>
+    <imagePath>spomenikveceslavholjevacgracan</imagePath>
+    <points>1</points>
+    <latitude>45.793911</latitude>
+    <longitude>15.979330</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan Krstitelj Rabljanin</name>
+    <description>1995., Bista Ivana Krstitelja Rabljanina (1470.-1540.), znamenitog hrvatskog ljevača bronce, tehnologa i umjetnika. Njegovo znanje i vještina uvelike su pripomogli u sigurnosti i obrambenoj moći Dubrovačke Republike.</description>
+    <author>Kosta Angeli Radovani </author>
+    <imagePath>spomenikivankrstiteljrabljanin</imagePath>
+    <points>1</points>
+    <latitude>45.8037098</latitude>
+    <longitude>15.9647352</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Marija Jurić Zagorka</name>
+    <description>1996., Spomenik Mariji Jurić Zagorki (1873.-1957.), hrvatskoj književnici i novinarki. Poznata je po djelovanju protiv društvene diskriminacije i mađarizacije, te je bila prva profesionalna novinarka i najčitanija hrvatska književnica svoga doba.</description>
+    <author>Stjepan Gračan</author>
+    <imagePath>spomenikmarijajuriczagorka</imagePath>
+    <points>1</points>
+    <latitude>45.786528</latitude>
+    <longitude>15.924639</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ruđer Bošković</name>
+    <description>1996., Spomenik Ruđeru Josipu Boškoviću (1711.-1787.), hrvatskom matematičaru, astronomu, fizičaru i filozofu. Po njemu je nazvan i Mjesečev krater Boscovich. </description>
+    <author>Stjepan Divković</author>
+    <imagePath>spomenikruderboskovicdivkovic</imagePath>
+    <points>1</points>
+    <latitude>45.803971</latitude>
+    <longitude>15.963985</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Oton Kučera</name>
+    <description>1998., Bista Otona Kučere (1857.-1931.), profesora, prirodoslovca, književnika, autora znanstveno popularnih djela iz fizike, te predsjednika Matice hrvatske.</description>
+    <author>Marija Ujeić Galetović</author>
+    <imagePath>spomenikotonkucera</imagePath>
+    <points>1</points>
+    <latitude>45.8037098</latitude>
+    <longitude>15.9647352</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Velimir Lojda</name>
+    <description>1999., Bista Dr. Velimira Lojde, cijeli radni vijek proveo na Kajzerici, sa svim Kajzerčanima se poznavao i bio dio njihovih obitelji. Iz zahvalnosti su mu 1999. stanovnici Kajzericepodigli spomenik uz staru ambulantu i dom mjesne zajednice.</description>
+    <author>Mladen Mikulin</author>
+    <imagePath>spomenikvelimirlojda</imagePath>
+    <points>1</points>
+    <latitude>45.7822663</latitude>
+    <longitude>15.9589175</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ferdinand Kovačević</name>
+    <description>1999., Bista Ferdinanda Kovačevića (1838.-1913), izumitelja, stručnog pisca, te pionira hrvatske telegrafije.</description>
+    <author>Stanko Jančić</author>
+    <imagePath>spomenikferdinandkovacevic</imagePath>
+    <points>1</points>
+    <latitude>45.803712</latitude>
+    <longitude>15.9645586</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ante Starčević</name>
+    <description>1999., Spomenik Anti Starčeviću (1823.-1896.), hrvatskom političaru i književniku, kojega su još dok je bio živ prozvali Ocem domovine zbog svojih ideologija koje su podržavale hrvatski nacionalizam.</description>
+    <author>Josip Poljan</author>
+    <imagePath>spomenikantestarcevicpoljan</imagePath>
+    <points>1</points>
+    <latitude>45.8057684</latitude>
+    <longitude>15.9778886</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Marko Marulić</name>
+    <description>1999., Spomenik Marka Marulića (1450.-1524-), hrvatskog književnika i humanista, te oca hrvatske književnosti.</description>
+    <author>Vlado Radas</author>
+    <imagePath>spomenikmarkomarulic</imagePath>
+    <points>1</points>
+    <latitude>45.8069617</latitude>
+    <longitude>15.97013</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>David Schwarz</name>
+    <description>2000., Spomenik Davidu Schwarzu (1850.-1897.), trgovcu drvima, no još važnije izumitelju prvog zračnog broda krute konstrukcije, preteče cepelina.</description>
+    <author>Stjepan Gračan</author>
+    <imagePath>spomenikdavidschwarz</imagePath>
+    <points>1</points>
+    <latitude>45.8037259</latitude>
+    <longitude>15.9646174</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Juraj Habdelić</name>
+    <description>2000., Spomenik Juraju Habdeliću (1609.-1678.), hrvatskom književniku, jezikoslovcu i isusovcu</description>
+    <author>Mladen Mikulin</author>
+    <imagePath>spomenikjurajhabdelic</imagePath>
+    <points>1</points>
+    <latitude>45.8275315</latitude>
+    <longitude>15.9984132</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Bartol Kašić</name>
+    <description>2001., Spomenik Bartolu Kašiću (1575.-1650.), jezikoslovcu i vjerskom piscu zaslužnom za „Prvu hrvatsku gramatiku“ (1604.)</description>
+    <author>Mile Grgas</author>
+    <imagePath>spomenikbartolkasic</imagePath>
+    <points>1</points>
+    <latitude>45.786533</latitude>
+    <longitude>15.924640</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Franjo Hanaman</name>
+    <description>2001., Spomenik Franju Hanamanu, kemičar, metalur i izumitelj, koji je rođen 30. lipnja 1878. u Drenovci, a preminuo 23. siječnja 1941. u Zagrebu. Poznat je po raznim izumima od kojega je najpoznatija prva ekonomična električna žarulja sa metalnom niti.</description>
+    <author>Stanko Jančić</author>
+    <imagePath>spomenikfranjohanaman</imagePath>
+    <points>1</points>
+    <latitude>45.8036808</latitude>
+    <longitude>15.9644465</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Vatroslav Lisinski</name>
+    <description>2004., Bista Vatroslava Lisinskog (1819.-1854.), hrvatskog skadatelja, te prvog hrvatskog profesionalnog glazbenika koji je ujedno postavio temelje nacionalnom smjeru u Hrvatskoj.</description>
+    <author>Mile Grgas</author>
+    <imagePath>spomenikvatroslavlisinskigrgas</imagePath>
+    <points>1</points>
+    <latitude>45.8005011</latitude>
+    <longitude>15.979643</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Slavoljub Penkala</name>
+    <description>2004., Spomenik Eduardu Slavoljubu Penkali (1871.-1922.), hrvatskom inženjeru kemije i izumitelju mehaničke olovke i nalivpera s krutom tintom.</description>
+    <author>Linda Milić Kršnjavi</author>
+    <imagePath>spomenikslavoljubpenkala</imagePath>
+    <points>1</points>
+    <latitude>45.8037098</latitude>
+    <longitude>15.9647352</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Miroslav Krleža</name>
+    <description>2004., Spomenik Miroslavu Krleži (1893.-1981.), Autoru najznačajnijih tekstova hrvatske književnosti 20.st. Po njemu je nazvan leksikografski zavod u Frankopanskoj i osnovna škola na Kaptolu.</description>
+    <author>Marija Ujević Galetović</author>
+    <imagePath>spomenikmiroslavkrleza</imagePath>
+    <points>1</points>
+    <latitude>45.8177263</latitude>
+    <longitude>15.9712635</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Dražen Petrović</name>
+    <description>2006., Spomenik Dražena Petrovića, jednog od najvećih hrvatskih i svjetskih košarkaša, te predvodnika vala europskih košarkaša u NBAu.</description>
+    <author>Kuzma Kovačić</author>
+    <imagePath>spomenikdrazenpetrovic</imagePath>
+    <points>1</points>
+    <latitude>45.803056</latitude>
+    <longitude>15.963778</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Benedikt Kotruljević</name>
+    <description>2007., Spomenik Benediktu Kotruljeviću (1416.-1469.), hrvatskom ekonomistu, diplomatu i humanistu. Kotruljević je zaslužan za modernu ekonomsku analizu s dvostavnim knjigovodstvom, čime se uvrstio u vrh svjetskih ekonomskih ličnosti.</description>
+    <author>Ante Despot</author>
+    <imagePath>spomenikbenediktkotruljevic</imagePath>
+    <points>1</points>
+    <latitude>45.8079275</latitude>
+    <longitude>15.9842088</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivan Merz</name>
+    <description>2007., Spomenik Ivanu Merzu ( 1896.-1928.), hrvatskom katoličkom djelatniku, te kako ga je nazvao Papa Ivan Pavao II, „Istaknuti laik u svjedočenju Evanđelja“.</description>
+    <author>Vid Vučak</author>
+    <imagePath>spomenikivanmerz</imagePath>
+    <points>1</points>
+    <latitude>45.8113958</latitude>
+    <longitude>15.9844484</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Stjepan Radić</name>
+    <description>2007., Spomenik Stjepanu Radiću (1871.-1928.), hrvatskom političaru, te osnivaču Hrvatske seljačke stranke.</description>
+    <author>Zoran Jurić</author>
+    <imagePath>spomenikstjepanradic</imagePath>
+    <points>1</points>
+    <latitude>45.81248</latitude>
+    <longitude>15.9789742</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Henri Dunant</name>
+    <description>2011., Spomenik Jeanu Henryu Dunantu (1828.-1910), osnivaču Crvenog križa. J.H. Dunant je 1901. godine dobio Nobelovu nagradu za mir</description>
+    <author>Tomislav Kršnjavi</author>
+    <imagePath>spomenikhenridunant</imagePath>
+    <points>1</points>
+    <latitude>45.8145356</latitude>
+    <longitude>15.9375214</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Vera Johanides</name>
+    <description>2011., Spomenik Veri Johanides (1917.-2000.), sveučilišnoj profesorici biotehnologije, te utemeljitelj biokemijskog inženjerstva u Hrvatskoj. Bila je i počasna članica Hrvatske akademije tehničkih znanosti.</description>
+    <author>Slavomir Drinković</author>
+    <imagePath>spomenikverajohanides</imagePath>
+    <points>1</points>
+    <latitude>45.8074864</latitude>
+    <longitude>15.9636901</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Joe Strummer</name>
+    <description>2013., Spomenik Johnu Grahamu Melloru (1952.-2002.) , poznatijem pod imenom Joe Strummer, pod kojim je djelovao kao pjevač glumac, te osnivač benda The Clash.</description>
+    <author>Marin Marinić</author>
+    <imagePath>spomenikjoestrummer</imagePath>
+    <points>1</points>
+    <latitude>45.8074646</latitude>
+    <longitude>15.9814024</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Taras Ševčenko</name>
+    <description>2015., Spomenik Tarasu Grigoroviću Ševčenku (1814.-1861.), ukrajinskom pjesniku, slikaru i humanistu. Bio je poznat po svojem zalaganju za samostalnost Ukrajine.</description>
+    <author>Konstantin Dobrjansky</author>
+    <imagePath>spomeniktarassevcenko</imagePath>
+    <points>1</points>
+    <latitude>45.7723236</latitude>
+    <longitude>15.9917727</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Aleksandar Sergejevič Puškin</name>
+    <description>2016., Spomenik Aleksandru Sergejeviču Puškinu (1799.-1837.), ruskom pjesniku, pjesniku i romanopiscu, te ocu moderne ruske književnosti. U njegova najznačajnija djela ubrajamo „Kapetanovu kći“, „Pikovu damu“ i „Cigani“.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikaleksandarsergejevicpuskin</imagePath>
+    <points>1</points>
+    <latitude>45.7842273</latitude>
+    <longitude>15.9849715</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Jurij Gagarin</name>
+    <description>2016., Spomenik Juriju Aleksejeviču Gagarinu (1934.-1968.), ruskom astronautu i vojnom pilotu, te prvom čovjeku koji je otputovao u svemir (12. travnja 1961.). Nakon njegove smrti, njegov rodni grad Gžatsk mijenja ime u Gagarin, njemu u čast.</description>
+    <author>Aleksej Leonov</author>
+    <imagePath>spomenikjurijgagarin</imagePath>
+    <points>1</points>
+    <latitude>45.798803</latitude>
+    <longitude>15.949377</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Nikola Šubić Zrinski</name>
+    <description>2017., Spomenik Nikolu Šubiću Zrinskom (1508.-1566.), državniku i vojskovođi, te jednom od najpoznatijih ličnosti hrvatskih velikaških obitelji.</description>
+    <author>Vladimir Herljević</author>
+    <imagePath>spomeniknikolasubiczrinski</imagePath>
+    <points>1</points>
+    <latitude>45.8093092</latitude>
+    <longitude>15.9781997</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Jokai Mor</name>
+    <description>2019., Spomenik Móru Jókaiu (1825.-1904.), mađarskom piscu  i  dramatičaru. Neka od njegovih najpoznatijih djela su Otok Nepean, Radni dani i Siromašni Bogataši.</description>
+    <author>Gyorgy Adam</author>
+    <imagePath>spomenikjokaimor</imagePath>
+    <points>1</points>
+    <latitude>45.7845756</latitude>
+    <longitude>15.9837025</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomen-park Bošnjacima </name>
+    <description>Borovje, 2012., Spomen park poginulim Bošnjacima trajna je uspomena na njihovu hrabrost i domoljublje. Park je otvoren u spomen Bošnjacima koji su u Domovinskom ratu sudjelovali kao hrvatski branitelji.</description>
+    <author>nepoznato</author>
+    <imagePath>spomenikbosnjacima</imagePath>
+    <points>1</points>
+    <latitude>45.7918931</latitude>
+    <longitude>16.0108563</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima</name>
+    <description>Črnomerec, 2000., Spomenik podignut u čast 78 poginulih bojnika Črnomerca, koji se nalazi na Trgu Siječanjskih žrtava.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimacrnomerec</imagePath>
+    <points>1</points>
+    <latitude>45.813271</latitude>
+    <longitude>15.9274256</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima</name>
+    <description>Dubrava, 2000., Spomenik poginulim hrvatskim braniteljima u Dubravi. Na spomeniku su uklesana 74 imena poginulih branitelja s tog područja, pripadnika različitih postrojbi iz Domovinskog rata.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimadubrava</imagePath>
+    <points>1</points>
+    <latitude>45.829472</latitude>
+    <longitude>16.053722</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Petar Guberina</name>
+    <description>izradeno 1996. postavljeno 2006., Spommenik Petru Guberini (1913.-2005.), hrvatskom jezikoslovcu, teoretičaru, te utemeljitelju SUVAGa</description>
+    <author>Vladimir Herljević</author>
+    <imagePath>spomenikpetarguberina</imagePath>
+    <points>1</points>
+    <latitude>45.8083837</latitude>
+    <longitude>15.9935817</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Vatroslav Lisinski</name>
+    <description>izrađeno 1940. postavljeno 1969., Skupltura Vatroslava Lisinskog (1819.-1854.), hrvatskog skadatelja, te prvog hrvatskog profesionalnog glazbenika koji je ujedno postavio temelje nacionalnom smjeru u Hrvatskoj.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>spomenikvatroslavlisinskiradaus</imagePath>
+    <points>1</points>
+    <latitude>45.8224842</latitude>
+    <longitude>15.9757802</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Đuro Đaković</name>
+    <description>izrađeno 1969. postavljeno 1986., Spomenik Đuri Đakoviću (1886.-1929.), hrvatskom političaru, te jednom od osnivača Saveza komunista Jugoslavije. Danas se po njemu zove jedna od najvećih industrijskih grupacija u Hrvatskoj i regiji s dugom tradicijom i ugledom na globalnom tržištu,  „Đuro Đaković“.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>spomenikdurodakovic</imagePath>
+    <points>1</points>
+    <latitude>45.8193531</latitude>
+    <longitude>15.9795286</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Matija Supina</name>
+    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rhoncus diam non tortor cursus, ac consequat neque maximus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus sit amet porttitor ipsum. Fusce iaculis sagittis massa, eu aliquam libero imperdiet non. Proin ullamcorper vulputate ligula, sit amet dictum mauris finibus non. Quisque sit amet luctus tortor. Cras gravida tortor vestibulum, ornare libero eget, ultrices magna. Fusce efficitur congue ligula ac accumsan. Donec ut quam imperdiet, sagittis nunc sit amet, tincidunt risus. Mauris ornare lectus tortor, ut malesuada neque congue at.</description>
+    <author>mama i tata</author>
+    <imagePath>matija</imagePath>
+    <points>10</points>
+    <latitude>45.86621149487807</latitude>
+    <longitude>15.792399123994073</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik Braniteljima</name>
+    <description>Maksimir, 1999., Spomenik palim braniteljima s područja kvarta Maksimir, gdje je 50 branitelja u Domovinskom ratu dalo svoj život za slobodnu hrvatsku.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimamaksimir</imagePath>
+    <points>1</points>
+    <latitude>45.825302</latitude>
+    <longitude>16.010379</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik poginulim revolucionarima Zagreba</name>
+    <description>napravljeno 1984. postavljeno 1985., Spomenik palim revolucionarima grada Zagreba 1919. - -1941. u sklopu spomen-parka Dotrščina.</description>
+    <author>Stevan Luketić</author>
+    <imagePath>spomenikdotrscinaluketic</imagePath>
+    <points>1</points>
+    <latitude>45.850625</latitude>
+    <longitude>16.025147</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Ivo Lola Riber</name>
+    <description>Nepoznato, Spomenik Ivi Loli Ribaru (1916.-1943.), Jugoslavenskom političaru i narodnom heroju, čime je bio proglašen 18. studenog 1944. godine.</description>
+    <author>Kosta Angeli Radovani</author>
+    <imagePath>spomenikivololariber</imagePath>
+    <points>1</points>
+    <latitude>45.811666</latitude>
+    <longitude>15.9428557</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik Braniteljima </name>
+    <description>Peščenica, 2000., Spomen-park podignut u sjećanje na 74 branitelja poginula u Domovinskom ratu s područja zagrebačkog kvarta Peščenica.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimapescenica</imagePath>
+    <points>1</points>
+    <latitude>45.804217</latitude>
+    <longitude>16.019745</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima / Prvoj oružanoj dragovoljačkoj postrojbi u Domovinskom ratu</name>
+    <description>Podsused, 2019., Spomenik Prvoj oružanoj dragovoljačkoj postrojbi u Domovinskom Ratu, 1. samostalnoj satniji Podsused koji se nalazi na Podsusedskom trgu.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimapodsused</imagePath>
+    <points>1</points>
+    <latitude>45.8165678</latitude>
+    <longitude>15.8353387</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik Josipu Račiću</name>
+    <description>(1980.) Na proslavi Dana škole 1980. g. otkriven je spomenik podignut u čast Josipa Račića. 1985. g. obilježena je 100. godišnjica rođenja Josipa Račića.</description>
+    <author>Ratko Petrić</author>
+    <imagePath>spomenikjosipuracicu</imagePath>
+    <points>4</points>
+    <latitude>45.7894534</latitude>
+    <longitude>15.9409573</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima</name>
+    <description>Trešnjevka, 2003., U središnjem dijelu Parka Stara Trešnjevka smješten je spomenik posvećen poginulim braniteljima s područja Trešnjevke.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimatresnjevka</imagePath>
+    <points>1</points>
+    <latitude>45.798321</latitude>
+    <longitude>15.948670</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spiridon Brusina</name>
+    <description>U Hrvatskom prirodoslovnom muzeju nalazi se skulptura hrvatskog zoologa Spiridona Brusine (1845.-1908.)&lt;/</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikspiridonbrusina</imagePath>
+    <points>1</points>
+    <latitude>45.8170606</latitude>
+    <longitude>15.9724073</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima </name>
+    <description>Vrapče, 1997., Spomenik palim borcima i žrtvama fašizma, te tridesetorici obješenih branitelja, dignut povodom 40te obljetnice osnutka Saveza komunista Jugoslavije.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimavrapce</imagePath>
+    <points>1</points>
+    <latitude>45.814336</latitude>
+    <longitude>15.905634</longitude>
+  </Spomenik>
+  <Spomenik>
+    <name>Spomenik braniteljima</name>
+    <description>Zapruđe, 1999. Somenuj dugbzt z čast poginulih branitelja s područja novozagrebačkog kvarta Zapruđe.</description>
+    <author>Nepoznato</author>
+    <imagePath>spomenikbraniteljimazaprude</imagePath>
+    <points>1</points>
+    <latitude>45.780585</latitude>
+    <longitude>15.996035</longitude>
+  </Spomenik>
+</NewDataSet>

@@ -1,1063 +1,930 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Sculptures>
-    <Sculpture>
-        <name>Mladenci</name>
-        <description>u Parku Mladenaca, Siget (1974.)</description>
-        <author>Stipe Sikirica</author>
-        <imagePath>mladencisikirica</imagePath>
-        <points>5</points>
-        <latitude>45.7760852</latitude>
-        <longitude>16.0132694</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Mladenci</name>
-        <description> Zapoljska 2 </description>
-        <author>Ivan Lesiak</author>
-        <imagePath>mladencilesiak</imagePath>
-        <points>4</points>
-        <latitude>45.8060105</latitude>
-        <longitude>16.0207654</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Spomenik anđelu cuvaru</name>
-        <description>u Maksimiru ispred crkve sv.Jeronima (2000.)</description>
-        <author>Ivana Biocic</author>
-        <imagePath>spomenikandelucuvaru</imagePath>
-        <points>3</points>
-        <latitude>45.8199283</latitude>
-        <longitude>16.0132694</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Akt</name>
-        <description>Tkalciceva 14, Centar(1989.)</description>
-        <author>Miroslav Zupancic</author>
-        <imagePath>aktzupancic</imagePath>
-        <points>1</points>
-        <latitude>45.8148105</latitude>
-        <longitude>15.9761339</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>AKZ</name>
-        <description>Avenija Marina Drzica 4 (1987.)</description>
-        <author>Dusan Dzamnonja</author>
-        <imagePath>skulpturaakz</imagePath>
-        <points>2</points>
-        <latitude>45.8032035</latitude>
-        <longitude>15.9940703</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Bacač diska</name>
-        <description>Ispred Dinamovog stadiona Maksimirska cesta 123 (1957.)</description>
-        <author>Vanja Radaus</author>
-        <imagePath>bacacdiska</imagePath>
-        <points>3</points>
-        <latitude>45.8186251</latitude>
-        <longitude>16.0136092</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Brijunski akt</name>
-        <description>Park Ribnjak (1954.)</description>
-        <author>Antun Augustincic</author>
-        <imagePath>brijunskiakt</imagePath>
-        <points>1</points>
-        <latitude>45.8162752</latitude>
-        <longitude>15.980527</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Brod na Suhom</name>
-        <description>Bocarski dom(1999.)</description>
-        <author>Petar Dolic</author>
-        <imagePath>brodnasuhom</imagePath>
-        <points>3</points>
-        <latitude>45.7894373</latitude>
-        <longitude>15.9621507</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Bumbina livada</name>
-        <description>Jezero Bundek (2016.)</description>
-        <author>Damir Matusic</author>
-        <imagePath>bumbinalivada</imagePath>
-        <points>4</points>
-        <latitude>45.7864061</latitude>
-        <longitude>15.9621507</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Čitac</name>
-        <description>Rooseveltov trg 4</description>
-        <author>Ivan Ivos Ici</author>
-        <imagePath>citac</imagePath>
-        <points>2</points>
-        <latitude>45.8079943</latitude>
-        <longitude>15.9676712</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Djecak</name>
-        <description>Park Gric(1979.)</description>
-        <author>Tomisalv Ostoja</author>
-        <imagePath>djecakostoja</imagePath>
-        <points>2</points>
-        <latitude>45.814746</latitude>
-        <longitude>15.971742</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Dar zivota</name>
-        <description>Jezero Bundek(2013.)</description>
-        <author>Dragan Kwiatkowski</author>
-        <imagePath>darzivota</imagePath>
-        <points>4</points>
-        <latitude>45.7855161</latitude>
-        <longitude>15.9893504</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Djevojka s knjigom</name>
-        <description>Šalata 3, kod Medicinskog fakulteta (izrađena 1940., postavljena 1981.)</description>
-        <author>Frano Kršinić</author>
-        <imagePath>djevojkasaknjigom</imagePath>
-        <points>3</points>
-        <latitude>45.8196578</latitude>
-        <longitude>15.9844695</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Dodir</name>
-        <description>Maksimirska cesta, Zagrebačka Nessie(1989.) Ravnice</description>
-        <author>Ivan Briski</author>
-        <imagePath>dodir</imagePath>
-        <points>3</points>
-        <latitude>45.8207026</latitude>
-        <longitude>16.0210001</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Egipčanin</name>
-        <description>Zoološki vrt, ispred zgrade s gmazovima</description>
-        <author>Jozo Turkalj</author>
-        <imagePath>egipcanin</imagePath>
-        <points>4</points>
-        <latitude>45.8208764</latitude>
-        <longitude>16.0198501</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Frulaš</name>
-        <description>Rokov Perivoj 4(1926.)</description>
-        <author>Frano Kršinić</author>
-        <imagePath>frulas</imagePath>
-        <points>3</points>
-        <latitude>45.8151249</latitude>
-        <longitude>15.9675644</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Grozdana</name>
-        <description>Prisavlje 2, Bočarski dom(1996.)</description>
-        <author>Miroslav Župančić</author>
-        <imagePath>grozdana</imagePath>
-        <points>4</points>
-        <latitude>45.7894299</latitude>
-        <longitude>15.9611435</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Hrvatski sokol</name>
-        <description>Park Maksimir(1925.)</description>
-        <author>A.Freundenreich/M.Mikulin</author>
-        <imagePath>hrvatskisokol</imagePath>
-        <points>4</points>
-        <latitude>45.8236017</latitude>
-        <longitude>16.0155561</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Igra</name>
-        <description>Ilica 532 ispred Knjižnice(1992.)</description>
-        <author>Miroslav Župančić</author>
-        <imagePath>igramiroslavzupancic</imagePath>
-        <points>5</points>
-        <latitude>45.8124494</latitude>
-        <longitude>15.8987759</longitude>
-    </Sculpture>
-
-
-    <Sculpture>
-        <name>Ivan Goran Kovačić</name>
-        <description>Park Ribnjak(1964.)</description>
-        <author>Vojin Bakić</author>
-        <imagePath>ivangorankovacic</imagePath>
-        <points>2</points>
-        <latitude>45.8179944</latitude>
-        <longitude>15.9798458</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Košarkaši</name>
-        <description>Trg doma sportova(1991.)</description>
-        <author>Stanko Jančić</author>
-        <imagePath>kosarkasi</imagePath>
-        <points>3</points>
-        <latitude>45.806715</latitude>
-        <longitude>15.9527871</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kumica Barica</name>
-        <description>Tržnica dolac</description>
-        <author>Stjepan Gračan</author>
-        <imagePath>kumicabarica</imagePath>
-        <points>1</points>
-        <latitude>45.8138417</latitude>
-        <longitude>15.9768164</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kugla</name>
-        <description>Jurkovićeva</description>
-        <author>Dušan Džamonja</author>
-        <imagePath>kugla</imagePath>
-        <points>2</points>
-        <latitude>45.8156103</latitude>
-        <longitude>15.9890223</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kupač</name>
-        <description>" Avenija Većeslava Holjevca 10, ispred INE(Izradena 1955. - postavljena 1999.)</description>
-        <author>Ivan Kožarić</author>
-        <imagePath>kupac</imagePath>
-        <points>4</points>
-        <latitude>45.7776723</latitude>
-        <longitude>15.9788862</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>La Futuro</name>
-        <description>Kennedyev trg(2001.)</description>
-        <author>Jesper Neergaard</author>
-        <imagePath>lafuturo</imagePath>
-        <points>3</points>
-        <latitude>45.8159475</latitude>
-        <longitude>16.0113745</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Lavlji most</name>
-        <description>" Zoološki vrt(1925.)</description>
-        <author>Jozo Turkalj</author>
-        <imagePath>lavljimost</imagePath>
-        <points>3</points>
-        <latitude>45.8214779</latitude>
-        <longitude>16.0210374</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Let u prostoru</name>
-        <description>Schlosserove stube 2</description>
-        <author>Milena Lah</author>
-        <imagePath>letuprostoru</imagePath>
-        <points>2</points>
-        <latitude>45.815627</latitude>
-        <longitude>15.9842683</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majčina igra</name>
-        <description>Mirogojska ulica 16 (izrađeno 1962. postavljeno 1978.)</description>
-        <author>Frano Kršinić</author>
-        <imagePath>majcinaigra</imagePath>
-        <points>2</points>
-        <latitude>45.8319351</latitude>
-        <longitude>15.9803814</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka doji dijete</name>
-        <description>Rockefellerova 4, Škola narodnog zdravlja Andrija Štampar (izrađeno 1930.>postavljeno 1940.)</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>majkadojidijete</imagePath>
-        <points>3</points>
-        <latitude>45.8286537</latitude>
-        <longitude>15.9816384</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Mali dječak</name>
-        <description>Trg kralja Petra Krešimira IV.(1928.)</description>
-        <author>Emil Bohutinsky</author>
-        <imagePath>malidjecak</imagePath>
-        <points>2</points>
-        <latitude>45.808444</latitude>
-        <longitude>15.991085</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Mali princ</name>
-        <description>Ulica Vladimira Vidrića, park(1985.)</description>
-        <author>Nada Orel</author>
-        <imagePath>maliprinc</imagePath>
-        <points>4</points>
-        <latitude>45.8121026</latitude>
-        <longitude>16.0229341</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Miljokaz</name>
-        <description>Slavonska avenija 6 ispred City plaze</description>
-        <author>Max Gangl</author>
-        <imagePath>miljokaz</imagePath>
-        <points>4</points>
-        <latitude>45.7942323</latitude>
-        <longitude>15.9700146</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Navalna grupa u akciji</name>
-        <description>Savska cesta 1 (Vatrogasni dom)(2010.)</description>
-        <author>Marija Reberski</author>
-        <imagePath>navalagrupauakciji</imagePath>
-        <points>3</points>
-        <latitude>45.8070024</latitude>
-        <longitude>15.9673881</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Nugentski lav</name>
-        <description>Kamenita vrata 19 st.</description>
-        <author>>(nepoznato)</author>
-        <imagePath>nugentskilav</imagePath>
-        <points>1</points>
-        <latitude>45.8158167</latitude>
-        <longitude>15.9748657</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Njegovateljica ruža</name>
-        <description>Trg kralja Petra Krešimira IV. (1953.)</description>
-        <author>Frano Kršinić</author>
-        <imagePath>njegovateljicaruza</imagePath>
-        <points>2</points>
-        <latitude>45.808372</latitude>
-        <longitude>15.990650</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Obelisk I i II</name>
-        <description>Savska cesta 30, prolaz Cibone</description>
-        <author>Petar Barišić</author>
-        <imagePath>obeliskiiii</imagePath>
-        <points>2</points>
-        <latitude>45.8026429</latitude>
-        <longitude>15.964418</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Oblik prostora XIII</name>
-        <description>Avenija Dubrovnik 17 Terasa Muzeja suvremene umjetnosti (1965.)</description>
-        <author>Ivan Kožarić</author>
-        <imagePath>oblikprostoraxiii</imagePath>
-        <points>4</points>
-        <latitude>45.7785724</latitude>
-        <longitude>15.9811319</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Zaljubljeni</name>
-        <description>Trg Otokara Keršovanija(1975.) </description>
-        <author>Ćiril Mihanović</author>
-        <imagePath>zaljubljeni</imagePath>
-        <points>4</points>
-        <latitude>45.8172439</latitude>
-        <longitude>15.9987421</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Povijest Hrvata</name>
-        <description>Trg Republike Hrvatske 14 ispred Pravnog fakulteta (1932.)</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>povijesthrvata</imagePath>
-        <points>1</points>
-        <latitude>45.8104324</latitude>
-        <longitude>15.9697552</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Poezija prostora</name>
-        <description>Maksimirski park (1981.)</description>
-        <author>Milena Lah</author>
-        <imagePath>poezijaprostora</imagePath>
-        <points>3</points>
-        <latitude>45.8322808</latitude>
-        <longitude>16.0263334</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Prosinačke žrtve</name>
-        <description>okretište tramvaja Dubrava (1960.)</description>
-        <author>Dušan Džamonja</author>
-        <imagePath>prosinackezrtve</imagePath>
-        <points>3</points>
-        <latitude>45.8244816</latitude>
-        <longitude>16.0383225</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Prizemljeno sunce</name>
-        <description>Bogovićeva ul. 1B (1994.)</description>
-        <author>Ivan Kožarić</author>
-        <imagePath>prizemljenosunce</imagePath>
-        <points>1</points>
-        <latitude>45.8123978</latitude>
-        <longitude>15.9754657</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Ranjenik</name>
-        <description>Hebrangova 1, u prolazu (izrađeno 1938. - postavljeno 1951.)</description>
-        <author>Vanja Radauš</author>
-        <imagePath>ranjenikradaus</imagePath>
-        <points>2</points>
-        <latitude>45.8093002</latitude>
-        <longitude>15.9776976</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Ranjenik</name>
-        <description>Ivana Matetića Ronjgova 67</description>
-        <author>Lujo Lozica</author>
-        <imagePath>ranjeniklozica</imagePath>
-        <points>5</points>
-        <latitude>45.7944971</latitude>
-        <longitude>15.897576</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Razlistana forma</name>
-        <description>Gajeva ulica , Ilica 1 (izrađeno 1961. - postavljeno 1987.) </description>
-        <author>Vojin Bakić</author>
-        <imagePath>razlistanaforma</imagePath>
-        <points>1</points>
-        <latitude>45.8124585</latitude>
-        <longitude>15.9764193</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Ribari</name>
-        <description>Ilica 197 (Klinika za tumore) (1947.)</description>
-        <author>Frano Kršinić</author>
-        <imagePath>ribari</imagePath>
-        <points>3</points>
-        <latitude>45.8116372</latitude>
-        <longitude>15.9433649</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Pozdrav</name>
-        <description>Križanje Branimirove i Harambašičeve, Svetic (1987.)</description>
-        <author>Milena Lah</author>
-        <imagePath>pozdrav</imagePath>
-        <points>3</points>
-        <latitude>45.8116232</latitude>
-        <longitude>16.013095</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Silviju Strahimiru Kranjčeviću</name>
-        <description>Ivana Lučića 3, pored Filozofskog fakulteta (1962.)</description>
-        <author>Tomislav Ostoja</author>
-        <imagePath>silvijustrahimirukranjcevicu</imagePath>
-        <points>2</points>
-        <latitude>45.796734</latitude>
-        <longitude>15.9706292</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Sinteza, Arena</name>
-        <description>Skup skulptura oko Arena centra (2008.)</description>
-        <author>Arh. ured UPI>2M</author>
-        <imagePath>sintezaarena</imagePath>
-        <points>5</points>
-        <latitude>45.7719584</latitude>
-        <longitude>15.9409573</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Strijeljanje talaca</name>
-        <description>Strossmayerov trg (1951.) </description>
-        <author>Frano Kršinić</author>
-        <imagePath>stijeljanjetalaca</imagePath>
-        <points>1</points>
-        <latitude>45.8076699</latitude>
-        <longitude>15.9785467</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Stup proizvodnje</name>
-        <description>Avenija Dubrovnik 15, Velesaja (1977.)</description>
-        <author>Mila Kumbatović</author>
-        <imagePath>stupprizvodnje</imagePath>
-        <points>4</points>
-        <latitude>45.7775415</latitude>
-        <longitude>15.9705698</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Sv.Juraj ubija zmaja</name>
-        <description>blabla</description>
-        <author>Anton Dominik Fernkorn</author>
-        <imagePath>svjurajubijazmaja</imagePath>
-        <points>1</points>
-        <latitude>45.8092842</latitude>
-        <longitude>15.9690857</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Sv. Juraj</name>
-        <description>Trg Braće hrvatskog zmaja, ispred Kamenitih vrata (1937.)</description>
-        <author>A. Kompatscher i A. Winder</author>
-        <imagePath>svjurajwinder</imagePath>
-        <points>1</points>
-        <latitude>45.8159029</latitude>
-        <longitude>15.9755332</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Školjka</name>
-        <description>Trg Ivana Meštrovića, Zapruđe</description>
-        <author>Nikola Koydl</author>
-        <imagePath>skulpturaskoljka</imagePath>
-        <points>4</points>
-        <latitude>45.779315</latitude>
-        <longitude>15.9962938</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Tri kugle</name>
-        <description>Grada Mainza/Vodovodna, ispred knjižnice "Vladimir Nazor"(1985.)</description>
-        <author>Anto Jakić</author>
-        <imagePath>trikugle</imagePath>
-        <points>3</points>
-        <latitude>45.8113844</latitude>
-        <longitude>15.9489354</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Trsik</name>
-        <description>Sachsova 4 (1973.)</description>
-        <author>Ante Vulin</author>
-        <imagePath>trsik</imagePath>
-        <points>2</points>
-        <latitude>45.7947235</latitude>
-        <longitude>16.0087996</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Tuga</name>
-        <description>Mošćenička 1, Dječje kazalište "Trešnja"(izrađeno 1976. - postavljeno 1999.)</description>
-        <author>Lujo Lozica</author>
-        <imagePath>skulpturatuga</imagePath>
-        <points>4</points>
-        <latitude>45.7944917</latitude>
-        <longitude>15.9440185</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Tvrdalj</name>
-        <description>park Opatovina (izrađeno 1994. - postavljeno 2002)</description>
-        <author>Šime Vulas</author>
-        <imagePath>tvrdalj</imagePath>
-        <points>1</points>
-        <latitude>45.81675</latitude>
-        <longitude>15.9771783</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Uzastopnost</name>
-        <description>Ul. grada Vukovara 68 ispred POU (2000.)</description>
-        <author>Petar Barišić</author>
-        <imagePath>uzastopnost</imagePath>
-        <points>2</points>
-        <latitude>45.7992631</latitude>
-        <longitude>15.9704457</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Veliki prodor</name>
-        <description>Bundek(2002.)</description>
-        <author>Ljubo De Karina</author>
-        <imagePath>velikiprodor</imagePath>
-        <points>4</points>
-        <latitude>45.7839093</latitude>
-        <longitude>15.9831931</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Veliki torzo</name>
-        <description>N/A</description>
-        <author>Raul Goldoni</author>
-        <imagePath>skulpturavelikitorzo</imagePath>
-        <points>1</points>
-        <latitude>45.8130229</latitude>
-        <longitude>15.9804987</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Zlatarevo zlato</name>
-        <description>Kamenita vrata, ali i u ALU Ilica (1929.) </description>
-        <author>Ivo Kerdić</author>
-        <imagePath>zlatarevozlato</imagePath>
-        <points>1</points>
-        <latitude>45.8157768</latitude>
-        <longitude>15.9750547</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Žena</name>
-        <description>Ul. Franje Račkog, Smičiklasova, Ul. Ignjata Đorđića</description>
-        <author>Ivan Meštrović</author>
-        <imagePath>zenamestrovic</imagePath>
-        <points>1</points>
-        <latitude>45.810969</latitude>
-        <longitude>15.985275</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Žena mačka</name>
-        <description>Prilaz baruna Filipovića 23, Lauba (2001.)</description>
-        <author>Marija Ujević Galetović</author>
-        <imagePath>zenamacka</imagePath>
-        <points>3</points>
-        <latitude>45.811818</latitude>
-        <longitude>15.9401214</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Hokej '66</name>
-        <description>Hokejski klub Šalata(1966.)</description>
-        <author>Tomislav Ostoja</author>
-        <imagePath>hokej66</imagePath>
-        <points>2</points>
-        <latitude>45.8157669</latitude>
-        <longitude>15.9845969</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Odbojkaši</name>
-        <description>Jarunska 5, odbojkaški centar</description>
-        <author>Bojan Stranić</author>
-        <imagePath>odbojkasi</imagePath>
-        <points>4</points>
-        <latitude>45.7839113</latitude>
-        <longitude>15.9474138</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Čovjek s kolutom</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura (1986.)</description>
-        <author>Mladen Mikulin</author>
-        <imagePath>covjekskolutom</imagePath>
-        <points>4</points>
-        <latitude>45.7906058</latitude>
-        <longitude>15.9751631</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Dvoje</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura</description>
-        <author>Šime Vulas</author>
-        <imagePath>dvoje</imagePath>
-        <points>4</points>
-        <latitude>45.7890859</latitude>
-        <longitude>15.9647169</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Mačka</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura (1986.)</description>
-        <author>Branko Ružić</author>
-        <imagePath>mackaruzic</imagePath>
-        <points>4</points>
-        <latitude>45.7887643</latitude>
-        <longitude>15.9634898</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kamen temeljac</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura (izrađeno 1993. - postavljeno 1996.)</description>
-        <author>Miro Vuco</author>
-        <imagePath>kamentemeljac</imagePath>
-        <points>4</points>
-        <latitude>45.7887643</latitude>
-        <longitude>15.9634898</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kapi</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura (1991.) </description>
-        <author>Ratko Petrić</author>
-        <imagePath>kapi</imagePath>
-        <points>4</points>
-        <latitude>45.7893768</latitude>
-        <longitude>15.9659141</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Putokaz</name>
-        <description>Skup skulptura na nasipu, Aleja skulptura (2006.) </description>
-        <author>Zvonimir Lončarić</author>
-        <imagePath>putokaz</imagePath>
-        <points>4</points>
-        <latitude>45.7875509</latitude>
-        <longitude>15.9591219</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Petrica Kerempuh</name>
-        <description>" Opatovina (izrađeno 1943. - postavljeno 1955.)</description>
-        <author>Vanja Radauš</author>
-        <imagePath>petricakerempuh</imagePath>
-        <points>2</points>
-        <latitude>45.8146896</latitude>
-        <longitude>15.9774771</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Prozor</name>
-        <description>Kožarska ul. 19 (1991.)</description>
-        <author>Vera Dajht Kralj</author>
-        <imagePath>prozor</imagePath>
-        <points>1</points>
-        <latitude>45.8169919</latitude>
-        <longitude>15.9766074</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka i dijete</name>
-        <description>1938.</description>
-        <author>Dušan Džamonja</author>
-        <imagePath>majkaidijetedzamonja</imagePath>
-        <points>1</points>
-        <latitude>45.8092675</latitude>
-        <longitude>15.9628213</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka i dijete</name>
-        <description> </description>
-        <author>Vanja Radauš</author>
-        <imagePath>majkaidijeteradaus</imagePath>
-        <points>1</points>
-        <latitude>45.8096327</latitude>
-        <longitude>15.962236 </longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka i dijete</name>
-        <description>Zorkovačka 44, unutar parka</description>
-        <author>Lujo Lozica</author>
-        <imagePath>majkaidijetelujolozica</imagePath>
-        <points>4</points>
-        <latitude>45.8013657</latitude>
-        <longitude>15.9475497</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka i dijete</name>
-        <description>Park Maksimir(1958.)</description>
-        <author>Ćiril Mihanović</author>
-        <imagePath>majkaidijetecirilmihanovic</imagePath>
-        <points>3</points>
-        <latitude>45.8207383</latitude>
-        <longitude>16.0135194</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Majka i dijete</name>
-        <description> Grad mladih - Granešina (1985.) </description>
-        <author>Josip i Ivan Cikač</author>
-        <imagePath>majkaidijetecikac</imagePath>
-        <points>5</points>
-        <latitude>45.8530867</latitude>
-        <longitude>16.0512683</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Otvorena vrata</name>
-        <description> </description>
-        <author>Stipe Sikirica</author>
-        <imagePath>otvorenavrata</imagePath>
-        <points>1</points>
-        <latitude>45.8328271</latitude>
-        <longitude>16.0404933</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Anđelija</name>
-        <description> </description>
-        <author>Stipe Sikirica</author>
-        <imagePath>andelija</imagePath>
-        <points>1</points>
-        <latitude>45.8118939</latitude>
-        <longitude>15.9347116</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Nađengrad</name>
-        <description>Park skulptura – Gajnice  (1986.)</description>
-        <author>Ante Rašić</author>
-        <imagePath>nadengrad</imagePath>
-        <points>5</points>
-        <latitude>45.8157631</latitude>
-        <longitude>15.876291</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Grad/Mogila</name>
-        <description> Park skulptura – Gajnice   (izrađeno 1984.-postavljeno 1986.) </description>
-        <author>Dora Kovačević</author>
-        <imagePath>gradmoglia</imagePath>
-        <points>5</points>
-        <latitude>45.816696</latitude>
-        <longitude>15.875772</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Plesačica</name>
-        <description> Park skulptura - Aquarius </description>
-        <author>Iris Lobaš Kukavčić</author>
-        <imagePath>plesacica</imagePath>
-        <points>4</points>
-        <latitude>45.7783697</latitude>
-        <longitude>15.936886</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kit</name>
-        <description> Park skulptura - Aquarius </description>
-        <author>Denis Krašković</author>
-        <imagePath>kitkraskovic</imagePath>
-        <points>4</points>
-        <latitude>45.7783697</latitude>
-        <longitude>15.936886</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Čovjek preko i Stoj</name>
-        <description> Park skulptura - Aquarius </description>
-        <author>Andreja Hotko-Pavić</author>
-        <imagePath>covjekprekoistoj</imagePath>
-        <points>4</points>
-        <latitude>45.7783537</latitude>
-        <longitude>15.937658</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Udovica</name>
-        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1908.-postavljeno 1985.) </description>
-        <author>Ivan Meštrović</author>
-        <imagePath>udovica</imagePath>
-        <points>1</points>
-        <latitude>45.811944</latitude>
-        <longitude>15.9619928</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Stup života</name>
-        <description> Park skulptura – Aakademija likovnih umjetnosti (1922.)  </description>
-        <author>Robert Frangeš Hihanović</author>
-        <imagePath>stupzivota</imagePath>
-        <points>1</points>
-        <latitude>45.811944</latitude>
-        <longitude>15.9619928</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Jedra</name>
-        <description> Park skulptura – Aakademija likovnih umjetnosti  (2002.) </description>
-        <author>Šime Vulas</author>
-        <imagePath>jedravulas</imagePath>
-        <points>1</points>
-        <latitude>45.811944</latitude>
-        <longitude>15.9619928</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Dijana</name>
-        <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1927.-postavljeno 1995.) </description>
-        <author>Frano Kršinić</author>
-        <imagePath>skulpturadijana</imagePath>
-        <points>1</points>
-        <latitude>45.811944</latitude>
-        <longitude>15.9619928</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Žena s tačkama</name>
-        <description> Grad mladih – Granešina (izrađeno 1947.- postavljeno 1988.)</description>
-        <author>Kosta Angeli Radovani</author>
-        <imagePath>zenastackama</imagePath>
-        <points>5</points>
-        <latitude>45.8525217</latitude>
-        <longitude>16.0518867</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Stup svečanosti</name>
-        <description> Grad mladih – Granešina (1985.)  </description>
-        <author>Milena Lah</author>
-        <imagePath>stupsvecanosti</imagePath>
-        <points>5</points>
-        <latitude>45.8537117</latitude>
-        <longitude>16.05128</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Slonovi stup</name>
-        <description> Grad mladih - Granešina (1988.) </description>
-        <author>Ratko Petrić</author>
-        <imagePath>slonovnistup</imagePath>
-        <points>5</points>
-        <latitude>45.8525217</latitude>
-        <longitude>16.0518867</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Putovanje barbara</name>
-        <description> Grad mladih - Granešina (1988.) </description>
-        <author>Peruško Bogdanić</author>
-        <imagePath>putovanjebarbara</imagePath>
-        <points>5</points>
-        <latitude>45.8530867</latitude>
-        <longitude>16.0512683</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Ptica</name>
-        <description> Grad mladih - Granešina (1988.) </description>
-        <author>Jasminka Podgorski-Antolović</author>
-        <imagePath>ptica</imagePath>
-        <points>5</points>
-        <latitude>45.8525217</latitude>
-        <longitude>16.0518867</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Pionirska majka</name>
-        <description> Grad mladih - Granešina (1984.)</description>
-        <author>Drago Belina</author>
-        <imagePath>pionirskamajka</imagePath>
-        <points>5</points>
-        <latitude>45.8537117</latitude>
-        <longitude>16.05128</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Mali konjanik</name>
-        <description> Grad mladih - Granešina (1987.) </description>
-        <author>Miro Vuco</author>
-        <imagePath>malikonjanik</imagePath>
-        <points>5</points>
-        <latitude>45.8537117</latitude>
-        <longitude>16.05128</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Grad mladosti</name>
-        <description> Grad mladih - Granešina </description>
-        <author>Jozo Vila</author>
-        <imagePath>gradmladosti</imagePath>
-        <points>1</points>
-        <latitude>45.8537117</latitude>
-        <longitude>16.05128</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Kotač vremena</name>
-        <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1993. postavljeno 2000.) </description>
-        <author>Milena Lah</author>
-        <imagePath>kotacvremena</imagePath>
-        <points>4</points>
-        <latitude>45.7906058</latitude>
-        <longitude>15.9751631</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Žabinjak</name>
-        <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1994.-postavljeno 2000.) </description>
-        <author>Stjepan Gračan</author>
-        <imagePath>zabinjak</imagePath>
-        <points>4</points>
-        <latitude>45.7906058</latitude>
-        <longitude>15.9751631</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Međaš</name>
-        <description> Skup skulptura na nasipu/Aleja skulptura (2016.) </description>
-        <author> Zlatko Bourek </author>
-        <imagePath>medas</imagePath>
-        <points>4</points>
-        <latitude>45.7873758</latitude>
-        <longitude>15.9584557</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Tok</name>
-        <description> Skup skulptura na nasipu/Aleja skulptura </description>
-        <author>Dora Kovačević</author>
-        <imagePath>tokkovacevic</imagePath>
-        <points>4</points>
-        <latitude>45.7889831</latitude>
-        <longitude>15.9642569</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Ruka</name>
-        <description> Skup skulptura na nasipu/Aleja skulptura  (2011.)</description>
-        <author>Ivan Kožarić</author>
-        <imagePath>ruka</imagePath>
-        <points>4</points>
-        <latitude>45.7883848</latitude>
-        <longitude>15.9620857</longitude>
-    </Sculpture>
-
-    <Sculpture>
-        <name>Dvije palme na otoku sreće</name>
-        <description>Martićeva ul. 14</description>
-        <author>Neven Bilić</author>
-        <imagePath>dvijepalmenaotokusrece</imagePath>
-        <points>2</points>
-        <latitude>45.8123412</latitude>
-        <longitude>15.9887995</longitude>
-    </Sculpture>
-    <!--	<Sculpture>
-            <name>Meta</name>
-            <description> Park skulptura – Aakademija likovnih umjetnosti (1963.) </description>
-            <author>Valerije Michieli Tomić</author>
-            <imagePath>meta</imagePath>
-            <points>1</points>
-            <latitude></latitude>
-            <longitude></longitude>
-        </Sculpture>
-
-        <Sculpture>
-            <name>  </name>
-            <description> </description>
-            <author> </author>
-            <imagePath></imagePath>
-            <points>1</points>
-            <latitude>-45.8257309</latitude>
-        <longitude>15.9640227</longitude>-->
-
-
-</Sculptures>
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Sculpture>
+    <name>AKZ</name>
+    <description>(1987.), Poklon gro "TEHNIKA" gradu Zagrebu. </description>
+    <author>Dusan Dzamnonja</author>
+    <imagePath>skulpturaakz</imagePath>
+    <points>2</points>
+    <latitude>45.8032035</latitude>
+    <longitude>15.9940703</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Anđelija</name>
+    <description>Skulptura je izradena od bronce 1976. godine, a psotavljena je u PLIVINOM dvorištu 1978. godine kada je organizirana samostalna izložba djela njezina autora. Skulptura prikazuje ženu koja sjedi na stolici i oko vrata nosi medalj on koji prikazuje samog autora. Skulptura prikazuje Andeliju, ženu sinjskog kraja.</description>
+    <author>Stipe Sikirica</author>
+    <imagePath>andelija</imagePath>
+    <points>1</points>
+    <latitude>45.8118939</latitude>
+    <longitude>15.9347116</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Bacač diska</name>
+    <description>(1957.), Skulptura je izrađena od bronce I postavljena neposredno prije održavanja Gimnaestrade u Zagrebu, tjelovježbene manifestacije na otvorenom s ritmičko-gimnastičkim vježbama koja se od 1930-ih godina održavala svake tri do četiri godine u drugom gradu.. </description>
+    <author>Vanja Radaus</author>
+    <imagePath>bacacdiska</imagePath>
+    <points>3</points>
+    <latitude>45.8186251</latitude>
+    <longitude>16.0136092</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Brijunski akt</name>
+    <description>(1954.), Ovo je brončana verzija figure koju je Augustinčić modelirao 1948. godine, a 1953. isklesao u mramoru za trijem Titove "Bijele vile" na Brijunima, što je skulpturi donijelo poznatiji naziv Brijunski akt.</description>
+    <author>Antun Augustincic</author>
+    <imagePath>brijunskiakt</imagePath>
+    <points>1</points>
+    <latitude>45.8162752</latitude>
+    <longitude>15.980527</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Brod na Suhom</name>
+    <description>(1999.), Umjetnost ne mora biti vesela, ali mora biti iskrena. Najbolje je kad se ne radi po narudžbi nego iz vlastite unutarnje potrebe.-riječi autora</description>
+    <author>Petar Dolic</author>
+    <imagePath>brodnasuhom</imagePath>
+    <points>3</points>
+    <latitude>45.7894373</latitude>
+    <longitude>15.9621507</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Bumbina livada</name>
+    <description>(2016.), Skulptura je postavljena 2016. godine povodom 50. obljetnice međunarodne vrtne izložbe "Floraart". Ona u cjelokupnom značenju simbolizira cvijeće prirodu, hortikulturu i umjetnost oblikovanja i aranžmana cvijeća.</description>
+    <author>Damir Matusic</author>
+    <imagePath>bumbinalivada</imagePath>
+    <points>4</points>
+    <latitude>45.7864061</latitude>
+    <longitude>15.9621507</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Čitac</name>
+    <description>(2002.). Izrađena je od kombiniranog materijala te je jedna od “najpoznatijih” Zagrebačkih skulptura.</description>
+    <author>Ivan Ivos Ici</author>
+    <imagePath>citac</imagePath>
+    <points>2</points>
+    <latitude>45.8079943</latitude>
+    <longitude>15.9676712</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Čovjek preko i Stoj</name>
+    <description> Park skulptura - Aquarius </description>
+    <author>Andreja Hotko-Pavić</author>
+    <imagePath>covjekprekoistoj</imagePath>
+    <points>4</points>
+    <latitude>45.7783537</latitude>
+    <longitude>15.937658</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Čovjek s kolutom</name>
+    <description>(izrađena 1986.- postavljena 2003.) Jedna od ponajboljih skulptura s autorove prve izložbe.</description>
+    <author>Mladen Mikulin</author>
+    <imagePath>covjekskolutom</imagePath>
+    <points>4</points>
+    <latitude>45.7906058</latitude>
+    <longitude>15.9751631</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Dar zivota</name>
+    <description>(2013.), Skulptura „Dar života“  iskaz je zahvalnosti svim darivateljima organa i njihovim plemenitim obiteljima. Skulptura  prikazuje dvije figure koje razmjenjuju energiju i ljubav.</description>
+    <author>Dragan Kwiatkowski</author>
+    <imagePath>darzivota</imagePath>
+    <points>4</points>
+    <latitude>45.7855161</latitude>
+    <longitude>15.9893504</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Dijana</name>
+    <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1927.-postavljeno 1995.) </description>
+    <author>Frano Kršinić</author>
+    <imagePath>skulpturadijana</imagePath>
+    <points>1</points>
+    <latitude>45.811944</latitude>
+    <longitude>15.9619928</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Djecak</name>
+    <description>(1979.), Kip "Dječaka" predstavlja pokojnog kiparovog sina Gorana, a jedan je od stotine radova koje je ovaj akademski kipar načinio u životu. 2015. je premješten na trenutnu lokaciju.</description>
+    <author>Tomisalv Ostoja</author>
+    <imagePath>djecakostoja</imagePath>
+    <points>2</points>
+    <latitude>45.814746</latitude>
+    <longitude>15.971742</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Djevojka s knjigom</name>
+    <description>Izrađena 1940., postavljena 1981. Dobrotom je autora izlivena i postavljena prilikom otvorenja nove zgrade Dekanata</description>
+    <author>Frano Kršinić</author>
+    <imagePath>djevojkasaknjigom</imagePath>
+    <points>3</points>
+    <latitude>45.8196578</latitude>
+    <longitude>15.9844695</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Dodir</name>
+    <description>Izrađena 1989. Vrlo zagonetna skulptura koju ćemo mi, bez obzira na “službeni” naziv, i dalje zvati zagrebačkom Nessie.</description>
+    <author>Ivan Briski</author>
+    <imagePath>dodir</imagePath>
+    <points>3</points>
+    <latitude>45.8207026</latitude>
+    <longitude>16.0210001</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Dvije palme na otoku sreće</name>
+    <description>Martićeva ul. 14</description>
+    <author>Neven Bilić</author>
+    <imagePath>dvijepalmenaotokusrece</imagePath>
+    <points>2</points>
+    <latitude>45.8123412</latitude>
+    <longitude>15.9887995</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Dvoje</name>
+    <description>Postavljena u skolpu skupa skulptura na nasipu, Aleja skulptura.</description>
+    <author>Šime Vulas</author>
+    <imagePath>dvoje</imagePath>
+    <points>4</points>
+    <latitude>45.7890859</latitude>
+    <longitude>15.9647169</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Egipčanin</name>
+    <description>(1925.-1928.) Spomenik je izlijevan iz betona. Predstavlja tipičan primjer egiptomanije razdoblja art decoa.</description>
+    <author>Jozo Turkalj</author>
+    <imagePath>egipcanin</imagePath>
+    <points>4</points>
+    <latitude>45.8208764</latitude>
+    <longitude>16.0198501</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>fanta</name>
+    <description>u Maksimiru ispred crkve sv.Jeronima (2000.)</description>
+    <author>Ivana Biocic</author>
+    <imagePath>spomenikandelucuvaru</imagePath>
+    <points>3</points>
+    <latitude>45.8199283</latitude>
+    <longitude>16.0132694</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Frulaš</name>
+    <description>(1926.), Krajem tridesetih godina urbanizirao se dio Trešnjevke gdje je usred naselja Ciril Jeglič (dovršio Smiljan Klaić) osmislio park s igralištem i bazenom, te je na dan otvorenja osvanula ova skulptura koju je Frano Kršinić poklonio gradu s namjerom da se odlije u bronci, no nakon izglaganja na zidiću, više nije viđena. Brončana skulptura se nalazi na trenutnoj lokaciji, ali kako i kada je tamo dosla je nepoznato.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>frulas</imagePath>
+    <points>3</points>
+    <latitude>45.8151249</latitude>
+    <longitude>15.9675644</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Grad mladosti</name>
+    <description>Djelo je nastalo 1985. godine u sklopu likovne kolonije “Pionirski grad”. Izradeno je od drva, visoko deset metara. Grad mladih - Granešina </description>
+    <author>Jozo Vila</author>
+    <imagePath>gradmladosti</imagePath>
+    <points>1</points>
+    <latitude>45.8537117</latitude>
+    <longitude>16.05128</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Grad/Mogila</name>
+    <description>Nastalo u sklopu parka skulptura – Gajnice (izradeno 1984.-postavljeno 1986.) </description>
+    <author>Dora Kovačević</author>
+    <imagePath>gradmoglia</imagePath>
+    <points>5</points>
+    <latitude>45.816696</latitude>
+    <longitude>15.875772</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Grozdana</name>
+    <description>(1996.), Djela poput ovog su često izrađivana od bračkog kamena, te su mnoga slična sudjelovala na izložbama I bila nagrađivana.</description>
+    <author>Miroslav Župančić</author>
+    <imagePath>grozdana</imagePath>
+    <points>4</points>
+    <latitude>45.7894299</latitude>
+    <longitude>15.9611435</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Hokej '66</name>
+    <description>Hokejski klub Šalata(1966.)</description>
+    <author>Tomislav Ostoja</author>
+    <imagePath>hokej66</imagePath>
+    <points>2</points>
+    <latitude>45.8157669</latitude>
+    <longitude>15.9845969</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Hrvatski sokol</name>
+    <description>(1925.), Poznata I kao Sokolska Mogila sa sigurnošču je jedan od simbola parka Maksimir. Podignuo ju je Hrvatski sokolski savez u spomen na III. hrvatski svesokolski slet održan povodom tog povjesnog jubileja u Zagrebu od 14. do 16. kolovoza 1925. godine. Građena je od grumenova zemlje donesene iz 155 mjesta iz raznih hrvatskih krajeva u kojim se zbio neki značajni povijesni ili pak kulturni događaj tijekom tisućugodišnje hrvatske povijesti.</description>
+    <author>A.Freundenreich/M.Mikulin</author>
+    <imagePath>hrvatskisokol</imagePath>
+    <points>4</points>
+    <latitude>45.8236017</latitude>
+    <longitude>16.0155561</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Igra</name>
+    <description>(1992.) Djela poput ovog su često izrađivana od bračkog kamena, te su mnoga slična sudjelovala na izložbama I bila nagrađivana.</description>
+    <author>Miroslav Župančić</author>
+    <imagePath>igramiroslavzupancic</imagePath>
+    <points>5</points>
+    <latitude>45.8124494</latitude>
+    <longitude>15.8987759</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ivan Goran Kovačić</name>
+    <description>(1964.) Autoru je lik Ivana Gorana Kovačića bila jedna od najdražih tema te se cijeli život bavio njime.U Kovačiću je vidio sudbinu pogubljene braće, što ga je pogađalo. Iako ova skulptura ne izgleda kao realan prikaz Ivana Gorana Kovačića, nakon te skulpture počeo je dobivati brojne narudžbe, jer je kanon socrealističkog portreta riješio na jako kreativan način.</description>
+    <author>Vojin Bakić</author>
+    <imagePath>ivangorankovacic</imagePath>
+    <points>2</points>
+    <latitude>45.8179944</latitude>
+    <longitude>15.9798458</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Jedra</name>
+    <description>Autoru su motivi jedra bila umjetnicka opsesija. Park skulptura – Aakademija likovnih umjetnosti  (2002.) </description>
+    <author>Šime Vulas</author>
+    <imagePath>jedravulas</imagePath>
+    <points>1</points>
+    <latitude>45.811944</latitude>
+    <longitude>15.9619928</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kamen temeljac</name>
+    <description>(izrađeno 1993. - postavljeno 1996.) Postavljena u skolpu skupa skulptura na nasipu, Aleja skulptura.</description>
+    <author>Miro Vuco</author>
+    <imagePath>kamentemeljac</imagePath>
+    <points>4</points>
+    <latitude>45.7887643</latitude>
+    <longitude>15.9634898</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kapi</name>
+    <description>(1991.) Aleja skulptura pokrenuta je na inicijativu autora u okviru sekcije “Prijedlog” Zagrebačkog salona 1985. godine. Njome je želio oživjeti kontinuirano zanemarivan prostor grada uz Savu te stvoriti reprezentativnu galeriju urbanih skulptura.</description>
+    <author>Ratko Petrić</author>
+    <imagePath>kapi</imagePath>
+    <points>4</points>
+    <latitude>45.7893768</latitude>
+    <longitude>15.9659141</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kit</name>
+    <description>(1999.) Park skulptura - Aquarius. Rijeci autora: "Ovo je jedan od mojih najuspješnijih radova. Naime svakodnevno po njemu skacu, penju se i skližu djeca. Nema tako velike place kao što su djeca koja obožavaju tvoj rad. Inace skulpturu je narucio klub Aquarius i pamtim da me je vlasnica, gda. Ana, maksimalno zakinula za novac. Nedavno su takoder bez mojeg znanja pomaknuli skulpturu tik do jezera, što zapravo i nije tako loš potez. Sve u svemu bez obzira, bio je to vrhunski posao u kojem su mi pomogli prijatelji Petar Šalic i Sven Klobucar, a poliesterske poslove su izvodili radnici plasticara Boška Popare, proizvodaca camaca i pasara. Skulptura je dugacka tri i pol metara i nastala je 1999."</description>
+    <author>Denis Krašković</author>
+    <imagePath>kitkraskovic</imagePath>
+    <points>4</points>
+    <latitude>45.7783697</latitude>
+    <longitude>15.936886</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Košarkaši</name>
+    <description>(1991.) Skulptura košarkaša prikladno postavljena na prosturu Doma sportova.</description>
+    <author>Stanko Jančić</author>
+    <imagePath>kosarkasi</imagePath>
+    <points>3</points>
+    <latitude>45.806715</latitude>
+    <longitude>15.9527871</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kotač vremena</name>
+    <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1993. postavljeno 2000.) </description>
+    <author>Milena Lah</author>
+    <imagePath>kotacvremena</imagePath>
+    <points>4</points>
+    <latitude>45.7906058</latitude>
+    <longitude>15.9751631</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kugla</name>
+    <description>Autor je često gradio slobodne prostorne konstrukcije izvanredne geometrijske čistoće i organske vitalnosti, skulpture kompaktnih ili rasječenih kugla.</description>
+    <author>Dušan Džamonja</author>
+    <imagePath>kugla</imagePath>
+    <points>2</points>
+    <latitude>45.8156103</latitude>
+    <longitude>15.9890223</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kumica Barica</name>
+    <description>(2006.) Kip kumice Barice simbol je svih prodavačica, domaći rečeno: kumica, koje svakodnevno prodaju svoje proizvode na najpoznatijoj zagrebačkoj tržnici Dolac.</description>
+    <author>Stjepan Gračan</author>
+    <imagePath>kumicabarica</imagePath>
+    <points>1</points>
+    <latitude>45.8138417</latitude>
+    <longitude>15.9768164</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Kupač</name>
+    <description>(Izradena 1955. - postavljena 1999.), Jednog dana 1956. godine Ivan Kožarić trčao je s obale Save u svoj atelje. Žurio se zabilježiti doživljaj čovjeka pod tušem kojeg je tamo vidio, kratak trenutak ravnoteže ljudskog tijela na jednoj nozi. Ponovljen je odljev skulpture, koja je na trenutnoj lokaciji.</description>
+    <author>Ivan Kožarić</author>
+    <imagePath>kupackozaric</imagePath>
+    <points>4</points>
+    <latitude>45.7776723</latitude>
+    <longitude>15.9788862</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>La Futuro</name>
+    <description>(2001.) ("Budućnost", u prijevodu s esperanta.), Jedna od zanimljivosti vezanih uz tu skulpturu je ta da Graz posjeduje vrlo sličnu skulpturu istoga umjetnika, naziva "La Espero" ("Nada", u prijevodu sa esperanta).</description>
+    <author>Jesper Neergaard</author>
+    <imagePath>lafuturo</imagePath>
+    <points>3</points>
+    <latitude>45.8159475</latitude>
+    <longitude>16.0113745</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Lavlji most</name>
+    <description>(1925.-1928.) Lavlji most je nazvan po statuama lavova koje krase njegove početke, a nalazi se neposredno ispred nekadašnjih kaveza lavova.</description>
+    <author>Jozo Turkalj</author>
+    <imagePath>lavljimost</imagePath>
+    <points>3</points>
+    <latitude>45.8214779</latitude>
+    <longitude>16.0210374</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Let u prostoru</name>
+    <description>(1989.) Jedna od prvih apstraktnih umjetnosti u Hrvatskoj.</description>
+    <author>Milena Lah</author>
+    <imagePath>letuprostoru</imagePath>
+    <points>2</points>
+    <latitude>45.815627</latitude>
+    <longitude>15.9842683</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mačka</name>
+    <description>(1986.) Za skulpturu možemo reći da posjeduje 360 različitih kompozicija, jer se kompozicija skulpturi mijenja svakim stupnjem obilaska oko nje.</description>
+    <author>Branko Ružić</author>
+    <imagePath>mackaruzic</imagePath>
+    <points>4</points>
+    <latitude>45.7887643</latitude>
+    <longitude>15.9634898</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majčina igra</name>
+    <description>(izrađeno 1962. postavljeno 1978.) Postoje i manje verzije ove skulpture koje su u privatnim vlasništima.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>majcinaigra</imagePath>
+    <points>2</points>
+    <latitude>45.8319351</latitude>
+    <longitude>15.9803814</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka doji dijete</name>
+    <description>(izrađeno 1930.&gt;postavljeno 1940.) Monumentalna stilizacija figure seljakinje i lirika majčinog odnosa prema djetetu visoka su kvaliteta ovog spomenika, a sam motiv materinstva zauzima značajno mjesto u Meštrovićevom opusu.</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>majkadojidijete</imagePath>
+    <points>3</points>
+    <latitude>45.8286537</latitude>
+    <longitude>15.9816384</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka i dijete</name>
+    <description />
+    <author>Vanja Radauš</author>
+    <imagePath>majkaidijeteradaus</imagePath>
+    <points>1</points>
+    <latitude>45.8096327</latitude>
+    <longitude>15.962236 </longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka i dijete</name>
+    <description>Na istoj lokaciji nalazio se "Frulaš" Frane Kršnica, ali je nestao. Ubrzo nakon zamjenjuje se ovom skulpturom Luje Lozice koji živi nedaleko od parka.</description>
+    <author>Lujo Lozica</author>
+    <imagePath>majkaidijetelujolozica</imagePath>
+    <points>4</points>
+    <latitude>45.8013657</latitude>
+    <longitude>15.9475497</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka i dijete</name>
+    <description>(izradeno 1952. - postavljeno 2002. na današnju lokaciju)</description>
+    <author>Dušan Džamonja</author>
+    <imagePath>majkaidijetedzamonja</imagePath>
+    <points>1</points>
+    <latitude>45.8092675</latitude>
+    <longitude>15.9628213</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka i dijete</name>
+    <description>Park Maksimir(1958.)</description>
+    <author>Ćiril Mihanović</author>
+    <imagePath>majkaidijetecirilmihanovic</imagePath>
+    <points>3</points>
+    <latitude>45.8207383</latitude>
+    <longitude>16.0135194</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Majka i dijete</name>
+    <description> Grad mladih - Granešina (1985.) </description>
+    <author>Josip i Ivan Cikač</author>
+    <imagePath>majkaidijetecikac</imagePath>
+    <points>5</points>
+    <latitude>45.8530867</latitude>
+    <longitude>16.0512683</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mali dječak</name>
+    <description>(1928.) Ovo je jedan od najboljih dječjih portreta u hrvatskoj modernoj skulpturi, a nastla je na zahtjev dječakova oca, Anutna Resa, zagrebačkog tvorničara. Urbana legenda kaže da je Antunov sin, Dragutin Res, imao samo 5 godina kada je stradao nakon jedne svađe s vršnjakom. Dragutin je navodno imao plišanog medvjedića kojeg mu je drugi dječak htio uzeti. Nakon što mu je Dragutin odbio dati medvjedića, drugi dječak je otišao doma te se vratio s čekićem kojim je udario Dragutina, a on je zbog ozljeda preminuo. Ovaj događaj objašnjava posjekotinu na čelu, čekić u jednoj i medvjedića u drugoj ruci. Naravno, ova priča tek je legenda te je, unatoč velikom broju građana koji su je čuli ili je prepričavaju, upitno koliko je priča istinita.</description>
+    <author>Emil Bohutinsky</author>
+    <imagePath>malidjecak</imagePath>
+    <points>2</points>
+    <latitude>45.808444</latitude>
+    <longitude>15.991085</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mali konjanik</name>
+    <description> Grad mladih - Granešina (1987.) </description>
+    <author>Miro Vuco</author>
+    <imagePath>malikonjanik</imagePath>
+    <points>5</points>
+    <latitude>45.8537117</latitude>
+    <longitude>16.05128</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mali princ</name>
+    <description>(1985.) Park malog princa je 1987. godine uređen prema zamisli akademske kiparica Nade Orel. Parkovnu cjelinu čine brončana figura Malog princa na postolju te pet isklesanih kamenih blokova s prizorima iz priče. Blokovi su povezani kamenim puteljcima, a cjelinu su 1980-ih godina nadopunjavale cvjetne gredice u obliku zvijezda.</description>
+    <author>Nada Orel</author>
+    <imagePath>maliprinc</imagePath>
+    <points>4</points>
+    <latitude>45.8121026</latitude>
+    <longitude>16.0229341</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Međaš</name>
+    <description>Nakon 4-godišnje stanke, na inicijativu akad. kipara Alena Novoseleca i HDLU-a, nastavljeno je postavljanje skulptura istaknutih hrvatskih umjetnika u okviru Aleje skulptura na savskom nasipu, predstavljanjem 12. skulpture po redu, autora akademika Zlatka Boureka naziva Medaš protiv uroka i poplave. Skup skulptura na nasipu/Aleja skulptura (2016.) </description>
+    <author> Zlatko Bourek </author>
+    <imagePath>medas</imagePath>
+    <points>4</points>
+    <latitude>45.7873758</latitude>
+    <longitude>15.9584557</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Miljokaz</name>
+    <description> Skulptura je u davnim vremenima simbolizirala putokaz za budućnost. Ima korijene u keltsko-rimskim i slavenskim kulturama. Rađen je od mramora i mramornih kristala, a slovo C na njemu simbolizira Hrvatsku (Croatia) i njenu otvorenost prema Europi.</description>
+    <author>Max Gangl</author>
+    <imagePath>miljokaz</imagePath>
+    <points>4</points>
+    <latitude>45.7942323</latitude>
+    <longitude>15.9700146</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mladenci</name>
+    <description>(1974.) Cijelokupna ideja parka je počela 1967. i za nju je zaslužan Smiljan Klaić. Skulptura je lijevana brončana statua koja prikazuje mladića kako posjeda djevojku na konja i vodi je u zajednički život</description>
+    <author>Stipe Sikirica</author>
+    <imagePath>mladencisikirica</imagePath>
+    <points>5</points>
+    <latitude>45.7760852</latitude>
+    <longitude>16.0132694</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Mladenci</name>
+    <description>Djelo dobitnika ULUH-ove nagrade za kiparstvo, Nagrade Vladimir Nazor za likovne umjetnosti, Nagrade HAZU. </description>
+    <author>Ivan Lesiak</author>
+    <imagePath>mladencilesiak</imagePath>
+    <points>4</points>
+    <latitude>45.8060105</latitude>
+    <longitude>16.0207654</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Nađengrad</name>
+    <description>Nastalo u sklopu parka skulptura – Gajnice  (1986.)</description>
+    <author>Ante Rašić</author>
+    <imagePath>nadengrad</imagePath>
+    <points>5</points>
+    <latitude>45.8157631</latitude>
+    <longitude>15.876291</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Navalna grupa u akciji</name>
+    <description>(2010.) Postavljena povodom 100. obljetnice Vatrogasne postaje.</description>
+    <author>Marija Reberski</author>
+    <imagePath>navalagrupauakciji</imagePath>
+    <points>3</points>
+    <latitude>45.8070024</latitude>
+    <longitude>15.9673881</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Nugentski lav</name>
+    <description>Postavljeno sredinom 19.st.</description>
+    <author>nepoznato</author>
+    <imagePath>nugentskilav</imagePath>
+    <points>1</points>
+    <latitude>45.8158167</latitude>
+    <longitude>15.9748657</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Njegovateljica ruža</name>
+    <description>(izrađena 1953., postavljena 1955.), Iako je sama skulptura atraktivna, do izražaja ponajviše dolazi zbog ružičnjaka koji se nalazi ispred same skulpture.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>njegovateljicaruza</imagePath>
+    <points>2</points>
+    <latitude>45.808372</latitude>
+    <longitude>15.990650</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Obelisk I i II</name>
+    <description>(1987.) Također poznato i kao “Sunce”.</description>
+    <author>Petar Barišić</author>
+    <imagePath>obeliskiiii</imagePath>
+    <points>2</points>
+    <latitude>45.8026429</latitude>
+    <longitude>15.964418</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Oblik prostora XIII</name>
+    <description>Avenija Dubrovnik 17 Terasa Muzeja suvremene umjetnosti (1965.)</description>
+    <author>Ivan Kožarić</author>
+    <imagePath>oblikprostoraxiii</imagePath>
+    <points>4</points>
+    <latitude>45.7785724</latitude>
+    <longitude>15.9811319</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Odbojkaši</name>
+    <description>(1994.) Spomen ploča na Domu odbojke "Bojan Stranić"</description>
+    <author>Bojan Stranić</author>
+    <imagePath>odbojkasi</imagePath>
+    <points>4</points>
+    <latitude>45.7839113</latitude>
+    <longitude>15.9474138</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Otvorena vrata</name>
+    <description>Djelo je izradeno 1988.godine od bronce, visoko 2,5 metra.</description>
+    <author>Stipe Sikirica</author>
+    <imagePath>otvorenavrata</imagePath>
+    <points>1</points>
+    <latitude>45.8328271</latitude>
+    <longitude>16.0404933</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Petrica Kerempuh</name>
+    <description>(izrađeno 1943. - postavljeno 1955.) Petrica Kerempuh je književni lik koji se pojavljuje u više književnih djela, a najpoznatije djelo su “Balade Petrice Kerempuha” autora Miroslava Krleže. U doslovnom smislu, “kerempuh” znači “crijevo, trbuh”, a u prenesenom značenju označava lukavog čovjeka, veseljaka.</description>
+    <author>Vanja Radauš</author>
+    <imagePath>petricakerempuh</imagePath>
+    <points>2</points>
+    <latitude>45.8146896</latitude>
+    <longitude>15.9774771</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Pionirska majka</name>
+    <description> Grad mladih - Granešina (1984.)</description>
+    <author>Drago Belina</author>
+    <imagePath>pionirskamajka</imagePath>
+    <points>5</points>
+    <latitude>45.8537117</latitude>
+    <longitude>16.05128</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Plesačica</name>
+    <description>Skulptura Plesacica odabrana je na javnom natjecaju za mlade umjetnike u okviru Parka skulptura Aquarius na Jarunskom jezeru u Zagrebu koji je žirirao akad. kipar Ivan Kožaric. Ujedno je bila i autoricin diplomski rad na Akademiji likovnih umjetnosti u Zagrebu.Skulptura je izvedena procesom recikliranja kartonske ambalaže za jaja, oslanjajuci se na ideje arte povera. Upotrebom potrošnog materijala suptilno sugerira na sveopci komercijalizam suvremenog društva, te kroz sofisticirani plesni pokret figure zatocene u plesnom kavezu vuce paralelu izmedu subkulture nocnog života kluba ispred kojeg je skulptura postavljena i sveprisutnog konzumerizma suvremene populacije. </description>
+    <author>Iris Lobaš Kukavčić</author>
+    <imagePath>plesacica</imagePath>
+    <points>4</points>
+    <latitude>45.7783697</latitude>
+    <longitude>15.936886</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Poezija prostora</name>
+    <description>(1981.) Malo je poznato da je autorica bila inspirirana zloglasnim Stubama smrti u nacističkom koncentracijskom logoru Mauthausen u blizini Linza. Njen rad nastao je nakon posjeta Mauthausenu, a o zločinu govori posredno, kroz priču o krajoliku koji se, baš kao i ljudi, sastoji i od prošlosti.</description>
+    <author>Milena Lah</author>
+    <imagePath>poezijaprostora</imagePath>
+    <points>3</points>
+    <latitude>45.8322808</latitude>
+    <longitude>16.0263334</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Povijest Hrvata</name>
+    <description>(1932.), Djelo je jedna od najpoznatijih autorovih skulptura. Lik sa skulpture u krilu drži masoivnu kamenu ploču na kojoj je u glagoljici ispisan naziv djela, te utjelovljuje prikaz brižne majke i čuvarice nacionalne baštine i povijesti. Bila je namjenjena novoj zgradi Starohrvatskog muzeja u Kninu, ali originalna mramorna Povijest Hrvata postavljena je u parkovni paviljon kraljevskoga dvora na Dedinju u Beogradu gdje se I danas nalazi. Godine 1970. prigodom tristote obljetnice osnutka Sveučilišta u Zagrebu ispred Rektorata postavljen je brončani odljev Povijesti Hrvata. </description>
+    <author>Ivan Meštrović</author>
+    <imagePath>povijesthrvata</imagePath>
+    <points>1</points>
+    <latitude>45.8104324</latitude>
+    <longitude>15.9697552</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Pozdrav</name>
+    <description>1987.). Još poznat I kao “Ruka prijateljstva” osmišljen je kao putokaz dobrodošlice povodom međunarodnog studentskog sportskog natjecanja 14. Ljetne univerzijade, koje je održano 1987. u Zagrebu.Skulptura je bila poklon autorice gradu.</description>
+    <author>Milena Lah</author>
+    <imagePath>pozdrav</imagePath>
+    <points>3</points>
+    <latitude>45.8116232</latitude>
+    <longitude>16.013095</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Prizemljeno sunce</name>
+    <description>(1994.) Cjelokupna instalacija postavljena je 2004., dok je samo Sunce izrađeno još 1971. i prvobitno je postavljeno na Kazališni trg (danas Trg maršala Tita), no zbog pretjeranog uništavanja 1994. premješteno je na današnju lokaciju u Bogovićevoj. Autorova tema je, kao što i sam naziv govori, prizemljeno Sunce i planeti Sunčevog sustava. Davor Preis, koji je izradio ostatak instalacije (Sunce je izradio Kožarić) držao se Kožarićevog mjerila te u skladu s tim istim izrađivao svoje planete.</description>
+    <author>Ivan Kožarić</author>
+    <imagePath>prizemljenosunce</imagePath>
+    <points>1</points>
+    <latitude>45.8123978</latitude>
+    <longitude>15.9754657</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Prosinačke žrtve</name>
+    <description>(1960.) Spomenik je podignut u trajno sjećanje na šesnaestoricu Zagrepčana koje su ustaški krvnici 20. prosinca 1943. godine objesili o telefonske stupove na lokaciji današnjeg okretišta u Dubravi. Zanimljivost vezana uz nastanak Spomenika prosinačkim žrtvama jest ta da je Dušan Džamonja - umjetnik svjetskog kalibra i jedan od naših najcjenjenih kipara uopće - skulpturu izradio samoinicijativno i poklonio je općini Maksimir.</description>
+    <author>Dušan Džamonja</author>
+    <imagePath>prosinackezrtve</imagePath>
+    <points>3</points>
+    <latitude>45.8244816</latitude>
+    <longitude>16.0383225</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Prozor</name>
+    <description>(1991.) Skulptura simbolizira ‘noćne dame’ koje su čekale mušterije na svojim prozorima u Tkalčićevoj ulici. Tkalčićeva je bila poznata po tome što je gotova svaka kuća u ovoj ulici bila kupleraj. Prvo takvo mjesto nalazilo se u Kožarskoj ulici, “Petrova kupelj”. Procedura za otvorenje kupleraja bila je jednostavna – odlazak u Gradsku skupštinu koja je zahtjeve odobravala ili odbijala.</description>
+    <author>Vera Dajht Kralj</author>
+    <imagePath>prozor</imagePath>
+    <points>1</points>
+    <latitude>45.8169919</latitude>
+    <longitude>15.9766074</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ptica</name>
+    <description>Djelo je nastalo u sklopu likovne kolonije “Pionirski grad”. Izradeno je od drva. Grad mladih - Granešina (1988.) </description>
+    <author>Jasminka Podgorski-Antolović</author>
+    <imagePath>ptica</imagePath>
+    <points>5</points>
+    <latitude>45.8525217</latitude>
+    <longitude>16.0518867</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Putokaz</name>
+    <description>(2006.) Skulptura prikazuje ženske noge, a podsjetnik je na nekadašnje popularno savsko kupalište tzv. babinjak, kojega se Zagrepčani s nostalgijom prisjećaju.</description>
+    <author>Zvonimir Lončarić</author>
+    <imagePath>putokaz</imagePath>
+    <points>4</points>
+    <latitude>45.7875509</latitude>
+    <longitude>15.9591219</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Putovanje barbara</name>
+    <description> Grad mladih - Granešina (1988.) </description>
+    <author>Peruško Bogdanić</author>
+    <imagePath>putovanjebarbara</imagePath>
+    <points>5</points>
+    <latitude>45.8530867</latitude>
+    <longitude>16.0512683</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ranjenik</name>
+    <description>Hebrangova 1, u prolazu (izrađeno 1938. - postavljeno 1951.)</description>
+    <author>Vanja Radauš</author>
+    <imagePath>ranjenikradaus</imagePath>
+    <points>2</points>
+    <latitude>45.8093002</latitude>
+    <longitude>15.9776976</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ranjenik</name>
+    <description>Ivana Matetića Ronjgova 67</description>
+    <author>Lujo Lozica</author>
+    <imagePath>ranjeniklozica</imagePath>
+    <points>5</points>
+    <latitude>45.7944971</latitude>
+    <longitude>15.897576</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Razlistana forma</name>
+    <description>(izrađeno 1961. - postavljeno 1987.) Nažalost često neprimječivana skulptura, zapravo je pravo umjetničko djelo. Razlistana forma je toliko jednostavna da se iznenađujemo tajnama koje polagano otkrivamo promatrajući je. Koliko genijalan čovjek treba biti da od dva komada bronce načini potpuno novu viziju prostornosti koja otvara mjesto masi?</description>
+    <author>Vojin Bakić</author>
+    <imagePath>razlistanaforma</imagePath>
+    <points>1</points>
+    <latitude>45.8124585</latitude>
+    <longitude>15.9764193</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ribari</name>
+    <description>(1947.) Jednaka skulptura Ribara nalazi se u Bakru.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>ribari</imagePath>
+    <points>3</points>
+    <latitude>45.8116372</latitude>
+    <longitude>15.9433649</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Ruka</name>
+    <description>Vidjevši malu drvenu maketu 'Ruke' Ivana Kožarica, Ratko Petric odabrao ju je za izvedbu na Aleji skulptura na Savskom nasipu. Prepoznao je u tom radu Ivana Kožarica novomilenijsku kombinaciju umjetnosti i dizajna, izgled znaka kompleksne i mnogoznacne simbolike, visoko tehnološku estetiku i ironican, podsmješljiv i duhovit komentar društvene zbilje. Ovaj je rad (ruka produženih prstiju) jednako toliko kriticki oštar i duhovit, koliko je minimalisticki jednostavan i suzdržan. Skup skulptura na nasipu/Aleja skulptura  (2011.)</description>
+    <author>Ivan Kožarić</author>
+    <imagePath>ruka</imagePath>
+    <points>4</points>
+    <latitude>45.7883848</latitude>
+    <longitude>15.9620857</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Silviju Strahimiru Kranjčeviću</name>
+    <description>(1962.) Radi se o spomeniku Silviju Strahimiru Kranjčeviću, koji kao da se bori s aždajama, a s obzirom da se za života borio i protiv institucija, ali i ljudi odnosno njihovih užasnih osobina, isturena ruka u borbenom položaju, izgleda nam sasvim autentično.</description>
+    <author>Tomislav Ostoja</author>
+    <imagePath>silvijustrahimirukranjcevicu</imagePath>
+    <points>2</points>
+    <latitude>45.796734</latitude>
+    <longitude>15.9706292</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Sinteza, Arena</name>
+    <description>Skup skulptura oko Arena centra (2008.)</description>
+    <author>Arh. ured UPI&gt;2M</author>
+    <imagePath>sintezaarena</imagePath>
+    <points>5</points>
+    <latitude>45.7719584</latitude>
+    <longitude>15.9409573</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Slonovi stup</name>
+    <description> Grad mladih - Granešina (1988.) </description>
+    <author>Ratko Petrić</author>
+    <imagePath>slonovnistup</imagePath>
+    <points>5</points>
+    <latitude>45.8525217</latitude>
+    <longitude>16.0518867</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Strijeljanje talaca</name>
+    <description>(1954.) Skulptura “Strijeljanje talaca” je zaštićeno nepokretno kulturno dobro Republike Hrvatske. Prvi je spomenik žrtvama fašizma podignut u užem centru.</description>
+    <author>Frano Kršinić</author>
+    <imagePath>stijeljanjetalaca</imagePath>
+    <points>1</points>
+    <latitude>45.8076699</latitude>
+    <longitude>15.9785467</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Stup proizvodnje</name>
+    <description>(1977.) Čelična skulptura nastala u sklopu autoričinig ciklusa “Industrijska skulptura. Jedina je skulptura izvan “parka skulptura” koji se nalazi unutar velesajma.”</description>
+    <author>Mila Kumbatović</author>
+    <imagePath>stupprizvodnje</imagePath>
+    <points>4</points>
+    <latitude>45.7775415</latitude>
+    <longitude>15.9705698</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Stup svečanosti</name>
+    <description> Grad mladih – Granešina (1985.)  </description>
+    <author>Milena Lah</author>
+    <imagePath>stupsvecanosti</imagePath>
+    <points>5</points>
+    <latitude>45.8537117</latitude>
+    <longitude>16.05128</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Stup života</name>
+    <description>Skulptura je izradena 1922. godine od bronce, visoka 2,56 metara, a postavljena na lokaciju 2001. godine. </description>
+    <author>Robert Frangeš Hihanović</author>
+    <imagePath>stupzivota</imagePath>
+    <points>1</points>
+    <latitude>45.811944</latitude>
+    <longitude>15.9619928</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Sv. Juraj</name>
+    <description>(1903.) Ova skulptura odskače od drugih jer prikazuje miroću sv. Juraja nakon bitke s zmajem, a ne samu borbu. Napravljena je od dva dijela, brončanje statue i kamena crvene rapske breče. Do 1937. godine skulptura se nalazila u Mallnitzu, kada ju kupuje dr. Želimir Mažuranić, a 1994. postavljena je na današnju lokaciju.</description>
+    <author>A. Kompatscher i A. Winder</author>
+    <imagePath>svjurajwinder</imagePath>
+    <points>1</points>
+    <latitude>45.8159029</latitude>
+    <longitude>15.9755332</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Sv.Juraj ubija zmaja</name>
+    <description>Sveti Juraj ubija zmaja poznata je srednjovjekovna tema o borbi dobra i zla te pobjedi kršćanstva nad bezbožnim barbarima. Skulptura je prvobitno izrađena za palaču u Beču 1853. godine, a 1908. godine postavlja se brončani odljev na trenutnu lokaciju u Zagrebu. </description>
+    <author>Anton Dominik Fernkorn</author>
+    <imagePath>svjurajubijazmaja</imagePath>
+    <points>1</points>
+    <latitude>45.8092842</latitude>
+    <longitude>15.9690857</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Školjka</name>
+    <description>(1987.)</description>
+    <author>Nikola Koydl</author>
+    <imagePath>skulpturaskoljka</imagePath>
+    <points>4</points>
+    <latitude>45.779315</latitude>
+    <longitude>15.9962938</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Tok</name>
+    <description>Od prvog rada Dore Kovacevic, koji je Ratko Petric odabrao za Prvu fazu  Aleje skulptura na Savskom nasipu i koji je bio predstavljen na izložbi u  Galeriji ULUPUH u Zagrebu 1994., do ovog koji je postavljen u prosincu 2010. i promoviran u proljece 2012., prošlo je osamnaest godina. U tom je razdoblju umjetnica ostvarila niz novih ciklusa i postavila pred sebe nove  kiparske probleme. Konacni rad koji je ostvaren i postavljen na Aleji  skulptura na Savskom nasipu nastao je iz kiparskih preokupacija punom i  praznom formom u relacijama u kojima je volumen izjednacen s oplošjem, a misao usmjerena na slikovitost (dekoraciju) kao kiparsku mogucnost. Skup skulptura na nasipu/Aleja skulptura </description>
+    <author>Dora Kovačević</author>
+    <imagePath>tokkovacevic</imagePath>
+    <points>4</points>
+    <latitude>45.7889831</latitude>
+    <longitude>15.9642569</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Tri kugle</name>
+    <description>Grada Mainza/Vodovodna, ispred knjižnice "Vladimir Nazor"(1985.)</description>
+    <author>Anto Jakić</author>
+    <imagePath>trikugle</imagePath>
+    <points>3</points>
+    <latitude>45.8113844</latitude>
+    <longitude>15.9489354</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Trsik</name>
+    <description>Sachsova 4 (1973.)</description>
+    <author>Ante Vulin</author>
+    <imagePath>trsik</imagePath>
+    <points>2</points>
+    <latitude>45.7947235</latitude>
+    <longitude>16.0087996</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Tuga</name>
+    <description>Mošćenička 1, Dječje kazalište "Trešnja"(izrađeno 1976. - postavljeno 1999.)</description>
+    <author>Lujo Lozica</author>
+    <imagePath>skulpturatuga</imagePath>
+    <points>4</points>
+    <latitude>45.7944917</latitude>
+    <longitude>15.9440185</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Tvrdalj</name>
+    <description>(izrađeno 1994. - postavljeno 2002.) Nastala još za Domovinskog rata (1991.-1995.), temom i oblikom odgovara vremenu sugerirajući  zatvorenost i sigurnost. Za postav ovog rada autor je izabrao park na Opatovini (jer je, kaže, nuđana i druga lokacija) stoga što je želio postaviti svoj  „Tvrdalj“ između stvarnih zidina sa željom da se skulptura vizualno nadovezuje na okolne zidine i krovove gornjogradskih kuća.</description>
+    <author>Šime Vulas</author>
+    <imagePath>tvrdalj</imagePath>
+    <points>1</points>
+    <latitude>45.81675</latitude>
+    <longitude>15.9771783</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Udovica</name>
+    <description> Park skulptura – Aakademija likovnih umjetnosti (izrađeno 1908.-postavljeno 1985.) </description>
+    <author>Ivan Meštrović</author>
+    <imagePath>udovica</imagePath>
+    <points>1</points>
+    <latitude>45.811944</latitude>
+    <longitude>15.9619928</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Uzastopnost</name>
+    <description>Ul. grada Vukovara 68 ispred POU (2000.)</description>
+    <author>Petar Barišić</author>
+    <imagePath>uzastopnost</imagePath>
+    <points>2</points>
+    <latitude>45.7992631</latitude>
+    <longitude>15.9704457</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Veliki prodor</name>
+    <description>Bundek(2002.)</description>
+    <author>Ljubo De Karina</author>
+    <imagePath>velikiprodor</imagePath>
+    <points>4</points>
+    <latitude>45.7839093</latitude>
+    <longitude>15.9831931</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Veliki torzo</name>
+    <description>Iako mnogo ljudi ne zna što ova skulptura predstavlja, ona je zapravo zamišljena kao ženski torzo.</description>
+    <author>Raul Goldoni</author>
+    <imagePath>skulpturavelikitorzo</imagePath>
+    <points>1</points>
+    <latitude>45.8130229</latitude>
+    <longitude>15.9804987</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Zaljubljeni</name>
+    <description>(1975.) Izrađena od bronce, a poznata je I pod nazivom “Odmor”.</description>
+    <author>Ćiril Mihanović</author>
+    <imagePath>zaljubljeni</imagePath>
+    <points>4</points>
+    <latitude>45.8172439</latitude>
+    <longitude>15.9987421</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Zlatarevo zlato</name>
+    <description>(1929.), Skulptura prikazuje lik Dore iz Šenoina romana „Zlatarevo zlato“, kćerke zagrebačkog zlatara Krupića, koja drži ključ grada i cehovsku škrinju s grbom. Do dana danjašnjeg neizostavna je skulptura u “gornjogradskoj kolekciji”. Ista ovakva skulptura se nalazi u dvorištu ALU.</description>
+    <author>Ivo Kerdić</author>
+    <imagePath>zlatarevozlato</imagePath>
+    <points>1</points>
+    <latitude>45.8157768</latitude>
+    <longitude>15.9750547</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Žabinjak</name>
+    <description> Skup skulptura na nasipu/Aleja skulptura (izrađeno 1994.-postavljeno 2000.) </description>
+    <author>Stjepan Gračan</author>
+    <imagePath>zabinjak</imagePath>
+    <points>4</points>
+    <latitude>45.7906058</latitude>
+    <longitude>15.9751631</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Žena</name>
+    <description>(izrađeno 1929. - postavljeno 1983.) Ul. Franje Račkog, Smičiklasova, Ul. Ignjata Đorđića</description>
+    <author>Ivan Meštrović</author>
+    <imagePath>zenamestrovic</imagePath>
+    <points>1</points>
+    <latitude>45.810969</latitude>
+    <longitude>15.985275</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Žena mačka</name>
+    <description>(2001.), Žena mačka je autoričin alter-ego.</description>
+    <author>Marija Ujević Galetović</author>
+    <imagePath>zenamacka</imagePath>
+    <points>3</points>
+    <latitude>45.811818</latitude>
+    <longitude>15.9401214</longitude>
+  </Sculpture>
+  <Sculpture>
+    <name>Žena s tačkama</name>
+    <description> Grad mladih – Granešina (izrađeno 1947.- postavljeno 1988.)</description>
+    <author>Kosta Angeli Radovani</author>
+    <imagePath>zenastackama</imagePath>
+    <points>5</points>
+    <latitude>45.8525217</latitude>
+    <longitude>16.0518867</longitude>
+  </Sculpture>
+</NewDataSet>

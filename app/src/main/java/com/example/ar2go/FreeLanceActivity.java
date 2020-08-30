@@ -4,19 +4,28 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.Fragment;
 
 import android.Manifest;
 import android.app.ActivityManager;
+import android.app.AlertDialog;
 import android.content.ContentResolver;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -28,13 +37,17 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -49,6 +62,7 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Locale;
 
 import static java.lang.String.valueOf;
 import static java.lang.Thread.sleep;
@@ -64,6 +78,7 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     private LocationManager locationManager;
     private LocationListener locationListener;
     private ImageView back, collection, showToolbar, checkboxSculptures, checkboxArhitekture, checkboxSpomenici;
+    private Marker marker;
     @NonNull
     private Boolean flag = false;
     private boolean isFrist;
@@ -76,6 +91,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
     protected String unlockedSculptures, userName, userEmail;
     private GoogleMap mMap;
     protected static ArrayList<Sculpture> sculptures, arhitekture, spomenici;
+    protected ArrayList<CustomLocation> customLocations = new ArrayList<>();
+    protected ArrayList<Marker> markersCustomLocations = new ArrayList<>();
     private LinearLayout toolbarLayout;
     private Animation showToolbarAnimation, unshowToolbarAnimation;
     private ScrollView leftScrollView;
@@ -147,7 +164,6 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         } catch (Exception ex) {
             Toast.makeText(FreeLanceActivity.this, "NEZZ KOJI K:" + ex, Toast.LENGTH_LONG).show();
         }
-        menuBar();
 
         flag = displayGpsStatus();
         if (flag) {
@@ -163,6 +179,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             finish();
             startActivity(new Intent(FreeLanceActivity.this, SecondActivity.class));
         }
+        menuBar();
+        //startCustomLocationTimer();
     }
 
     private boolean isMyServiceRunning(Class<?> serviceClass) {
@@ -196,7 +214,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         if (sculptures != null && unlockedSculptures != null && isSculptureShown) {
             for (Sculpture sculpture : sculptures) {
                 if (unlockedSculptures.contains(sculpture.imagePath)) {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    Marker marker = mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    marker.setTag(sculpture.imagePath);
                 } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown"));
                 }
@@ -206,9 +225,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         if (spomenici != null && unlockedSculptures != null && isSpomeniciShown) {
             for (Sculpture sculpture : spomenici) {
                 if (unlockedSculptures.contains(sculpture.imagePath)) {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    Marker marker = mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    marker.setTag(sculpture.imagePath);
                 } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE)));
+
                 }
             }
         }
@@ -216,18 +237,108 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
         if (arhitekture != null && unlockedSculptures != null && isArhitektureShown) {
             for (Sculpture sculpture : arhitekture) {
                 if (unlockedSculptures.contains(sculpture.imagePath)) {
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    Marker marker = mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title(sculpture.name).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+                    marker.setTag(sculpture.imagePath);
                 } else {
                     mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(sculpture.latitude), Double.valueOf(sculpture.longitude))).title("Unknown").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
+
                 }
             }
         }
-
+        final ArrayList<Sculpture> AllSculptures = new ArrayList<>();
+        AllSculptures.addAll(sculptures);
+        AllSculptures.addAll(spomenici);
+        AllSculptures.addAll(arhitekture);
+        mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+            @Override
+            public void onInfoWindowClick(Marker marker) {
+                if (!marker.getTitle().equals("Unknown") && marker.getTag() != null) {
+                    for (Sculpture sculptureTmp : AllSculptures) {
+                        if (sculptureTmp.imagePath.equals(marker.getTag())) {
+                            Pop popSculpture = new Pop(sculptureTmp.name, sculptureTmp.imagePath, sculptureTmp.description, sculptureTmp.author);
+                            popSculpture.setFirstTime(false);
+                            Intent i = new Intent(FreeLanceActivity.this, Pop.class);
+                            i.putExtra("currentSculpture", popSculpture);
+                            startActivity(i);
+                        }
+                    }
+                }
+            }
+        });
         if (currentLocation != null && isFrist) {
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(currentLocation, 15.5f));
             isFrist = false;
         }
         googleMap.setMyLocationEnabled(true);
+
+        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+            @Override
+            public void onMapClick(LatLng latLng) {
+                if (toolbarShown) {
+                    toolbarShown = false;
+                    toolbarLayout.startAnimation(unshowToolbarAnimation);
+                    unshowToolbarAnimation.setAnimationListener(new Animation.AnimationListener() {
+                        @Override
+                        public void onAnimationStart(Animation animation) {
+                            toolbarLayout.setVisibility(View.INVISIBLE);
+                            leftScrollView.setVisibility(View.INVISIBLE);
+                        }
+
+                        @Override
+                        public void onAnimationEnd(Animation animation) {
+                        }
+
+                        @Override
+                        public void onAnimationRepeat(Animation animation) {
+
+                        }
+                    });
+                }
+            }
+        });
+        getCustomLocation();
+    }
+
+    void getCustomLocation() {
+        final DatabaseReference databaseReferenceOfLocations = firebaseDatabase.getReference("Locations");
+
+        databaseReferenceOfLocations.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot postSnapshot : dataSnapshot.getChildren()) {
+                    CustomLocation customLocation = postSnapshot.getValue(CustomLocation.class);
+                    String locationName = customLocation.getName();
+                    String locationtDescription = customLocation.getDescription();
+                    double locationLatitude = customLocation.getLatitude();
+                    double locationLongitude = customLocation.getLongitude();
+                    int locationRadius = customLocation.getRadius();
+
+                    CustomLocation tmpLoc = new CustomLocation(locationName, locationtDescription, locationLatitude, locationLongitude, locationRadius);
+                    customLocations.add(tmpLoc);
+
+                    //mMap.addMarker(new MarkerOptions().position(new LatLng(Double.valueOf(locationLatitude), Double.valueOf(locationLongitude))).title(locationName).icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ROSE)));
+                    marker = mMap.addMarker(
+                            new MarkerOptions()
+                                    .position(new LatLng(Double.valueOf(locationLatitude), Double.valueOf(locationLongitude)))
+                                    .title(locationName)
+                                    .snippet(timeLeftFormatted)
+                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.confetti)));
+                    marker.setTag(customLocation.name + customLocation.radius);
+
+                    mMap.addCircle(new CircleOptions()
+                            .center(new LatLng(Double.valueOf(locationLatitude), Double.valueOf(locationLongitude)))
+                            .radius(locationRadius)
+                            .strokeWidth(0f)
+                            .fillColor(0x550000FF));
+                    markersCustomLocations.add(marker);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(FreeLanceActivity.this, "Couldn't connect to database", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     private void setuUiVeiws() {
@@ -456,10 +567,11 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             Location loc1 = new Location("");
             loc1.setLongitude(loc.getLongitude());
             loc1.setLatitude(loc.getLatitude());
-            if (sculptures != null && spomenici != null &&  arhitekture != null) {
+            if (sculptures != null && spomenici != null && arhitekture != null && customLocations != null) {
                 checkIfCurrentLocationIsNear(sculptures, loc1);
                 checkIfCurrentLocationIsNear(spomenici, loc1);
                 checkIfCurrentLocationIsNear(arhitekture, loc1);
+                checkIfCustomLocationIsNear(loc1);
             }
         }
 
@@ -479,7 +591,8 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
                     bodovi = bodovi + Integer.valueOf(sculpture.points);
                     unlockedSculptures = unlockedSculptures + ", " + sculpture.imagePath;
                     if (userName != null && userEmail != null) {
-                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes - 1);
+                        lifes--;
+                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes);
                         databaseReference.setValue(addBodovi);
                         popSculpture.setFirstTime(true);
                         Intent i = new Intent(FreeLanceActivity.this, Pop.class);
@@ -492,7 +605,68 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
 
         protected boolean checkIfSculptureUnlocked(@NonNull String name) {
             return !unlockedSculptures.contains(name);
+        }
 
+        private void checkIfCustomLocationIsNear(Location loc) {
+            for (CustomLocation customLocation : customLocations) {
+
+                Double customLocationeLatitude = customLocation.latitude;
+                Double customLocationLongtitude = customLocation.longitude;
+
+                Location loc2 = new Location("");
+                loc2.setLongitude(customLocationLongtitude);
+                loc2.setLatitude(customLocationeLatitude);
+
+                float distanceInMeters = loc.distanceTo(loc2);
+                if (distanceInMeters < customLocation.radius &&
+                        checkIfSculptureUnlocked(customLocation.name + customLocation.radius)) {
+                    customLocationPublic = loc2;
+                    rangePublic = customLocation.radius;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(FreeLanceActivity.this);
+                    builder.setMessage("Usli ste u krug zabave, ostanite u krugu dok odbrojavanje ne dode na 00:00 da bi ste dobili dodate bodove!\nStisnite na pin lokacije kako bi ste vidjeli koliko je još ostalo!\n")
+                            .setCancelable(false)
+                            .setTitle(customLocation.name)
+                            .setNeutralButton("Okay!",
+                                    new DialogInterface.OnClickListener() {
+                                        public void onClick(@NonNull DialogInterface dialog, int id) {
+                                            // cancel the dialog box
+                                            dialog.cancel();
+                                        }
+                                    });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                    if (!mTimerRunning)
+                        mTimeLeftInMillis = START_TIME_IN_MILLIS;
+
+                    for (Marker markerTmp : markersCustomLocations) {
+                        String tmpTag = customLocation.name + customLocation.radius;
+                        customLocationNamePublic = customLocation.name;
+                        customLocationRangePublic = customLocation.radius;
+                        if (markerTmp.getTag().equals(tmpTag)) {
+                            markerPublic = markerTmp;
+                            startCustomLocationTimer(markerPublic);
+                        }
+                    }
+
+//                    startStopwatchForCustomLocation();
+//                    Pop popSculpture = new Pop(sculpture.name, sculpture.imagePath, sculpture.description, sculpture.author);
+//                    bodovi = bodovi + Integer.valueOf(sculpture.points);
+//                    unlockedSculptures = unlockedSculptures + ", " + sculpture.imagePath;
+//                    if (userName != null && userEmail != null) {
+//                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes - 1);
+//                        databaseReference.setValue(addBodovi);
+//                        popSculpture.setFirstTime(true);
+//                        Intent i = new Intent(FreeLanceActivity.this, Pop.class);
+//                        i.putExtra("currentSculpture", popSculpture);
+//                        startActivity(i);
+                } else {
+                    if (mTimerRunning) {
+                        mTimerRunning = false;
+                        mTimeLeftInMillis = START_TIME_IN_MILLIS;
+                        Toast.makeText(FreeLanceActivity.this, "Izasli ste iz kruga!", Toast.LENGTH_LONG).show();
+                    }
+                }
+            }
         }
 
         @Override
@@ -511,6 +685,121 @@ public class FreeLanceActivity extends AppCompatActivity implements OnMapReadyCa
             // TODO Auto-generated method stub
         }
 
+    }
+
+    private static final int START_TIME_IN_MILLIS = 30 * 60 * 1000;
+    private CountDownTimer mCountDownTimer;
+    private boolean mTimerRunning;
+    private long mTimeLeftInMillis;
+    private long mEndTime;
+    private String timeLeftFormatted;
+    private String customLocationNamePublic;
+    private int customLocationRangePublic;
+    protected Location customLocationPublic;
+    protected int rangePublic;
+    protected Marker markerPublic;
+
+    public void startCustomLocationTimer(final Marker markerTmp) {
+        mEndTime = System.currentTimeMillis() + mTimeLeftInMillis;
+        mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                mTimeLeftInMillis = millisUntilFinished;
+                updateCountDownText();
+//                Marker marker = mMap.addMarker(
+//                        new MarkerOptions()
+//                                .position(new LatLng(45.866211494878, 15.792399123994))
+//                                .title("Dinamo")
+//                                .snippet(timeLeftFormatted)
+//                                .icon(BitmapDescriptorFactory.fromResource(R.drawable.confetti)));
+                markerTmp.setSnippet(timeLeftFormatted);
+                //Toast.makeText(FreeLanceActivity.this, "left: " + timeLeftFormatted, Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onFinish() {
+                mTimerRunning = false;
+                if (ActivityCompat.checkSelfPermission(FreeLanceActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(FreeLanceActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    // TODO: Consider calling
+                    //    ActivityCompat#requestPermissions
+                    // here to request the missing permissions, and then overriding
+                    //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                    //                                          int[] grantResults)
+                    // to handle the case where the user grants the permission. See the documentation
+                    // for ActivityCompat#requestPermissions for more details.
+                    return;
+                }
+                Location loc = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+                float distanceInMeters = loc.distanceTo(customLocationPublic);
+                if (distanceInMeters < rangePublic) {
+                    unlockedSculptures = unlockedSculptures + ", " + customLocationNamePublic + customLocationRangePublic;
+                    if (userName != null && userEmail != null) {
+                        UserProfile addBodovi = new UserProfile(userName, userEmail, bodovi, unlockedSculptures, lifes - 1);
+                        databaseReference.setValue(addBodovi);
+//                        popSculpture.setFirstTime(true);
+//                        Intent i = new Intent(FreeLanceActivity.this, Pop.class);
+//                        i.putExtra("currentSculpture", popSculpture);
+//                        startActivity(i);
+//                        Toast.makeText(FreeLanceActivity.this, "BRAVO IDIOTE" + timeLeftFormatted, Toast.LENGTH_LONG).show();
+                    }
+                }
+                resetTimer();
+            }
+        }.start();
+        mTimerRunning = true;
+    }
+
+    private void resetTimer() {
+        mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    }
+
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putLong("millisLeft", mTimeLeftInMillis);
+        editor.putBoolean("timerRunning", mTimerRunning);
+        editor.putLong("endTime", mEndTime);
+        editor.putString("customLocation", customLocationNamePublic + customLocationRangePublic);
+        editor.apply();
+        if (mCountDownTimer != null) {
+            mCountDownTimer.cancel();
+        }
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        SharedPreferences prefs = getSharedPreferences("prefs", MODE_PRIVATE);
+        mTimeLeftInMillis = prefs.getLong("millisLeft", START_TIME_IN_MILLIS);
+        mTimerRunning = prefs.getBoolean("timerRunning", false);
+        String tmpTag = prefs.getString("customLocation", "");
+
+        updateCountDownText();
+        if (mTimerRunning) {
+            mEndTime = prefs.getLong("endTime", 0);
+            mTimeLeftInMillis = mEndTime - System.currentTimeMillis();
+            if (mTimeLeftInMillis < 0) {
+                mTimeLeftInMillis = 0;
+                mTimerRunning = false;
+                updateCountDownText();
+            } else {
+                for (Marker markerTmp : markersCustomLocations) {
+                    if (markerTmp.getTag().equals(tmpTag)) {
+                        markerPublic = markerTmp;
+                        startCustomLocationTimer(markerPublic);
+                    }
+                }
+            }
+        }
+    }
+
+    private void updateCountDownText() {
+        int minutes = (int) (mTimeLeftInMillis / 1000) / 60;
+        int seconds = (int) (mTimeLeftInMillis / 1000) % 60;
+        timeLeftFormatted = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds);
     }
 
     @Override
